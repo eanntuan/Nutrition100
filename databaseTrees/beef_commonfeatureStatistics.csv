@@ -1,0 +1,184 @@
+Feature,Count,Mean,Variance
+ top round cap-off steak/roast,2,129.0,0.0
+ slow roasted,2,166.0,4.0
+ retail cuts,2,677.0,9.0
+ separable fat,2,677.0,9.0
+ top sirloin petite roast,3,169.0,10.0
+ manufacturing beef,2,122.0,12.0
+ top sirloin filet,3,170.0,14.0
+ shoulder pot roast or steak,6,126.0,16.0
+ top sirloin petite roast/filet,3,127.0,16.0
+ tripe,2,89.0,20.0
+ bottom round steak/roast,2,135.0,25.0
+ ribeye  petite roast/filet,3,132.0,28.0
+ shoulder steak,6,177.0,28.0
+ shoulder pot roast,6,199.0,29.0
+ carcass,2,284.0,42.0
+ inside skirt steak,2,212.0,56.0
+ sweetbread,2,310.0,56.0
+ ribeye filet,3,197.0,81.0
+ ribeye petite roast,3,176.0,96.0
+ 80% lean meat / 20% fat,5,259.0,101.0
+ outside skirt steak,2,244.0,121.0
+ tripe uncooked,2,90.0,169.0
+ lungs,2,106.0,196.0
+ 85% lean meat / 15% fat,5,237.0,210.0
+ shoulder tender,6,160.0,279.0
+ 75% lean meat / 25% fat,5,270.0,279.0
+ medallion,6,160.0,279.0
+ oyster blade,4,181.0,291.0
+ eye of round steak,12,139.0,310.0
+ pancreas,2,253.0,324.0
+ 90% lean meat / 10% fat,5,208.0,328.0
+ tip center,6,159.0,332.0
+ plate,4,228.0,336.0
+ top round roast,12,140.0,337.0
+ 97% lean meat / 3% fat,4,143.0,345.0
+ tenderloin roast,12,161.0,347.0
+ shoulder top and center steaks,6,161.0,393.0
+ top loin petite roast,6,210.0,396.0
+ tip side,6,148.0,397.0
+ spleen,2,125.0,400.0
+ 93% lean meat / 7% fat,4,179.0,408.0
+ knuckle,13,155.0,408.0
+ top blade,12,202.0,409.0
+ 95% lean meat / 5% fat,5,167.0,415.0
+ intermuscular fat,2,581.0,441.0
+ full cut,6,199.0,448.0
+ breakfast strips,2,427.0,462.0
+ eye of round roast,12,143.0,463.0
+ outside round,6,160.0,477.0
+ eye round,4,144.0,496.0
+ liver,5,156.0,517.0
+ subcutaneous fat,2,708.0,529.0
+ brain,3,163.0,544.0
+ top loin petite roast/filet,6,163.0,549.0
+ tongue,4,255.0,550.0
+ rump centre,4,166.0,556.0
+ top loin filet,6,215.0,589.0
+ corned beef,3,233.0,612.0
+ clod roast,8,179.0,642.0
+ ribs prepared,2,171.0,650.0
+ tri-tip roast,11,172.0,652.0
+ Denver Cut,12,198.0,662.0
+ under blade center steak,12,198.0,662.0
+ top round steak,13,147.0,686.0
+ under blade pot roast or steak,5,174.0,686.0
+  seam fat,3,594.0,704.0
+ bottom sirloin,10,171.0,708.0
+ shoulder clod,18,172.0,720.0
+ trimmed to 1/4" fat,7,169.0,744.0
+ under blade steak,6,246.0,796.0
+ ribeye steak/roast lip-on,2,188.0,812.0
+ kidneys,2,128.0,870.0
+ hind shin,4,156.0,891.0
+ eye of round,12,166.0,911.0
+ tip round,18,173.0,949.0
+ shoulder top blade steak,12,171.0,973.0
+ whole (ribs 6-12),12,342.0,974.0
+ chuck for stew,6,158.0,1000.0
+ heart,4,140.0,1038.0
+ tenderloin steak,12,174.0,1046.0
+ composite of trimmed retail cuts,14,255.0,1061.0
+ flank,18,179.0,1122.0
+ fast roasted,5,228.0,1133.0
+ mock tender steak,18,162.0,1146.0
+ 70% lean meat / 30% fat,5,270.0,1161.0
+ bottom round,34,192.0,1162.0
+ ribeye cap steak,6,211.0,1175.0
+ inside skirt,12,206.0,1177.0
+ kidney,2,122.0,1225.0
+ top round,23,196.0,1256.0
+ America's Beef Roast,12,183.0,1260.0
+ chuck eye roast,12,183.0,1260.0
+ outside skirt,12,251.0,1295.0
+ round,160,169.0,1317.0
+ shank crosscuts,2,164.0,1332.0
+ bolar blade,4,177.0,1371.0
+ rib eye roast,12,259.0,1405.0
+ baked,8,212.0,1407.0
+ loaf,8,212.0,1407.0
+ under blade pot roast,6,258.0,1425.0
+ fast fried,7,211.0,1473.0
+ pan-browned,8,232.0,1483.0
+ crumbles,8,232.0,1483.0
+ flat,4,202.0,1501.0
+ top sirloin cap steak,12,186.0,1559.0
+ pan-broiled,8,205.0,1569.0
+ top loin steak,25,188.0,1583.0
+ separable lean only,373,178.0,1591.0
+ tenderloin steak/roast,6,195.0,1649.0
+ lip off,24,197.0,1697.0
+ grilled,139,216.0,1710.0
+ thymus,2,277.0,1722.0
+ bottom sirloin butt,2,223.0,1722.0
+ plate steak,24,229.0,1758.0
+ steak,105,192.0,1790.0
+ porterhouse steak,18,223.0,1823.0
+ canned,2,207.0,1849.0
+ top sirloin,19,197.0,1914.0
+ chuck eye roll,4,193.0,1923.0
+ t-bone steak,17,219.0,1928.0
+ rib eye,3,210.0,1938.0
+ cube roll,4,227.0,1995.0
+ USDA select,3,218.0,2008.0
+ eye,5,217.0,2011.0
+ rib eye steak/roast,12,204.0,2037.0
+ back ribs,12,303.0,2057.0
+ brisket point end,4,185.0,2149.0
+ patty,15,213.0,2150.0
+ chuck eye steak,11,214.0,2156.0
+ blade roast,7,287.0,2209.0
+ short loin,45,218.0,2281.0
+ loin,88,187.0,2346.0
+ short ribs,12,235.0,2350.0
+ rib eye steak,24,234.0,2409.0
+ pan-fried,5,235.0,2442.0
+ point half,4,304.0,2515.0
+ top loin,13,225.0,2539.0
+ ground,43,218.0,2555.0
+ trimmed to 0" fat,450,192.0,2570.0
+ boneless,348,190.0,2574.0
+ lip-on,48,229.0,2603.0
+ large end (ribs 6-9),17,330.0,2654.0
+ USDA choice,3,234.0,2768.0
+ chuck,115,206.0,2783.0
+ select,237,194.0,2856.0
+ roast,45,185.0,2892.0
+ chuck eye Country-Style ribs,12,217.0,2915.0
+  external fat,3,581.0,2924.0
+ striploin,4,230.0,3023.0
+ broiled,102,230.0,3045.0
+ flat half,24,200.0,3213.0
+ braised,121,245.0,3224.0
+ all grades,249,205.0,3266.0
+ simmered,6,175.0,3346.0
+ arm pot roast,16,229.0,3434.0
+ whole,5,249.0,3657.0
+ small end rib steak/roast,4,321.0,3680.0
+ bone-in,36,254.0,3768.0
+ choice,250,213.0,3774.0
+ tenderloin,22,235.0,4049.0
+ prime,18,326.0,4105.0
+ cooked,542,230.0,4246.0
+ brisket,35,220.0,4251.0
+ trimmed to 1/8" fat,288,230.0,4367.0
+ separable lean and fat,458,230.0,4424.0
+ roasted,107,223.0,4583.0
+ small end (ribs 10-12),31,250.0,4928.0
+ boiled,7,186.0,5331.0
+ rib,80,295.0,5334.0
+ top loin steak/roast,6,260.0,7505.0
+ smoked,2,222.0,8010.0
+ raw,396,188.0,8723.0
+ brisket naval end,4,314.0,9270.0
+ cured,11,235.0,11504.0
+ shortribs,4,331.0,12276.0
+ New Zealand,74,212.0,14845.0
+ imported,74,212.0,14845.0
+ grass-fed,16,204.0,16948.0
+ Aust. marble score 9,8,401.0,21007.0
+ variety meats and by-products,24,202.0,22865.0
+ Wagyu,16,366.0,24077.0
+ Aust. marble score 4/5,8,331.0,24706.0
+ Australian,30,293.0,27582.0

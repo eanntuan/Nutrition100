@@ -1,0 +1,22 @@
+<form id="amtForm" method="POST" action="[[turkSubmitTo]]/mturk/externalSubmit">
+<!-- Inputs related to the turk task -->
+<input type="hidden" name="assignmentId" value="[[assignmentId]]">
+<input type="hidden" name="workerId" value="[[workerId]]">
+<input type="hidden" id="isPreview" value="[[isPreview]]">
+<!-- Inputs related to the utterances -->
+<input type="hidden" name="dataGroupId" value="[[groupId]]">
+
+[[#each utterances:uttIndex]]
+  <input type="hidden" name="utt_[[uttIndex]]_id" value="[[uttId]]">
+  <input type="hidden" name="utt_[[uttIndex]]_text" value="[[uttText]]">
+  <input type="hidden" name="utt_[[uttIndex]]_recognition" id="utt_[[uttIndex]]_recognition">
+  <input type="hidden" name="utt_[[uttIndex]]_path" id="utt_[[uttIndex]]_path">
+[[/each]]
+
+
+<button type="submit" class="btn done-btn btn-warning btn-lg
+  {{#unless allAccepted }} disabled {{/unless}}
+  [[#if isPreview]] hidden [[/if]]" 
+  id="amtSubmit">Submit</button>
+
+</form>

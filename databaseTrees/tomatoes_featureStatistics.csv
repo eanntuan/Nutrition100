@@ -1,0 +1,19 @@
+Feature,Count,Mean,Variance
+ drained,1,213.0,0.0
+ packed in oil,1,213.0,0.0
+ crushed,1,32.0,0.0
+ with salt,1,18.0,0.0
+ no salt added,1,16.0,0.0
+ with green chilies,1,15.0,0.0
+ yellow,1,15.0,0.0
+ packed in tomato juice,2,16.0,0.0
+ orange,1,16.0,0.0
+ green,1,23.0,0.0
+ year round average,1,18.0,0.0
+ raw,4,18.0,9.0
+ canned,5,21.0,46.0
+ red,8,25.0,415.0
+ ripe,8,25.0,415.0
+ sun-dried,2,235.0,506.0
+ stewed,2,52.0,702.0
+ cooked,3,38.0,826.0

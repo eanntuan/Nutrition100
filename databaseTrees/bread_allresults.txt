@@ -1,0 +1,68 @@
+35240 Bread, blue corn, somiviki (Hopi), Calories:186.0
+18021 Bread, boston brown, canned, Calories:195.0
+35140 Bread, kneel down (Navajo), Calories:195.0
+18049 Bread, reduced-calorie, oat bran, Calories:201.0
+18053 Bread, reduced-calorie, rye, Calories:203.0
+18057 Bread, reduced-calorie, white, Calories:207.0
+18051 Bread, reduced-calorie, oatmeal, Calories:210.0
+18055 Bread, reduced-calorie, wheat, Calories:217.0
+18037 Bread, oat bran, Calories:236.0
+18967 Bread, wheat, white wheat, Calories:238.0
+18050 Bread, reduced-calorie, oat bran, toasted, Calories:239.0
+18059 Bread, rice bran, Calories:243.0
+18043 Bread, protein (includes gluten), Calories:245.0
+18066 Bread, wheat bran, Calories:248.0
+18044 Bread, pumpernickel, Calories:250.0
+18075 Bread, whole-wheat, commercially prepared, Calories:252.0
+18038 Bread, oat bran, toasted, Calories:259.0
+18060 Bread, rye, Calories:259.0
+18025 Bread, cracked-wheat, Calories:260.0
+18068 Bread, wheat germ, Calories:261.0
+18384 Bread, rice bran, toasted, Calories:264.0
+18035 Bread, Multi-Grain (includes whole-grain), Calories:265.0
+18024 Bread, cornbread, prepared from recipe, made with low fat (2%) milk, Calories:266.0
+18042 Bread, pita, whole-wheat, Calories:266.0
+18069 Bread, white, commercially prepared (includes soft bread crumbs), Calories:266.0
+18971 Bread, potato, Calories:266.0
+18064 Bread, wheat, Calories:267.0
+18416 Bread, white, commercially prepared, low sodium, no salt, Calories:267.0
+18039 Bread, oatmeal, Calories:269.0
+18383 Bread, protein, toasted (includes gluten), Calories:270.0
+18033 Bread, italian, Calories:271.0
+18029 Bread, french or vienna (includes sourdough), Calories:272.0
+18047 Bread, raisin, enriched, Calories:274.0
+18071 Bread, white, prepared from recipe, made with nonfat dry milk, Calories:274.0
+18414 Bread, raisin, unenriched, Calories:274.0
+18041 Bread, pita, white, enriched, Calories:275.0
+18045 Bread, pumpernickel, toasted, Calories:275.0
+18413 Bread, pita, white, unenriched, Calories:275.0
+18077 Bread, whole-wheat, prepared from recipe, Calories:278.0
+18061 Bread, rye, toasted, Calories:284.0
+18073 Bread, white, prepared from recipe, made with low fat (2%) milk, Calories:285.0
+28287 Bread, naan (Indian bread), whole wheat, refrigerated, Calories:286.0
+18027 Bread, egg, Calories:287.0
+18036 Bread, Multi-Grain, toasted (includes whole-grain), Calories:288.0
+18032 Bread, irish soda, prepared from recipe, Calories:290.0
+28307 Bread, naan (Indian bread), plain, commercially prepared, refrigerated, Calories:291.0
+18040 Bread, oatmeal, toasted, Calories:292.0
+18070 Bread, white, commercially prepared, toasted, Calories:293.0
+18385 Bread, wheat germ, toasted, Calories:293.0
+18432 Bread, white, commercially prepared, toasted, low sodium no salt, Calories:293.0
+18048 Bread, raisin, toasted, enriched, Calories:297.0
+28306 Bread, chapati or roti, plain, commercially prepared, Calories:297.0
+28285 Bread, chapati or roti, whole wheat, frozen, Calories:299.0
+18078 Bread, whole-wheat, prepared from recipe, toasted, Calories:305.0
+18076 Bread, whole-wheat, commercially prepared, toasted, Calories:306.0
+18065 Bread, wheat, toasted, Calories:313.0
+18028 Bread, egg, toasted, Calories:315.0
+28288 Bread, roll, Mexican, bollilo, Calories:318.0
+18030 Bread, french or vienna, toasted (includes sourdough), Calories:319.0
+18019 Bread, banana, prepared from recipe, made with margarine, Calories:326.0
+28286 Bread, paratha (Indian bread), whole wheat, frozen, Calories:326.0
+18023 Bread, cornbread, dry mix, prepared with 2% milk, 80% margarine, and eggs, Calories:330.0
+18955 Bread, pan dulce, sweet yeast bread, Calories:367.0
+18953 Bread, salvadoran sweet cheese (quesadilla salvadorena), Calories:374.0
+18954 Bread, pound cake type, pan de torta salvadoran, Calories:390.0
+18972 Bread, cheese, Calories:408.0
+18022 Bread, cornbread, dry mix, enriched (includes corn muffin mix), Calories:418.0
+18412 Bread, cornbread, dry mix, unenriched (includes corn muffin mix), Calories:418.0

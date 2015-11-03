@@ -1,0 +1,24 @@
+Feature,Count,Mean,Variance
+ 3.25% milkfat,2,61.0,0.0
+ regular,2,362.0,0.0
+ instant,2,358.0,0.0
+ filled,2,63.0,0.0
+ 1% milkfat,3,44.0,6.0
+ 2% milkfat,5,52.0,7.0
+ commercial,4,77.0,18.0
+ chocolate,4,77.0,18.0
+ protein fortified,3,48.0,37.0
+ with added nonfat milk solids,3,45.0,62.0
+ cultured,2,48.0,64.0
+ reduced fat,8,59.0,112.0
+ lowfat,5,48.0,130.0
+ fluid,29,57.0,333.0
+ evaporated,4,120.0,595.0
+ dry,7,398.0,3848.0
+ canned,5,160.0,6924.0
+ with added vitamin A and vitamin D,10,122.0,14288.0
+ without added vitamin A and vitamin D,6,168.0,19345.0
+ buttermilk,4,136.0,21023.0
+ nonfat,11,186.0,24839.0
+ whole,6,209.0,41004.0
+ with added vitamin D,3,208.0,41290.0

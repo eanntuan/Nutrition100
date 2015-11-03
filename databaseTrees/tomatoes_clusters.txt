@@ -1,0 +1,10 @@
+Cluster:[74201000(17.0), 74201003(17.0), 74204500(17.0), 74101000(18.0), 74201001(18.0), 74202010(22.0), 74202011(22.0), 74102000(23.0), 74204010(26.0), 74204013(26.0)]
+Features found in cluster:  raw
+Cluster:[74204011(59.0)]
+Cluster:[74203010(84.0), 74203011(85.0)]
+Features found in cluster:  scalloped
+Cluster:[74202050(169.0), 74202051(169.0)]
+Features found in cluster:  fried
+Cluster:[74205010(202.0), 74205011(202.0)]
+Cluster:[74206000(258.0)]
+Features found in cluster:  dried

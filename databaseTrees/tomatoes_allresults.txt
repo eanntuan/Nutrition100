@@ -1,0 +1,14 @@
+11537 Tomatoes, red, ripe, canned, with green chilies, Calories:15.0
+11696 Tomatoes, yellow, raw, Calories:15.0
+11531 Tomatoes, red, ripe, canned, packed in tomato juice, Calories:16.0
+11695 Tomatoes, orange, raw, Calories:16.0
+11885 Tomatoes, red, ripe, canned, packed in tomato juice, no salt added, Calories:16.0
+11529 Tomatoes, red, ripe, raw, year round average, Calories:18.0
+11530 Tomatoes, red, ripe, cooked, Calories:18.0
+11884 Tomatoes, red, ripe, cooked, with salt, Calories:18.0
+11527 Tomatoes, green, raw, Calories:23.0
+11533 Tomatoes, red, ripe, canned, stewed, Calories:26.0
+11693 Tomatoes, crushed, canned, Calories:32.0
+11660 Tomatoes, red, ripe, cooked, stewed, Calories:79.0
+11956 Tomatoes, sun-dried, packed in oil, drained, Calories:213.0
+11955 Tomatoes, sun-dried, Calories:258.0

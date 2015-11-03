@@ -1,0 +1,28 @@
+Feature,Count,Mean,Variance
+ unenriched,2,274.0,0.0
+ chapati or roti,2,298.0,1.0
+ naan (Indian bread),2,288.0,6.0
+ refrigerated,2,288.0,6.0
+ plain,2,294.0,9.0
+ pita,3,272.0,18.0
+ made with low fat (2%) milk,2,275.0,90.0
+ rice bran,2,253.0,110.0
+ enriched,3,282.0,112.0
+ raisin,3,281.0,117.0
+ pumpernickel,2,262.0,156.0
+ reduced-calorie,6,212.0,163.0
+ frozen,2,312.0,182.0
+ egg,2,301.0,196.0
+ wheat germ,2,277.0,256.0
+ whole wheat,3,303.0,277.0
+ commercially prepared,7,285.0,308.0
+ prepared from recipe,7,289.0,359.0
+ oat bran,4,233.0,435.0
+ toasted,14,287.0,438.0
+ whole-wheat,5,281.0,455.0
+ white,9,270.0,593.0
+ rye,3,248.0,1146.0
+ oatmeal,3,257.0,1192.0
+ wheat,4,258.0,1296.0
+ dry mix,3,388.0,1720.0
+ cornbread,4,358.0,4112.0

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Parse</title>
+<style>
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="parse.js"></script>
+</head>
+<body>
+<h1>Parse</h1>
+<div>
+<textarea placeholder="Type a sentence number" rows="1" cols="80"
+				id="typed-query"
+				onkeypress="if (isEnter(event)) drawTree(document.getElementById('typed-query').value);"></textarea>
+</div>
+<div id="dependencies"></div>
+</body>
+</html>

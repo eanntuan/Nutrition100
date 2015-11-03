@@ -1,0 +1,82 @@
+43396 Cheese, cottage, lowfat, 1% milkfat, with vegetables, Calories:67.0
+01014 Cheese, cottage, nonfat, uncreamed, dry, large or small curd, Calories:72.0
+01016 Cheese, cottage, lowfat, 1% milkfat, Calories:72.0
+43352 Cheese, cottage, lowfat, 1% milkfat, no sodium added, Calories:72.0
+42235 Cheese, cottage, lowfat, 1% milkfat, lactose reduced, Calories:74.0
+01015 Cheese, cottage, lowfat, 2% milkfat, Calories:81.0
+43273 Cheese, cottage, with vegetables, Calories:95.0
+01013 Cheese, cottage, creamed, with fruit, Calories:97.0
+01012 Cheese, cottage, creamed, large or small curd, Calories:98.0
+01186 Cheese, cream, fat free, Calories:105.0
+01061 Cheese, American, nonfat or fat free, Calories:126.0
+01266 Cheese, Swiss, nonfat or fat free, Calories:127.0
+01037 Cheese, ricotta, part skim milk, Calories:138.0
+42304 Cheese, mozzarella, nonfat, Calories:141.0
+42205 Cheese, pasteurized process, cheddar or American, fat-free, Calories:148.0
+01265 Cheese, cheddar, nonfat or fat free, Calories:157.0
+43379 Cheese, pasteurized process, swiss, low fat, Calories:165.0
+01168 Cheese, low fat, cheddar or colby, Calories:173.0
+01036 Cheese, ricotta, whole milk, Calories:174.0
+43589 Cheese, swiss, low fat, Calories:179.0
+43275 Cheese, pasteurized process, American, low fat, Calories:180.0
+43274 Cheese, cream, low fat, Calories:201.0
+43278 Cheese, american cheddar, imitation, Calories:239.0
+01031 Cheese, neufchatel, Calories:253.0
+01028 Cheese, mozzarella, part skim milk, Calories:254.0
+01019 Cheese, feta, Calories:264.0
+01159 Cheese, goat, soft type, Calories:264.0
+01204 Cheese, parmesan, dry grated, reduced fat, Calories:265.0
+42303 Cheese, muenster, low fat, Calories:271.0
+01208 Cheese, provolone, reduced fat, Calories:274.0
+43597 Cheese, mozzarella, low sodium, Calories:280.0
+01209 Cheese, Mexican, blend, reduced fat, Calories:282.0
+01228 Cheese, fresh, queso fresco, Calories:299.0
+01007 Cheese, camembert, Calories:300.0
+01026 Cheese, mozzarella, whole milk, Calories:300.0
+01029 Cheese, mozzarella, low moisture, part-skim, Calories:301.0
+01271 Cheese, mozzarella, low moisture, part-skim, shredded, Calories:304.0
+01260 Cheese, cheddar, reduced fat, Calories:309.0
+01229 Cheese, white, queso blanco, Calories:310.0
+42155 Cheese, monterey, low fat, Calories:313.0
+01027 Cheese, mozzarella, whole milk, low moisture, Calories:318.0
+01227 Cheese, dry white, queso seco, Calories:325.0
+01024 Cheese, limburger, Calories:327.0
+01006 Cheese, brie, Calories:334.0
+01044 Cheese, pasteurized process, swiss, Calories:334.0
+01041 Cheese, tilsit, Calories:340.0
+01017 Cheese, cream, Calories:342.0
+01035 Cheese, provolone, Calories:351.0
+01034 Cheese, port de salut, Calories:352.0
+01004 Cheese, blue, Calories:353.0
+01022 Cheese, gouda, Calories:356.0
+01166 Cheese, mexican, queso asadero, Calories:356.0
+01018 Cheese, edam, Calories:357.0
+01251 Cheese, Mexican blend, Calories:358.0
+01157 Cheese, goat, semisoft type, Calories:364.0
+01042 Cheese, pasteurized process, American, fortified with vitamin D, Calories:366.0
+01030 Cheese, muenster, Calories:368.0
+01039 Cheese, roquefort, Calories:369.0
+01005 Cheese, brick, Calories:371.0
+01253 Cheese, pasteurized process, American, without added vitamin D, Calories:371.0
+01025 Cheese, monterey, Calories:373.0
+01165 Cheese, mexican, queso anejo, Calories:373.0
+01167 Cheese, mexican, queso chihuahua, Calories:374.0
+43405 Cheese, swiss, low sodium, Calories:374.0
+01043 Cheese, pasteurized process, pimento, Calories:375.0
+01008 Cheese, caraway, Calories:376.0
+43398 Cheese, pasteurized process, cheddar or American, low sodium, Calories:376.0
+01040 Cheese, swiss, Calories:380.0
+01010 Cheese, cheshire, Calories:387.0
+01038 Cheese, romano, Calories:387.0
+01020 Cheese, fontina, Calories:389.0
+01033 Cheese, parmesan, hard, Calories:392.0
+01011 Cheese, colby, Calories:394.0
+01169 Cheese, low-sodium, cheddar or colby, Calories:398.0
+01009 Cheese, cheddar, Calories:406.0
+01270 Cheese, cheddar, sharp, sliced, Calories:410.0
+01023 Cheese, gruyere, Calories:413.0
+01146 Cheese, parmesan, shredded, Calories:415.0
+01032 Cheese, parmesan, grated, Calories:420.0
+43340 Cheese, parmesan, low sodium, Calories:451.0
+01156 Cheese, goat, hard type, Calories:452.0
+01021 Cheese, gjetost, Calories:466.0

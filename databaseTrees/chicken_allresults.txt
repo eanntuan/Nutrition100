@@ -1,0 +1,204 @@
+05023 Chicken, gizzard, all classes, raw, Calories:94.0
+05678 Chicken, dark meat, drumstick, meat only, enhanced, raw, Calories:106.0
+05314 Chicken, broilers or fryers, breast, skinless, boneless, meat only, enhanced, raw, Calories:108.0
+05117 Chicken, roasting, light meat, meat only, raw, Calories:109.0
+05682 Chicken, dark meat, thigh, meat only, enhanced, raw, Calories:110.0
+05113 Chicken, roasting, meat only, raw, Calories:111.0
+05119 Chicken, roasting, dark meat, meat only, raw, Calories:113.0
+05039 Chicken, broilers or fryers, light meat, meat only, raw, Calories:114.0
+05071 Chicken, broilers or fryers, dark meat, drumstick, meat only, raw, Calories:116.0
+05309 Chicken, cornish game hens, meat only, raw, Calories:116.0
+05011 Chicken, broilers or fryers, meat only, raw, Calories:119.0
+05027 Chicken, liver, all classes, raw, Calories:119.0
+05062 Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw, Calories:120.0
+05080 Chicken, broilers or fryers, leg, meat only, raw, Calories:120.0
+05096 Chicken, broilers or fryers, dark meat, thigh, meat only, raw, Calories:121.0
+05020 Chicken, broilers or fryers, giblets, raw, Calories:124.0
+05043 Chicken, broilers or fryers, dark meat, meat only, raw, Calories:125.0
+05105 Chicken, broilers or fryers, wing, meat only, raw, Calories:126.0
+05115 Chicken, roasting, giblets, raw, Calories:127.0
+05137 Chicken, capons, giblets, raw, Calories:130.0
+05310 Chicken, cornish game hens, meat only, cooked, roasted, Calories:134.0
+05053 Chicken, broilers or fryers, back, meat only, raw, Calories:137.0
+05129 Chicken, stewing, light meat, meat only, raw, Calories:137.0
+05342 Chicken, broilers or fryers, breast, meat only, cooked, rotisserie, original seasoning, Calories:137.0
+05332 Chicken, ground, raw, Calories:143.0
+05000 Chicken, broiler, rotisserie, BBQ, breast meat only, Calories:144.0
+05748 Chicken, broiler or fryers, breast, skinless, boneless, meat only, enhanced, cooked, braised, Calories:145.0
+05679 Chicken, Dark meat, Drumstick, Meat only, Enhanced, Cooked, Roasted, Calories:146.0
+05688 Chicken, dark meat, drumstick, meat and skin, enhanced, raw,, Calories:146.0
+05125 Chicken, stewing, meat only, raw, Calories:148.0
+05749 Chicken, broiler or fryers, breast, skinless, boneless, meat only, enhanced, cooked, grilled, Calories:148.0
+05671 Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, braised, Calories:149.0
+05680 Chicken, dark meat, drumstick, meat only, enhanced, cooked, braised, Calories:149.0
+05065 Chicken, broilers or fryers, breast, meat only, cooked, stewed, Calories:151.0
+05747 Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, grilled, Calories:151.0
+05025 Chicken, heart, all classes, raw, Calories:153.0
+05118 Chicken, roasting, light meat, meat only, cooked, roasted, Calories:153.0
+05024 Chicken, gizzard, all classes, cooked, simmered, Calories:154.0
+05088 Chicken, broilers or fryers, neck, meat only, raw, Calories:154.0
+05073 Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted, Calories:155.0
+05022 Chicken, broilers or fryers, giblets, cooked, simmered, Calories:157.0
+05131 Chicken, stewing, dark meat, meat only, raw, Calories:157.0
+05746 Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised, Calories:157.0
+05042 Chicken, broilers or fryers, light meat, meat only, cooked, stewed, Calories:159.0
+05066 Chicken, broilers or fryers, drumstick, meat and skin, raw, Calories:161.0
+05138 Chicken, capons, giblets, cooked, simmered, Calories:164.0
+05681 Chicken, dark meat, thigh, meat only, enhanced, cooked, braised, Calories:164.0
+05683 Chicken, dark meat, thigh, meat only, enhanced, cooked, roasted, Calories:164.0
+05064 Chicken, broilers or fryers, breast, meat only, cooked, roasted, Calories:165.0
+05116 Chicken, roasting, giblets, cooked, simmered, Calories:165.0
+05277 Chicken, canned, meat only, with broth, Calories:165.0
+05028 Chicken, liver, all classes, cooked, simmered, Calories:167.0
+05114 Chicken, roasting, meat only, cooked, roasted, Calories:167.0
+05127 Chicken, stewing, giblets, raw, Calories:168.0
+05074 Chicken, broilers or fryers, drumstick, meat only, cooked, stewed, Calories:169.0
+05057 Chicken, broilers or fryers, breast, meat and skin, raw, Calories:172.0
+05319 Chicken, broiler, rotisserie, BBQ, drumstick, meat only, Calories:172.0
+05661 Chicken, liver, all classes, cooked, pan-fried, Calories:172.0
+05041 Chicken, broilers or fryers, light meat, meat only, cooked, roasted, Calories:173.0
+05082 Chicken, broilers or fryers, leg, meat only, cooked, roasted, Calories:174.0
+05358 Chicken, broiler, rotisserie, BBQ, breast meat and skin, Calories:175.0
+05343 Chicken, broilers or fryers, drumstick, meat only, cooked, rotisserie, original seasoning, Calories:176.0
+05672 Chicken, broilers or fryers, dark meat, thigh, meat only, cooked, braised, Calories:176.0
+05014 Chicken, broilers or fryers, meat only, stewed, Calories:177.0
+05120 Chicken, roasting, dark meat, meat only, cooked, roasted, Calories:178.0
+05090 Chicken, broilers or fryers, neck, meat only, cooked, simmered, Calories:179.0
+05098 Chicken, broilers or fryers, thigh, meat only, cooked, roasted, Calories:179.0
+05689 Chicken, dark meat, drumstick, meat and skin, enhanced, cooked, roasted, Calories:180.0
+05108 Chicken, broilers or fryers, wing, meat only, cooked, stewed, Calories:181.0
+05687 Chicken, dark meat, drumstick, meat and skin, enhanced, braised, Calories:183.0
+05061 Chicken, broilers or fryers, breast, meat and skin, cooked, stewed, Calories:184.0
+05078 Chicken, broilers or fryers, leg, meat and skin, cooked, roasted, Calories:184.0
+05339 Chicken, broiler, rotisserie, BBQ, wing, meat only, Calories:184.0
+05348 Chicken, broilers or fryers, breast, meat and skin, cooked, rotisserie, original seasoning, Calories:184.0
+05026 Chicken, heart, all classes, cooked, simmered, Calories:185.0
+05083 Chicken, broilers or fryers, leg, meat only, cooked, stewed, Calories:185.0
+05311 Chicken, canned, no broth, Calories:185.0
+05029 Chicken, broilers or fryers, light meat, meat and skin, raw, Calories:186.0
+05063 Chicken, broilers or fryers, breast, meat only, cooked, fried, Calories:187.0
+05676 Chicken, broilers or fryers, dark meat, drumstick, meat and skin, cooked, braised, Calories:187.0
+05333 Chicken, ground, crumbles, cooked, pan-browned, Calories:189.0
+05013 Chicken, broilers or fryers, meat only, roasted, Calories:190.0
+05069 Chicken, broilers or fryers, drumstick, meat and skin, cooked, roasted, Calories:191.0
+05100 Chicken, broilers or fryers, wing, meat and skin, raw, Calories:191.0
+05040 Chicken, broilers or fryers, light meat, meat only, cooked, fried, Calories:192.0
+05046 Chicken, broilers or fryers, dark meat, meat only, cooked, stewed, Calories:192.0
+05334 Chicken, broiler, rotisserie, BBQ, thigh, meat only, Calories:193.0
+05128 Chicken, stewing, giblets, cooked, simmered, Calories:194.0
+05072 Chicken, broilers or fryers, drumstick, meat only, cooked, fried, Calories:195.0
+05099 Chicken, broilers or fryers, thigh, meat only, cooked, stewed, Calories:195.0
+05345 Chicken, broilers or fryers, thigh, meat only, cooked, rotisserie, original seasoning, Calories:196.0
+05060 Chicken, broilers or fryers, breast, meat and skin, cooked, roasted, Calories:197.0
+05346 Chicken, broilers or fryers, wing, meat only, cooked, rotisserie, original seasoning, Calories:197.0
+05691 Chicken, dark meat, thigh, meat and skin, enhanced, raw, Calories:197.0
+05307 Chicken, cornish game hens, meat and skin, raw, Calories:200.0
+05033 Chicken, broilers or fryers, light meat, meat and skin, cooked, stewed, Calories:201.0
+05107 Chicken, broilers or fryers, wing, meat only, cooked, roasted, Calories:203.0
+05070 Chicken, broilers or fryers, drumstick, meat and skin, cooked, stewed, Calories:204.0
+05045 Chicken, broilers or fryers, dark meat, meat only, cooked, roasted, Calories:205.0
+05341 Chicken, broilers or fryers, back, meat only, cooked, rotisserie, original seasoning, Calories:205.0
+05359 Chicken, broiler, rotisserie, BBQ, drumstick meat and skin, Calories:206.0
+05081 Chicken, broilers or fryers, leg, meat only, cooked, fried, Calories:208.0
+05056 Chicken, broilers or fryers, back, meat only, cooked, stewed, Calories:209.0
+05106 Chicken, broilers or fryers, wing, meat only, cooked, fried, Calories:211.0
+05312 Chicken, wing, frozen, glazed, barbecue flavored, Calories:211.0
+05693 Chicken, broiler, rotisserie, BBQ, back meat only, Calories:212.0
+05001 Chicken, broilers or fryers, meat and skin and giblets and neck, raw, Calories:213.0
+05109 Chicken, roasting, meat and skin and giblets and neck, raw, Calories:213.0
+05130 Chicken, stewing, light meat, meat only, cooked, stewed, Calories:213.0
+05075 Chicken, broilers or fryers, leg, meat and skin, raw, Calories:214.0
+05122 Chicken, stewing, meat and skin, and giblets and neck, cooked, stewed, Calories:214.0
+05692 Chicken, dark meat, thigh, meat and skin, enhanced, cooked, roasted, Calories:214.0
+05006 Chicken, broilers or fryers, meat and skin, raw, Calories:215.0
+05335 Chicken, feet, boiled, Calories:215.0
+05349 Chicken, broilers or fryers, drumstick, meat and skin, cooked, rotisserie, original seasoning, Calories:215.0
+05690 Chicken, dark meat, thigh, meat and skin, enhanced, cooked, braised, Calories:215.0
+05005 Chicken, broilers or fryers, meat and skin and giblets and neck, stewed, Calories:216.0
+05097 Chicken, broilers or fryers, thigh, meat only, cooked, fried, Calories:218.0
+05010 Chicken, broilers or fryers, meat and skin, cooked, stewed, Calories:219.0
+05012 Chicken, broilers or fryers, meat only, cooked, fried, Calories:219.0
+05079 Chicken, broilers or fryers, leg, meat and skin, cooked, stewed, Calories:220.0
+05110 Chicken, roasting, meat and skin and giblets and neck, cooked, roasted, Calories:220.0
+05091 Chicken, broilers or fryers, thigh, meat and skin, raw, Calories:221.0
+05032 Chicken, broilers or fryers, light meat, meat and skin, cooked, roasted, Calories:222.0
+05059 Chicken, broilers or fryers, breast, meat and skin, cooked, fried, flour, Calories:222.0
+05112 Chicken, roasting, meat and skin, cooked, roasted, Calories:223.0
+43128 Chicken, meatless, Calories:224.0
+05134 Chicken, capons, meat and skin and giblets and neck, cooked, roasted, Calories:226.0
+05361 Chicken, broiler, rotisserie, BBQ, thigh meat and skin, Calories:226.0
+05089 Chicken, broilers or fryers, neck, meat only, cooked, fried, Calories:229.0
+05136 Chicken, capons, meat and skin, cooked, roasted, Calories:229.0
+05677 Chicken, broilers or fryers, dark meat, thigh, meat and skin, cooked, braised, Calories:229.0
+05094 Chicken, broilers or fryers, thigh, meat and skin, cooked, roasted, Calories:232.0
+05095 Chicken, broilers or fryers, thigh, meat and skin, cooked, stewed, Calories:232.0
+05133 Chicken, capons, meat and skin and giblets and neck, raw, Calories:232.0
+05038 Chicken, broilers or fryers, dark meat, meat and skin, cooked, stewed, Calories:233.0
+05351 Chicken, broilers or fryers, thigh, meat and skin, cooked, rotisserie, original seasoning, Calories:233.0
+05004 Chicken, broilers or fryers, meat and skin and giblets and neck, roasted, Calories:234.0
+05135 Chicken, capons, meat and skin, raw, Calories:234.0
+43410 Chicken, meatless, breaded, fried, Calories:234.0
+05034 Chicken, broilers or fryers, dark meat, meat and skin, raw, Calories:237.0
+05126 Chicken, stewing, meat only, cooked, stewed, Calories:237.0
+05009 Chicken, broilers or fryers, meat and skin, cooked, roasted, Calories:239.0
+05044 Chicken, broilers or fryers, dark meat, meat only, cooked, fried, Calories:239.0
+05055 Chicken, broilers or fryers, back, meat only, cooked, roasted, Calories:239.0
+05320 Chicken, wing, frozen, glazed, barbecue flavored, heated (conventional oven), Calories:242.0
+05068 Chicken, broilers or fryers, drumstick, meat and skin, cooked, fried, flour, Calories:245.0
+05031 Chicken, broilers or fryers, light meat, meat and skin, cooked, fried, flour, Calories:246.0
+05087 Chicken, broilers or fryers, neck, meat and skin, cooked simmered, Calories:247.0
+05313 Chicken, wing, frozen, glazed, barbecue flavored, heated (microwave), Calories:248.0
+05104 Chicken, broilers or fryers, wing, meat and skin, cooked, stewed, Calories:249.0
+05121 Chicken, stewing, meat and skin, and giblets and neck, raw, Calories:251.0
+05357 Chicken, broiler, rotisserie, BBQ, back meat and skin, Calories:251.0
+05037 Chicken, broilers or fryers, dark meat, meat and skin, cooked, roasted, Calories:253.0
+05077 Chicken, broilers or fryers, leg, meat and skin, cooked, fried, flour, Calories:254.0
+05103 Chicken, broilers or fryers, wing, meat and skin, cooked, roasted, Calories:254.0
+05362 Chicken, broiler, rotisserie, BBQ, wing meat and skin, Calories:257.0
+05052 Chicken, broilers or fryers, back, meat and skin, cooked, stewed, Calories:258.0
+05123 Chicken, stewing, meat and skin, raw, Calories:258.0
+05132 Chicken, stewing, dark meat, meat only, cooked, stewed, Calories:258.0
+05308 Chicken, cornish game hens, meat and skin, cooked, roasted, Calories:259.0
+05058 Chicken, broilers or fryers, breast, meat and skin, cooked, fried, batter, Calories:260.0
+05347 Chicken, broilers or fryers, back, meat and skin, cooked, rotisserie, original seasoning, Calories:260.0
+22974 Chicken, nuggets, dark and white meat, precooked, frozen, not reheated, Calories:260.0
+22975 Chicken, nuggets, white meat, precooked, frozen, not reheated, Calories:261.0
+05093 Chicken, broilers or fryers, thigh, meat and skin, cooked, fried, flour, Calories:262.0
+05352 Chicken, broilers or fryers, wing, meat and skin, cooked, rotisserie, original seasoning, Calories:266.0
+05067 Chicken, broilers or fryers, drumstick, meat and skin, cooked, fried, batter, Calories:268.0
+05008 Chicken, broilers or fryers, meat and skin, cooked, fried, flour, Calories:269.0
+05003 Chicken, broilers or fryers, meat and skin and giblets and neck, cooked, fried, flour, Calories:272.0
+05076 Chicken, broilers or fryers, leg, meat and skin, cooked, fried, batter, Calories:273.0
+05021 Chicken, broilers or fryers, giblets, cooked, fried, Calories:277.0
+05030 Chicken, broilers or fryers, light meat, meat and skin, cooked, fried, batter, Calories:277.0
+05092 Chicken, broilers or fryers, thigh, meat and skin, cooked, fried, batter, Calories:277.0
+05036 Chicken, broilers or fryers, dark meat, meat and skin, cooked, fried, flour, Calories:285.0
+05124 Chicken, stewing, meat and skin, cooked, stewed, Calories:285.0
+05054 Chicken, broilers or fryers, back, meat only, cooked, fried, Calories:288.0
+05007 Chicken, broilers or fryers, meat and skin, cooked, fried, batter, Calories:289.0
+05002 Chicken, broilers or fryers, meat and skin and giblets and neck, cooked, fried, batter, Calories:291.0
+05084 Chicken, broilers or fryers, neck, meat and skin, raw, Calories:297.0
+05035 Chicken, broilers or fryers, dark meat, meat and skin, cooked, fried, batter, Calories:298.0
+05051 Chicken, broilers or fryers, back, meat and skin, cooked, roasted, Calories:300.0
+05048 Chicken, broilers or fryers, back, meat and skin, raw, Calories:319.0
+05102 Chicken, broilers or fryers, wing, meat and skin, cooked, fried, flour, Calories:321.0
+05101 Chicken, broilers or fryers, wing, meat and skin, cooked, fried, batter, Calories:324.0
+05085 Chicken, broilers or fryers, neck, meat and skin, cooked, fried, batter, Calories:330.0
+05049 Chicken, broilers or fryers, back, meat and skin, cooked, fried, batter, Calories:331.0
+05050 Chicken, broilers or fryers, back, meat and skin, cooked, fried, flour, Calories:331.0
+05086 Chicken, broilers or fryers, neck, meat and skin, cooked, fried, flour, Calories:332.0
+32020 Chicken, thighs, frozen, breaded, reheated, Calories:334.0
+05015 Chicken, broilers or fryers, skin only, raw, Calories:349.0
+05019 Chicken, broilers or fryers, skin only, cooked, stewed, Calories:363.0
+05356 Chicken, broiler, rotisserie, BBQ, skin, Calories:378.0
+05685 Chicken, skin (drumsticks and thighs), enhanced, raw, Calories:386.0
+05016 Chicken, broilers or fryers, skin only, cooked, fried, batter, Calories:394.0
+05684 Chicken, skin (drumsticks and thighs), enhanced, cooked, braised, Calories:403.0
+05344 Chicken, broilers or fryers, skin only, cooked, rotisserie, original seasoning, Calories:406.0
+05686 Chicken, skin (drumsticks and thighs), enhanced, cooked, roasted, Calories:420.0
+05674 Chicken, skin (drumsticks and thighs), raw, Calories:440.0
+05673 Chicken, skin (drumsticks and thighs), cooked, braised, Calories:443.0
+05018 Chicken, broilers or fryers, skin only, cooked, roasted, Calories:454.0
+05675 Chicken, skin (drumsticks and thighs), cooked, roasted, Calories:462.0
+05017 Chicken, broilers or fryers, skin only, cooked, fried, flour, Calories:502.0
+05047 Chicken, broilers or fryers, separable fat, raw, Calories:629.0

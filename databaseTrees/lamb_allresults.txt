@@ -1,0 +1,269 @@
+17377 Lamb, New Zealand, imported, testes, raw, Calories:68.0
+17375 Lamb, New Zealand, imported, sweetbread, raw, Calories:72.0
+17367 Lamb, New Zealand, imported, kidney, raw, Calories:84.0
+17205 Lamb, variety meats and by-products, lungs, raw, Calories:95.0
+17195 Lamb, variety meats and by-products, kidneys, raw, Calories:97.0
+17214 Lamb, variety meats and by-products, spleen, raw, Calories:101.0
+17373 Lamb, New Zealand, imported, heart, raw, Calories:105.0
+17364 Lamb, New Zealand, imported, kidney, cooked, soaked and fried, Calories:112.0
+17206 Lamb, variety meats and by-products, lungs, cooked, braised, Calories:113.0
+17391 Lamb, New Zealand, imported, hind-shank, separable lean only, raw, Calories:115.0
+17385 Lamb, New Zealand, imported, tenderloin, separable lean only, raw, Calories:116.0
+17358 Lamb, New Zealand, imported, brains, raw, Calories:118.0
+17009 Lamb, domestic, foreshank, separable lean only, trimmed to 1/4" fat, choice, raw, Calories:120.0
+17389 Lamb, New Zealand, imported, loin, boneless, separable lean only, raw, Calories:120.0
+17423 Lamb, New Zealand, imported, tenderloin, separable lean and fat, raw, Calories:120.0
+17363 Lamb, New Zealand, imported, chump, boneless, separable lean only, raw, Calories:121.0
+17381 Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean only, raw, Calories:121.0
+17422 Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean and fat, raw, Calories:121.0
+17070 Lamb, New Zealand, imported, fore-shank, separable lean only, raw, Calories:122.0
+17185 Lamb, variety meats and by-products, brain, raw, Calories:122.0
+17191 Lamb, variety meats and by-products, heart, raw, Calories:122.0
+17410 Lamb, New Zealand, imported, loin, boneless, separable lean and fat, raw, Calories:122.0
+17288 Lamb, Australian, imported, fresh, foreshank, separable lean only, trimmed to 1/8" fat, raw, Calories:123.0
+17017 Lamb, domestic, leg, shank half, separable lean only, trimmed to 1/4" fat, choice, raw, Calories:125.0
+17376 Lamb, New Zealand, imported, testes, cooked, soaked and fried, Calories:125.0
+17074 Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean only, raw, Calories:126.0
+17013 Lamb, domestic, leg, whole (shank and sirloin), separable lean only, trimmed to 1/4" fat, choice, raw, Calories:128.0
+17064 Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable lean only, raw, Calories:128.0
+17387 Lamb, New Zealand, imported, loin saddle, separable lean only, raw, Calories:131.0
+17047 Lamb, domestic, shoulder, arm, separable lean only, trimmed to 1/4" fat, choice, raw, Calories:132.0
+17304 Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean only, trimmed to 1/8" fat, raw, Calories:132.0
+17296 Lamb, Australian, imported, fresh, leg, shank half, separable lean only, trimmed to 1/8" fat, raw, Calories:133.0
+17003 Lamb, domestic, composite of trimmed retail cuts, separable lean only, trimmed to 1/4" fat, choice, raw, Calories:134.0
+17021 Lamb, domestic, leg, sirloin half, separable lean only, trimmed to 1/4" fat, choice, raw, Calories:134.0
+17059 Lamb, domestic, cubed for stew or kabob (leg and shoulder), separable lean only, trimmed to 1/4" fat, raw, Calories:134.0
+17292 Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean only, trimmed to 1/8" fat, raw, Calories:135.0
+17369 Lamb, New Zealand, imported, liver, raw, Calories:136.0
+17196 Lamb, variety meats and by-products, kidneys, cooked, braised, Calories:137.0
+17324 Lamb, Australian, imported, fresh, shoulder, arm, separable lean only, trimmed to 1/8" fat, raw, Calories:137.0
+17300 Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separable lean only, trimmed to 1/8" fat, raw, Calories:138.0
+17199 Lamb, variety meats and by-products, liver, raw, Calories:139.0
+17078 Lamb, New Zealand, imported, loin chop, separable lean only, raw, Calories:142.0
+17282 Lamb, Australian, imported, fresh, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, raw, Calories:142.0
+17361 Lamb, New Zealand, imported, chump, boneless, separable lean only, cooked, fast roasted, Calories:142.0
+17026 Lamb, domestic, loin, separable lean only, trimmed to 1/4" fat, choice, raw, Calories:143.0
+17308 Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean only, trimmed to 1/8" fat, raw, Calories:143.0
+17395 Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean only, raw, Calories:143.0
+17039 Lamb, domestic, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4" fat, choice, raw, Calories:144.0
+17374 Lamb, New Zealand, imported, sweetbread, cooked, soaked and simmered, Calories:144.0
+17186 Lamb, variety meats and by-products, brain, cooked, braised, Calories:145.0
+17312 Lamb, Australian, imported, fresh, loin, separable lean only, trimmed to 1/8" fat, raw, Calories:146.0
+17397 Lamb, New Zealand, imported, rack - fully frenched, separable lean only, raw, Calories:147.0
+17360 Lamb, New Zealand, imported, breast, separable lean only, raw, Calories:149.0
+17055 Lamb, domestic, shoulder, blade, separable lean only, trimmed to 1/4" fat, choice, raw, Calories:151.0
+17392 Lamb, New Zealand, imported, neck chops, separable lean only, raw, Calories:151.0
+17210 Lamb, variety meats and by-products, pancreas, raw, Calories:152.0
+17086 Lamb, New Zealand, imported, square-cut shoulder, separable lean only, raw, Calories:154.0
+17357 Lamb, New Zealand, imported, brains, cooked, soaked and fried, Calories:154.0
+17320 Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean only,   trimmed to 1/8" fat, raw, Calories:155.0
+17384 Lamb, New Zealand, imported, tenderloin, separable lean only, cooked, fast fried, Calories:155.0
+17215 Lamb, variety meats and by-products, spleen, cooked, braised, Calories:156.0
+17388 Lamb, New Zealand, imported, loin, boneless, separable lean only, cooked, fast roasted, Calories:156.0
+17409 Lamb, New Zealand, imported, loin, boneless, separable lean and fat, cooked, fast roasted, Calories:157.0
+17418 Lamb, New Zealand, imported, tenderloin, separable lean and fat, cooked, fast fried, Calories:157.0
+17380 Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean only, cooked, slow roasted, Calories:159.0
+17082 Lamb, New Zealand, imported, rack - partly frenched, separable lean only, raw, Calories:160.0
+17316 Lamb, Australian, imported, fresh, rib, separable lean only, trimmed to 1/8" fat, raw, Calories:160.0
+17372 Lamb, New Zealand, imported, heart, cooked, soaked and simmered, Calories:161.0
+17386 Lamb, New Zealand, imported, loin saddle, separable lean only, cooked, fast roasted, Calories:162.0
+17400 Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean only, cooked, fast fried, Calories:162.0
+17328 Lamb, Australian, imported, fresh, shoulder, blade, separable lean only, trimmed to 1/8" fat, raw, Calories:164.0
+17383 Lamb, New Zealand, imported, square-cut shoulder chops, separable lean only, raw, Calories:164.0
+17289 Lamb, Australian, imported, fresh, foreshank, separable lean only, trimmed to 1/8" fat, cooked, braised, Calories:165.0
+17368 Lamb, New Zealand, imported, liver, cooked, soaked and fried, Calories:168.0
+17032 Lamb, domestic, rib, separable lean only, trimmed to 1/4" fat, choice, raw, Calories:169.0
+17420 Lamb, New Zealand, imported, rack - fully frenched, separable lean and fat, raw, Calories:169.0
+17396 Lamb, New Zealand, imported, rack - fully frenched, separable lean only, cooked, fast roasted, Calories:173.0
+17018 Lamb, domestic, leg, shank half, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted, Calories:180.0
+17366 Lamb, New Zealand, imported, flap, boneless, separable lean only, raw, Calories:180.0
+17075 Lamb, New Zealand, imported, frozen, leg, whole (shank and sirloin), separable lean only, cooked, roasted, Calories:181.0
+17297 Lamb, Australian, imported, fresh, leg, shank half, separable lean only, trimmed to 1/8" fat, cooked, roasted, Calories:182.0
+17068 Lamb, New Zealand, imported, fore-shank, separable lean and fat, raw, Calories:183.0
+17309 Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean only, trimmed to 1/8" fat, cooked, broiled, Calories:183.0
+17192 Lamb, variety meats and by-products, heart, cooked, braised, Calories:185.0
+17232 Lamb, domestic, leg, shank half, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:185.0
+17061 Lamb, domestic, cubed for stew or kabob (leg and shoulder), separable lean only, trimmed to 1/4" fat, cooked, broiled, Calories:186.0
+17404 Lamb, New Zealand, imported, hind-shank, separable lean and fat, raw, Calories:186.0
+17010 Lamb, domestic, foreshank, separable lean only, trimmed to 1/4" fat, choice, cooked, braised, Calories:187.0
+17305 Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean only, trimmed to 1/8" fat, cooked, broiled, Calories:188.0
+17293 Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean only, trimmed to 1/8" fat, cooked, roasted, Calories:190.0
+17014 Lamb, domestic, leg, whole (shank and sirloin), separable lean only, trimmed to 1/4" fat, choice, cooked, roasted, Calories:191.0
+17050 Lamb, domestic, shoulder, arm, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted, Calories:192.0
+17313 Lamb, Australian, imported, fresh, loin, separable lean only, trimmed to 1/8" fat, cooked, broiled, Calories:192.0
+17370 Lamb, New Zealand, imported, ground lamb, cooked, braised, Calories:192.0
+17399 Lamb, New Zealand, imported, square-cut shoulder, separable lean only, cooked, slow roasted, Calories:192.0
+17083 Lamb, New Zealand, imported, rack - partly frenched, separable lean only, cooked, fast roasted, Calories:193.0
+17371 Lamb, New Zealand, imported, ground lamb, raw, Calories:193.0
+17286 Lamb, Australian, imported, fresh, foreshank, separable lean and fat, trimmed to 1/8" fat, raw, Calories:195.0
+17306 Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean and fat, trimmed to 1/8" fat, raw, Calories:195.0
+17419 Lamb, New Zealand, imported, rack - fully frenched, separable lean and fat, cooked, fast roasted, Calories:195.0
+17390 Lamb, New Zealand, imported, hind-shank, separable lean only, cooked, braised, Calories:196.0
+17079 Lamb, New Zealand, imported, frozen, loin, separable lean only, cooked, broiled, Calories:199.0
+17394 Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean only, cooked, slow roasted, Calories:199.0
+17049 Lamb, domestic, shoulder, arm, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled, Calories:200.0
+17007 Lamb, domestic, foreshank, separable lean and fat, trimmed to 1/4" fat, choice, raw, Calories:201.0
+17015 Lamb, domestic, leg, shank half, separable lean and fat, trimmed to 1/4" fat, choice, raw, Calories:201.0
+17228 Lamb, domestic, foreshank, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:201.0
+17258 Lamb, new zealand, imported, frozen, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, raw, Calories:201.0
+17283 Lamb, Australian, imported, fresh, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, cooked, Calories:201.0
+17294 Lamb, Australian, imported, fresh, leg, shank half, separable lean and fat, trimmed to 1/8" fat, raw, Calories:201.0
+17028 Lamb, domestic, loin, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted, Calories:202.0
+17310 Lamb, Australian, imported, fresh, loin, separable lean and fat, trimmed to 1/8" fat, raw, Calories:203.0
+17022 Lamb, domestic, leg, sirloin half, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted, Calories:204.0
+17042 Lamb, domestic, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4" fat, choice, cooked, roasted, Calories:204.0
+17004 Lamb, domestic, composite of trimmed retail cuts, separable lean only, trimmed to 1/4" fat, choice, cooked, Calories:206.0
+17065 Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable lean only, cooked, Calories:206.0
+17072 Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean and fat, raw, Calories:206.0
+17302 Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean and fat, trimmed to 1/8" fat, raw, Calories:208.0
+17398 Lamb, New Zealand, imported, loin chop, separable lean only, cooked, fast fried, Calories:208.0
+17421 Lamb, New Zealand, imported, tunnel-boned leg, chump off, shank off, separable lean and fat, cooked, slow roasted, Calories:208.0
+17058 Lamb, domestic, shoulder, blade, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted, Calories:209.0
+17071 Lamb, New Zealand, imported, fore-shank, separable lean only, cooked, braised, Calories:209.0
+17230 Lamb, domestic, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:209.0
+17041 Lamb, domestic, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4" fat, choice, cooked, broiled, Calories:210.0
+17317 Lamb, Australian, imported, fresh, rib, separable lean only, trimmed to 1/8" fat, cooked, roasted, Calories:210.0
+17057 Lamb, domestic, shoulder, blade, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled, Calories:211.0
+17405 Lamb, New Zealand, imported, leg chop/steak, bone-in, separable lean and fat, cooked, fast fried, Calories:212.0
+17290 Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, raw, Calories:215.0
+17301 Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separable lean only, trimmed to 1/8" fat, cooked, roasted, Calories:215.0
+17307 Lamb, Australian, imported, fresh, leg, center slice, bone-in, separable lean and fat, trimmed to 1/8" fat, cooked, broiled, Calories:215.0
+17027 Lamb, domestic, loin, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled, Calories:216.0
+17233 Lamb, domestic, leg, shank half, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:217.0
+17311 Lamb, Australian, imported, fresh, loin, separable lean and fat, trimmed to 1/8" fat, cooked, broiled, Calories:219.0
+17200 Lamb, variety meats and by-products, liver, cooked, braised, Calories:220.0
+17220 Lamb, variety meats and by-products, tongue, raw, Calories:222.0
+17060 Lamb, domestic, cubed for stew or kabob (leg and shoulder), separable lean only, trimmed to 1/4" fat, cooked, braised, Calories:223.0
+17256 Lamb, new zealand, imported, frozen, foreshank, separable lean and fat, trimmed to 1/8" fat, raw, Calories:223.0
+17016 Lamb, domestic, leg, shank half, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted, Calories:225.0
+17379 Lamb, New Zealand, imported, tongue - swiss cut, raw, Calories:225.0
+17280 Lamb, Australian, imported, fresh, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, raw, Calories:229.0
+17011 Lamb, domestic, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/4" fat, choice, raw, Calories:230.0
+17295 Lamb, Australian, imported, fresh, leg, shank half, separable lean and fat, trimmed to 1/8" fat, cooked, roasted, Calories:231.0
+17329 Lamb, Australian, imported, fresh, shoulder ,blade, separable lean only, trimmed to 1/8" fat, cooked, broiled, Calories:231.0
+17412 Lamb, New Zealand, imported, neck chops, separable lean and fat, raw, Calories:231.0
+17034 Lamb, domestic, rib, separable lean only, trimmed to 1/4" fat, choice, cooked, roasted, Calories:232.0
+17254 Lamb, new zealand, imported, frozen, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, raw, Calories:232.0
+17321 Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean only, trimmed to 1/8" fat, cooked, Calories:233.0
+17211 Lamb, variety meats and by-products, pancreas, cooked, braised, Calories:234.0
+17259 Lamb, new zealand, imported, frozen, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, cooked, roasted, Calories:234.0
+17365 Lamb, New Zealand, imported, flap, boneless, separable lean only, cooked, braised, Calories:234.0
+17033 Lamb, domestic, rib, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled, Calories:235.0
+17303 Lamb, Australian, imported, fresh, leg, sirloin chops, boneless, separable lean and fat, trimmed to 1/8" fat, cooked, broiled, Calories:235.0
+17287 Lamb, Australian, imported, fresh, foreshank, separable lean and fat, trimmed to 1/8" fat, cooked, braised, Calories:236.0
+17201 Lamb, variety meats and by-products, liver, cooked, pan-fried, Calories:238.0
+17325 Lamb, Australian, imported, fresh, shoulder, arm, separable lean only,   trimmed to 1/8" fat, cooked, braised, Calories:238.0
+17080 Lamb, New Zealand, imported, rack - partly frenched, separable lean and fat, raw, Calories:240.0
+17231 Lamb, domestic, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:242.0
+17008 Lamb, domestic, foreshank, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised, Calories:243.0
+17226 Lamb, domestic, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:243.0
+17229 Lamb, domestic, foreshank, separable lean and fat, trimmed to 1/8" fat, cooked, braised, Calories:243.0
+17322 Lamb, Australian, imported, fresh, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, raw, Calories:243.0
+17242 Lamb, domestic, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:244.0
+17246 Lamb, domestic, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:244.0
+17250 Lamb, domestic, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:244.0
+17291 Lamb, Australian, imported, fresh, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/8" fat, cooked, roasted, Calories:244.0
+17073 Lamb, New Zealand, imported, frozen, leg, whole (shank and sirloin), separable lean and fat, cooked, roasted, Calories:246.0
+17403 Lamb, New Zealand, imported, hind-shank, separable lean and fat, cooked, braised, Calories:247.0
+17264 Lamb, new zealand, imported, frozen, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, raw, Calories:251.0
+17414 Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean and fat, raw, Calories:252.0
+17081 Lamb, New Zealand, imported, rack - partly frenched, separable lean and fat, cooked, fast roasted, Calories:253.0
+17298 Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separable lean and fat, trimmed to 1/8" fat, raw, Calories:254.0
+17353 Lamb, Australian, ground,  85% lean / 15% fat, raw, Calories:255.0
+17382 Lamb, New Zealand, imported, square-cut shoulder chops, separable lean only, cooked, braised, Calories:255.0
+17069 Lamb, New Zealand, imported, fore-shank, separable lean and fat, cooked, braised, Calories:256.0
+17281 Lamb, Australian, imported, fresh, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, cooked, Calories:256.0
+17318 Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, raw, Calories:256.0
+17012 Lamb, domestic, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted, Calories:258.0
+17257 Lamb, new zealand, imported, frozen, foreshank, separable lean and fat, trimmed to 1/8" fat, cooked, braised, Calories:258.0
+17051 Lamb, domestic, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, raw, Calories:259.0
+17043 Lamb, domestic, shoulder, arm, separable lean and fat, trimmed to 1/4" fat, choice, raw, Calories:260.0
+17234 Lamb, domestic, leg, sirloin half, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:261.0
+17326 Lamb, Australian, imported, fresh, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, raw, Calories:262.0
+17035 Lamb, domestic, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4" fat, choice, raw, Calories:264.0
+17393 Lamb, New Zealand, imported, neck chops, separable lean only, cooked, braised, Calories:264.0
+17001 Lamb, domestic, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4" fat, choice, raw, Calories:267.0
+17249 Lamb, domestic, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, choice, roasted, Calories:267.0
+17252 Lamb, domestic, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:267.0
+17244 Lamb, domestic, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:268.0
+17245 Lamb, domestic, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:269.0
+17248 Lamb, domestic, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, cooked, broiled, Calories:269.0
+17253 Lamb, domestic, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:270.0
+17255 Lamb, new zealand, imported, frozen, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, cooked, Calories:270.0
+17359 Lamb, New Zealand, imported, breast, separable lean only, cooked, braised, Calories:270.0
+17227 Lamb, domestic, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, cooked, Calories:271.0
+17019 Lamb, domestic, leg, sirloin half, separable lean and fat, trimmed to 1/4" fat, choice, raw, Calories:272.0
+17084 Lamb, New Zealand, imported, square-cut shoulder, separable lean and fat, raw, Calories:272.0
+17378 Lamb, New Zealand, imported, tongue - swiss cut, cooked, soaked and simmered, Calories:272.0
+17187 Lamb, variety meats and by-products, brain, cooked, pan-fried, Calories:273.0
+17260 Lamb, new zealand, imported, frozen, loin, separable lean and fat, trimmed to 1/8" fat, raw, Calories:273.0
+17408 Lamb, New Zealand, imported, loin saddle, separable lean and fat, raw, Calories:273.0
+17407 Lamb, New Zealand, imported, loin saddle, separable lean and fat, cooked, fast roasted, Calories:274.0
+17221 Lamb, variety meats and by-products, tongue, cooked, braised, Calories:275.0
+17416 Lamb, New Zealand, imported, square-cut shoulder chops, separable lean and fat, raw, Calories:275.0
+17038 Lamb, domestic, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted, Calories:276.0
+17209 Lamb, variety meats and by-products, mechanically separated, raw, Calories:276.0
+17062 Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable lean and fat, raw, Calories:277.0
+17315 Lamb, Australian, imported, fresh, rib, separable lean and fat, trimmed to 1/8" fat, cooked, roasted, Calories:277.0
+17037 Lamb, domestic, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled, Calories:278.0
+17053 Lamb, domestic, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled, Calories:278.0
+17046 Lamb, domestic, shoulder, arm, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted, Calories:279.0
+17048 Lamb, domestic, shoulder, arm, separable lean only, trimmed to 1/4" fat, choice, cooked, braised, Calories:279.0
+17236 Lamb, domestic, loin, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:279.0
+17045 Lamb, domestic, shoulder, arm, separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled, Calories:281.0
+17054 Lamb, domestic, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted, Calories:281.0
+17299 Lamb, Australian, imported, fresh, leg, sirloin half, boneless, separable lean and fat, trimmed to 1/8" fat, cooked, roasted, Calories:281.0
+17224 Lamb, ground, raw, Calories:282.0
+17040 Lamb, domestic, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4" fat, choice, cooked, braised, Calories:283.0
+17225 Lamb, ground, cooked, broiled, Calories:283.0
+17235 Lamb, domestic, leg, sirloin half, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:284.0
+17087 Lamb, New Zealand, imported, frozen, shoulder, whole (arm and blade), separable lean only, cooked, braised, Calories:285.0
+17413 Lamb, New Zealand, imported, netted shoulder, rolled, boneless, separable lean and fat, cooked, slow roasted, Calories:287.0
+17056 Lamb, domestic, shoulder, blade, separable lean only, trimmed to 1/4" fat, choice, cooked, braised, Calories:288.0
+17314 Lamb, Australian, imported, fresh, rib, separable lean and fat, trimmed to 1/8" fat, raw, Calories:289.0
+17238 Lamb, domestic, loin, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:290.0
+17327 Lamb, Australian, imported, fresh, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, cooked, broiled, Calories:291.0
+17020 Lamb, domestic, leg, sirloin half, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted, Calories:292.0
+17002 Lamb, domestic, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4" fat, choice, cooked, Calories:294.0
+17417 Lamb, New Zealand, imported, square-cut shoulder, separable lean and fat, cooked, slow roasted, Calories:294.0
+17261 Lamb, new zealand, imported, frozen, loin, separable lean and fat, trimmed to 1/8" fat, cooked, broiled, Calories:296.0
+17319 Lamb, Australian, imported, fresh, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, cooked, Calories:296.0
+17237 Lamb, domestic, loin, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:297.0
+17076 Lamb, New Zealand, imported, loin chop, separable lean and fat, raw, Calories:298.0
+17063 Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable lean and fat, cooked, Calories:305.0
+17411 Lamb, New Zealand, imported, neck chops, separable lean and fat, cooked, braised, Calories:307.0
+17025 Lamb, domestic, loin, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted, Calories:309.0
+17023 Lamb, domestic, loin, separable lean and fat, trimmed to 1/4" fat, choice, raw, Calories:310.0
+17262 Lamb, new zealand, imported, frozen, rib, separable lean and fat, trimmed to 1/8" fat, raw, Calories:311.0
+17323 Lamb, Australian, imported, fresh, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, cooked, braised, Calories:311.0
+17077 Lamb, New Zealand, imported, frozen, loin, separable lean and fat, cooked, broiled, Calories:315.0
+17024 Lamb, domestic, loin, separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled, Calories:316.0
+17263 Lamb, new zealand, imported, frozen, rib, separable lean and fat, trimmed to 1/8" fat, cooked, roasted, Calories:317.0
+17415 Lamb, New Zealand, imported, square-cut shoulder chops, separable lean and fat, cooked, braised, Calories:322.0
+17406 Lamb, New Zealand, imported, loin chop, separable lean and fat, cooked, fast fried, Calories:332.0
+17247 Lamb, domestic, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised, Calories:337.0
+17402 Lamb, New Zealand, imported, flap, boneless, separable lean and fat, raw, Calories:337.0
+17243 Lamb, domestic, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised, Calories:338.0
+17251 Lamb, domestic, shoulder, blade, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised, Calories:339.0
+17240 Lamb, domestic, rib, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:340.0
+17241 Lamb, domestic, rib, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:341.0
+17239 Lamb, domestic, rib, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:342.0
+17265 Lamb, new zealand, imported, frozen, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/8" fat, cooked, braised, Calories:342.0
+17036 Lamb, domestic, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised, Calories:344.0
+17052 Lamb, domestic, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised, Calories:345.0
+17044 Lamb, domestic, shoulder, arm, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised, Calories:346.0
+17085 Lamb, New Zealand, imported, frozen, shoulder, whole (arm and blade), separable lean and fat, cooked, braised, Calories:357.0
+17031 Lamb, domestic, rib, separable lean and fat, trimmed to 1/4" fat, choice, cooked, roasted, Calories:359.0
+17030 Lamb, domestic, rib, separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled, Calories:361.0
+17029 Lamb, domestic, rib, separable lean and fat, trimmed to 1/4" fat, choice, raw, Calories:372.0
+17401 Lamb, New Zealand, imported, flap, boneless, separable lean and fat, cooked, braised, Calories:376.0
+17006 Lamb, domestic, composite of trimmed retail cuts, separable fat, trimmed to 1/4" fat, choice, cooked, Calories:586.0
+17067 Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable fat, cooked, Calories:586.0
+17354 Lamb, New Zealand, imported, Intermuscular fat, cooked, Calories:596.0
+17285 Lamb, Australian, imported, fresh, separable fat, cooked, Calories:639.0
+17066 Lamb, New Zealand, imported, frozen, composite of trimmed retail cuts, separable fat, raw, Calories:640.0
+17355 Lamb, New Zealand, imported, Intermuscular fat, raw, Calories:640.0
+17284 Lamb, Australian, imported, fresh, separable fat, raw, Calories:648.0
+17005 Lamb, domestic, composite of trimmed retail cuts, separable fat, trimmed to 1/4" fat, choice, raw, Calories:665.0
+17362 Lamb, New Zealand, imported, subcutaneous fat, cooked, Calories:674.0
+17356 Lamb, New Zealand, imported, subcutaneous fat, raw, Calories:703.0

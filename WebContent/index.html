@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>Food Log</title>
+<script src="jquery-1.10.2.min.js"></script>
+<script src="tag.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- 
+    <link rel="stylesheet" type="text/css" href="css/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="css/cssfonts-min.css">
+    <link rel="stylesheet" type="text/css" href="css/cssbase-min.css"> 
+	-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <!-- Bootstrap -->
+  	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script data-main="demo/js/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.17/require.min.js"></script>
+    
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type='text/javascript' src='https://projects.csail.mit.edu/slu/JavaScriptSpellCheck/include.js'></script>
+	<script type='text/javascript' src="dist/js/jquery.spellchecker.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<link rel="stylesheet" type="text/css" href="demo/audio_demo.css">
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	
+	        Nutrition
+	        <small>by MIT SLS</small>
+	      </a>
+	
+	    </div> <!-- end of navbar header -->
+	  </div> <!-- end of navbar container -->
+	</nav>
+	
+	<div class="container">		
+		
+		<form id="answerForm" method="POST" action="https://www.mturk.com/mturk/externalSubmit">
+		<!--  <h1>Food Log</h1> -->
+		
+		<div id="introDiv">
+			<div id="warning">
+	          IMPORTANT: You must ACCEPT the HIT before you can submit the answers.
+	        </div>
+	        <div id="jsWarning">
+	          IMPORTANT: Please turn on JavaScript.
+	        </div>
+	        <div id="instructionsDiv">
+	          <h2>Instructions</h2>
+	          <div id="innerInstructionDiv">
+	            <p>Please record <b>four</b> different meals (e.g. what you ate for breakfast, lunch, dinner, or snack today or yesterday) using as much detail and
+	accuracy as possible. Be creative--we will not accept repeat answers. Try to include as much additional information as
+	you remember, such as brand names and quantities. Please press the record button below to describe your meal orally, or type in the textbox. It's more fun to record your meal verbally, but it requires using Chrome.</p>
+	             <h3>Examples</h3>
+	             <p>I had a boiled egg, a Thomas's english muffin, and an ounce of organic butter.</p>
+	             <p>For lunch I ate a plate of spaghetti with a spinach salad and feta cheese.</p>
+	          	 <p>***<b>Note: you must record each meal one at a time</b>, pressing Enter or stop recording at the end of each.***</p>
+	          </div>
+	        </div>
+	      </div>
+	      
+	    <div class="jumbotron align-center">
+			<h1>Record a nutrition log!</h1>
+				<span id="speech-mic" disabled class="fa-stack fa-3x record-btn"
+		             on-click="toggleRecording">
+			      <i class="fa fa-microphone fa-stack-2x
+			      {{#if recording}} stroked-red {{else}} stroked {{/if}}"></i>
+			      <i class="fa fa-microphone fa-stack-2x fill"
+			       style="max-height: {{meterMaxHeight}};"></i>
+			    </span>
+			    <span class="dialog-text"><textarea id="textEntry" disabled type="text"></textarea></span>
+		</div>
+	      
+	    <!-- 
+	    <div id="questionsDiv">
+	        <div class="dialog">
+	          <p class="dialog-line car">
+	            <span class="dialog-person">System:</span>
+	            <span class="dialog-text">Hi! Please record (click the microphone) or type your meal <b>one at a time</b> (hit 'Enter' when done):</span>
+	          </p>
+	          <p class="dialog-line you">
+	            <span class="dialog-person">You:</span>
+	            <span id="speech-mic" class="fa-stack fa-4x record-btn"
+	              on-click="toggleRecording">
+			      <i class="fa fa-microphone fa-stack-2x
+			      {{#if recording}} stroked-red {{else}} stroked {{/if}}"></i>
+			      <i class="fa fa-microphone fa-stack-2x fill"
+			       style="max-height: {{meterMaxHeight}};"></i>
+			    </span>
+			    <input class="bigButton" type="hidden" disabled type="button" value="Start Recording"></input>
+	            <span class="dialog-text"><textarea id="textEntry" disabled type="text"></textarea></span>
+	          </p>
+	        </div>
+	        
+	      </div>
+	       -->
+	        
+	        <input type="hidden" id="response1" name="response1" value="" class="required">
+	        <input type="hidden" id="response2" name="response2" value="" class="required">
+	        <input type="hidden" id="response3" name="response3" value="" class="required">
+	        <input type="hidden" id="response4" name="response4" value="" class="required">
+			
+			<input type="hidden" id="numSpoken" name="numSpoken"></input>
+			<input type="hidden" id="numTyped" name="numTyped"></input>
+			<input type="hidden" id="numUSDAMissed" name="numUSDAMissed"></input>
+			<input type="hidden" id="numTagsMissed" name="numTagsMissed"></input>
+			<input type="hidden" id="numQuantMissed" name="numQuantMissed"></input>
+			<input type="hidden" id="numFoods" name="numFoods"></input>
+			<input type="hidden" id="numDeletions" name="numDeletions"></input>
+			<input type="hidden" id="numSubs" name="numSubs"></input>
+	
+	          <p id="incompleteWarning" class="centerize red">You'll need to record four valid meals before you can submit. Keep going!</p>
+	          <p id="similarWarning" class="centerize red">Your description is too similar to others. Please try again.</p>
+	          <p id="shortWarning" class="centerize red">Your description is too short.  Please elaborate.</p>
+	          <p id="spellWarning" class="centerize red">Please use real English words.</p>
+	          <p id="repeatWarning" class="centerize red">Your description has too many repeating words.  Please try again.</p>
+	          <p id="canSubmit" class="centerize red">You successfully recorded two meals!</p>
+	        
+			<div id="tagged-query"></div>
+			<div id="dependencies"></div>
+			<div id="deletions"></div>
+			<div id="database-results"></div>
+	
+	      
+	      <div id="finalDiv">
+	        <p>(Optional) Please let us know how we can make this HIT better.</p>
+	        <p>
+	          <input id="feedback" disabled name="feedback"></input>
+	        </p>
+	
+	        <div class="spellchecker-suggestbox">
+	        
+	        <p id="radioBtnWarning" class="centerize red">You'll need to check the radio buttons before you can submit!</p>
+	
+	        <div id="submitDiv" class="centerize">
+	          <input type="hidden" id="assignmentId" name="assignmentId" value=""></input>
+	          <input type="hidden" id="dataIndex" name="dataIndex" value=""></input>
+	          <!-- <p>Please click "Check" before submitting so we can validate your response.</p> -->
+	                    
+	          <!-- <button type="button" class="bigButton" id="checkButton">Check</button> -->
+	          <button type="button" class="bigButton" disabled id="submitButton">Submit</button>          
+	        </div>
+	      </div>
+	      </div>
+		
+		</form>
+	
+	<footer>
+			<p>MIT Spoken Language Systems Group</p>
+		</footer>
+	</div> <!-- End of container div -->
+	
+	
+	
+</body>
+
+
+</html>

@@ -1,0 +1,326 @@
+10112 Pork, fresh, variety meats and by-products, lungs, raw, Calories:85.0
+10885 Pork, cured, ham -- water added, shank, bone-in, separable lean only, unheated, Calories:91.0
+10866 Pork, cured, ham -- water added, rump, bone-in, separable lean only, unheated, Calories:95.0
+10886 Pork, cured, ham -- water added, slice, bone-in, separable lean only, unheated, Calories:95.0
+10113 Pork, fresh, variety meats and by-products, lungs, cooked, braised, Calories:99.0
+10106 Pork, fresh, variety meats and by-products, kidneys, raw, Calories:100.0
+10117 Pork, fresh, variety meats and by-products, spleen, raw, Calories:100.0
+10888 Pork, cured, ham and water product, slice, bone-in, separable lean only, unheated, Calories:103.0
+10944 Pork, fresh, enhanced, loin, tenderloin, separable lean only, raw, Calories:106.0
+10887 Pork, cured, ham and water product, rump, bone-in, separable lean only, unheated, Calories:107.0
+10060 Pork, fresh, loin, tenderloin, separable lean only, raw, Calories:109.0
+10893 Pork, cured, ham with natural juices, spiral slice, boneless, separable lean only, unheated, Calories:109.0
+10880 Pork, cured, ham -- water added, whole, boneless, separable lean only, unheated, Calories:110.0
+10884 Pork, cured, ham with natural juices, whole, boneless, separable lean only, unheated, Calories:110.0
+10900 Pork, cured, ham with natural juices, whole, boneless, separable lean and fat, unheated, Calories:112.0
+10883 Pork, cured, ham with natural juices, whole, boneless, separable lean only, heated, roasted, Calories:113.0
+10889 Pork, cured, ham and water product, shank, bone-in, unheated, separable lean only, Calories:113.0
+10963 Pork, Leg sirloin tip roast, boneless, separable lean and fat, raw, Calories:113.0
+10928 Pork, cured, ham with natural juices, whole, boneless, separable lean and fat, heated, roasted, Calories:114.0
+10951 Pork, fresh, enhanced, loin, tenderloin, separable lean and fat, raw, Calories:114.0
+10872 Pork, cured, ham and water product, whole, boneless, separable lean only, unheated, Calories:116.0
+10882 Pork, cured, ham with natural juices, slice, boneless, separable lean only, heated, pan-broil, Calories:116.0
+10943 Pork, fresh, enhanced, loin, tenderloin, separable lean only, cooked, roasted, Calories:116.0
+10879 Pork, cured, ham -- water added, whole, boneless, separable lean only, heated, roasted, Calories:117.0
+10905 Pork, cured, ham and water product, whole, boneless, separable lean and fat, unheated, Calories:117.0
+10948 Pork, fresh, enhanced, loin, top loin (chops), boneless, separable lean only, raw, Calories:117.0
+10103 Pork, fresh, variety meats and by-products, heart, raw, Calories:118.0
+10926 Pork, cured, ham with natural juices, slice, boneless, separable lean and fat, heated, pan-broil, Calories:118.0
+10018 Pork, fresh, leg (ham), shank half, separable lean only, raw, Calories:119.0
+10878 Pork, cured, ham -- water added, slice, boneless, separable lean only, heated, pan-broil, Calories:119.0
+10014 Pork, fresh, leg (ham), rump half, separable lean only, raw, Calories:120.0
+10077 Pork, fresh, shoulder, arm picnic, separable lean only, raw, Calories:120.0
+10137 Pork, cured, ham, extra lean (approximately 4% fat), canned, unheated, Calories:120.0
+10218 Pork, fresh, loin, tenderloin, separable lean and fat, raw, Calories:120.0
+10214 Pork, fresh, loin, sirloin (chops or roasts), boneless, separable lean only, raw, Calories:121.0
+10865 Pork, cured, ham -- water added, rump, bone-in, separable lean only, heated, roasted, Calories:121.0
+10909 Pork, cured, ham -- water added, whole, boneless, separable lean and fat, unheated, Calories:121.0
+10952 Pork, fresh, enhanced, loin, tenderloin, separable lean and fat, cooked, roasted, Calories:121.0
+10973 Pork, ground, 96% lean / 4% fat, raw, Calories:121.0
+10149 Pork, cured, ham, steak, boneless, extra lean, unheated, Calories:122.0
+10869 Pork, cured, ham and water product, slice, bone-in, separable lean only, heated, pan-broil, Calories:122.0
+10890 Pork, cured, ham with natural juices, rump, bone-in, separable lean only, unheated, Calories:122.0
+10946 Pork, fresh, enhanced, shoulder, (Boston butt), blade (steaks), separable lean only, raw, Calories:122.0
+10094 Pork, fresh, loin, center loin (chops), boneless, separable lean only, raw, Calories:123.0
+10870 Pork, cured, ham and water product, slice, boneless, separable lean only, heated, pan-broil, Calories:123.0
+10871 Pork, cured, ham and water product, whole, boneless, separable lean only, heated, roasted, Calories:123.0
+10892 Pork, cured, ham with natural juices, slice, bone-in, separable lean only, unheated, Calories:123.0
+10922 Pork, cured, ham and water product, whole, boneless, separable lean and fat, heated, roasted, Calories:123.0
+10957 Pork, Leg Cap Steak, boneless, separable lean and fat, raw, Calories:123.0
+10982 Pork, fresh, loin, blade (chops or roasts), boneless, separable lean only, raw, Calories:123.0
+10921 Pork, cured, ham and water product, slice, boneless, separable lean and fat, heated, pan-broil, Calories:124.0
+10916 Pork, cured, ham -- water added, slice, boneless, separable lean and fat, heated, pan-broil, Calories:125.0
+10932 Pork, cured, ham, rump, bone-in, separable lean only, unheated, Calories:125.0
+10934 Pork, cured, ham, shank, bone-in, separable lean only, unheated, Calories:125.0
+10876 Pork, cured, ham with natural juices, spiral slice, meat only, boneless, separable lean only, heated, roasted, Calories:126.0
+10917 Pork, cured, ham -- water added, whole, boneless, separable lean and fat, heated, roasted, Calories:126.0
+10040 Pork, fresh, loin, center loin (chops), bone-in, separable lean only, raw, Calories:127.0
+10066 Pork, fresh, loin, top loin (chops), boneless, separable lean only, raw, Calories:127.0
+10096 Pork, fresh, variety meats and by-products, brain, raw, Calories:127.0
+10958 Pork, Shoulder breast, boneless, separable lean and fat, raw, Calories:127.0
+10867 Pork, cured, ham -- water added, shank, bone-in, separable lean only, heated, roasted, Calories:128.0
+10961 Pork, Shoulder petite tender, boneless, separable lean and fat, raw, Calories:128.0
+10056 Pork, fresh, loin, sirloin (chops or roasts), bone-in, separable lean only, raw, Calories:129.0
+10901 Pork, cured, ham with natural juices, spiral slice, boneless, separable lean and fat, unheated, Calories:129.0
+10891 Pork, cured, ham with natural juices, shank, bone-in, separable lean only, unheated, Calories:130.0
+10938 Pork, cured, ham, slice, bone-in, separable lean only, unheated, Calories:130.0
+10868 Pork, cured, ham -- water added, slice, bone-in, separable lean only, heated, pan-broil, Calories:131.0
+10877 Pork, cured, ham and water product, rump, bone-in, separable lean only, heated, roasted, Calories:131.0
+10084 Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean only, raw, Calories:132.0
+10225 Pork, fresh, loin, top loin (roasts), boneless, separable lean only, raw, Calories:132.0
+10881 Pork, cured, ham and water product, shank, bone-in, separable lean only, heated, roasted, Calories:132.0
+10931 Pork, cured, ham, rump, bone-in, separable lean only, heated, roasted, Calories:132.0
+10210 Pork, fresh, loin, sirloin (chops or roasts), boneless, separable lean and fat, raw, Calories:133.0
+10002 Pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder), separable lean only, raw, Calories:134.0
+10110 Pork, fresh, variety meats and by-products, liver, raw, Calories:134.0
+10010 Pork, fresh, leg (ham), whole, separable lean only, raw, Calories:136.0
+10048 Pork, fresh, loin, center rib (chops or roasts), bone-in, separable lean only, raw, Calories:136.0
+10138 Pork, cured, ham, extra lean (approximately 4% fat), canned, roasted, Calories:136.0
+10873 Pork, cured, ham with natural juices, rump, bone-in, separable lean only, heated, roasted, Calories:137.0
+10097 Pork, fresh, variety meats and by-products, brain, cooked, braised, Calories:138.0
+10927 Pork, cured, ham with natural juices, spiral slice, boneless, separable lean and fat, heated, roasted, Calories:139.0
+10933 Pork, cured, ham, shank, bone-in, separable lean only, heated, roasted, Calories:139.0
+10132 Pork, cured, feet, pickled, Calories:140.0
+10207 Pork, fresh, loin, country-style ribs, separable lean only, raw, Calories:140.0
+10024 Pork, fresh, loin, whole, separable lean only, raw, Calories:143.0
+10032 Pork, fresh, loin, blade (chops or roasts), bone-in, separable lean only, raw, Calories:143.0
+10061 Pork, fresh, loin, tenderloin, separable lean only, cooked, roasted, Calories:143.0
+10184 Pork, cured, ham, extra lean and regular, canned, unheated, Calories:144.0
+10228 Pork, fresh, composite of trimmed retail cuts (loin and shoulder blade), separable lean only, raw, Calories:144.0
+10134 Pork, cured, ham, boneless, extra lean (approximately 5% fat), roasted, Calories:145.0
+10874 Pork, cured, ham with natural juices, shank, bone-in, separable lean only, heated, roasted, Calories:145.0
+43327 Pork, cured, ham, boneless, low sodium, extra lean (approximately 5% fat), roasted, Calories:145.0
+10152 Pork, cured, ham, whole, separable lean only, unheated, Calories:147.0
+10222 Pork, fresh, loin, tenderloin, separable lean and fat, cooked, roasted, Calories:147.0
+10072 Pork, fresh, shoulder, whole, separable lean only, raw, Calories:148.0
+10104 Pork, fresh, variety meats and by-products, heart, cooked, braised, Calories:148.0
+10899 Pork, cured, ham, slice, bone-in, separable lean only, heated, pan-broil, Calories:148.0
+10118 Pork, fresh, variety meats and by-products, spleen, cooked, braised, Calories:149.0
+10906 Pork, cured, ham and water product, slice, bone-in, separable lean and fat, unheated, Calories:149.0
+10875 Pork, cured, ham with natural juices, slice, bone-in, separable lean only, heated, pan-broil, Calories:150.0
+10107 Pork, fresh, variety meats and by-products, kidneys, cooked, braised, Calories:151.0
+10199 Pork, fresh, loin, center rib (chops or roasts), boneless, separable lean only, raw, Calories:152.0
+10062 Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, raw, Calories:155.0
+10920 Pork, cured, ham and water product, slice, bone-in, separable lean and fat, heated, pan-broil, Calories:155.0
+10960 Pork, shoulder, petite tender, boneless, separable lean and fat, cooked, broiled, Calories:155.0
+10962 Pork, Leg sirloin tip roast, boneless, separable lean and fat, cooked, braised, Calories:156.0
+10153 Pork, cured, ham, whole, separable lean only, roasted, Calories:157.0
+10863 Pork, fresh, variety meats and by-products, stomach, cooked, simmered, Calories:157.0
+10989 Pork, fresh, loin, blade (chops or roasts), boneless, separable lean and fat only, raw, Calories:157.0
+10956 Pork, loin, leg cap steak, boneless, separable lean and fat, cooked, broiled, Calories:158.0
+10119 Pork, fresh, variety meats and by-products, stomach, raw, Calories:159.0
+10902 Pork, cured, ham with natural juices, slice, bone-in, separable lean and fat, unheated, Calories:159.0
+10216 Pork, fresh, loin, sirloin (chops), boneless, separable lean only, cooked, broiled, Calories:161.0
+10913 Pork, cured, ham -- water added, rump, bone-in, separable lean and fat, heated, roasted, Calories:161.0
+10163 Pork, fresh, loin, center loin (chops), boneless, separable lean only, cooked, pan-broiled, Calories:162.0
+10182 Pork, cured, ham, boneless, extra lean and regular, unheated, Calories:162.0
+10959 Pork, Shoulder breast, boneless, separable lean and fat, cooked, broiled, Calories:162.0
+10215 Pork, fresh, loin, sirloin (chops), boneless, separable lean only, cooked, braised, Calories:163.0
+10910 Pork, cured, ham -- water added, slice, bone-in, separable lean and fat, unheated, Calories:164.0
+10015 Pork, fresh, leg (ham), rump half, separable lean only, cooked, roasted, Calories:165.0
+10111 Pork, fresh, variety meats and by-products, liver, cooked, braised, Calories:165.0
+10183 Pork, cured, ham, boneless, extra lean and regular, roasted, Calories:165.0
+43325 Pork, cured, ham, boneless, low sodium, extra lean and regular, roasted, Calories:165.0
+10101 Pork, fresh, variety meats and by-products, ears, frozen, cooked, simmered, Calories:166.0
+10224 Pork, fresh, loin, top loin (roasts), boneless, separable lean and fat, raw, Calories:166.0
+10915 Pork, cured, ham -- water added, slice, bone-in, separable lean and fat, heated, pan-broil, Calories:166.0
+10185 Pork, cured, ham, extra lean and regular, canned, roasted, Calories:167.0
+10911 Pork, cured, ham -- water added, shank, bone-in, separable lean and fat, unheated, Calories:167.0
+10052 Pork, fresh, loin, sirloin (chops or roasts), bone-in, separable lean and fat, raw, Calories:168.0
+10858 Pork, fresh, loin, top loin (chops), boneless, enhanced, separable lean only, cooked, pan-broiled, Calories:169.0
+10953 Pork, fresh, enhanced, shoulder, (Boston butt), blade (steaks), separable lean and fat, raw, Calories:169.0
+10984 Pork, fresh, loin, blade (chops), boneless, separable lean only, boneless, cooked, broiled, Calories:169.0
+10036 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw, Calories:170.0
+10067 Pork, fresh, loin, top loin (chops), boneless, separable lean only, cooked, braised, Calories:170.0
+10169 Pork, cured, shoulder, arm picnic, separable lean only, roasted, Calories:170.0
+10212 Pork, fresh, loin, sirloin (chops), boneless, separable lean and fat, cooked, broiled, Calories:170.0
+10947 Pork, fresh, enhanced, loin, top loin (chops), boneless, separable lean only, cooked, broiled, Calories:170.0
+10211 Pork, fresh, loin, sirloin (chops), boneless, separable lean and fat, cooked, braised, Calories:171.0
+10898 Pork, pickled pork hocks, Calories:171.0
+10949 Pork, fresh, enhanced, loin, top loin (chops), boneless, separable lean and fat, raw, Calories:171.0
+10181 Pork, fresh, loin, top loin (chops), boneless, separable lean only, cooked, pan-fried, Calories:172.0
+10912 Pork, cured, ham -- water added, rump, bone-in, separable lean and fat, unheated, Calories:172.0
+43326 Pork, cured, ham, low sodium, lean and fat, cooked, Calories:172.0
+10068 Pork, fresh, loin, top loin (chops), boneless, separable lean only, cooked, broiled, Calories:173.0
+10069 Pork, fresh, loin, top loin (roasts), boneless, separable lean only, cooked, roasted, Calories:173.0
+10939 Pork, cured, ham, slice, bone-in, separable lean and fat, unheated, Calories:173.0
+10058 Pork, fresh, loin, sirloin (chops), bone-in, separable lean only, cooked, broiled, Calories:174.0
+10019 Pork, fresh, leg (ham), shank half, separable lean only, cooked, roasted, Calories:175.0
+10983 Pork, fresh, loin, blade (roasts), boneless, separable lean only, cooked, roasted, Calories:175.0
+10955 Pork, cured, ham, rump, bone-in, separable lean and fat, unheated, Calories:176.0
+10226 Pork, fresh, composite of trimmed retail cuts (loin and shoulder blade), separable lean and fat, raw, Calories:177.0
+10923 Pork, cured, ham with natural juices, rump, bone-in, separable lean and fat, heated, roasted, Calories:177.0
+10929 Pork, cured, ham, rump, bone-in, separable lean and fat, heated, roasted, Calories:177.0
+10936 Pork, cured, ham, shank, bone-in, separable lean and fat, unheated, Calories:177.0
+10136 Pork, cured, ham, boneless, regular (approximately 11% fat), roasted, Calories:178.0
+10217 Pork, fresh, loin, sirloin (roasts), boneless, separable lean only, cooked, roasted, Calories:178.0
+10908 Pork, cured, ham and water product, rump, bone-in, separable lean and fat, unheated, Calories:179.0
+10042 Pork, fresh, loin, center loin (chops), bone-in, separable lean only, cooked, broiled, Calories:180.0
+10925 Pork, cured, ham with natural juices, slice, bone-in, separable lean and fat, heated, pan-broil, Calories:180.0
+10937 Pork, cured, ham, slice, bone-in, separable lean and fat, heated, pan-broil, Calories:180.0
+10012 Pork, fresh, leg (ham), rump half, separable lean and fat, raw, Calories:182.0
+10098 Pork, fresh, variety meats and by-products, chitterlings, raw, Calories:182.0
+10131 Pork, cured, canadian-style bacon, grilled, Calories:185.0
+10979 Pork, ground, 96% lean / 4% fat, cooked, pan-broiled, Calories:185.0
+10044 Pork, fresh, loin, center rib (chops or roasts), bone-in, separable lean and fat, raw, Calories:186.0
+10050 Pork, fresh, loin, center rib (chops), bone-in, separable lean only, cooked, broiled, Calories:186.0
+10080 Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean and fat, raw, Calories:186.0
+10918 Pork, cured, ham and water product, rump, bone-in, separable lean and fat, heated, roasted, Calories:186.0
+10223 Pork, fresh, loin, tenderloin, separable lean only, cooked, broiled, Calories:187.0
+10976 Pork, ground, 96% lean / 4% fat, cooked, crumbles, Calories:187.0
+10204 Pork, fresh, loin, country-style ribs, separable lean and fat, raw, Calories:189.0
+10859 Pork, fresh, loin, top loin (chops), boneless, enhanced, separable lean and fat, cooked, pan-broiled, Calories:190.0
+10903 Pork, cured, ham with natural juices, shank, bone-in, separable lean and fat, unheated, Calories:191.0
+10924 Pork, cured, ham with natural juices, shank, bone-in, separable lean and fat, heated, roasted, Calories:191.0
+10935 Pork, cured, ham, shank, bone-in, separable lean and fat, heated, roasted, Calories:191.0
+10065 Pork, fresh, loin, top loin (roasts), boneless, separable lean and fat, cooked, roasted, Calories:192.0
+10213 Pork, fresh, loin, sirloin (roasts), boneless, separable lean and fat, cooked, roasted, Calories:192.0
+10016 Pork, fresh, leg (ham), shank half, separable lean and fat, raw, Calories:193.0
+10034 Pork, fresh, loin, blade (chops), bone-in, separable lean only, cooked, broiled, Calories:193.0
+10074 Pork, fresh, shoulder, arm picnic, separable lean and fat, raw, Calories:193.0
+10028 Pork, fresh, loin, blade (chops or roasts), bone-in, separable lean and fat, raw, Calories:194.0
+10043 Pork, fresh, loin, center loin (roasts), bone-in, separable lean only, cooked, roasted, Calories:194.0
+10078 Pork, fresh, shoulder, arm picnic, separable lean only, cooked, braised, Calories:194.0
+10057 Pork, fresh, loin, sirloin (chops), bone-in, separable lean only, cooked, braised, Calories:195.0
+10141 Pork, cured, ham, center slice, country-style, separable lean only, raw, Calories:195.0
+10176 Pork, fresh, loin, center loin (chops), bone-in, separable lean only, cooked, pan-fried, Calories:195.0
+10064 Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, cooked, broiled, Calories:196.0
+10186 Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, cooked, pan-fried, Calories:196.0
+10020 Pork, fresh, loin, whole, separable lean and fat, raw, Calories:198.0
+10950 Pork, fresh, enhanced, loin, top loin (chops), boneless, separable lean and fat, cooked, broiled, Calories:198.0
+10115 Pork, fresh, variety meats and by-products, pancreas, raw, Calories:199.0
+10990 Pork, fresh, loin, blade (roasts), boneless, separable lean and fat, cooked, roasted, Calories:199.0
+10041 Pork, fresh, loin, center loin (chops), bone-in, separable lean only, cooked, braised, Calories:200.0
+10063 Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, cooked, braised, Calories:200.0
+10904 Pork, cured, ham with natural juices, rump, bone-in, separable lean and fat, unheated, Calories:200.0
+10914 Pork, cured, ham -- water added, shank, bone-in, separable lean and fat, heated, roasted, Calories:200.0
+10093 Pork, fresh, composite of trimmed retail cuts (leg, loin, and shoulder), separable lean only, cooked, Calories:201.0
+10164 Pork, fresh, loin, center loin (chops), boneless, separable lean and fat, raw, Calories:201.0
+10221 Pork, fresh, loin, tenderloin, separable lean and fat, cooked, broiled, Calories:201.0
+10988 Pork, fresh, blade, (chops), boneless, separable lean and fat, cooked, broiled, Calories:202.0
+10142 Pork, cured, ham, center slice, separable lean and fat, unheated, Calories:203.0
+10025 Pork, fresh, loin, whole, separable lean only, cooked, braised, Calories:204.0
+10059 Pork, fresh, loin, sirloin (roasts), bone-in, separable lean only, cooked, roasted, Calories:204.0
+10051 Pork, fresh, loin, center rib (roasts), bone-in, separable lean only, cooked, roasted, Calories:206.0
+10049 Pork, fresh, loin, center rib (chops), bone-in, separable lean only, cooked, braised, Calories:208.0
+10013 Pork, fresh, leg (ham), rump half, separable lean and fat, cooked, roasted, Calories:209.0
+10027 Pork, fresh, loin, whole, separable lean only, cooked, roasted, Calories:209.0
+10038 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, broiled, Calories:209.0
+10026 Pork, fresh, loin, whole, separable lean only, cooked, broiled, Calories:210.0
+10003 Pork, fresh, composite of trimmed leg, loin, shoulder, and spareribs, (includes cuts to be cured), separable lean and fat, raw, Calories:211.0
+10011 Pork, fresh, leg (ham), whole, separable lean only, cooked, roasted, Calories:211.0
+10177 Pork, fresh, loin, center rib (chops), bone-in, separable lean only, cooked, pan-fried, Calories:211.0
+10194 Pork, fresh, loin, center rib (chops or roasts), boneless, separable lean and fat, raw, Calories:211.0
+10200 Pork, fresh, loin, center rib (chops), boneless, separable lean only, cooked, braised, Calories:211.0
+10229 Pork, fresh, composite of trimmed retail cuts (loin and shoulder blade), separable lean only, cooked, Calories:211.0
+10102 Pork, fresh, variety meats and by-products, feet, raw, Calories:212.0
+10203 Pork, fresh, loin, center rib (roasts), boneless, separable lean only, cooked, roasted, Calories:214.0
+10187 Pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder, and spareribs), separable lean and fat, raw, Calories:216.0
+10201 Pork, fresh, loin, center rib (chops), boneless, separable lean only, cooked, broiled, Calories:216.0
+10985 Pork, fresh, loin, country-style ribs, separable lean only, boneless, cooked, broiled, Calories:216.0
+10986 Pork, fresh, loin, country-style ribs, separable lean only, bone-in, cooked, broiled, Calories:216.0
+10035 Pork, fresh, loin, blade (roasts), bone-in, separable lean only, cooked, roasted, Calories:217.0
+10972 Pork, ground, 84% lean / 16% fat, raw, Calories:218.0
+10116 Pork, fresh, variety meats and by-products, pancreas, cooked, braised, Calories:219.0
+10987 Pork, fresh, loin, country-style ribs, separable lean only, boneless, cooked, roasted, Calories:219.0
+10033 Pork, fresh, loin, blade (chops), bone-in, separable lean only, cooked, braised, Calories:222.0
+10046 Pork, fresh, loin, center rib (chops), bone-in, separable lean and fat, cooked, broiled, Calories:222.0
+10054 Pork, fresh, loin, sirloin (chops), bone-in, separable lean and fat, cooked, broiled, Calories:222.0
+10120 Pork, fresh, loin, blade (chops), bone-in, separable lean only, cooked, pan-fried, Calories:222.0
+10192 Pork, fresh, backribs, separable lean and fat, raw, Calories:224.0
+10202 Pork, fresh, loin, center rib (chops), boneless, separable lean only, cooked, pan-fried, Calories:224.0
+10121 Pork, fresh, variety meats and by-products, tongue, raw, Calories:225.0
+10140 Pork, cured, ham, regular (approximately 13% fat), canned, roasted, Calories:226.0
+10086 Pork, fresh, shoulder, blade, boston (steaks), separable lean only, cooked, broiled, Calories:227.0
+10209 Pork, fresh, loin, country-style ribs, separable lean only, bone-in, cooked, roasted, Calories:227.0
+10945 Pork, fresh, enhanced, shoulder, (Boston butt), blade (steaks), separable lean only, cooked, braised, Calories:227.0
+10079 Pork, fresh, shoulder, arm picnic, separable lean only, cooked, roasted, Calories:228.0
+10189 Pork, fresh, loin, center loin (chops), boneless, separable lean and fat, cooked, pan-broiled, Calories:229.0
+10055 Pork, fresh, loin, sirloin (roasts), bone-in, separable lean and fat, cooked, roasted, Calories:230.0
+10073 Pork, fresh, shoulder, whole, separable lean only, cooked, roasted, Calories:230.0
+10030 Pork, fresh, loin, blade (chops), bone-in, separable lean and fat, cooked, broiled, Calories:231.0
+10039 Pork, fresh, loin, center loin (roasts), bone-in, separable lean and fat, cooked, roasted, Calories:231.0
+10017 Pork, fresh, leg (ham), shank half, separable lean and fat, cooked, roasted, Calories:232.0
+10087 Pork, fresh, shoulder, blade, boston (roasts), separable lean only, cooked, roasted, Calories:232.0
+10085 Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean only, cooked, braised, Calories:233.0
+10099 Pork, fresh, variety meats and by-products, chitterlings, cooked, simmered, Calories:233.0
+10053 Pork, fresh, loin, sirloin (chops), bone-in, separable lean and fat, cooked, braised, Calories:234.0
+10100 Pork, fresh, variety meats and by-products, ears, frozen, raw, Calories:234.0
+10919 Pork, cured, ham and water product, shank, bone-in, separable lean and fat, heated, roasted, Calories:234.0
+10075 Pork, fresh, shoulder, arm picnic, separable lean and fat, cooked, braised, Calories:235.0
+10227 Pork, fresh, composite of trimmed retail cuts (loin and shoulder blade), separable lean and fat, cooked, Calories:235.0
+10070 Pork, fresh, shoulder, whole, separable lean and fat, raw, Calories:236.0
+10173 Pork, fresh, variety meats and by-products, feet, cooked, simmered, Calories:238.0
+10179 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, pan-fried, Calories:238.0
+10188 Pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder, and spareribs), separable lean and fat, cooked, Calories:238.0
+10021 Pork, fresh, loin, whole, separable lean and fat, cooked, braised, Calories:239.0
+10022 Pork, fresh, loin, whole, separable lean and fat, cooked, broiled, Calories:242.0
+10037 Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, braised, Calories:242.0
+10907 Pork, cured, ham and water product, shank, bone-in, separable lean and fat, unheated, Calories:243.0
+10008 Pork, fresh, leg (ham), whole, separable lean and fat, raw, Calories:245.0
+10150 Pork, cured, ham, whole, separable lean and fat, unheated, Calories:246.0
+10208 Pork, fresh, loin, country-style ribs, separable lean only, cooked, braised, Calories:247.0
+10991 Pork, fresh, loin, country-style ribs, separable lean and fat, boneless, cooked, broiled, Calories:247.0
+10023 Pork, fresh, loin, whole, separable lean and fat, cooked, roasted, Calories:248.0
+10047 Pork, fresh, loin, center rib (roasts), bone-in, separable lean and fat, cooked, roasted, Calories:248.0
+10198 Pork, fresh, loin, center rib (roasts), boneless, separable lean and fat, cooked, roasted, Calories:252.0
+10031 Pork, fresh, loin, blade (roasts), bone-in, separable lean and fat, cooked, roasted, Calories:254.0
+10029 Pork, fresh, loin, blade (chops), bone-in, separable lean and fat, cooked, braised, Calories:255.0
+10195 Pork, fresh, loin, center rib (chops), boneless, separable lean and fat, cooked, braised, Calories:255.0
+10178 Pork, fresh, loin, blade (chops), bone-in, separable lean and fat, cooked, pan-fried, Calories:256.0
+10180 Pork, fresh, loin, center rib (chops), bone-in, separable lean and fat, cooked, pan-fried, Calories:256.0
+10082 Pork, fresh, shoulder, blade, boston (steaks), separable lean and fat, cooked, broiled, Calories:259.0
+10196 Pork, fresh, loin, center rib (chops), boneless, separable lean and fat, cooked, broiled, Calories:260.0
+10992 Pork, fresh, loin, country-style ribs, separable lean and fat, bone-in, cooked, broiled, Calories:260.0
+10045 Pork, fresh, loin, center rib (chops), bone-in, separable lean and fat, cooked, braised, Calories:261.0
+10219 Pork, fresh, ground, raw, Calories:263.0
+10954 Pork, fresh, enhanced, shoulder, (Boston butt), blade (steaks), separable lean and fat, cooked, braised, Calories:263.0
+10081 Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean and fat, cooked, braised, Calories:267.0
+10083 Pork, fresh, shoulder, blade, boston (roasts), separable lean and fat, cooked, roasted, Calories:269.0
+10170 Pork, cured, shoulder, blade roll, separable lean and fat, unheated, Calories:269.0
+10993 Pork, fresh, loin, country-style ribs, separable lean and fat, boneless, cooked, roasted, Calories:270.0
+10122 Pork, fresh, variety meats and by-products, tongue, cooked, braised, Calories:271.0
+10009 Pork, fresh, leg (ham), whole, separable lean and fat, cooked, roasted, Calories:273.0
+10197 Pork, fresh, loin, center rib (chops), boneless, separable lean and fat, cooked, pan-fried, Calories:273.0
+10205 Pork, fresh, loin, country-style ribs, separable lean and fat, cooked, braised, Calories:273.0
+10088 Pork, fresh, spareribs, separable lean and fat, raw, Calories:277.0
+10168 Pork, cured, shoulder, arm picnic, separable lean and fat, roasted, Calories:280.0
+10171 Pork, cured, shoulder, blade roll, separable lean and fat, roasted, Calories:287.0
+10975 Pork, ground, 84% lean / 16% fat, cooked, crumbles, Calories:289.0
+10071 Pork, fresh, shoulder, whole, separable lean and fat, cooked, roasted, Calories:292.0
+10193 Pork, fresh, backribs, separable lean and fat, cooked, roasted, Calories:292.0
+10220 Pork, fresh, ground, cooked, Calories:297.0
+10978 Pork, ground, 84% lean / 16% fat, cooked, pan-broiled, Calories:301.0
+10114 Pork, fresh, variety meats and by-products, mechanically separated, raw, Calories:304.0
+10146 Pork, cured, ham, patties, unheated, Calories:315.0
+10076 Pork, fresh, shoulder, arm picnic, separable lean and fat, cooked, roasted, Calories:317.0
+10206 Pork, fresh, loin, country-style ribs, separable lean and fat, bone-in, cooked, roasted, Calories:359.0
+10940 Pork, fresh, spareribs, separable lean and fat, cooked, roasted, Calories:361.0
+10001 Pork, fresh, carcass, separable lean and fat, raw, Calories:376.0
+10977 Pork, ground, 72% lean / 28% fat, cooked, pan-broiled, Calories:377.0
+10174 Pork, fresh, variety meats and by-products, tail, raw, Calories:378.0
+10128 Pork, cured, breakfast strips, raw or unheated, Calories:388.0
+10974 Pork, ground, 72% lean / 28% fat, cooked, crumbles, Calories:393.0
+10175 Pork, fresh, variety meats and by-products, tail, cooked, simmered, Calories:396.0
+10089 Pork, fresh, spareribs, separable lean and fat, cooked, braised, Calories:397.0
+10123 Pork, cured, bacon, unprepared, Calories:417.0
+10129 Pork, cured, breakfast strips, cooked, Calories:459.0
+10862 Pork, cured, bacon, pre-sliced, cooked, pan-fried, Calories:468.0
+10861 Pork, cured, bacon, cooked, microwaved, Calories:476.0
+10894 Pork, cured, ham, separable fat, boneless, heated, Calories:507.0
+10942 Pork, fresh, enhanced, composite of separable fat, raw, Calories:508.0
+10895 Pork, cured, ham, separable fat, boneless, unheated, Calories:515.0
+10005 Pork, fresh, belly, raw, Calories:518.0
+43378 Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium, Calories:541.0
+10860 Pork, cured, bacon, cooked, baked, Calories:548.0
+10166 Pork, cured, separable fat (from ham and arm picnic), unheated, Calories:579.0
+10000 Pork, fresh, enhanced, composite of separable fat, cooked, Calories:585.0
+10167 Pork, cured, separable fat (from ham and arm picnic), roasted, Calories:591.0
+43297 Pork, oriental style, dehydrated, Calories:615.0
+10007 Pork, fresh, separable fat, cooked, Calories:626.0
+10006 Pork, fresh, separable fat, raw, Calories:632.0
+10105 Pork, fresh, variety meats and by-products, jowl, raw, Calories:655.0
+10165 Pork, cured, salt pork, raw, Calories:748.0
+10004 Pork, fresh, backfat, raw, Calories:812.0
+10109 Pork, fresh, variety meats and by-products, leaf fat, raw, Calories:857.0
+10864 Pork, bacon, rendered fat, cooked, Calories:898.0

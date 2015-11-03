@@ -1,0 +1,136 @@
+require.config({
+    paths: {
+        'jquery': 'https://code.jquery.com/jquery-1.11.0.min',
+        'ractive': 'https://cdnjs.cloudflare.com/ajax/libs/ractive/0.7.2/ractive.min',
+        'spoke': 'spoke',
+    },
+});
+
+require(['jquery', 'ractiveUi', 'spoke', 'recognizerAccept', 'mic'], 
+    function($, ui, spoke, acceptOrReject, mic) {
+
+    console.log("Loaded requirements for main.js");
+
+    var isPreview = $('#isPreview').val();
+    console.log('isPreview?', $('#isPreview'), isPreview);
+
+    if (isPreview === 'true') {
+        console.log('isPreview:', isPreview);
+        console.log('In preview mode. Do not establish socket connection');
+        return;
+    } else {
+        console.log('isPreview:', isPreview, ' is not preview.');
+    }
+
+    var socket = spoke.sharedSocket.getSocket();
+    socket.on('connect', function () {
+        ui.component.set('connected', true);
+    });
+
+    socket.on('disconnect', function () {
+        ui.component.set('connected', false);
+    });
+
+    /* Add more listeners to the socket */
+
+    socket.on('error', function (err) {
+        console.log('Connection error:', err);
+        ui.component.set('connected', false);
+    });
+    socket.on('reconnect', function (num) {
+        console.log('Socket successfully reconnected, try number', num);
+        ui.component.set('connected', true);
+    });
+    socket.on('reconnecting', function (num) {
+        console.log('Trying to reconnect, try number', num);
+    });
+    socket.on('reconnect_error', function (err) {
+        console.log('Reconnect error:', err);
+        ui.component.set('connected', false);
+    });
+    socket.on('connect_timeout', function () {
+        console.log('Socket connection timed out. The timeout was', socket.io._timeout);
+        ui.component.set('connected', false);
+    });
+
+    /* 
+        Set up the recorder and recognizer on the record buttons 
+    */
+    var recorders = [];
+    var recordButtons = $('button.record-btn');
+    recordButtons.map(function (i, btn) {
+        btn = $(btn);
+        var expectedText = btn.data('text');
+        var index = btn.data('uttindex');
+        var uttId = btn.data('uttid');
+        /* 
+            Recorder setup
+        */
+        var recOptions = {
+            audioMetadata: {
+                fragment: uttId,
+                index: index,
+                text: expectedText,
+            },
+        };
+        var recorder = spoke.Recorder(btn, recOptions);
+        recorders[i] = recorder;
+
+        var onToggleData = {
+            index: index,
+        };
+        recorder.on('start.spoke.recorder', onToggleData, function (event) {
+            ui.component.set('recordingFragment', event.data.index);
+            ui.component.set('recording', true);
+        });
+
+        recorder.on('stop.spoke.recorder', onToggleData, function (event) {
+            var index = event.data.index;
+            ui.component.set('recordingFragment', -1);
+            ui.component.set('recording', false);
+            ui.data.recognizedState[index] = ui.RecognizedStateEnum.PENDING;
+            ui.component.set('recognizedState', ui.data.recognizedState);
+        });
+
+        var uttPath = $('#utt_' + index + '_path');
+        recorder.on('result.spoke.recorder', onToggleData, function (event, result) {
+            if (result.index === onToggleData.index) {
+                console.log('Recorder result:', result);
+                ui.data.savedState[result.index] = result.success;
+                ui.component.set('savedState', ui.data.savedState);
+                uttPath.val(result.path);
+            }
+        });
+
+        /* 
+            Recognizer setup 
+        */
+        var uttRecognitionInput = $('#utt_' + index + '_recognition');
+        var recognizer = spoke.recognizer.Recognizer(btn);
+
+        recognizer.on('start.spoke.recognizer', function (event) {
+            console.log('Spoke Recognizer start', event);
+        });
+
+        recognizer.on('stop.spoke.recognizer', function (event) {
+            console.log('Spoke Recognizer stop', event);
+        });
+
+        recognizer.on('finalResult.spoke.recognizer', function (event, result) {
+            console.log('Final result from speech recognition:', event, result);
+            uttRecognitionInput.val(result);
+            acceptOrReject(expectedText, result, index);
+        });
+
+
+    });
+
+    socket.on('audioStreamResult', function (result) {
+        console.log('Audio stream result for', result.index, ',', result.fragment,':', result.success);
+        ui.data.savedState[result.index] = result.success;
+        ui.component.set('savedState', ui.data.savedState);
+    });
+
+
+
+});

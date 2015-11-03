@@ -1,0 +1,26 @@
+01184 Yogurt, vanilla or lemon flavor, nonfat milk, sweetened with low-calorie sweetener, Calories:43.0
+01221 Yogurt, vanilla or lemon flavor, nonfat milk, sweetened with low-calorie sweetener, fortified with vitamin D, Calories:43.0
+01118 Yogurt, plain, skim milk, 13 grams protein per 8 ounce, Calories:56.0
+01256 Yogurt, Greek, plain, nonfat, Calories:59.0
+01116 Yogurt, plain, whole milk, 8 grams protein per 8 ounce, Calories:61.0
+01117 Yogurt, plain, low fat, 12 grams protein per 8 ounce, Calories:63.0
+01275 Yogurt, Greek, non fat, vanilla, CHOBANI, Calories:71.0
+01281 Yogurt, Greek, non fat, strawberry, CHOBANI, Calories:80.0
+01280 Yogurt, Greek, non fat, strawberry, DANNON OIKOS, Calories:84.0
+01119 Yogurt, vanilla, low fat, 11 grams protein per 8 ounce, Calories:85.0
+01220 Yogurt, vanilla, low fat, 11 grams protein per 8 ounce, fortified with vitamin D, Calories:85.0
+01278 Yogurt, Greek, non fat, vanilla, DANNON OIKOS, Calories:85.0
+01231 Yogurt, vanilla flavor, lowfat milk, sweetened with low calorie sweetener, Calories:86.0
+01218 Yogurt, fruit variety, nonfat, fortified with vitamin D, Calories:95.0
+43261 Yogurt, fruit variety, nonfat, Calories:95.0
+01120 Yogurt, fruit, low fat, 9 grams protein per 8 ounce, Calories:99.0
+01216 Yogurt, fruit, low fat, 9 grams protein per 8 ounce, fortified with vitamin D, Calories:99.0
+01121 Yogurt, fruit, low fat, 10 grams protein per 8 ounce, Calories:102.0
+01217 Yogurt, fruit, low fat, 10 grams protein per 8 ounce, fortified with vitamin D, Calories:102.0
+01235 Yogurt, frozen, flavors not chocolate, nonfat milk, with low-calorie sweetener, Calories:104.0
+01122 Yogurt, fruit, low fat, 11 grams protein per 8 ounce, Calories:105.0
+01203 Yogurt, fruit, lowfat, with low calorie sweetener, Calories:105.0
+01219 Yogurt, fruit, lowfat, with low calorie sweetener, fortified with vitamin D, Calories:105.0
+01276 Yogurt, Greek, strawberry, DANNON OIKOS, Calories:106.0
+01187 Yogurt, chocolate, nonfat milk, Calories:112.0
+01222 Yogurt, chocolate, nonfat milk, fortified with vitamin D, Calories:112.0

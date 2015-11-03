@@ -1,0 +1,53 @@
+<div class="panel panel-default utterance-panel"
+  data-uttId="[[uttId]]"
+  data-uttIndex="[[uttIndex]]">
+
+  <div class="panel-body">
+    <div class="row">
+
+      <div class="col-lg-2 col-md-3 col-sm-3 content-buttons-container glyph"> 
+        <button type="button" 
+          class="btn record-btn btn-lg content-buttons
+          {{#if isRecording([[uttIndex]])}} btn-danger {{else}} btn-primary {{/if}} 
+          {{#if and(recording, !isRecording( [[uttIndex]] )) }} disabled {{/if}}
+          {{#if and(anyPending, !isPending( [[uttIndex]] )) }} disabled {{/if}} " 
+          on-click="toggleRecord"
+          data-uttId="[[uttId]]"
+          data-uttIndex="[[uttIndex]]"
+          data-text="[[uttText]]"
+          >
+          {{#if isRecording([[uttIndex]])}}
+            <i class="fa fa-stop"></i> Stop
+          {{else}}
+            <i class="fa fa-dot-circle-o"></i> Record
+          {{/if}}
+        </button>
+
+      </div>
+
+      <div class="col-lg-2 col-md-2 col-sm-3 glyph">
+        <div
+            class="btn btn-lg disabled ok
+            {{ acceptedStateClass([[uttIndex]])}}"
+            >
+            {{#if isPending([[uttIndex]])}}
+              <i class="fa fa-spinner fa-spin"></i>
+            {{else}}
+              {{#if isAccepted([[uttIndex]])}}
+                <i class="fa fa-check"></i> {{ acceptedText([[uttIndex]])}}
+              {{else}}
+                <i class="fa fa-repeat"></i> Redo
+              {{/if}}
+            {{/if}}
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-7 col-sm-6 content-container">
+        <span class="big-text readable-fragment">
+          [[ this.uttText ]]
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>

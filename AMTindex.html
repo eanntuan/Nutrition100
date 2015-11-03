@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Text Entry</title>
+    <link rel="stylesheet" type="text/css" href="css/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="css/cssfonts-min.css">
+    <link rel="stylesheet" type="text/css" href="css/cssbase-min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+  	<script type='text/javascript' src='js/JavaScriptSpellCheck/include.js'></script>
+  	<!-- <script type='text/javascript' src="dist/js/jquery.spellchecker.min.js"></script> -->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+
+</head>
+
+<body>
+	 <form id="answerForm" method="POST" action="https://www.mturk.com/mturk/externalSubmit">
+      <div id="introDiv">
+        <div id="warning">
+          IMPORTANT: You must ACCEPT the HIT before you can submit the answers.
+        </div>
+        <div id="jsWarning">
+          IMPORTANT: Please turn on JavaScript.
+        </div>
+        <div id="instructionsDiv">
+          <h2>Instructions</h2>
+          <div id="innerInstructionDiv">
+            <p>Please record what you ate for breakfast today (or yesterday) using as much detail and
+accuracy as possible. Be creative - we will not accept repeat answers. Try to include as much additional information as
+you remember, such as brand names, preparation methods, portion sizes,
+etc. Please write the description in the way you'd imagine
+describing it orally.</p>
+                        <h3>Example</h3>
+                        <p>I had a boiled egg, a Thomas's english muffin, and an ounce of organic butter. I had a cup of coffee French roast doctored with an ounce or two of half-and-half and two teaspoons of brown sugar.</p>
+                        <h3>Requirements</h3>
+            <ul>
+              <li>Write in spoken English.</li>
+                        </ul>
+          </div>
+        </div>
+      </div>
+      <div id="questionsDiv">
+        <div class="dialog">
+          <p class="dialog-line car">
+            <span class="dialog-person">System:</span>
+            <span class="dialog-text">Hi! Please describe your meal:</span>
+          </p>
+          <p class="dialog-line you">
+            <span class="dialog-person">You:</span>
+            <span class="dialog-text"><textarea disabled type="text" class="required" name="response1"></textarea></span>
+          </p>
+        </div>
+      </div>
+      <div id="finalDiv">
+        <p>(Optional) Please let us know how we can make this HIT better.</p>
+        <p>
+          <textarea disabled id="feedback" name="feedback" rows="3" cols="50"></textarea>
+        </p>
+
+        <div class="spellchecker-suggestbox">
+
+        <div id="submitDiv" class="centerize">
+          <input type="hidden" id="assignmentId" name="assignmentId" value="">
+          <input type="hidden" id="dataIndex" name="dataIndex" value="">
+          <p>Please click "Check" before submitting so we can validate your response.</p>
+          <p id="incompleteWarning" class="centerize hidden red">Please fill in the box.</p>
+          <p id="similarWarning" class="centerize hidden red">Your answer is similar to others. Please try again.</p>
+          <p id="shortWarning" class="centerize hidden red">Your answer is too short.  Please elaborate.</p>
+          <p id="spellWarning" class="centerize hidden red">Please use real English words</p>
+          <p id="repeatWarning" class="centerize hidden red">Your answer has too many repeating words.  Please try again.</p>
+          <button type="button" class="bigButton" disabled id="checkButton">Check</button>
+          <button type="button" class="bigButton" disabled id="submitButton">Submit</button>          
+        </div>
+      </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,948 @@
+23445 Beef, New Zealand, imported, tripe uncooked, raw, Calories:77.0
+13341 Beef, variety meats and by-products, tripe, raw, Calories:85.0
+23423 Beef, New Zealand, imported, kidney, raw, Calories:87.0
+13328 Beef, variety meats and by-products, lungs, raw, Calories:92.0
+23640 Beef, variety meats and by-products, tripe, cooked, simmered, Calories:94.0
+13323 Beef, variety meats and by-products, kidneys, raw, Calories:99.0
+23444 Beef, New Zealand, imported, tripe uncooked, cooked, boiled, Calories:103.0
+13333 Beef, variety meats and by-products, spleen, raw, Calories:105.0
+23415 Beef, New Zealand, imported, heart, raw, Calories:105.0
+13353 Beef, cured, luncheon meat, jellied, Calories:111.0
+13321 Beef, variety meats and by-products, heart, raw, Calories:112.0
+23417 Beef, New Zealand, imported, hind shin, separable lean only, raw, Calories:114.0
+23477 Beef, ground, 97% lean meat / 3% fat, raw, Calories:115.0
+23356 Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:116.0
+23359 Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:116.0
+23362 Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:116.0
+23365 Beef, round, eye of round steak, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:116.0
+23409 Beef, New Zealand, imported, eye round, separable lean only, raw, Calories:116.0
+13000 Beef, grass-fed, strip steaks, lean only, raw, Calories:117.0
+23088 Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:117.0
+23427 Beef, New Zealand, imported, manufacturing beef, raw, Calories:119.0
+23635 Beef, round, eye of round, roast, separable lean only, trimmed to 1/8" fat, select, raw, Calories:119.0
+13329 Beef, variety meats and by-products, lungs, cooked, braised, Calories:120.0
+23326 Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:120.0
+23332 Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:120.0
+23335 Beef, round, eye of round steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:120.0
+13649 Beef, shoulder pot roast or steak, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:121.0
+23329 Beef, round, top round roast, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:121.0
+23354 Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:121.0
+23357 Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:121.0
+23360 Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:121.0
+23363 Beef, round, eye of round steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:121.0
+23124 Beef, chuck, mock tender steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:122.0
+23262 Beef, loin, top sirloin petite roast/filet, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:122.0
+23653 Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, select, raw, Calories:122.0
+13647 Beef, shoulder pot roast or steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:123.0
+23089 Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:123.0
+13597 Beef, brisket, flat half, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:124.0
+23032 Beef, round, knuckle, tip side, steak, separable lean and fat , trimmed to 0" fat, select, raw, Calories:124.0
+23094 Beef, chuck for stew, separable lean and fat, select, raw, Calories:124.0
+23324 Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:124.0
+23330 Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:124.0
+23333 Beef, round, eye of round steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:124.0
+23355 Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:124.0
+23358 Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:124.0
+23361 Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:124.0
+23364 Beef, round, eye of round steak, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:124.0
+23597 Beef, round, eye of round, roast, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:124.0
+23632 Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, select, raw, Calories:124.0
+13648 Beef, shoulder pot roast or steak, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:125.0
+23265 Beef, ribeye  petite roast/filet, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:125.0
+23327 Beef, round, top round roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:125.0
+23403 Beef, New Zealand, imported, brisket point end, separable lean only, raw, Calories:125.0
+23631 Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, select, raw, Calories:125.0
+23426 Beef, New Zealand, imported, manufacturing beef, cooked, boiled, Calories:126.0
+23651 Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, all grades, raw, Calories:126.0
+23087 Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:127.0
+23112 Beef, shoulder pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:127.0
+23315 Beef, Australian, grass-fed, loin, top sirloin cap-off steak/roast, boneless, separable lean and fat, raw, Calories:127.0
+23325 Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:127.0
+23331 Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:127.0
+23334 Beef, round, eye of round steak, boneless separable lean and fat, trimmed to 0" fat, choice, raw, Calories:127.0
+23584 Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, select, raw, Calories:127.0
+23596 Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:127.0
+13227 Beef, shank crosscuts, separable lean only, trimmed to 1/4" fat, choice, raw, Calories:128.0
+23093 Beef, chuck for stew, separable lean and fat, all grades, raw, Calories:128.0
+23122 Beef, chuck, mock tender steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:128.0
+23246 Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, select, raw, Calories:128.0
+23261 Beef, loin, top sirloin petite roast/filet, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:128.0
+23328 Beef, round, top round roast, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:128.0
+23418 Beef, New Zealand, imported, inside, raw, Calories:128.0
+23594 Beef, round, bottom round, roast, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:128.0
+23616 Beef, round, eye of round, roast, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:128.0
+23637 Beef, round, bottom round, roast, separable lean only, trimmed to 1/8" fat, select, raw, Calories:128.0
+23051 Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, select, raw, Calories:129.0
+23055 Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:129.0
+23309 Beef, Australian, grass-fed, round, top round cap-off steak/roast, boneless, separable lean only, raw, Calories:129.0
+23318 Beef, Australian, grass-fed, round, top round cap-off steak/roast, boneless, separable lean and fat, raw, Calories:129.0
+23398 Beef, New Zealand, imported, bolar blade, separable lean only, raw, Calories:129.0
+23457 Beef, New Zealand, imported, eye round, separable lean and fat, raw, Calories:129.0
+23513 Beef, chuck, clod roast, separable lean only, trimmed to 1/4" fat, all grades, raw, Calories:129.0
+23613 Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:129.0
+23636 Beef, round, top round, steak, separable lean only, trimmed to 1/8" fat, select, raw, Calories:129.0
+23650 Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, select, raw, Calories:129.0
+23000 Beef, shoulder pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:130.0
+23095 Beef, chuck for stew, separable lean and fat, choice, raw, Calories:130.0
+23308 Beef, Australian, grass-fed, round, bottom round steak/roast, boneless, separable lean only, raw, Calories:130.0
+23652 Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, choice, raw, Calories:130.0
+23123 Beef, chuck, mock tender steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:131.0
+23303 Beef, Australian, grass-fed, loin, top loin steak/roast, boneless, separable lean only, raw, Calories:131.0
+23404 Beef, New Zealand, imported, chuck eye roll, separable lean only, raw, Calories:131.0
+23557 Beef, ground, 95% lean meat / 5% fat, raw, Calories:131.0
+23611 Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:131.0
+13595 Beef, brisket, flat half, boneless separable lean only, trimmed to 0" fat, all grades, raw, Calories:132.0
+23240 Beef, loin, top sirloin petite roast/filet, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:132.0
+23603 Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:132.0
+13358 Beef, cured, smoked, chopped beef, Calories:133.0
+13523 Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:133.0
+13974 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, select, raw, Calories:133.0
+23030 Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:133.0
+23111 Beef, shoulder pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:133.0
+23263 Beef, ribeye  petite roast/filet, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:133.0
+23425 Beef, New Zealand, imported, liver, raw, Calories:133.0
+23585 Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8" fat, select, raw, Calories:133.0
+23244 Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:134.0
+23582 Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 1/8" fat, select, raw, Calories:134.0
+13325 Beef, variety meats and by-products, liver, raw, Calories:135.0
+23255 Beef, top loin petite roast/filet, boneless, separable lean only, trimmed to 1/8" fat, select, raw, Calories:135.0
+23368 Beef, loin, tenderloin roast, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:135.0
+23371 Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, select, raw, Calories:135.0
+23374 Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:135.0
+23384 Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, select, raw, Calories:135.0
+23609 Beef, round, top round, steak, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:135.0
+23625 Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:135.0
+13596 Beef, brisket, flat half, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:137.0
+13903 Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:137.0
+13972 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, all grades, raw, Calories:137.0
+23047 Beef, round, knuckle, tip center, steak, separable lean and fat, trimmed to 0" fat, select, raw, Calories:137.0
+23073 Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:137.0
+23479 Beef, ground, 97% lean meat /3% fat, patty, cooked, pan-broiled, Calories:137.0
+23657 Beef, flank, steak, separable lean only, trimmed to 0" fat, select, raw, Calories:137.0
+23245 Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:138.0
+23264 Beef, ribeye  petite roast/filet, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:138.0
+23294 Beef, Australian, grass-fed, loin, tenderloin steak/roast, boneless, separable lean only, raw, Calories:138.0
+23607 Beef, short loin, top loin steak, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:138.0
+13519 Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:139.0
+13973 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, choice, raw, Calories:139.0
+23366 Beef, loin, tenderloin roast, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:139.0
+23372 Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:139.0
+23612 Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:139.0
+13293 Beef, chuck, under blade pot roast or steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:140.0
+23039 Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, select, raw, Calories:140.0
+23317 Beef, Australian, grass-fed, round, bottom round steak/roast, boneless, separable lean and fat, raw, Calories:140.0
+23441 Beef, New Zealand, imported, tenderloin, separable lean only, raw, Calories:140.0
+23617 Beef, round, top round, steak, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:140.0
+23618 Beef, round, bottom round, roast, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:140.0
+23057 Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:141.0
+23466 Beef, New Zealand, imported, rump centre, separable lean only, raw, Calories:141.0
+23599 Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:141.0
+23656 Beef, flank, steak, separable lean only, trimmed to 0" fat, all grades, raw, Calories:141.0
+23036 Beef, chuck, shoulder clod, shoulder tender, medallion, separable lean and fat, trimmed to 0" fat, select, raw, Calories:142.0
+23063 Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:142.0
+23179 Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, select, raw, Calories:142.0
+23344 Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:142.0
+23411 Beef, New Zealand, imported, flank, separable lean only, raw, Calories:142.0
+23646 Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, all grades, raw, Calories:142.0
+13318 Beef, variety meats and by-products, brain, raw, Calories:143.0
+13520 Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:143.0
+23037 Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:143.0
+23061 Beef, round, knuckle, tip center, steak, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:143.0
+23079 Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:143.0
+23253 Beef, top loin petite roast/filet, boneless, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:143.0
+23367 Beef, loin, tenderloin roast, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:143.0
+23369 Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, raw, Calories:143.0
+23373 Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:143.0
+23386 Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:143.0
+13482 Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, select, raw, Calories:144.0
+23053 Beef, chuck, shoulder clod, shoulder tender, medallion, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:144.0
+23338 Beef, loin, tenderloin roast, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:144.0
+13294 Beef, chuck, under blade pot roast or steak, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:145.0
+13334 Beef, variety meats and by-products, spleen, cooked, braised, Calories:145.0
+13468 Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8" fat, select, raw, Calories:145.0
+13488 Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, select, raw, Calories:145.0
+13971 Beef, flank, steak, separable lean and fat, trimmed to 0" fat, select, raw, Calories:145.0
+23034 Beef, chuck, shoulder clod, shoulder tender, medallion, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:145.0
+23467 Beef, New Zealand, imported, rump centre, separable lean and fat, raw, Calories:145.0
+13863 Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:146.0
+23074 Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:146.0
+23431 Beef, New Zealand, imported, ribs prepared, raw, Calories:146.0
+23471 Beef, New Zealand, imported, tenderloin, separable lean and fat, raw, Calories:146.0
+23472 Beef, ground, 93% lean meat / 7% fat, raw, Calories:146.0
+23478 Beef, ground, 97% lean meat / 3% fat, patty, cooked, broiled, Calories:146.0
+13355 Beef, cured, pastrami, Calories:147.0
+23342 Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:147.0
+23463 Beef, New Zealand, imported, hind shin, separable lean and fat, raw, Calories:147.0
+23480 Beef, ground, 97% lean meat / 3% fat, loaf, cooked, baked, Calories:147.0
+23155 Beef, rib eye steak/roast, boneless, lip-on, separable lean only, trimmed to 1/8" fat, select, raw, Calories:148.0
+23583 Beef, tenderloin, steak, separable lean only, trimmed to 1/8" fat, select, raw, Calories:148.0
+23623 Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 1/8" fat, choice, raw, Calories:148.0
+13068 Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, raw, Calories:149.0
+13284 Beef, rib eye, small end (ribs 10-12), separable lean only, trimmed to 0" fat, select, raw, Calories:149.0
+13426 Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, select, cooked, roasted, Calories:149.0
+23254 Beef, top loin petite roast/filet, boneless, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:149.0
+23336 Beef, loin, tenderloin roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:149.0
+23370 Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, raw, Calories:149.0
+23383 Beef, round, eye of round steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:149.0
+23385 Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:149.0
+23045 Beef, round, knuckle, tip center, steak, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:150.0
+23049 Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:150.0
+23343 Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:150.0
+23380 Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, select, cooked, roasted, Calories:150.0
+23424 Beef, New Zealand, imported, liver, cooked, boiled, Calories:150.0
+23434 Beef, New Zealand, imported, striploin, separable lean only, raw, Calories:150.0
+13320 Beef, variety meats and by-products, brain, cooked, simmered, Calories:151.0
+13486 Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:151.0
+23302 Beef, Australian, grass-fed, loin, tenderloin steak/roast, boneless, separable lean and fat, raw, Calories:151.0
+23341 Beef, loin, top loin steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, select, raw, Calories:151.0
+13889 Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:152.0
+23072 Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:152.0
+13350 Beef, cured, dried, Calories:153.0
+13478 Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:153.0
+23080 Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:153.0
+23167 Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, select, raw, Calories:153.0
+23337 Beef, loin, tenderloin roast, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:153.0
+23601 Beef, tenderloin, steak, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:153.0
+23175 Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, raw, Calories:154.0
+23353 Beef, round, eye of round steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:154.0
+23413 Beef, New Zealand, imported, flat, separable lean only, raw, Calories:154.0
+23648 Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, choice, raw, Calories:154.0
+13023 Beef, brisket, whole, separable lean only, all grades, raw, Calories:155.0
+13464 Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:155.0
+13970 Beef, flank, steak, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:155.0
+23152 Beef, rib eye steak/roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, select, raw, Calories:155.0
+23381 Beef, round, eye of round steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:155.0
+23429 Beef, New Zealand, imported, oyster blade, separable lean only, raw, Calories:155.0
+23627 Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:155.0
+13487 Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:156.0
+23153 Beef, rib eye steak/roast, boneless, lip-on, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:156.0
+13420 Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, select, cooked, roasted, Calories:157.0
+13499 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, select, raw, Calories:157.0
+13958 Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, select, raw, Calories:157.0
+13963 Beef, chuck, mock tender steak, separable lean only, trimmed to 0" fat, select, cooked, broiled, Calories:157.0
+23350 Beef, round, top round roast, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, roasted, Calories:157.0
+23421 Beef, New Zealand, imported, kidney, cooked, boiled, Calories:157.0
+13324 Beef, variety meats and by-products, kidneys, cooked, simmered, Calories:158.0
+13493 Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:158.0
+13983 Beef, brisket, flat half, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:158.0
+23379 Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:158.0
+23382 Beef, round, eye of round steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:158.0
+23624 Beef, tenderloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:158.0
+13881 Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:159.0
+23351 Beef, round, eye of round steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:159.0
+23447 Beef, New Zealand, imported, bolar blade, separable lean and fat, raw, Calories:159.0
+23509 Beef, chuck, mock tender steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled, Calories:159.0
+23521 Beef, chuck, mock tender steak, separable lean and fat, trimmed to 0" fat, USDA select, cooked, broiled, Calories:159.0
+13235 Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:160.0
+23033 Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:160.0
+23078 Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:160.0
+23307 Beef, Australian, grass-fed, rib, ribeye steak/roast lip-on, boneless, separable lean only, raw, Calories:160.0
+23348 Beef, round, top round roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted, Calories:160.0
+23547 Beef, chuck, mock tender steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:160.0
+13097 Beef, rib, eye, small end (ribs 10-12), separable lean only, trimmed to 0" fat, choice, raw, Calories:161.0
+13231 Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:161.0
+13961 Beef, chuck, mock tender steak, separable lean only, trimmed to 0" fat, choice, cooked, broiled, Calories:161.0
+23067 Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:161.0
+23154 Beef, rib eye steak/roast, boneless, lip-on, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:161.0
+23407 Beef, New Zealand, imported, cube roll, separable lean only, raw, Calories:161.0
+23459 Beef, New Zealand, imported, flank, separable lean and fat, raw, Calories:161.0
+23519 Beef, chuck, mock tender steak, separable lean and fat, trimmed to 0" fat, USDA choice, cooked, broiled, Calories:161.0
+13417 Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, roasted, Calories:162.0
+13491 Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:162.0
+13969 Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:162.0
+23048 Beef, round, knuckle, tip center, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:162.0
+23177 Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, raw, Calories:162.0
+23378 Beef, round, top round roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:162.0
+13418 Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:163.0
+23339 Beef, loin, top loin steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:163.0
+23349 Beef, round, top round roast, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted, Calories:163.0
+23352 Beef, round, eye of round steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:163.0
+23451 Beef, New Zealand, imported, brisket point end, separable lean and fat, raw, Calories:163.0
+23591 Beef, round, eye of round, roast, separable lean only, trimmed to 1/8" fat, select, cooked, roasted, Calories:163.0
+23604 Beef, round, bottom round, roast, separable lean only, trimmed to 1/8" fat, all grades, cooked, Calories:163.0
+13898 Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:164.0
+22908 Beef, corned beef hash, with potato, canned, Calories:164.0
+23163 Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, all grades, raw, Calories:164.0
+23277 Beef, ribeye petite roast, boneless, separable lean only, trimmed to 0" fat, select, cooked, roasted, Calories:164.0
+23408 Beef, New Zealand, imported, eye round, separable lean only, cooked, slow roasted, Calories:164.0
+23559 Beef, ground, 95% lean meat / 5% fat, patty, cooked, pan-broiled, Calories:164.0
+23590 Beef, round, bottom round , roast, separable lean only, trimmed to 1/8" fat, select, cooked, roasted, Calories:164.0
+13065 Beef, flank, steak, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:165.0
+13322 Beef, variety meats and by-products, heart, cooked, simmered, Calories:165.0
+13904 Beef, brisket, flat half, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:165.0
+13954 Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:165.0
+23258 Beef, loin, top sirloin filet, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:165.0
+23260 Beef, loin, top sirloin petite roast, boneless, separable lean only, trimmed to 0" fat, select, cooked, roasted, Calories:165.0
+13419 Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:166.0
+13492 Beef, round, top round steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:166.0
+13877 Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:166.0
+13891 Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:166.0
+23043 Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, select, raw, Calories:166.0
+23052 Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:166.0
+23150 Beef, rib eye steak/roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, all grades, raw, Calories:166.0
+13415 Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted, Calories:167.0
+13959 Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:167.0
+23416 Beef, New Zealand, imported, hind shin, separable lean only, cooked, braised, Calories:167.0
+23481 Beef, ground, 97% lean meat / 3% fat, crumbles, cooked, pan-browned, Calories:167.0
+13894 Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:168.0
+23056 Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:168.0
+23456 Beef, New Zealand, imported, eye round, separable lean and fat, cooked, slow roasted, Calories:168.0
+13414 Beef, round, bottom round roast, separable lean only, trimmed to 0" fat, select, cooked, roasted, Calories:169.0
+13946 Beef, shoulder steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:169.0
+13975 Beef, brisket, flat half, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:169.0
+23068 Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:169.0
+23271 Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0" fat, select, raw, Calories:169.0
+23377 Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0" fat, select, cooked, roasted, Calories:169.0
+23598 Beef, round, eye of round, roast, separable lean only, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:169.0
+13356 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, all grades, raw, Calories:170.0
+13968 Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:170.0
+23243 Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, select, cooked, grilled, Calories:170.0
+23259 Beef, loin, top sirloin petite roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:170.0
+23292 Beef, top loin petite roast/filet, boneless, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:170.0
+23588 Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, select, cooked, broiled, Calories:170.0
+13416 Beef, round, eye of round roast, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted, Calories:171.0
+13937 Beef, chuck, clod roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:171.0
+23165 Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, choice, raw, Calories:171.0
+23256 Beef, loin, top sirloin filet, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:171.0
+23340 Beef, loin, top loin steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:171.0
+13158 Beef, round, full cut, separable lean only, trimmed to 1/4" fat, select, cooked, broiled, Calories:172.0
+13823 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, select, cooked, roasted, Calories:172.0
+13940 Beef, chuck, clod roast, separable lean only, trimmed to 0" fat, select, cooked, roasted, Calories:172.0
+23065 Beef, chuck, shoulder clod, shoulder tender, medallion, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:172.0
+23110 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, select, raw, Calories:172.0
+23514 Beef, chuck, clod roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:172.0
+13149 Beef, rib, shortribs, separable lean only, choice, raw, Calories:173.0
+13791 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean and fat, trimmed to 0" fat, select, raw, Calories:173.0
+13879 Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:173.0
+13901 Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, prime, raw, Calories:173.0
+23151 Beef, rib eye steak/roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, choice, raw, Calories:173.0
+23239 Beef, loin, top sirloin petite roast, boneless, separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:173.0
+23515 Beef, chuck, clod roast, separable lean only, trimmed to 1/4" fat, all grades, cooked, roasted, Calories:173.0
+13424 Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:174.0
+13956 Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:174.0
+23031 Beef, round, knuckle, tip side, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:174.0
+23219 Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, select, raw, Calories:174.0
+23257 Beef, loin, top sirloin filet, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:174.0
+23347 Beef, loin, tenderloin roast, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, roasted, Calories:174.0
+23558 Beef, ground, 95% lean meat / 5% fat, patty, cooked, broiled, Calories:174.0
+23561 Beef, ground, 95% lean meat / 5% fat, loaf, cooked, baked, Calories:174.0
+13327 Beef, variety meats and by-products, liver, cooked, pan-fried, Calories:175.0
+13405 Beef, round, bottom round, roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted, Calories:175.0
+23066 Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:175.0
+23474 Beef, ground, 93% lean meat /7% fat, patty, cooked, pan-broiled, Calories:175.0
+23516 Beef, shoulder steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:175.0
+23620 Beef, round, eye of round, roast, separable lean only, trimmed to 1/8" fat, choice, cooked, roasted, Calories:175.0
+13360 Beef, cured, thin-sliced beef, Calories:176.0
+13425 Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:176.0
+23040 Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:176.0
+23059 Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:176.0
+23562 Beef, ground, 90% lean meat / 10% fat, raw, Calories:176.0
+13408 Beef, round, bottom round, roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:177.0
+13456 Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, select, cooked, broiled, Calories:177.0
+13484 Beef, short loin, t-bone steak, separable lean only, trimmed to 0" fat, select, cooked, broiled, Calories:177.0
+23054 Beef, chuck, shoulder clod, shoulder tender, medallion, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:177.0
+23062 Beef, round, knuckle, tip center, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:177.0
+23375 Beef, loin, tenderloin roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:177.0
+23461 Beef, New Zealand, imported, flat, separable lean and fat, raw, Calories:177.0
+23536 Beef, shoulder steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:177.0
+23589 Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8" fat, select, cooked, grilled, Calories:177.0
+23592 Beef, round, top round, steak, separable lean only, trimmed to 1/8" fat, select, cooked, broiled, Calories:177.0
+13359 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, choice, raw, Calories:178.0
+13887 Beef, round, tip round, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:178.0
+13943 Beef, shoulder steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:178.0
+23275 Beef, ribeye petite roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:178.0
+23422 Beef, New Zealand, imported, knuckle, cooked, fast fried, Calories:178.0
+23440 Beef, New Zealand, imported, oyster blade, separable lean and fat, raw, Calories:178.0
+23610 Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:178.0
+23655 Beef, flank, steak, separable lean only, trimmed to 0" fat, select, cooked, broiled, Calories:178.0
+23252 Beef, top loin petite roast, boneless, separable lean only, trimmed to 1/8" fat, select, cooked, roasted, Calories:179.0
+23283 Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:179.0
+23414 Beef, New Zealand, imported, heart, cooked, boiled, Calories:179.0
+23619 Beef, round, bottom round, roast, separable lean only, trimmed to 1/8" fat, choice, cooked, roasted, Calories:179.0
+23649 Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, select, cooked, roasted, Calories:179.0
+13786 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:180.0
+23269 Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0" fat, all grades, raw, Calories:180.0
+13423 Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted, Calories:181.0
+23035 Beef, chuck, shoulder clod, shoulder tender, medallion, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:181.0
+23085 Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:181.0
+23241 Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:181.0
+23453 Beef, New Zealand, imported, chuck eye roll, separable lean and fat, raw, Calories:181.0
+13490 Beef, rib, eye, small end (ribs 10- 12) separable lean only, trimmed to 0" fat, select, cooked, broiled, Calories:182.0
+13985 Beef, loin, bottom sirloin butt, tri-tip roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:182.0
+23041 Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:182.0
+23058 Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:182.0
+23064 Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:182.0
+23108 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:182.0
+23554 Beef, shoulder steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:182.0
+13454 Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled, Calories:183.0
+13821 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:183.0
+13949 Beef, flank, steak, separable lean and fat, trimmed to 0" fat, select, cooked, broiled, Calories:183.0
+23345 Beef, loin, tenderloin roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted, Calories:183.0
+23376 Beef, loin, tenderloin roast, boneless, separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:183.0
+13866 Beef, round, full cut, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:184.0
+13967 Beef, chuck, top blade, separable lean only, trimmed to 0" fat, select, cooked, broiled, Calories:184.0
+23038 Beef, chuck, shoulder clod, shoulder top and center steaks, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:184.0
+23249 Beef, top loin filet, boneless, separable lean only, trimmed to 1/8" fat, select, cooked, grilled, Calories:184.0
+23393 Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, select, cooked, grilled, Calories:184.0
+23475 Beef, ground, 93% lean meat / 7% fat, loaf, cooked, baked, Calories:184.0
+13411 Beef, round, bottom round, roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:185.0
+13788 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:185.0
+23473 Beef, ground, 93% lean meat / 7% fat, patty, cooked, broiled, Calories:185.0
+23608 Beef, round, top round, steak, separable lean only, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:185.0
+23091 Beef, chuck for stew, separable lean and fat, select, cooked, braised, Calories:186.0
+23274 Beef, ribeye filet, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:186.0
+23533 Beef, shoulder steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:186.0
+23654 Beef, flank, steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled, Calories:186.0
+13399 Beef, round, bottom round, roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted, Calories:187.0
+13502 Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:187.0
+13874 Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:187.0
+23104 Beef, chuck, under blade pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:187.0
+23217 Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:187.0
+23270 Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0" fat, choice, raw, Calories:187.0
+23290 Beef, top loin petite roast/filet, boneless, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:187.0
+23629 Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled, Calories:187.0
+13421 Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted, Calories:188.0
+13455 Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, choice, cooked, broiled, Calories:188.0
+23046 Beef, round, knuckle, tip center, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:188.0
+23276 Beef, ribeye petite roast, boneless, separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:188.0
+23346 Beef, loin, tenderloin roast, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted, Calories:188.0
+23432 Beef, New Zealand, imported, rump centre, separable lean only, cooked, fast fried, Calories:188.0
+23586 Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 1/8" fat, select, cooked, broiled, Calories:188.0
+13450 Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:189.0
+13883 Beef, round, tip round, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:189.0
+13934 Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:189.0
+23109 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:189.0
+23242 Beef, loin, top sirloin cap steak, boneless, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled, Calories:189.0
+23517 Beef, chuck, clod steak, separable lean only, trimmed to 1/4" fat, all grades, cooked, braised, Calories:189.0
+23606 Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:189.0
+23634 Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, select, cooked, braised, Calories:189.0
+13438 Beef, round, top round, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:190.0
+13822 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:190.0
+23082 Beef, shoulder pot roast, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:190.0
+23086 Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:190.0
+13156 Beef, round, full cut, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled, Calories:191.0
+13326 Beef, variety meats and by-products, liver, cooked, braised, Calories:191.0
+23050 Beef, round, outside round, bottom round, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:191.0
+23090 Beef, chuck for stew, separable lean and fat, all grades, cooked, braised, Calories:191.0
+23178 Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:191.0
+23281 Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:191.0
+23295 Beef, Australian, Wagyu, loin, tenderloin steak/roast, boneless, separable lean only, Aust. marble score 4/5, raw, Calories:191.0
+23387 Beef, loin, top loin steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:191.0
+13047 Beef, grass-fed, ground, raw, Calories:192.0
+13868 Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:192.0
+13948 Beef, flank, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:192.0
+23149 Beef, rib eye steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, select, cooked, grilled, Calories:192.0
+23465 Beef, New Zealand, imported, rump centre, separable lean and fat, cooked, fast fried, Calories:192.0
+13394 Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 0" fat, all grades, cooked, broiled, Calories:193.0
+23397 Beef, New Zealand, imported, bolar blade, separable lean only, cooked, fast roasted, Calories:193.0
+23560 Beef, ground, 95% lean meat / 5% fat, crumbles, cooked, pan-browned, Calories:193.0
+23621 Beef, round, top round, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled, Calories:193.0
+23647 Beef, bottom sirloin, tri-tip roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:193.0
+13070 Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, cooked, broiled, Calories:194.0
+13470 Beef, short loin, porterhouse steak, separable lean only, trimmed to 0" fat, select, cooked, broiled, Calories:194.0
+13862 Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:194.0
+23092 Beef, chuck for stew, separable lean and fat, choice, cooked, braised, Calories:194.0
+23401 Beef, New Zealand, imported, brisket naval end, separable lean only, raw, Calories:194.0
+23410 Beef, New Zealand, imported, flank, separable lean only, cooked, braised, Calories:194.0
+23587 Beef, tenderloin, steak, separable lean only, trimmed to 1/8" fat, select, cooked, broiled, Calories:194.0
+13378 Beef, chuck, arm pot roast, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:195.0
+13864 Beef, round, full cut, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:195.0
+23218 Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:195.0
+23247 Beef, top loin filet, boneless, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:195.0
+23250 Beef, top loin petite roast, boneless, separable lean only, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:195.0
+23638 Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:195.0
+13319 Beef, variety meats and by-products, brain, cooked, pan-fried, Calories:196.0
+13422 Beef, round, tip round, roast, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted, Calories:196.0
+13500 Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:196.0
+23083 Beef, shoulder pot roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:196.0
+23102 Beef, chuck, under blade pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:196.0
+23139 Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:196.0
+23428 Beef, New Zealand, imported, oyster blade, separable lean only, cooked, braised, Calories:196.0
+23462 Beef, New Zealand, imported, hind shin, separable lean and fat, cooked, braised, Calories:196.0
+23531 Beef, chuck, clod roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted, Calories:196.0
+23595 Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, all grades, cooked, braised, Calories:196.0
+23084 Beef, chuck, mock tender steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:197.0
+23430 Beef, New Zealand, imported, ribs prepared, cooked, fast roasted, Calories:197.0
+23464 Beef, New Zealand, imported, oyster blade, separable lean and fat, cooked, braised, Calories:197.0
+13346 Beef, cured, corned beef, brisket, raw, Calories:198.0
+13396 Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 0" fat, select, cooked, broiled, Calories:198.0
+13442 Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:198.0
+13444 Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:198.0
+13481 Beef, short loin, t-bone steak, separable lean only, trimmed to 0" fat, choice, cooked, broiled, Calories:198.0
+13485 Beef, brisket, flat half, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:198.0
+13871 Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:198.0
+23173 Beef, plate steak, boneless, outside skirt, separable lean only, trimmed to 0" fat, select, raw, Calories:198.0
+23394 Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:198.0
+13402 Beef, round, bottom round, roast, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted, Calories:199.0
+13885 Beef, round, tip round, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:199.0
+23076 Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:199.0
+23272 Beef, ribeye filet, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:199.0
+23282 Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:199.0
+23291 Beef, top loin petite roast/filet, boneless, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:199.0
+23305 Beef, Australian, grass-fed, loin, top loin steak/roast, boneless, separable lean and fat, raw, Calories:199.0
+23388 Beef, loin, top loin steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:199.0
+13432 Beef, round, top round, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:200.0
+23081 Beef, shoulder pot roast, boneless, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:200.0
+23133 Beef, shoulder pot roast, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:200.0
+23439 Beef, New Zealand, imported, tenderloin, separable lean only, cooked, fast fried, Calories:200.0
+23525 Beef, chuck, top blade, separable lean and fat, trimmed to 0" fat, select, cooked, broiled, Calories:200.0
+23600 Beef, tenderloin, steak, separable lean only, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:200.0
+13228 Beef, shank crosscuts, separable lean only, trimmed to 1/4" fat, choice, cooked, simmered, Calories:201.0
+13366 Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, select, cooked, Calories:201.0
+13900 Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled, Calories:201.0
+13929 Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:201.0
+13957 Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted, Calories:201.0
+23476 Beef, ground, 93% lean meat / 7% fat, crumbles, cooked, pan-browned, Calories:201.0
+23630 Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled, Calories:201.0
+13067 Beef, flank, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, broiled, Calories:202.0
+13441 Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:202.0
+13448 Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:202.0
+13501 Beef, shoulder top blade steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:202.0
+23103 Beef, chuck, under blade pot roast or steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:202.0
+23161 Beef, rib eye roast, boneless, lip-on, separable lean only, trimmed to 1/8" fat, select, cooked, roasted, Calories:202.0
+23402 Beef, New Zealand, imported, brisket point end, separable lean only, cooked, braised, Calories:202.0
+23470 Beef, New Zealand, imported, tenderloin, separable lean and fat, cooked, fast fried, Calories:202.0
+23626 Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 1/8"fat, choice, cooked, broiled, Calories:202.0
+13469 Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8" fat, select, cooked, grilled, Calories:203.0
+23248 Beef, top loin filet, boneless, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled, Calories:203.0
+23511 Beef, chuck, top blade, separable lean only, trimmed to 0" fat, all grades, cooked, broiled, Calories:203.0
+23615 Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, choice, cooked, braised, Calories:203.0
+13882 Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted, Calories:204.0
+13893 Beef, round, top round steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:204.0
+23131 Beef, shoulder pot roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:204.0
+23564 Beef, ground, 90% lean meat / 10% fat, patty, cooked, pan-broiled, Calories:204.0
+13098 Beef, rib, eye, small end (ribs 10-12), separable lean only, trimmed to 0" fat, choice, cooked, broiled, Calories:205.0
+13370 Beef, brisket, flat half, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:205.0
+13950 Beef, brisket, flat half, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:205.0
+13977 Beef, plate, inside skirt steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled, Calories:205.0
+23137 Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:205.0
+23395 Beef, loin, top loin steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:205.0
+23593 Beef, round, bottom round, steak, separable lean only, trimmed to 1/8" fat, select, cooked, braised, Calories:205.0
+23633 Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, select, cooked, braised, Calories:205.0
+13413 Beef, round, bottom round, steak, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:206.0
+13453 Beef, top sirloin, steak, separable lean and fat, trimmed to 0" fat, select, cooked, broiled, Calories:206.0
+13483 Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, select, cooked, grilled, Calories:206.0
+23169 Beef, plate steak, boneless, outside skirt, separable lean only, trimmed to 0" fat, all grades, raw, Calories:206.0
+23174 Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:206.0
+23251 Beef, top loin petite roast, boneless, separable lean only, trimmed to 1/8" fat, choice, cooked, roasted, Calories:206.0
+23304 Beef, Australian, Wagyu, loin, tenderloin steak/roast, boneless, separable lean and fat, Aust. marble score 4/5, raw, Calories:206.0
+23628 Beef, tenderloin, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled, Calories:206.0
+13436 Beef, round, top round, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:207.0
+13447 Beef, loin, top loin steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:207.0
+23100 Beef, rib eye steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:207.0
+23132 Beef, shoulder pot roast, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:207.0
+23552 Beef, chuck, clod roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted, Calories:207.0
+13878 Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:208.0
+23003 Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:208.0
+23232 Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, select, raw, Calories:208.0
+23273 Beef, ribeye filet, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:208.0
+23392 Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled, Calories:208.0
+23405 Beef, New Zealand, imported, chuck eye roll, separable lean only, cooked, braised, Calories:208.0
+23458 Beef, New Zealand, imported, flank, separable lean and fat, cooked, braised, Calories:208.0
+13354 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:209.0
+13428 Beef, round, top round, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:209.0
+23077 Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:209.0
+13598 Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:210.0
+13888 Beef, round, tip round, roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted, Calories:210.0
+23138 Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:210.0
+23158 Beef, rib eye steak, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, select, cooked, grilled, Calories:210.0
+13364 Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, all grades, cooked, Calories:211.0
+13439 Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:211.0
+13443 Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:211.0
+13449 Beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:211.0
+23121 Beef, chuck, mock tender steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:211.0
+13343 Beef, brisket, flat half, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:212.0
+13377 Beef, chuck, arm pot roast, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:212.0
+13451 Beef, top sirloin, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:212.0
+13466 Beef, short loin, porterhouse steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled, Calories:212.0
+13479 Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:212.0
+13876 Beef, round, bottom round, roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted, Calories:212.0
+13880 Beef, round, eye of round, roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:212.0
+23044 Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:212.0
+23171 Beef, plate steak, boneless, outside skirt, separable lean only, trimmed to 0" fat, choice, raw, Calories:212.0
+13369 Beef, brisket, flat half, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:213.0
+13465 Beef, short loin, porterhouse steak, separable lean only,  trimmed to 1/8" fat, all grades, cooked, grilled, Calories:213.0
+23289 Beef, top loin petite roast, boneless, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted, Calories:213.0
+13407 Beef, round, bottom round, steak, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:214.0
+13931 Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:214.0
+23001 Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:214.0
+23566 Beef, ground, 90% lean meat / 10% fat, loaf, cooked, baked, Calories:214.0
+23602 Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, all grades, cooked, braised, Calories:214.0
+23007 Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:215.0
+23075 Beef, chuck eye steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:215.0
+23097 Beef, chuck, under blade steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:215.0
+23107 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:215.0
+23176 Beef, rib eye steak, boneless, lip off, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:215.0
+23567 Beef, ground, 85% lean meat / 15% fat, raw, Calories:215.0
+13285 Beef, chuck, under blade pot roast, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:216.0
+13384 Beef, chuck, under blade pot roast, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:216.0
+13430 Beef, round, top round, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:216.0
+23528 Beef, chuck, clod roast, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted, Calories:216.0
+23549 Beef, chuck, top blade, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:216.0
+23605 Beef, round, bottom round, steak, separable lean only, trimmed to 1/8" fat, all grades, cooked, braised, Calories:216.0
+13236 Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled, Calories:217.0
+13404 Beef, round, bottom round, steak, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:217.0
+13440 Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:217.0
+13965 Beef, chuck, top blade, separable lean only, trimmed to 0" fat, choice, cooked, broiled, Calories:217.0
+23148 Beef, rib eye steak, boneless, lip-on, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled, Calories:217.0
+23316 Beef, Australian, grass-fed, rib, ribeye steak/roast lip-on, boneless, separable lean and fat, raw, Calories:217.0
+23433 Beef, New Zealand, imported, striploin, separable lean only, cooked, fast fried, Calories:217.0
+23563 Beef, ground, 90% lean meat / 10% fat, patty, cooked, broiled, Calories:217.0
+13368 Beef, brisket, whole, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:218.0
+13867 Beef, round, full cut, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled, Calories:218.0
+13870 Beef, round, bottom round, roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:218.0
+13905 Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:218.0
+23159 Beef, rib eye roast, boneless, lip-on, separable lean only, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:218.0
+13365 Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0" fat, choice, cooked, Calories:219.0
+13452 Beef, top sirloin, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, broiled, Calories:219.0
+13884 Beef, round, tip round, roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:219.0
+23098 Beef, chuck, under blade steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:219.0
+23147 Beef, rib eye roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, select, cooked, roasted, Calories:219.0
+23286 Beef, top loin filet, boneless, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled, Calories:219.0
+13351 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:220.0
+13390 Beef, rib, large end (ribs 6-9), separable lean only, trimmed to 0" fat, select, cooked, roasted, Calories:220.0
+13650 Beef, shoulder top blade steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:220.0
+23119 Beef, chuck, mock tender steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:220.0
+23540 Beef, plate, inside skirt steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:220.0
+13165 Beef, brisket, flat half, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:221.0
+13232 Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled, Calories:221.0
+13955 Beef, bottom sirloin, tri-tip roast, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted, Calories:221.0
+23070 Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:221.0
+23156 Beef, rib eye steak, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:221.0
+23185 Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, select, raw, Calories:221.0
+23060 Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:222.0
+23096 Beef, chuck, under blade steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:222.0
+23226 Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, select, raw, Calories:222.0
+13398 Beef, round, bottom round, steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:223.0
+13410 Beef, round, bottom round, steak, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:223.0
+13445 Beef, loin, top loin steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:223.0
+13799 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:223.0
+13873 Beef, round, bottom round, roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:223.0
+23005 Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:223.0
+23143 Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:223.0
+23166 Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:223.0
+23311 Beef, Australian, Wagyu, loin, top loin steak/roast, boneless, separable lean only, Aust. marble score 4/5, raw, Calories:223.0
+13339 Beef, variety meats and by-products, tongue, raw, Calories:224.0
+13467 Beef, short loin, porterhouse steak, separable lean only, trimmed to 0" fat, choice, cooked, broiled, Calories:224.0
+13896 Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:224.0
+13913 Beef, loin, top loin, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:224.0
+13981 Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:224.0
+23614 Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8" fat, choice, cooked, braised, Calories:224.0
+13395 Beef, rib, small end (ribs 10-12), separable lean only, trimmed to 0" fat, choice, cooked, broiled, Calories:225.0
+13899 Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, select, cooked, braised, Calories:225.0
+13902 Beef, round, top round, steak, separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled, Calories:225.0
+23120 Beef, chuck, mock tender steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:225.0
+23455 Beef, New Zealand, imported, cube roll, separable lean and fat, raw, Calories:225.0
+23268 Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:226.0
+23412 Beef, New Zealand, imported, flat, separable lean only, cooked, braised, Calories:226.0
+23105 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:227.0
+23130 Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0" fat, select, raw, Calories:227.0
+23144 Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:227.0
+23523 Beef, chuck, top blade, separable lean and fat, trimmed to 0" fat, choice, cooked, broiled, Calories:227.0
+13352 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:228.0
+13886 Beef, round, tip round, roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:228.0
+13890 Beef, round, top round, separable lean only, trimmed to 1/8" fat, choice, cooked, pan-fried, Calories:228.0
+13907 Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:228.0
+13909 Beef, short loin, top loin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:228.0
+23042 Beef, chuck, shoulder clod, top blade, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:228.0
+23071 Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:228.0
+23230 Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:228.0
+23287 Beef, top loin petite roast, boneless, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:228.0
+23446 Beef, New Zealand, imported, bolar blade, separable lean and fat, cooked, fast roasted, Calories:228.0
+23622 Beef, round, bottom round, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, braised, Calories:228.0
+23115 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean and fat, trimmed to 0" fat, select, cooked, roasted, Calories:229.0
+23157 Beef, rib eye steak, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, choice, cooked, grilled, Calories:229.0
+23160 Beef, rib eye roast, boneless, lip-on, separable lean only, trimmed to 1/8" fat, choice, cooked, roasted, Calories:229.0
+13401 Beef, round, bottom round, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:230.0
+13477 Beef, short loin, t-bone steak, separable lean and fat, trimmed to 0" fat, USDA select, cooked, broiled, Calories:230.0
+13819 Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:230.0
+13935 Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled, Calories:230.0
+23213 Beef, rib eye steak/roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:230.0
+23565 Beef, ground, 90% lean meat / 10% fat, crumbles, cooked, pan-browned, Calories:230.0
+13383 Beef, chuck, under blade pot roast, boneless, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:231.0
+23146 Beef, rib eye roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:231.0
+23224 Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:232.0
+23569 Beef, ground, 85% lean meat / 15% fat, patty, cooked, pan-broiled, Calories:232.0
+13446 Beef, loin, top loin steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:233.0
+13979 Beef, plate, outside skirt steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled, Calories:233.0
+23216 Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:233.0
+23571 Beef, ground, 85% lean meat / 15% fat, loaf, cooked, baked, Calories:233.0
+13795 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:234.0
+13951 Beef, rib eye, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, select, cooked, broiled, Calories:234.0
+23069 Beef, chuck eye Country-Style ribs, boneless, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:234.0
+23162 Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:234.0
+23220 Beef, ground, unspecified fat content, cooked, Calories:234.0
+23293 Beef, Australian, grass-fed,  ground,  85% lean / 15% fat, raw, Calories:234.0
+23313 Beef, Australian, Wagyu, rib, small end rib steak/roast, boneless, separable lean only, Aust. marble score 4/5, raw, Calories:234.0
+13331 Beef, variety meats and by-products, pancreas, raw, Calories:235.0
+13865 Beef, round, full cut, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:235.0
+23128 Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:235.0
+13337 Beef, variety meats and by-products, thymus, raw, Calories:236.0
+23106 Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:236.0
+23113 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, roasted, Calories:236.0
+13069 Beef, flank, steak, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:237.0
+13911 Beef, loin, top loin, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:237.0
+23310 Beef, Australian, Wagyu, loin, tenderloin steak/roast, boneless, separable lean only, Aust. marble score 9, raw, Calories:237.0
+13388 Beef, rib, large end (ribs 6-9), separable lean only, trimmed to 0" fat, all grades, cooked, roasted, Calories:238.0
+13496 Beef, ground, 70% lean meat / 30% fat, patty cooked, pan-broiled, Calories:238.0
+13892 Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised, Calories:238.0
+23225 Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:238.0
+23279 Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled, Calories:238.0
+13813 Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:239.0
+23181 Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, all grades, raw, Calories:239.0
+23284 Beef, top loin filet, boneless, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:239.0
+23288 Beef, top loin petite roast, boneless, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:239.0
+23406 Beef, New Zealand, imported, cube roll, separable lean only, cooked, fast roasted, Calories:239.0
+13875 Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, braised, Calories:240.0
+13982 Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:240.0
+23101 Beef, rib eye roast, bone-in, lip-on, separable lean only, trimmed to 1/8" fat, choice, cooked, roasted, Calories:240.0
+23129 Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:240.0
+13495 Beef, ground, 70% lean meat / 30% fat, loaf, cooked, baked, Calories:241.0
+23114 Beef, chuck eye roast, boneless, America's Beef Roast, separable lean and fat, trimmed to 0" fat, choice, cooked, roasted, Calories:241.0
+23231 Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:241.0
+23164 Beef, plate steak, boneless, inside skirt, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:242.0
+23278 Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:242.0
+13797 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:243.0
+13930 Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:243.0
+23443 Beef, New Zealand, imported, tongue, raw, Calories:243.0
+13372 Beef, brisket, point half, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:244.0
+13809 Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:244.0
+23201 Beef, rib eye steak/roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:244.0
+23214 Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:245.0
+13856 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:246.0
+13920 Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:246.0
+23266 Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:246.0
+23574 Beef, ground, 80% lean meat / 20% fat, patty, cooked, pan-broiled, Calories:246.0
+13473 Beef, short loin, t-bone steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:247.0
+13869 Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised, Calories:247.0
+13917 Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:247.0
+23390 Beef, loin, top loin steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled, Calories:247.0
+13815 Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:248.0
+23194 Beef, rib eye steak/roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:248.0
+23229 Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:248.0
+23323 Beef, Australian, Wagyu, loin, tenderloin steak/roast, boneless, separable lean and fat, Aust. marble score 9, raw, Calories:248.0
+23579 Beef, ground, 75% lean meat / 25% fat, patty, cooked, pan-broiled, Calories:248.0
+13391 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:249.0
+13811 Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:249.0
+13923 Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:249.0
+13952 Beef, rib eye, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:249.0
+23280 Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled, Calories:249.0
+13348 Beef, cured, corned beef, canned, Calories:250.0
+13895 Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised, Calories:250.0
+13914 Beef, loin, top loin, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled, Calories:250.0
+13980 Beef, chuck, short ribs, boneless, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:250.0
+23450 Beef, New Zealand, imported, brisket point end, separable lean and fat, cooked, braised, Calories:250.0
+23568 Beef, ground, 85% lean meat / 15% fat, patty, cooked, broiled, Calories:250.0
+13347 Beef, cured, corned beef, brisket, cooked, Calories:251.0
+13803 Beef, brisket, whole, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:251.0
+23183 Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, choice, raw, Calories:252.0
+23452 Beef, New Zealand, imported, chuck eye roll, separable lean and fat, cooked, braised, Calories:252.0
+23460 Beef, New Zealand, imported, flat, separable lean and fat, cooked, braised, Calories:252.0
+23469 Beef, New Zealand, imported, striploin, separable lean and fat, raw, Calories:252.0
+13382 Beef, chuck, blade roast, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:253.0
+13389 Beef, rib, large end (ribs 6-9), separable lean only, trimmed to 0" fat, choice, cooked, roasted, Calories:253.0
+23202 Beef, rib eye steak/roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:253.0
+23215 Beef, plate steak, boneless, inside skirt, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:253.0
+23285 Beef, top loin filet, boneless, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled, Calories:253.0
+13850 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:254.0
+13872 Beef, round, bottom round, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised, Calories:254.0
+23572 Beef, ground, 80% lean meat / 20% fat, raw, Calories:254.0
+23576 Beef, ground, 80% lean meat / 20% fat, loaf, cooked, baked, Calories:254.0
+23581 Beef, ground, 75% lean meat / 25% fat, loaf, cooked, baked, Calories:254.0
+23192 Beef, rib eye steak/roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:255.0
+23541 Beef, plate, outside skirt steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:255.0
+23570 Beef, ground, 85% lean meat / 15% fat, crumbles, cooked, pan-browned, Calories:256.0
+13932 Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:257.0
+13474 Beef, short loin, t-bone steak, separable lean and fat, trimmed to 0" fat, USDA choice, cooked, broiled, Calories:258.0
+23267 Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:259.0
+23193 Beef, rib eye steak/roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:260.0
+13363 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, select, cooked, Calories:261.0
+23118 Beef, chuck, under blade steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:261.0
+13924 Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled, Calories:262.0
+13066 Beef, flank, steak, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:263.0
+13494 Beef, ground, 70% lean meat / 30% fat, crumbles, cooked, pan-browned, Calories:263.0
+13853 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:263.0
+23004 Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled, Calories:263.0
+13910 Beef, loin, top loin, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:264.0
+23391 Beef, loin, top loin steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:264.0
+13096 Beef, rib, eye, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, choice, cooked, broiled, Calories:265.0
+13801 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, prime, raw, Calories:265.0
+13807 Beef, brisket, point half, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:265.0
+13817 Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:265.0
+23399 Beef, New Zealand, imported, brisket naval end, separable lean only, cooked, braised, Calories:265.0
+23545 Beef, loin, bottom sirloin butt, tri-tip steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:265.0
+13897 Beef, round, top round, separable lean and fat, trimmed to 1/8" fat, choice, cooked, pan-fried, Calories:266.0
+13463 Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 0" fat, USDA select, cooked, broiled, Calories:267.0
+13918 Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:267.0
+23142 Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:267.0
+23172 Beef, plate steak, boneless, outside skirt, separable lean only, trimmed to 0" fat, select, cooked, grilled, Calories:268.0
+23573 Beef, ground, 80% lean meat / 20% fat, patty, cooked, broiled, Calories:270.0
+13332 Beef, variety meats and by-products, pancreas, cooked, braised, Calories:271.0
+23227 Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:271.0
+23442 Beef, New Zealand, imported, tongue, cooked, boiled, Calories:271.0
+23575 Beef, ground, 80% lean meat / 20% fat, crumbles, cooked, pan-browned, Calories:272.0
+13361 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, all grades, cooked, Calories:273.0
+13921 Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:273.0
+23196 Beef, rib eye steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled, Calories:273.0
+13095 Beef, rib, eye, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, choice, raw, Calories:274.0
+13926 Beef, tenderloin, separable lean and fat, trimmed to 1/8" fat, prime, raw, Calories:274.0
+23116 Beef, chuck, under blade steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:275.0
+23389 Beef, loin, top loin steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled, Calories:275.0
+13330 Beef, variety meats and by-products, mechanically separated beef, raw, Calories:276.0
+13459 Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 0" fat, all grades, cooked, broiled, Calories:276.0
+23002 Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:276.0
+23659 Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:276.0
+13497 Beef, ground, 70% lean meat / 30% fat, patty, cooked, broiled, Calories:277.0
+13805 Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:277.0
+23140 Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:277.0
+23200 Beef, rib eye roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted, Calories:277.0
+23580 Beef, ground, 75% lean meat / 25% fat, crumbles, cooked, pan-browned, Calories:277.0
+13002 Beef, carcass, separable lean and fat, select, raw, Calories:278.0
+13800 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, select, cooked, Calories:278.0
+13857 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled, Calories:278.0
+13912 Beef, short loin, top loin, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled, Calories:278.0
+23658 Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:278.0
+23578 Beef, ground, 75% lean meat / 25% fat, patty, cooked, broiled, Calories:279.0
+13055 Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, select, cooked, braised, Calories:280.0
+13915 Beef, short loin, top loin, steak, separable lean and fat, trimmed to 1/8" fat, prime, raw, Calories:281.0
+23008 Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled, Calories:281.0
+23223 Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, select, cooked, grilled, Calories:281.0
+23168 Beef, plate steak, boneless, outside skirt, separable lean only, trimmed to 0" fat, all grades, cooked, grilled, Calories:282.0
+13362 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 0" fat, choice, cooked, Calories:283.0
+13375 Beef, chuck, arm pot roast, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:283.0
+13460 Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 0" fat, USDA choice, cooked, broiled, Calories:283.0
+23141 Beef, chuck eye steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:283.0
+13340 Beef, variety meats and by-products, tongue, cooked, simmered, Calories:284.0
+13906 Beef, short loin, porterhouse steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled, Calories:284.0
+23117 Beef, chuck, under blade steak, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:284.0
+13393 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, select, cooked, broiled, Calories:285.0
+23136 Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:285.0
+23228 Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:285.0
+23454 Beef, New Zealand, imported, cube roll, separable lean and fat, cooked, fast roasted, Calories:286.0
+23127 Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:287.0
+23184 Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, select, cooked, braised, Calories:287.0
+13381 Beef, chuck, under blade pot roast, boneless, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:288.0
+13830 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:288.0
+13806 Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised, Calories:289.0
+23006 Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:289.0
+23319 Beef, Australian, Wagyu, loin, top loin steak/roast, boneless, separable lean and fat, Aust. marble score 4/5, raw, Calories:289.0
+23190 Beef, rib eye roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted, Calories:290.0
+13001 Beef, carcass, separable lean and fat, choice, raw, Calories:291.0
+13367 Beef, brisket, whole, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:291.0
+13796 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, Calories:291.0
+13851 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:291.0
+23099 Beef, chuck, under blade pot roast, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:291.0
+23170 Beef, plate steak, boneless, outside skirt, separable lean only, trimmed to 0" fat, choice, cooked, grilled, Calories:291.0
+23197 Beef, rib eye steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:291.0
+23198 Beef, rib eye roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:292.0
+23221 Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled, Calories:292.0
+23577 Beef, ground, 75% lean meat / 25% fat, raw, Calories:293.0
+13908 Beef, short loin, t-bone steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled, Calories:294.0
+13150 Beef, rib, shortribs, separable lean only, choice, cooked, braised, Calories:295.0
+13317 Beef, ground, patties, frozen, cooked, broiled, Calories:295.0
+13814 Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, braised, Calories:295.0
+13844 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, select, raw, Calories:295.0
+23134 Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:296.0
+13373 Beef, chuck, arm pot roast, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:297.0
+23660 Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised, Calories:298.0
+13802 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, prime, cooked, Calories:299.0
+23180 Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, all grades, cooked, braised, Calories:299.0
+23191 Beef, rib eye roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:300.0
+23222 Beef, plate steak, boneless, outside skirt, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled, Calories:300.0
+13798 Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, cooked, Calories:301.0
+23468 Beef, New Zealand, imported, striploin, separable lean and fat, cooked, fast fried, Calories:301.0
+13810 Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised, Calories:302.0
+23135 Beef, chuck eye Country-Style ribs, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:303.0
+23195 Beef, rib eye steak, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled, Calories:303.0
+23199 Beef, rib eye roast, boneless, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:303.0
+23438 Beef, New Zealand, imported, sweetbread, raw, Calories:303.0
+13854 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:304.0
+23187 Beef, rib eye steak, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, select, cooked, grilled, Calories:304.0
+23125 Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:305.0
+23238 Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, select, raw, Calories:305.0
+13380 Beef, chuck, under blade pot roast, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:306.0
+13824 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:306.0
+23182 Beef, rib, back ribs, bone-in, separable lean only, trimmed to 0" fat, choice, cooked, braised, Calories:306.0
+23189 Beef, rib eye roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:307.0
+13927 Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled, Calories:308.0
+13342 Beef, sandwich steaks, flaked, chopped, formed and thinly sliced, raw, Calories:309.0
+13812 Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised, Calories:309.0
+23188 Beef, rib eye steak, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, grilled, Calories:309.0
+13916 Beef, short loin, top loin, separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled, Calories:310.0
+43384 Beef, bologna, reduced sodium, Calories:310.0
+13357 Beef, cured, sausage, cooked, smoked, Calories:312.0
+13392 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 0" fat, choice, cooked, broiled, Calories:312.0
+13933 Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, choice, cooked, pan-fried, Calories:313.0
+23186 Beef, rib eye steak, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, choice, cooked, grilled, Calories:313.0
+13831 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled, Calories:315.0
+13838 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, all grades, raw, Calories:316.0
+13925 Beef, tenderloin, roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted, Calories:316.0
+23126 Beef, chuck, short ribs, boneless, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:317.0
+23321 Beef, Australian, Wagyu, rib, small end rib steak/roast, boneless, separable lean and fat, Aust. marble score 4/5, raw, Calories:317.0
+13820 Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, select, cooked, braised, Calories:318.0
+23437 Beef, New Zealand, imported, sweetbread, cooked, boiled, Calories:318.0
+13338 Beef, variety meats and by-products, thymus, cooked, braised, Calories:319.0
+13827 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:322.0
+13858 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted, Calories:323.0
+13845 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, select, cooked, broiled, Calories:324.0
+13919 Beef, tenderloin, roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:324.0
+23236 Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, all grades, raw, Calories:324.0
+13832 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted, Calories:330.0
+23314 Beef, Australian, Wagyu, rib, small end rib steak/roast, boneless, separable lean only, Aust. marble score 9, raw, Calories:330.0
+13387 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 0" fat, select, cooked, roasted, Calories:331.0
+13804 Beef, brisket, whole, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised, Calories:331.0
+13922 Beef, tenderloin, roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:331.0
+23312 Beef, Australian, Wagyu, loin, top loin steak/roast, boneless, separable lean only, Aust. marble score 9, raw, Calories:331.0
+13498 Beef, ground, 70% lean meat / 30% fat, raw, Calories:332.0
+13841 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, choice, raw, Calories:333.0
+13846 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, select, cooked, roasted, Calories:333.0
+13859 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, prime, raw, Calories:335.0
+23237 Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, choice, raw, Calories:336.0
+13825 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:337.0
+13839 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, broiled, Calories:338.0
+13816 Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised, Calories:341.0
+13852 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:341.0
+23235 Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, select, cooked, braised, Calories:341.0
+13928 Beef, tenderloin, roast, separable lean and fat, trimmed to 1/8" fat, prime, cooked, roasted, Calories:343.0
+23449 Beef, New Zealand, imported, brisket naval end, separable lean and fat, raw, Calories:345.0
+13808 Beef, brisket, point half, separable lean and fat, trimmed to 1/8" fat, all grades, cooked, braised, Calories:349.0
+13826 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:351.0
+13828 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:352.0
+13860 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled, Calories:354.0
+13833 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, prime, raw, Calories:355.0
+13840 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, all grades, cooked, roasted, Calories:355.0
+13371 Beef, brisket, point half, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:358.0
+13818 Beef, chuck, blade roast, separable lean and fat, trimmed to 1/8" fat, choice, cooked, braised, Calories:359.0
+13855 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:359.0
+23233 Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised, Calories:360.0
+13829 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:365.0
+13847 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, prime, raw, Calories:367.0
+13842 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, choice, cooked, broiled, Calories:370.0
+13386 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 0" fat, choice, cooked, roasted, Calories:372.0
+23234 Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, choice, cooked, braised, Calories:372.0
+13843 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted, Calories:378.0
+13834 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled, Calories:386.0
+13147 Beef, rib, shortribs, separable lean and fat, choice, raw, Calories:388.0
+23320 Beef, Australian, Wagyu, loin, top loin steak/roast, separable lean and fat, Aust. marble score 9, raw, Calories:392.0
+13849 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, prime, cooked, roasted, Calories:393.0
+13835 Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, prime, cooked, roasted, Calories:400.0
+13848 Beef, rib, large end (ribs 6-9), separable lean and fat, trimmed to 1/8" fat, prime, cooked, broiled, Calories:404.0
+23322 Beef, Australian, Wagyu, rib, small end rib steak/roast, boneless, separable lean and fat, Aust. marble score 9, raw, Calories:405.0
+13344 Beef, cured, breakfast strips, raw or unheated, Calories:406.0
+13861 Beef, rib, small end (ribs 10-12), separable lean and fat, trimmed to 1/8" fat, prime, cooked, roasted, Calories:411.0
+13345 Beef, cured, breakfast strips, cooked, Calories:449.0
+23448 Beef, New Zealand, imported, brisket naval end, separable lean and fat, cooked, braised, Calories:453.0
+13148 Beef, rib, shortribs, separable lean and fat, choice, cooked, braised, Calories:471.0
+23296 Beef, Australian, grass-fed,  external fat, raw, Calories:509.0
+23419 Beef, New Zealand, imported, intermuscular fat, cooked, Calories:560.0
+23297 Beef, Australian, grass-fed,  seam fat, raw, Calories:562.0
+23299 Beef, Australian, Wagyu,  seam fat, Aust. marble score 4/5, raw, Calories:594.0
+23298 Beef, Australian, Wagyu,  external fat, Aust. marble score 4/5, raw, Calories:596.0
+23420 Beef, New Zealand, imported, intermuscular fat, raw, Calories:602.0
+23301 Beef, Australian, Wagyu,  seam fat, Aust. marble score 9, raw, Calories:627.0
+23300 Beef, Australian, Wagyu,  external fat, Aust. marble score 9, raw, Calories:639.0
+13019 Beef, retail cuts, separable fat, raw, Calories:674.0
+13020 Beef, retail cuts, separable fat, cooked, Calories:680.0
+23436 Beef, New Zealand, imported, subcutaneous fat, raw, Calories:685.0
+23435 Beef, New Zealand, imported, subcutaneous fat, cooked, Calories:731.0
+13335 Beef, variety meats and by-products, suet, raw, Calories:854.0

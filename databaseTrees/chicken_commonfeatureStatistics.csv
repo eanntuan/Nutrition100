@@ -1,0 +1,54 @@
+Feature,Count,Mean,Variance
+ nuggets,2,260.0,0.0
+ precooked,2,260.0,0.0
+ not reheated,2,260.0,0.0
+ grilled,2,149.0,2.0
+ meatless,2,229.0,25.0
+ canned,2,175.0,100.0
+ broiler or fryers,5,144.0,162.0
+ simmered,8,170.0,171.0
+ heart,2,169.0,256.0
+ barbecue flavored,3,233.0,262.0
+ glazed,3,233.0,262.0
+ boneless,6,138.0,317.0
+ skinless,6,138.0,317.0
+ and giblets and neck,2,232.0,342.0
+ ground,2,166.0,529.0
+ liver,3,152.0,570.0
+ skin (drumsticks and thighs),6,425.0,657.0
+ meat and skin and giblets and neck,9,235.0,683.0
+ all classes,7,149.0,873.0
+ gizzard,2,124.0,900.0
+ batter,12,301.0,1323.0
+ breast,16,168.0,1350.0
+ frozen,6,259.0,1390.0
+ drumstick,19,177.0,1466.0
+ meat only,74,168.0,1535.0
+ capons,6,202.0,1642.0
+ thigh,20,201.0,1647.0
+ roasting,11,161.0,1735.0
+ leg,9,203.0,1816.0
+ stewed,25,216.0,1914.0
+ meat and skin,71,240.0,1972.0
+ giblets,9,167.0,1973.0
+ stewing,12,210.0,2222.0
+ light meat,13,183.0,2274.0
+ breaded,2,284.0,2500.0
+ wing,15,227.0,2606.0
+ dark meat,31,184.0,2621.0
+ skin only,6,411.0,2765.0
+ cornish game hens,4,177.0,3205.0
+ back,11,261.0,3374.0
+ BBQ,11,218.0,3606.0
+ broiler,11,218.0,3606.0
+ fried,36,273.0,3625.0
+ rotisserie,22,221.0,4073.0
+ neck,7,252.0,4284.0
+ original seasoning,11,225.0,4516.0
+ flour,12,295.0,5041.0
+ cooked,124,232.0,5299.0
+ roasted,34,225.0,5945.0
+ broilers or fryers,117,229.0,6179.0
+ braised,12,216.0,9199.0
+ raw,51,186.0,9617.0
+ enhanced,17,202.0,9675.0

@@ -1,0 +1,70 @@
+Feature,Count,Mean,Variance
+ boston brown,1,195.0,0.0
+ toasted (includes gluten),1,270.0,0.0
+ sweet yeast bread,1,367.0,0.0
+ pound cake type,1,390.0,0.0
+ somiviki (Hopi),1,186.0,0.0
+ Multi-Grain (includes whole-grain),1,265.0,0.0
+ potato,1,266.0,0.0
+ 80% margarine,1,330.0,0.0
+ kneel down (Navajo),1,195.0,0.0
+ prepared with 2% milk,1,330.0,0.0
+ salvadoran sweet cheese (quesadilla salvadorena),1,374.0,0.0
+ canned,1,195.0,0.0
+ unenriched (includes corn muffin mix),1,418.0,0.0
+ low sodium no salt,1,293.0,0.0
+ white wheat,1,238.0,0.0
+ and eggs,1,330.0,0.0
+ enriched (includes corn muffin mix),1,418.0,0.0
+ Multi-Grain,1,288.0,0.0
+ roll,1,318.0,0.0
+ italian,1,271.0,0.0
+ banana,1,326.0,0.0
+ bollilo,1,318.0,0.0
+ Mexican,1,318.0,0.0
+ irish soda,1,290.0,0.0
+ commercially prepared (includes soft bread crumbs),1,266.0,0.0
+ french or vienna (includes sourdough),1,272.0,0.0
+ cheese,1,408.0,0.0
+ toasted (includes whole-grain),1,288.0,0.0
+ pan dulce,1,367.0,0.0
+ unenriched,2,274.0,0.0
+ blue corn,1,186.0,0.0
+ made with nonfat dry milk,1,274.0,0.0
+ no salt,1,267.0,0.0
+ low sodium,1,267.0,0.0
+ made with margarine,1,326.0,0.0
+ wheat bran,1,248.0,0.0
+ protein (includes gluten),1,245.0,0.0
+ french or vienna,1,319.0,0.0
+ cracked-wheat,1,260.0,0.0
+ protein,1,270.0,0.0
+ toasted (includes sourdough),1,319.0,0.0
+ pan de torta salvadoran,1,390.0,0.0
+ paratha (Indian bread),1,326.0,0.0
+ chapati or roti,2,298.0,1.0
+ naan (Indian bread),2,288.0,6.0
+ refrigerated,2,288.0,6.0
+ plain,2,294.0,9.0
+ pita,3,272.0,18.0
+ made with low fat (2%) milk,2,275.0,90.0
+ rice bran,2,253.0,110.0
+ enriched,3,282.0,112.0
+ raisin,3,281.0,117.0
+ pumpernickel,2,262.0,156.0
+ reduced-calorie,6,212.0,163.0
+ frozen,2,312.0,182.0
+ egg,2,301.0,196.0
+ wheat germ,2,277.0,256.0
+ whole wheat,3,303.0,277.0
+ commercially prepared,7,285.0,308.0
+ prepared from recipe,7,289.0,359.0
+ oat bran,4,233.0,435.0
+ toasted,14,287.0,438.0
+ whole-wheat,5,281.0,455.0
+ white,9,270.0,593.0
+ rye,3,248.0,1146.0
+ oatmeal,3,257.0,1192.0
+ wheat,4,258.0,1296.0
+ dry mix,3,388.0,1720.0
+ cornbread,4,358.0,4112.0

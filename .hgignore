@@ -1,0 +1,16 @@
+syntax: glob
+*.orig
+*.class
+*~
+.*/CVS
+.*/CVS/.*
+.cvsignore
+.git/
+.gitignore
+.settings/sf.eclipse.javacc.prefs
+.svn
+^CVS
+bin/
+build/*
+lib/CRF.jar
+*/.DS_Store

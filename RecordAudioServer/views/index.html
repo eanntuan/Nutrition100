@@ -1,0 +1,34 @@
+<div id="body-container">
+<div id="taskContainer">
+
+  [[> instructions]]
+
+  <div class="hiddenOnLoad hidden">
+
+    {{#if acceptBrowser }}
+
+
+    <h3>Please record each of the sentences below.</h3>
+    <ol>
+    [[#each this.utterances:uttIndex]]
+      <li>[[> utterance]]</li>
+    [[/each]]
+    </ol>
+
+    [[> amt_form]]
+
+    {{ else }}
+
+    <div class="alert alert-danger">
+      Your browser is not supported for this task. Please make sure you are using a Chrome browser.
+    </div>
+
+    {{/if}}
+
+  </div>
+
+
+</div>
+</div>
+
+<script data-main="[[ pathPrefix ]]js/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.17/require.min.js"></script>

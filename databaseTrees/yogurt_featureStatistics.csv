@@ -1,0 +1,33 @@
+Feature,Count,Mean,Variance
+ whole milk,1,61.0,0.0
+ vanilla flavor,1,86.0,0.0
+ 9 grams protein per 8 ounce,2,99.0,0.0
+ fruit variety,2,95.0,0.0
+ skim milk,1,56.0,0.0
+ with low-calorie sweetener,1,104.0,0.0
+ lowfat milk,1,86.0,0.0
+ chocolate,2,112.0,0.0
+ sweetened with low-calorie sweetener,2,43.0,0.0
+ with low calorie sweetener,2,105.0,0.0
+ 10 grams protein per 8 ounce,2,102.0,0.0
+ 13 grams protein per 8 ounce,1,56.0,0.0
+ flavors not chocolate,1,104.0,0.0
+ lowfat,2,105.0,0.0
+ frozen,1,104.0,0.0
+ vanilla or lemon flavor,2,43.0,0.0
+ sweetened with low calorie sweetener,1,86.0,0.0
+ 12 grams protein per 8 ounce,1,63.0,0.0
+ 8 grams protein per 8 ounce,1,61.0,0.0
+ fruit,7,102.0,6.0
+ plain,4,59.0,6.0
+ CHOBANI,2,75.0,20.0
+ non fat,4,80.0,30.0
+ vanilla,4,81.0,36.0
+ 11 grams protein per 8 ounce,3,91.0,88.0
+ DANNON OIKOS,3,91.0,102.0
+ strawberry,3,90.0,130.0
+ low fat,8,92.0,175.0
+ Greek,6,80.0,205.0
+ nonfat,3,83.0,288.0
+ fortified with vitamin D,7,91.0,453.0
+ nonfat milk,5,82.0,1064.0

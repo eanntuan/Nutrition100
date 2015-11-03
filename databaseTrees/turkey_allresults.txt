@@ -1,0 +1,92 @@
+07943 Turkey, breast, smoked, lemon pepper flavor, 97% fat-free, Calories:95.0
+05721 Turkey, breast, from whole bird, enhanced, meat only, raw, Calories:101.0
+05729 Turkey, wing, from whole bird, enhanced, meat only, raw, Calories:101.0
+07900 Turkey, pork, and beef sausage, low fat, smoked, Calories:101.0
+05704 Turkey, whole, enhanced, meat only, raw, Calories:105.0
+05738 Turkey, drumstick, from whole bird, meat only, raw, Calories:108.0
+05740 Turkey, thigh, from whole bird, meat only, raw, Calories:108.0
+05173 Turkey, gizzard, all classes, raw, Calories:111.0
+05708 Turkey, retail parts, enhanced, breast, meat only, raw, Calories:111.0
+05167 Turkey, whole, meat only, raw, Calories:112.0
+05712 Turkey, retail parts, wing, meat only, raw, Calories:112.0
+07944 Turkey, white, rotisserie, deli cut, Calories:112.0
+05215 Turkey, back, from whole bird, non-enhanced, meat only, raw, Calories:113.0
+05219 Turkey, breast, from whole bird, non-enhanced, meat only, raw, Calories:114.0
+05227 Turkey, wing, from whole bird, non-enhanced, meat only, raw, Calories:114.0
+05694 Turkey, dark meat from whole, enhanced, meat only, raw, Calories:114.0
+05710 Turkey, retail parts, breast, meat only, raw, Calories:114.0
+05719 Turkey, back, from whole bird, enhanced, meat only, raw, Calories:114.0
+05724 Turkey, drumstick, from whole bird, enhanced, meat only, raw, Calories:114.0
+05726 Turkey, thigh, from whole bird, enhanced, meat only, raw, Calories:114.0
+05717 Turkey, retail parts, thigh, meat only, raw, Calories:116.0
+05716 Turkey, retail parts, drumstick, meat only, raw, Calories:118.0
+05171 Turkey, whole, giblets, raw, Calories:124.0
+05718 Turkey, breast, from whole bird, enhanced, meat only, roasted, Calories:127.0
+05720 Turkey, back, from whole bird, enhanced, meat only, roasted, Calories:127.0
+05730 Turkey, wing, from whole bird, enhanced, meat only, roasted, Calories:127.0
+05177 Turkey, liver, all classes, raw, Calories:128.0
+22957 Turkey, stuffing, mashed potatoes w/gravy, assorted vegetables, frozen, microwaved, Calories:128.0
+05709 Turkey, retail parts, enhanced, breast, meat only, cooked, roasted, Calories:130.0
+05711 Turkey, retail parts, breast, meat only, cooked, roasted, Calories:136.0
+05285 Turkey, diced, light and dark meat, seasoned, Calories:138.0
+05739 Turkey, drumstick, from whole bird, meat only, roasted, Calories:139.0
+05175 Turkey, heart, all classes, raw, Calories:140.0
+05705 Turkey, whole, enhanced, meat only, roasted, Calories:140.0
+05736 Turkey, retail parts, drumstick, meat and skin, raw, Calories:141.0
+05165 Turkey, whole, meat and skin, raw, Calories:143.0
+05193 Turkey, all classes, leg, meat and skin, raw, Calories:144.0
+05727 Turkey, retail parts, enhanced, breast, meat and skin, raw, Calories:144.0
+05186 Turkey, all classes, light meat, cooked, roasted, Calories:147.0
+05220 Turkey, breast, from whole bird, non-enhanced, meat only, roasted, Calories:147.0
+05228 Turkey, wing, from whole bird, non-enhanced, meat only, roasted, Calories:147.0
+05174 Turkey, gizzard, all classes, cooked, simmered, Calories:155.0
+05732 Turkey, retail parts, breast, meat and skin, raw, Calories:155.0
+05191 Turkey, all classes, breast, meat and skin, raw, Calories:157.0
+05695 Turkey, enhanced, dark meat, meat only, cooked, roasted, Calories:158.0
+05706 Turkey, whole, enhanced, meat and skin, raw, Calories:158.0
+05725 Turkey, drumstick, from whole bird, enhanced, meat only, roasted, Calories:158.0
+05728 Turkey, thigh, from whole bird, enhanced, meat only, roasted, Calories:158.0
+05168 Turkey, whole, meat only, cooked, roasted, Calories:159.0
+05722 Turkey, retail parts, thigh, meat only, cooked, roasted, Calories:159.0
+05183 Turkey, dark meat, meat and skin, raw, Calories:161.0
+05742 Turkey, retail parts, thigh, meat and skin, raw, Calories:161.0
+05733 Turkey, retail parts, breast, meat and skin, cooked, roasted, Calories:164.0
+05741 Turkey, thigh, from whole bird, meat only, roasted, Calories:165.0
+05284 Turkey, canned, meat only, with broth, Calories:169.0
+05700 Turkey, enhanced, dark meat from whole, meat and skin, raw, Calories:169.0
+05713 Turkey, retail parts, wing, meat only, cooked, roasted, Calories:170.0
+43391 Turkey, light or dark meat, smoked, cooked, skin and bone removed, Calories:170.0
+05200 Turkey, fryer-roasters, meat and skin, cooked, roasted, Calories:172.0
+05172 Turkey, whole, giblets, cooked, simmered, Calories:173.0
+05188 Turkey, from whole, dark meat, cooked, roasted, Calories:173.0
+05216 Turkey, back, from whole bird, non-enhanced, meat only, roasted, Calories:173.0
+05723 Turkey, retail parts, drumstick, meat only, cooked, roasted, Calories:173.0
+05176 Turkey, heart, all classes, cooked, simmered, Calories:174.0
+05707 Turkey, whole, enhanced, meat and skin, roasted, Calories:176.0
+05743 Turkey, retail parts, thigh, meat and skin, cooked, roasted, Calories:183.0
+05166 Turkey, whole, meat and skin, cooked, roasted, Calories:189.0
+05178 Turkey, liver, all classes, cooked, simmered, Calories:189.0
+05192 Turkey, all classes, breast, meat and skin, cooked, roasted, Calories:189.0
+05195 Turkey, all classes, wing, meat and skin, raw, Calories:197.0
+05737 Turkey, retail parts, drumstick, meat and skin, cooked, roasted, Calories:197.0
+05701 Turkey, enhanced, dark meat from whole, meat and skin, cooked, roasted, Calories:199.0
+05304 Turkey, mechanically deboned, from turkey frames, raw, Calories:201.0
+05734 Turkey, retail parts, wing, meat and skin, raw, Calories:202.0
+05745 Turkey, back, from whole bird, enhanced, meat and skin, roasted, Calories:205.0
+05184 Turkey, dark meat from whole, meat and skin, cooked, roasted, Calories:206.0
+05744 Turkey, back, from whole bird, enhanced, meat and skin, raw, Calories:206.0
+05194 Turkey, all classes, leg, meat and skin, cooked, roasted, Calories:208.0
+43367 Turkey, drumstick, smoked, cooked, with skin, bone removed, Calories:208.0
+43390 Turkey, light or dark meat, smoked, cooked, with skin, bone removed, Calories:208.0
+43366 Turkey, wing, smoked, cooked, with skin, bone removed, Calories:221.0
+05196 Turkey, all classes, wing, meat and skin, cooked, roasted, Calories:229.0
+05735 Turkey, retail parts, wing, meat and skin, cooked, roasted, Calories:235.0
+42241 Turkey, pork, and beef sausage, reduced fat, smoked, Calories:241.0
+05190 Turkey, all classes, back, meat and skin, cooked, roasted, Calories:244.0
+05714 Turkey, skin, from retail parts, from dark meat, raw, Calories:380.0
+05698 Turkey, enhanced, skin from whole (light and dark), raw, Calories:381.0
+05169 Turkey, skin from whole, (light and dark), raw, Calories:407.0
+05715 Turkey, skin, from retail parts, from dark meat, cooked, roasted, Calories:414.0
+05699 Turkey, enhanced, skin from whole, (light and dark), roasted, Calories:451.0
+05170 Turkey, skin from whole (light and dark), roasted, Calories:459.0
+05236 Turkey, young hen, skin only, cooked, roasted, Calories:482.0

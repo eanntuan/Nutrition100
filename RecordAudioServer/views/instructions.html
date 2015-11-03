@@ -1,0 +1,63 @@
+<div class="panel panel-primary big-text">
+<div class="panel-heading">
+  <span class="strong">Instructions</span>
+</div>
+
+<div class="panel-body clearfix">
+  <div class="row">
+    <div class="col-lg-8 col-md-9 col-sm-8">
+      To complete this task, you must <ul>
+        <li>be a native English speaker</li>
+        <li>be using a computer equipped with a microphone</li>
+        <li>and be using a Chrome browser</li>
+      </ul>
+    </div>
+      
+    <div class="col-lg-2 col-md-3 col-sm-4 vol-meter vol-meter-md">
+      <span class="fa-stack vol-meter vol-meter-md">
+        <i class="fa fa-microphone fa-stack-2x glyph 
+        {{#if recording}} stroked-red {{else}} stroked {{/if}}"></i>
+        <i class="fa fa-microphone fa-stack-2x glyph fill" 
+        style="max-height: {{meterMaxHeight}};"></i>
+      </span>
+      {{#if connected}}
+        <span class="label label-primary">Connected</span>
+      {{else}}
+        <span class="label label-danger">Disconnected 
+          <i class="fa fa-spinner fa-spin"></i>
+        </span>
+      {{/if}}
+    </div>
+  </div>
+
+  <p>If your microphone is on and working, the volume meter at the right should move as you speak (after you grant permission for the site to use your microphone). Underneath the microphone volume meter you can see whether you are connected to server for recording. If you become disconnected, please continue recording after a connection is reestablished.</p>
+
+  <p>You will be presented with 10 sentences (or sentence fragments). For each sentence, please:</p>
+<ul>
+  <li>Ensure you are in a quiet room.</li>
+  <li>Press the 
+      <button type="button" class="btn btn-xs btn-primary record-btn" disabled>
+        <i class="fa fa-dot-circle-o"></i> Record
+      </button>
+      button next to the sentence and then read the sentence out loud exactly as it is written. During recording, the record button will be replaced with a stop button; end the recording by pressing the
+      <button type="button" class="btn btn-xs btn-danger record-btn" disabled>
+        <i class="fa fa-stop"></i> Stop
+      </button>
+      button next to the sentence.</li>
+  <li>Please read the sentence naturally.</li>
+  <li>After you record a sentence, we will process the recording. If it is acceptable, it will be marked as 
+  <div class="btn btn-xs btn-success disabled">
+      <i class="fa fa-check"></i> Great
+    </div> 
+    or 
+    <div class="btn btn-xs btn-success disabled">
+      <i class="fa fa-check"></i> Perfect
+    </div>. Otherwise, the sentence will be marked with a
+    <div class="btn btn-xs btn-danger disabled">
+      <i class="fa fa-repeat"></i> Redo
+    </div> and you must redo the recording of that sentence to complete the task.
+  </li>
+</ul>
+After all 10 sentences have been accepted, the submit button at the bottom of the page will be enabled.
+</div>
+</div>
