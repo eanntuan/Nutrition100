@@ -18,7 +18,7 @@ var RECORDINGS_DIRECTORY_DEBUG = '/s/nutrition/recordings/debug_recordings/';
 var RECORDINGS_DIRECTORY_DEV = __dirname + '/recordings'
 
 // %d is for a number unique to each utterance within the same session
-var RAW_FILE_NAME_FORMAT = '%s/utterance_%d.raw';
+//var RAW_FILE_NAME_FORMAT = '%s/utterance_%d.raw';
 var WAV_FILE_NAME_FORMAT = '%s/utterance_%d.wav';
 var TXT_FILE_NAME_FORMAT = '%s/utterance_%d.txt';
 
@@ -48,9 +48,38 @@ var AppSocket = function(server, appLocals) {
         }
         
         logger.debug('Recording to dir:', recordToDir);
+        
+        //Getting timestamp for the file names
+        //var dateObj = new Date(year, month, day, hours, minutes);
+        /*var month = dateObj.getUCMonth() + 1; //months from 1-12
+        var day = dateObj.getUTCDate();
+        var year = dateObj.getUTCFullYear();
+        
+        var hr = d.getHours();
+        var min = d.getMinutes();
+        if (min < 10) {
+            min = "0" + min;
+        }
+        var ampm = hr < 12 ? "am" : "pm";
+        
+        var newdate = year + "/" + month + "/" + day + " - " + hr + ":" + min + ampm;
+        */
+        
+        var currentdate = new Date(); 
+        var datetime = currentdate.getDate() + "-"
+                        + (currentdate.getMonth()+1)  + "-" 
+                        + currentdate.getFullYear() + "_"  
+                        + currentdate.getHours() + ":"  
+                        + currentdate.getMinutes() + "__";
+        logger.debug('Timestamp: ', datetime);
+        
         var recordingsDirOptions = {
             mode: 0755,
-            prefix: 'r_',
+            prefix: currentdate.getDate() + "-"
+            + (currentdate.getMonth()+1)  + "-" 
+            + currentdate.getFullYear() + "_"  
+            + currentdate.getHours() + ":"  
+            + currentdate.getMinutes() + "__",
             postfix: '',
             dir: recordToDir,
         };
@@ -67,18 +96,18 @@ var AppSocket = function(server, appLocals) {
             //	var streamText = data.text.toLowerCase().replace('.', '') + '\n';
             var clientSampleRate = data.sampleRate;
 
-            var rawFileName = util.format(RAW_FILE_NAME_FORMAT, recordingsDir, streamId);
+            //var rawFileName = util.format(RAW_FILE_NAME_FORMAT, recordingsDir, streamId);
             var wavFileName = util.format(WAV_FILE_NAME_FORMAT, recordingsDir, streamId);
-            //	var txtFileName = util.format(TXT_FILE_NAME_FORMAT, recordingsDir, streamId);
+            var txtFileName = util.format(TXT_FILE_NAME_FORMAT, recordingsDir, streamId);
             
            
-            logger.debug('Saving raw audio to file ' + rawFileName);
-            console.log('Saving raw audio to file ' + rawFileName);
+            //logger.debug('Saving raw audio to file ' + rawFileName);
+            //console.log('Saving raw audio to file ' + rawFileName);
             
             logger.debug('Saving converted wav audio to file ' + wavFileName);
             console.log('Saving converted wav audio to file ' + wavFileName);
             
-            var rawFileWriter = fs.createWriteStream(rawFileName, {encoding: 'binary'});
+            //var rawFileWriter = fs.createWriteStream(rawFileName, {encoding: 'binary'});
             //	fs.writeFile(txtFileName, streamText);
 
             streamId+=1;
@@ -109,7 +138,7 @@ var AppSocket = function(server, appLocals) {
                 });
             };
 
-            stream.pipe(rawFileWriter);
+            //stream.pipe(rawFileWriter);
             Recorder.convertToWav(stream, clientSampleRate, wavFileName, onWavConversion);
             
         });

@@ -11,7 +11,8 @@ require(['jquery', 'ractiveUi', 'spoke'],
 	
     console.log("Loaded requirements for main.js");
     
-    var socket = spoke.sharedSocket.getSocket({url: "http://localhost:8002", path: "/socket.io/"});
+    //var socket = spoke.sharedSocket.getSocket({url: "http://localhost:8002", path: "/socket.io/"});
+    var socket = spoke.sharedSocket.getSocket({url: "http://gentle-ben.csail.mit.edu:8002", path: "/socket.io/"});
     socket.on('connect', function () {
         ui.component.set('connected', true);
     });
