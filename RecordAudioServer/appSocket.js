@@ -6,6 +6,7 @@ var tmp = require('tmp');
 var extfs = require('extfs');
 var Recorder = require('./lib/recorder');
 var logger = require('./lib/logger');
+//var mkpath = require('mkpath');
 
 // should require (./app) here and get locals from that
 
@@ -66,27 +67,57 @@ var AppSocket = function(server, appLocals) {
         */
         
         var currentdate = new Date(); 
-        var datetime = currentdate.getDate() + "-"
-                        + (currentdate.getMonth()+1)  + "-" 
-                        + currentdate.getFullYear() + "_"  
-                        + currentdate.getHours() + ":"  
-                        + currentdate.getMinutes() + "__";
-        logger.debug('Timestamp: ', datetime);
+        var date = (currentdate.getMonth()+1) + "-" 
+	        + currentdate.getDate() + "-"
+	        + currentdate.getFullYear();
+        
+        var time = currentdate.getHours() + ":" + currentdate.getMinutes() + "_";
+        
+        
+        
+        var month = currentdate.getMonth()+1;
+        var year = currentdate.getFullYear();
+        var day = currentdate.getDate();
+
+        //var date = month + "-" + day + "-" + year "-";
+        var date = (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + currentdate.getFullYear() + "-";
+        var time = currentdate.getHours() + ":" + currentdate.getMinutes() + "_";
+        
+        logger.debug('Timestamp: ', date + "-" + time);
+
+        if(!fs.existsSync(RECORDINGS_DIRECTORY_PROD + year)){
+        	logger.debug(RECORDINGS_DIRECTORY_PROD + year + " directory doesn't exist");
+        	fs.mkdirSync(RECORDINGS_DIRECTORY_PROD + year);
+        	logger.debug('1.Created new recordings dir at', RECORDINGS_DIRECTORY_PROD + year);
+        }
+       
+        if(!fs.existsSync(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month)){
+        	logger.debug(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + " directory doesn't exist");
+        	fs.mkdirSync(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month);
+        	logger.debug('2.Created new recordings dir at', RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month);
+        }
+        
+        if(!fs.existsSync(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + "/Day-" + day)){
+        	logger.debug(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + "/Day-" + day + " directory doesn't exist");
+        	fs.mkdirSync(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + "/Day-" + day);
+        	logger.debug('3.Created new recordings dir at', RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + "/Day-" + day);
+        }
+        
+        var recordToDir = RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + "/Day-" + day;
         
         var recordingsDirOptions = {
-            mode: 0755,
-            prefix: currentdate.getDate() + "-"
-            + (currentdate.getMonth()+1)  + "-" 
-            + currentdate.getFullYear() + "_"  
-            + currentdate.getHours() + ":"  
-            + currentdate.getMinutes() + "__",
-            postfix: '',
-            dir: recordToDir,
-        };
+                mode: 0755,
+                prefix: time,
+                postfix: '',
+                dir: recordToDir,
+            };
+        
+        //recordingsDir = 
+        
         var recordingsDirObj = tmp.dirSync(recordingsDirOptions);
         var recordingsDir = recordingsDirObj.name;
-        logger.debug('Created new recordings dir at', recordingsDir);
-        
+        logger.debug('4.Created new recordings dir at', recordingsDir);
+        console.log('Created new recordings dir at', recordingsDir);
         var streamId = 0;
 
         ss(socket).on('audioStream', function(stream, data) {
