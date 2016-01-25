@@ -43,6 +43,8 @@ public class Images extends HttpServlet {
     public Images() {
         super();
     }
+    
+
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -83,6 +85,10 @@ public class Images extends HttpServlet {
 			e1.printStackTrace();
 		}
 		//Add calls to get database lookups for food item
+		System.out.println("");
+		
+		
+
 		segmentation.results=USDALookup.foodItemInitialLookup(segmentation.attributes, segmentation.tokens);
 //		segmentation.semantic3results=Semantics3Lookup.foodItemLookup(segmentation.attributes, segmentation.tokens);
 
@@ -90,7 +96,29 @@ public class Images extends HttpServlet {
 		// get Google image of food items
 		try {
 			long beforeImages = System.currentTimeMillis();
+			//Map<String, String> foodImages = GetImages.getImagesDB(segmentation.foods);
+			segmentation.images = GetImages.getImageEncodings();
+			
+			System.out.println ("Printing segmentation images value 1");
+			
+			for (Map.Entry<String, String> entry : segmentation.images.entrySet()) {
+			    String key = entry.getKey();
+			    String value = entry.getValue();
+
+			    System.out.println ("Food: " + key + " Image Path: " + value);
+			}    
+			
 			segmentation.images = GetImages.getImages(segmentation.foods, segmentation.attributes, segmentation.tokens);
+			
+			System.out.println ("Printing segmentation images value 2");
+			
+			for (Map.Entry<String, String> entry : segmentation.images.entrySet()) {
+			    String key = entry.getKey();
+			    String value = entry.getValue();
+
+			    System.out.println ("Food: " + key + " Image Path: " + value);
+			}   
+			
 			long endTime = System.currentTimeMillis();
 			System.out.println("Total time: "+(endTime-starttime)+" images time: "+(endTime-beforeImages));
 		} catch (IOException e) {

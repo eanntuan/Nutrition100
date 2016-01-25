@@ -19,6 +19,7 @@ import org.atteo.evo.inflector.English;
 
 import com.sun.org.apache.bcel.internal.generic.NEWARRAY;
 
+import edu.mit.csail.sls.nut.GetImages;
 import edu.mit.csail.sls.nut.Segment;
 
 public class USDALookup {
@@ -48,8 +49,8 @@ public class USDALookup {
 			String brand, ArrayList<String> descriptions, int startingLevel, String quantity, ArrayList<String> addedAdjectives) {
 
 		System.out.println("Lookup is called on "+foodItem+" at level "+startingLevel);
-		System.out.println("Description"+descriptions);
-		System.out.println("Added adjectives"+addedAdjectives);
+		System.out.println("Description: "+descriptions);
+		System.out.println("Added adjectives: "+addedAdjectives);
 		int currentLevel = startingLevel;
 		ArrayList<ReturnableItem> results = new ArrayList<ReturnableItem>();
 		Stemmer stemmer = new Stemmer();
@@ -76,6 +77,7 @@ public class USDALookup {
 			switch (currentLevel) {
 			// To begin, check the cache for matching options
 			case 0: {
+				System.out.println("case 0");
 				// First, check if the full brand and description are found, or
 				// move on if brand or description are empty
 				if (!(descriptions.isEmpty() || brand.equals(""))) {
@@ -104,6 +106,7 @@ public class USDALookup {
 				break;
 			}
 			case 1: {
+				System.out.println("case 1");
 				// Next check for the full description and food item
 				if (!descriptions.isEmpty()) {
 					results = findFreeBaseEquiv(descriptionString + " "
@@ -121,6 +124,7 @@ public class USDALookup {
 			}
 			
 			case 2: {
+				System.out.println("case 2");
 				//Check if a cached result is found with just the first description
 				if (!descriptions.isEmpty()) {
 					 results =findFreeBaseEquiv(descriptions.get(0)+" "+foodItem,
@@ -136,6 +140,7 @@ public class USDALookup {
 			}
 			
 			case 3: {
+				System.out.println("case 3");
 				//Check if a cached result for just the food item exists
 				if (descriptions.isEmpty()) {
 				results =findFreeBaseEquiv(foodItem, singularItem, pluralItem);
@@ -148,6 +153,7 @@ public class USDALookup {
 			
 			//If no result is found in the cache, move onto the USDA SR database
 			case 4: {
+				System.out.println("case 4");
 				if (!descriptions.isEmpty() && !brand.isEmpty()) {
 				// Food item and description begins entry, brand exact feature in adjectives
 				ArrayList<ReturnableItem> tempResults = executeItemFirstPartialQuery(
@@ -164,6 +170,7 @@ public class USDALookup {
 			}
 			
 			case 5: {
+				System.out.println("case 5");
 				// Food item and description begins entry, brand similar feature in adjectives
 				if (!descriptions.isEmpty() && !brand.isEmpty()) {
 				ArrayList<ReturnableItem> tempResults = executeItemFirstPartialQuery(
@@ -180,6 +187,7 @@ public class USDALookup {
 			}
 			
 			case 6: {
+				System.out.println("case 6");
 				//Food item and description begins entry,  brand not in entry
 				if (!descriptions.isEmpty()) {
 				results = executeItemFirstPartialQuery(
@@ -191,6 +199,7 @@ public class USDALookup {
 			}
 			
 			case 7: {
+				System.out.println("case 7");
 				//Food item and description found exactly in entry
 				if (!descriptions.isEmpty()) {
 				results = executeItemPartialQuery(
@@ -203,6 +212,7 @@ public class USDALookup {
 			}
 			
 			case 8: {
+				System.out.println("case 8");
 				//Food item begins entry, exact brand and description in adjectives
 				ArrayList<ReturnableItem> tempResults = executeItemFirstPartialQuery(foodItem, singularItem, pluralItem);
 				for (ReturnableItem currentItem : tempResults) {
@@ -255,6 +265,7 @@ public class USDALookup {
 			}
 			
 			case 11: {
+				System.out.println("case 11");
 				//Food item begins entry, partial match to brand or description in adjectives
 				ArrayList<ReturnableItem> tempResults = executeItemFirstPartialQuery(foodItem, singularItem, pluralItem);
 				for (ReturnableItem currentItem : tempResults) {
@@ -276,12 +287,14 @@ public class USDALookup {
 			}
 			
 			case 12: {
+				System.out.println("case 12");
 				//Food item begins entry
 				results = executeItemFirstPartialQuery(foodItem, singularItem, pluralItem);
 				break;
 			}
 			
 			case 13: {
+				System.out.println("case 13");
 				//Food item anywhere in entry
 				results = executeItemPartialQuery(foodItem, singularItem, pluralItem);
 				adjectivesrelevant=false;
@@ -400,15 +413,26 @@ public class USDALookup {
 	public static Map<String, USDAResult> foodItemInitialLookup(
 			Map<String, ArrayList<Segment>> dependencies,
 			ArrayList<String> tokens) {
-		System.out.println("Food item lookup:" + dependencies);
+		System.out.println("Food item initial lookup dependencies:" + dependencies);
+		
 		Map<String, USDAResult> foodItems = new HashMap<String, USDAResult>();
+		
+		//System.out.println("Testing if there is an image: " + image);
+		
+		//Map<String, String> foodImages = new HashMap<String, String>();
+		
 		System.out.println("Keyset: " + dependencies.keySet());
+		//GetImages.setImageName(imageLink);
+		
+		Set<String> keyset = dependencies.keySet();
+		
 		for (String item : dependencies.keySet()) {
 
 			foodItems.put(
 					item,
 					foodItemLookup(item, dependencies.get(item), tokens,
 							new ArrayList<String>()));
+			//foodImages.put(item, "image here");
 
 		}
 
@@ -428,7 +452,7 @@ public class USDALookup {
 		ArrayList<String> description = new ArrayList<String>();
 		 String quantity = "";
 		for (Segment s : dependencies) {
-			System.out.println(s.label);
+			System.out.println("label: " + s.label);
 			if (s.label.equals("Brand")) {
 				for (int i = s.start; i < s.end; i++) {
 					// don't include "from" as part of brand name
@@ -582,6 +606,7 @@ public class USDALookup {
 
 	private static ArrayList<ReturnableItem> executeQuery(String query) {
 		ArrayList<ReturnableItem> returnedItems = new ArrayList<ReturnableItem>();
+		
 		Connection conn = null;
 		Statement stmt = null;
 
@@ -593,7 +618,8 @@ public class USDALookup {
 			// System.out.println("Connecting to database...");
 
 			conn = DriverManager.getConnection(DB_URL, USER, PASS);
-
+			//Map<String, String> foodImages = new HashMap<String, String>();
+			
 			// STEP 4: Execute a query
 			// System.out.println("Creating statement...");
 			stmt = conn.createStatement();
@@ -611,8 +637,19 @@ public class USDALookup {
 				double carbohydrates =rs.getDouble("carbohydrates");
 				double fiber =rs.getDouble("fiber");
 				double sugars=rs.getDouble("sugars");
-				System.out.println(longDesc + " Calories: " + calories+" "+ndb_no);
+				String image = rs.getString("image");
+				System.out.println(longDesc + ", Calories: " + calories+", NDB_No: "+ndb_no);
+				System.out.println("USDA Lookup image name: " + image);
 
+				
+				//Adding image path to hash table
+				//String foodDesc[] = longDesc.split(" ", 2);
+				//String firstWord = foodDesc[0];
+				//System.out.println("first word: " + firstWord);
+				
+				//foodImages.put(firstWord, image);
+				
+				
 				USDAItem toAdd=new USDAItem(ndb_no, longDesc, calories);
 				toAdd.setProtein(protein);
 				toAdd.setFat(fat);
@@ -621,6 +658,10 @@ public class USDALookup {
 				toAdd.setCarbohydrates(carbohydrates);
 				toAdd.setFiber(fiber);
 				toAdd.setSugars(sugars);
+				toAdd.setImage(image);
+				
+				GetImages.imageName(longDesc, image);
+				
 				returnedItems.add(toAdd);
 
 			}
@@ -668,13 +709,15 @@ public class USDALookup {
 
 	public static ArrayList<ReturnableItem> executeItemFirstPartialQuery(
 			String item, String singular, String plural) {
+		
+		System.out.println("Execute item first partial query for: " + item);
 
 		String sql;
 		sql="SELECT NDB_No, Long_Desc, Calories, "
 				+ "Protein, fat, cholesterol, "
 				+ "sodium, carbohydrates, fiber, "
 				//+ "sugars FROM foodsWithNutrients "
-				+ "sugars FROM foodsWithNutrientsTufts "
+				+ "sugars, image FROM foodsWithNutrientsTufts "
 				+ "WHERE ";
 
 		sql += "(Long_Desc LIKE '"
@@ -688,12 +731,14 @@ public class USDALookup {
 				+ "' OR Long_Desc LIKE '"
 				+ singular + "' OR Long_Desc LIKE '" + plural + "')";
 		//
-		System.out.println("Query:" + sql);
+		System.out.println("Query (1):" + sql);
 
 		ArrayList<ReturnableItem> returnedItems = executeQuery(sql);
 
-		System.out.println("Finished with " + returnedItems.size()
+		System.out.println("Finished (1) with " + returnedItems.size()
 				+ " results.");
+		
+		
 
 		return returnedItems;
 
@@ -711,7 +756,7 @@ public class USDALookup {
 				+ "Protein, fat, cholesterol, "
 				+ "sodium, carbohydrates, fiber, "
 				//+ "sugars FROM foodsWithNutrients "
-				+ "sugars FROM foodsWithNutrientsTufts "
+				+ "sugars, image FROM foodsWithNutrientsTufts "
 				+ "WHERE ";
 		sql += "(Long_Desc LIKE '%"
 				+ item
@@ -725,11 +770,12 @@ public class USDALookup {
 				+ singular
 				+ "' OR Long_Desc LIKE '%" + plural + "')";
 
-		System.out.println("Query:" + sql);
+		System.out.println("Query (2):" + sql);
 		ArrayList<ReturnableItem> returnedItems = executeQuery(sql);
 
-		System.out.println("Finished with " + returnedItems.size()
+		System.out.println("Finished (2) with " + returnedItems.size()
 				+ " results.");
+		//System.out.println("Returned items: " + returnedItems);
 
 		return returnedItems;
 
@@ -754,7 +800,7 @@ public class USDALookup {
 			}
 			sql = sql.substring(0, sql.length() - 2);
 			//
-			System.out.println("Query:" + sql);
+			System.out.println("Query (3):" + sql);
 
 			ArrayList<USDAWeight> returnedItems = executeWeightQuery(sql);
 
@@ -842,6 +888,8 @@ public class USDALookup {
 
 	public static ArrayList<ReturnableItem> findFreeBaseEquiv(String item,
 			String singular, String plural) {
+		
+		System.out.println("Find freebase equiv");
 
 		String sql;
 		
@@ -849,7 +897,7 @@ public class USDALookup {
 				+ "Protein, fat, cholesterol, "
 				+ "sodium, carbohydrates, fiber, "
 				//+ "sugars FROM foodsWithNutrients as fd, freebaseEquiv as free "
-				+ "sugars FROM foodsWithNutrientsTufts as fd, freebaseEquiv as free "
+				+ "sugars, image FROM foodsWithNutrientsTufts as fd, freebaseEquiv as free "
 				+ "WHERE fd.NDB_NO = free.srid AND ";
 //		sql="SELECT fd.NDB_No, Long_Desc, nd1.Nutr_Val as Calories, "
 //				+ "nd2.Nutr_Val as Protein, nd3.Nutr_Val as fat, nd4.Nutr_Val as cholesterol, "
@@ -880,7 +928,7 @@ public class USDALookup {
 
 		ArrayList<ReturnableItem> returnedItems = executeQuery(sql);
 
-		System.out.println("Finished with " + returnedItems.size()
+		System.out.println("Finished (3) with " + returnedItems.size()
 				+ " results.");
 
 		return returnedItems;
@@ -893,7 +941,8 @@ public class USDALookup {
 
 	public static ArrayList<ReturnableItem> findNutritionixEquiv(String item,
 			String singular, String plural) {
-
+		
+		System.out.println("Find nutritionix equiv");
 		String sql;
 		sql = "SELECT itemName, calories, nutritionixID, servingQuant, servingAmount FROM nutritionixCache"
 				+ " WHERE name LIKE '"
@@ -906,7 +955,7 @@ public class USDALookup {
 
 		ArrayList<ReturnableItem> returnedItems = executeNutritionixCacheQuery(sql);
 
-		System.out.println("Finished with " + returnedItems.size()
+		System.out.println("Finished (4) with " + returnedItems.size()
 				+ " results.");
 
 		return returnedItems;
@@ -943,7 +992,7 @@ public class USDALookup {
 				String servingAmount = rs.getString("servingAmount");
 				String servingQuant = rs.getString("servingQuant");
 				String nutid = rs.getString("nutritionixID");
-				System.out.println(itemName + " Calories: " + calories);
+				System.out.println(itemName + ", Calories: " + calories);
 
 				returnedItems.add(new NutritionixItem(nutid, itemName, calories, servingAmount, servingQuant));
 

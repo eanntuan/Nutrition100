@@ -50,100 +50,57 @@ public class GetImages {
 	
 	public static String path="/scratch/images/";
 //	public static String path="/Users/rnaphtal/Desktop/imageCache/";
-	/**
-	 * Get images of food items with attributes from Google image search
-	 * 
-	 * @param foodItems
-	 * @param segmentDeps
-	 * @param segmentation
-	 * @return
-	 * @throws IOException
-	 */
-	static Map<String, String> getImages(ArrayList<String> foods,
-			Map<String, ArrayList<Segment>> segmentDeps,
-			ArrayList<String> tokens) throws IOException {
+	
+//	public static String imageLink = "";
+	private static Map<String, String> foodImages = new HashMap<>();
+	private static Map<String, String> foodEncodingImages = new HashMap<>();
+	
+	public static Map<String, String> imageName(String description, String imageLink){
+		System.out.println("Got food description: " + description);
+		System.out.println("Got image name: " + imageLink);
+		
+		String foodDesc[] = description.split(" ", 2);
+		String firstWord = foodDesc[0];
+		firstWord = firstWord.replaceAll("[^A-Za-z]", "");
+		//System.out.println("first word: " + firstWord);
+		
+		foodImages.put(firstWord, imageLink);
+		
+		Map<String, String> foodImageEncoding = new HashMap<>();
+		boolean noRes = true;
+		
+		for (Map.Entry<String, String> entry : foodImages.entrySet()) {
+		    String foodName = entry.getKey();
+		    String imagePath = entry.getValue();
 
-		Map<String, String> foodImages = new HashMap<>();
-		// for (String food : foods) {
-		for (String food : segmentDeps.keySet()) {
-			ArrayList<Segment> attributes = segmentDeps.get(food);
-			System.out.println(attributes);
-			String newFood = "";
-			// remove numeric values (i.e. indices) from food name
-			newFood = newFood.replaceAll("[^A-Za-z]", "");
-			System.out.println("food: " + food);
-			System.out.println("food no punc: " + newFood);
-			for (String foodItem : segmentDeps.keySet()) {
-				System.out.println("segment deps food item: " + foodItem);
-			}
-			System.out.println();
-			String description="";
-			String brand="";
-			for (Segment segment : attributes) {
-				if (segment.label.equals("Brand")) {
-					String attrString = StringUtils.join(
-							tokens.subList(segment.start, segment.end), " ");
-					System.out.println("attribute string: " + attrString);
-//					attrString = attrString.replaceAll("%", "%20percent");
-//					attrString = attrString.replaceAll(" ", "%20");
-					//System.out.println(attrString);
-//					newFood += "%20";
-					brand += " "+attrString;
-					System.out.println("brand: " + brand);
-				} else if (segment.label.equals("Description")) {
-					String attrString = StringUtils.join(
-							tokens.subList(segment.start, segment.end), " ");
-					description += " "+attrString;
-				}
-				// String attrString =
-				// StringUtils.join(tokens.subList(segment.start, segment.end),
-				// "%20");
-				
-			}
-			newFood=brand.trim()+" "+description.trim()+" "+food.replaceAll("[^A-Za-z]", "");
-			newFood= newFood.replaceAll("  ", " ").trim();
-			newFood= newFood.replaceAll("%", "%20percent");
-			newFood= newFood.replaceAll(" ", "%20");
-			
-			System.out.println("new food: " + newFood);
-			
-			// "cereal%20bowl" doesn't work, but "cereal%20a%20bowl" does
-			if (newFood.equals("cereal%20bowl")) {
-				newFood = "cereal%20a%20bowl";
-			} else if (newFood.equals("milk%20a%20glass%20whole")) {
-				newFood = "milk%20glass%20whole";
-			}
-			newFood = newFood.replaceAll("/", "__");
-			if (newFood.equals("nut%20a%20small%20ziplock%20bag%20full%20honey")){
-				continue;
-			}
-
-			// retry sending URL request until get data back
-			boolean noRes = true;
-
-			// TODO first check if it is cached
-			File f = new File(path+newFood + ".png");
-			
-			if (f.exists() && !f.isDirectory()) {
-				System.out.println("Should fetch from file and implemented");
+		    System.out.println ("Food: " + foodName + " Image Path: " + imagePath);
+		    
+		    File f = new File(path+ imagePath + ".png");
+		    System.out.println("File path: " + f.getAbsolutePath());
+		    
+		    if (f.exists() && !f.isDirectory()) {
+				System.out.println("Found file name in database");
 				BufferedImage buffImg;
 				try {
 					buffImg = ImageIO.read(f);
-					foodImages.put(food, "data:image/png;base64,"+encodeToString(buffImg, "png"));
-					noRes = false;
-					System.out.println("Loaded image"+f.getAbsolutePath());
+					foodImageEncoding.put(foodName, "data:image/png;base64,"+encodeToString(buffImg, "png"));
+					//noRes = false;
+					System.out.println("TESTING: Loaded image imageName"+f.getAbsolutePath());
+					System.out.println("");
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
 
 			} else {
-				System.out.println("new food: " + newFood);
 				System.out.println("Should not fetch from file");
-				foodImages.put(food, "");
+				foodImageEncoding.put(foodName, "");
+	
 			}
-
-			noRes=false;
+		    
+		    noRes=false;
 			long startTime = System.currentTimeMillis(); // fetch starting time
+			
+			/*
 			while (noRes) {
 				// break out of while loop after .1 secs
 				if (System.currentTimeMillis() - startTime > 100) {
@@ -151,7 +108,7 @@ public class GetImages {
 				}
 				URL url = new URL(
 						"https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q="
-								+ newFood + "&userip=USERS-IP-ADDRESS");
+								+ foodName + "&userip=USERS-IP-ADDRESS");
 				URLConnection connection = url.openConnection();
 				connection.addRequestProperty("Referer",
 						"http://web.sls.csail.mit.edu/Nutrition/");
@@ -178,13 +135,13 @@ public class GetImages {
 						String imgUrl = (String) img.get("url");
 						try {
 							
-							foodImages.put(food, getImageEncoding(newFood, imgUrl));
+							foodImages.put(foodName, getImageEncoding(foodName, imagePath));
 						} catch (Exception e) {
 //							e.printStackTrace();
-							foodImages.put(food, imgUrl);
+							foodImages.put(foodName, imagePath);
 						}
 						// foodImages.put(food, imgUrl);
-						System.out.println(imgUrl);
+						System.out.println("TESTING image path" + imagePath);
 					} catch (JSONException e) {
 						e.printStackTrace();
 					}
@@ -194,9 +151,188 @@ public class GetImages {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-			}
+			
 
+		}*/
 		}
+		
+		setImageEncodings(foodImageEncoding);
+		
+		return foodImageEncoding;
+		   
+
+	}
+	
+	static void setImageEncodings(Map<String, String> images){
+		System.out.println("In the SET image encodings method");
+		foodEncodingImages = images;
+
+	}
+	
+	static Map<String, String> getImageEncodings(){
+		System.out.println("");
+		System.out.println("In the GET image encodings method");
+
+		return foodEncodingImages;
+	}
+	
+	
+	/**
+	 * Get images of food items with attributes from Google image search
+	 * 
+	 * @param foodItems
+	 * @param segmentDeps
+	 * @param segmentation
+	 * @return
+	 * @throws IOException
+	 */
+	static Map<String, String> getImages(ArrayList<String> foods,
+			Map<String, ArrayList<Segment>> segmentDeps,
+			ArrayList<String> tokens) throws IOException {
+		 
+
+		Map<String, String> foodImages = new HashMap<>();
+		
+//		// for (String food : foods) {
+//		for (String food : segmentDeps.keySet()) {
+//			ArrayList<Segment> attributes = segmentDeps.get(food);
+//			System.out.println(attributes);
+//			String newFood = "";
+//			// remove numeric values (i.e. indices) from food name
+//			newFood = newFood.replaceAll("[^A-Za-z]", "");
+//			
+//			System.out.println("food: " + food);
+//			System.out.println("food no punc: " + newFood);
+//			
+//			for (String foodItem : segmentDeps.keySet()) {
+//				System.out.println("segment deps food item: " + foodItem);
+//			}
+//			System.out.println();
+//			String description="";
+//			String brand="";
+//			for (Segment segment : attributes) {
+//				if (segment.label.equals("Brand")) {
+//					String attrString = StringUtils.join(
+//							tokens.subList(segment.start, segment.end), " ");
+//					System.out.println("attribute string: " + attrString);
+////					attrString = attrString.replaceAll("%", "%20percent");
+////					attrString = attrString.replaceAll(" ", "%20");
+//					//System.out.println(attrString);
+////					newFood += "%20";
+//					brand += " "+attrString;
+//					System.out.println("brand: " + brand);
+//				} else if (segment.label.equals("Description")) {
+//					String attrString = StringUtils.join(
+//							tokens.subList(segment.start, segment.end), " ");
+//					description += " "+attrString;
+//				}
+//				// String attrString =
+//				// StringUtils.join(tokens.subList(segment.start, segment.end),
+//				// "%20");
+//				
+//			}
+//			newFood=brand.trim()+" "+description.trim()+" "+food.replaceAll("[^A-Za-z]", "");
+//			newFood= newFood.replaceAll("  ", " ").trim();
+//			newFood= newFood.replaceAll("%", "%20percent");
+//			newFood= newFood.replaceAll(" ", "%20");
+//			
+//			System.out.println("new food: " + newFood);
+//			
+//			// "cereal%20bowl" doesn't work, but "cereal%20a%20bowl" does
+//			if (newFood.equals("cereal%20bowl")) {
+//				newFood = "cereal%20a%20bowl";
+//			} else if (newFood.equals("milk%20a%20glass%20whole")) {
+//				newFood = "milk%20glass%20whole";
+//			}
+//			newFood = newFood.replaceAll("/", "__");
+//			if (newFood.equals("nut%20a%20small%20ziplock%20bag%20full%20honey")){
+//				continue;
+//			}
+//
+//			// retry sending URL request until get data back
+//			boolean noRes = true;
+//
+//			//first check if it is cached
+//			//if there is an image link associated with it
+//			/*if(imageLink.length() > 1){
+//				File f = new File(path+imageLink);
+//			}*/
+//			
+//			File f = new File(path+newFood + ".png");
+//			
+//			if (f.exists() && !f.isDirectory()) {
+//				System.out.println("Should fetch from file and implemented");
+//				BufferedImage buffImg;
+//				try {
+//					buffImg = ImageIO.read(f);
+//					//foodImages.put(food, "data:image/png;base64,"+encodeToString(buffImg, "png"));
+//					noRes = false;
+//					System.out.println("Loaded image"+f.getAbsolutePath());
+//				} catch (IOException e) {
+//					e.printStackTrace();
+//				}
+//
+//			} else {
+//				System.out.println("new food: " + newFood);
+//				System.out.println("Should not fetch from file");
+//				foodImages.put(food, "");
+//			}
+//
+//			noRes=false;
+//			long startTime = System.currentTimeMillis(); // fetch starting time
+//			while (noRes) {
+//				// break out of while loop after .1 secs
+//				if (System.currentTimeMillis() - startTime > 100) {
+//					break;
+//				}
+//				URL url = new URL(
+//						"https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q="
+//								+ newFood + "&userip=USERS-IP-ADDRESS");
+//				URLConnection connection = url.openConnection();
+//				connection.addRequestProperty("Referer",
+//						"http://web.sls.csail.mit.edu/Nutrition/");
+//
+//				String line;
+//				StringBuilder builder = new StringBuilder();
+//				BufferedReader reader = new BufferedReader(
+//						new InputStreamReader(connection.getInputStream()));
+//				while ((line = reader.readLine()) != null) {
+//					builder.append(line);
+//				}
+//
+//				noRes = builder.toString().contains("qps rate exceeded");
+//				System.out.println(noRes + builder.toString());
+//				if (!noRes) {
+//					JSONObject json;
+//					try {
+//						json = new JSONObject(builder.toString());
+//						JSONObject responseData = (JSONObject) json
+//								.get("responseData");
+//						JSONArray results = (JSONArray) responseData
+//								.get("results");
+//						JSONObject img = (JSONObject) results.get(0);
+//						String imgUrl = (String) img.get("url");
+//						try {
+//							
+//							foodImages.put(food, getImageEncoding(newFood, imgUrl));
+//						} catch (Exception e) {
+////							e.printStackTrace();
+//							foodImages.put(food, imgUrl);
+//						}
+//						// foodImages.put(food, imgUrl);
+//						System.out.println("imgURL" + imgUrl);
+//					} catch (JSONException e) {
+//						e.printStackTrace();
+//					}
+//				}
+//				try {
+//					Thread.sleep(100);
+//				} catch (InterruptedException e) {
+//					e.printStackTrace();
+//				}
+//			}
+//
+//		}
 		return foodImages;
 	}
 

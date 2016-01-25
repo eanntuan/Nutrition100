@@ -16,6 +16,7 @@ public class USDAItem extends TreeNode implements Comparable<USDAItem>, FSTNode,
 	private double carbohydrates;
 	private double fiber;
 	private double sugars;
+	private String image;
 	
 	public USDAItem (String p_foodID, String p_longDesc, double p_calories){
 		super();
@@ -266,6 +267,20 @@ public class USDAItem extends TreeNode implements Comparable<USDAItem>, FSTNode,
 	 */
 	public void setSugars(double sugars) {
 		this.sugars = sugars;
+	}
+	
+	/**
+	 * @return the image
+	 */
+	public String getImage() {
+		return image;
+	}
+	
+	/**
+	 * @param image the image to set
+	 */
+	public void setImage(String image) {
+		this.image = image;
 	}
 	
 }

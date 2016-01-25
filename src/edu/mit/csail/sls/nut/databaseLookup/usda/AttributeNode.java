@@ -73,10 +73,10 @@ public class AttributeNode implements FSTNode {
 			for (FSTNode currentNode: nextCopy) {
 				if (itemsSimilarNFS(currentNode.itemsUpstream(), nfsNode)) {
 					if (!next.remove(currentNode)) {
-						System.err.println("Current node is not in next" + currentNode);
+						System.err.println("Current node is not in next " + currentNode);
 					};
 					currentNode.hide();
-					System.out.println("Removed from"+attribute+"because similar to NFS/NS" + currentNode);
+					System.out.println("Removed from "+attribute+" because similar to NFS/NS" + currentNode);
 					attributesRemoved.addAll(currentNode.attributesUpstream());
 				}
 			}
@@ -87,11 +87,11 @@ public class AttributeNode implements FSTNode {
 		
 		if (next.size() == 1) {
 			if (!first) {
-				System.out.println("Removed bc not first" + attribute);
+				System.out.println("Removed bc not first: " + attribute);
 				this.needed = false;
 				attributesRemoved.add(attribute);
 			} else {
-				System.out.println("First with 1 option" + attribute);
+				System.out.println("First with 1 option: " + attribute);
 				this.needed = true;
 				attributesKept.add(attribute);
 			}
@@ -104,7 +104,7 @@ public class AttributeNode implements FSTNode {
 			//If all items upstream are similar, this node is not needed and all can be compressed
 			if (itemsSimilar(allItems)) {
 				this.needed = false;
-				System.out.println("Added bc final then all upstream similar" + attribute);
+				System.out.println("Added bc final then all upstream similar: " + attribute);
 				attributesKept.add(attribute);
 				attributesRemoved.addAll(attributesUpstream());
 				CompositeItem item = new CompositeItem(allItems);
@@ -113,7 +113,7 @@ public class AttributeNode implements FSTNode {
 			} else if (allItems.size() ==2) {
 				//Add only if 1 is a food item
 				if (next.get(0).getFSTType().equals(FSTNode.type.Item) || next.get(1).getFSTType().equals(FSTNode.type.Item)) {
-					System.out.println("Adding attribute bc 2 items" + attribute);
+					System.out.println("Adding attribute bc 2 items: " + attribute);
 					attributesKept.add(attribute);
 				}
 				
