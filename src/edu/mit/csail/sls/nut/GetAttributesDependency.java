@@ -12,7 +12,7 @@ public class GetAttributesDependency {
      * Get all food-attribute associations, using Stanford dependency parse:
      * associate a food and attribute if there's a dependency between them.
      */
-	static Map<String, ArrayList<Segment>> getAttributeDeps(Sentence sentence, Segmentation segmentation, ArrayList<CRFToken> foodItems) {		
+	static Map<String, ArrayList<Segment>> getAttributeDeps(Sentence sentence, NLPData segmentation, ArrayList<CRFToken> foodItems) {		
 		Map<String, ArrayList<Segment>> segmentDeps = Tag.initializeSegmentDeps(foodItems);
 		
 		// determine food-attribute dependencies for entire attribute segments

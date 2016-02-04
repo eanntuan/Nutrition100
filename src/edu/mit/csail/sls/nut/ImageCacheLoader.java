@@ -43,8 +43,20 @@ public class ImageCacheLoader {
 		PrintWriter FSTWriter = null;
 		try {
 			PrintWriter FSTwriter = null;
-		    Segmentation result = Tag.runCRF(FSTwriter, text, type, NutritionContext.sentenceTagger, false, labelType, tag_type);
-				
+			
+			NLPData NLPresult = Tag.runCRF(FSTwriter, text, type, NutritionContext.sentenceTagger, false, labelType, tag_type);
+			
+			Segmentation result = new Segmentation();
+			result.text = NLPresult.text;
+			result.tokens = NLPresult.tokens;
+			result.labels = NLPresult.labels;
+			result.tags = NLPresult.tags;
+			result.segments = NLPresult.segments;
+			result.parse = NLPresult.parse;
+			result.deps = NLPresult.deps;
+			result.foods = NLPresult.foods;
+			result.attributes = NLPresult.attributes;
+
 			return result;
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

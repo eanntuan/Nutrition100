@@ -85,7 +85,7 @@ public class GetImages {
 					buffImg = ImageIO.read(f);
 					foodImageEncoding.put(foodName, "data:image/png;base64,"+encodeToString(buffImg, "png"));
 					//noRes = false;
-					System.out.println("TESTING: Loaded image imageName"+f.getAbsolutePath());
+					System.out.println("TESTING: Loaded image imageName:"+f.getAbsolutePath());
 					System.out.println("");
 				} catch (IOException e) {
 					e.printStackTrace();

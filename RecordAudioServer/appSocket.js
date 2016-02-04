@@ -91,19 +91,19 @@ var AppSocket = function(server, appLocals) {
         	logger.debug('1.Created new recordings dir at', RECORDINGS_DIRECTORY_PROD + year);
         }
        
-        if(!fs.existsSync(RECORDINGS_DIRECTORY_PROD + year + "/" + year + "-"+ month)){
-        	logger.debug(RECORDINGS_DIRECTORY_PROD + year + "/" + year + "-"+ month + " directory doesn't exist");
-        	fs.mkdirSync(RECORDINGS_DIRECTORY_PROD + "/" + year + "-"+ month);
-        	logger.debug('2.Created new recordings dir at', RECORDINGS_DIRECTORY_PROD + year + "/" + year + "-"+ month);
+        if(!fs.existsSync(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month)){
+        	logger.debug(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + " directory doesn't exist");
+        	fs.mkdirSync(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month);
+        	logger.debug('2.Created new recordings dir at', RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month);
         }
         
-        if(!fs.existsSync(RECORDINGS_DIRECTORY_PROD + year + "/" + year + "-"+ month + "/" + year + "-"+ month + "-" + day)){
-        	logger.debug(RECORDINGS_DIRECTORY_PROD + year + "/" + year + "-"+ month + "/" + year + "-"+ month + "-" + day + " directory doesn't exist");
-        	fs.mkdirSync(RECORDINGS_DIRECTORY_PROD + year + "/" + year + "-"+ month + "/" + year + "-"+ month + "-" + day);
-        	logger.debug('3.Created new recordings dir at', RECORDINGS_DIRECTORY_PROD + year + "/" + year + "-"+ month + "/" + year + "-"+ month + "-" + day);
+        if(!fs.existsSync(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + "/Day-" + day)){
+        	logger.debug(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + "/Day-" + day + " directory doesn't exist");
+        	fs.mkdirSync(RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + "/Day-" + day);
+        	logger.debug('3.Created new recordings dir at', RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + "/Day-" + day);
         }
         
-        var recordToDir = RECORDINGS_DIRECTORY_PROD + year + "/" + year + "-"+ month + "/" + year + "-"+ month + "-" + day;
+        var recordToDir = RECORDINGS_DIRECTORY_PROD + year + "/Month-" + month + "/Day-" + day;
         
         var recordingsDirOptions = {
                 mode: 0755,

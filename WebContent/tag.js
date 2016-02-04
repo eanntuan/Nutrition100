@@ -10,22 +10,19 @@ var foodItemsToRows={};
 
     // type of approach for associating foods w/ attrs: FST|Simple|Dependency
     var segment_type = "CRF";
-
-
     var labelRep = "IOE";
     var tag_type = "mallet"; // semantic tagging type: semicrf|mallet
     var responseNum = 1;
     var numSpoken = 0;
     var numTyped = 0;
     var foodNum = 0;
-    
-    
-    
+
     (function(){	
     	var scripts = document.getElementsByTagName("script");
     	var src = scripts[scripts.length-1].src;
     	var pos = src.lastIndexOf('/');
     	nuturl = src.substring(0, pos+1);
+    	nuturlNLP = "http://localhost:8080/Nutrition103-NLP/";
     	nutname = src.substring(pos+1, src.indexOf(".", pos+1));
     	
     	$('<link rel="stylesheet" type="text/css" href="'+nuturl+nutname+'.css'+'">').appendTo("head");
@@ -71,7 +68,6 @@ var foodItemsToRows={};
     	        event.preventDefault();
     	        var feedback = $("#feedback").val();
     	        //$("#feedback").val("");
-    	        
     	    }
     	});
     	
@@ -168,7 +164,6 @@ var foodItemsToRows={};
         }
         
         // Perform a check of the data and prevent accidental submission
-        
         // check that there are > 4 words in the diary
         sentence = sentence.replace(/(^\s*)|(\s*$)/gi,"");
         sentence = sentence.replace(/[ ]{2,}/gi," ");
@@ -218,12 +213,11 @@ var foodItemsToRows={};
 			if (valu.length==1 && !(value==="a" || value==="i")) {
 				count += 1;
 			}
-			
 			if (!$Spelling.BinSpellCheck(valu) && value!=="i") {
 				count += 1;
 			}
-			
 		}
+		
 		if (count/wordcount >= 0.5) {
 			// They used more than 50% of words not in dictionary
 			console.log("more than 50% misspelled!");
@@ -231,7 +225,6 @@ var foodItemsToRows={};
 	 		$("#submitButton").prop("disabled",true);
 	 		return false;
 		}
-		
 
 		// check that diary is not a repeat
 		$.ajax({
@@ -321,6 +314,7 @@ var foodItemsToRows={};
 	    var dependencies = data.attributes;
 	    var databaseResults = data.results;
 	    var images = data.images;
+	    
 	    // leave previous meal descriptions visible when evaluating the system
 	    if (nuturl.indexOf("Eval")==-1) {
 	    	textArea.html("");
@@ -334,8 +328,6 @@ var foodItemsToRows={};
 	    	textArea.append("<div style:'clear:left'></div>");
 	    }
 	    textArea.append("<div class='eolDiv'>");
-	    //textArea.append("<div class='successful'>Meal logged successfully... </div>");
-	    //textArea.append("<span class='successful'>" + &#10004; "</span>");
 	    textArea.append("<br/>");
 	}
 	
@@ -347,6 +339,8 @@ var foodItemsToRows={};
 	    var databaseResults = data.results;
 	    var semantic3Results = data.semantic3results;
 	    var images = data.images;
+	    console.log("images");
+	    console.log(images);
 	    $(".changedComponent").removeClass("changedComponent");
 	    //Allow modifications without food items 
 	    if (jQuery.isEmptyObject(dependencies)&& !jQuery.isEmptyObject(rowsToFoodItems)) {
@@ -464,6 +458,7 @@ var foodItemsToRows={};
 //			console.log("image:", images[food]);
 			var row = $('<tr id="food"'+tableRow+'"></tr>'); 
 			var img = $('<img id="dynamic'+(tableRow+1)+'">'); 
+			console.log(("images[food]: " + images[food]));
 			img.attr("src", images[food]);
 			img.attr("border", '1');
 			img.hide();
@@ -526,7 +521,7 @@ var foodItemsToRows={};
 	    		//console.log("quantity selection supposed to be in 2nd column: " + quantitySelectionText);
 	    		
 	    		stext+=hits[0].longDesc+", Calories: " + "<div id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"</div>";
-	    		console.log(hits[0].foodID);
+	    		console.log("food id: " + hits[0].foodID);
 	    		if (hits[0].foodID=="-1") {
 	    			stext+=" <a style='font-size: 8pt;' target='_blank' href=http://www.nutritionix.com/search/item/"+hits[0].nutID+">Source: Nutritionix </a>";
 	    		}else {
@@ -568,7 +563,7 @@ var foodItemsToRows={};
 			foodNum += 1;
 			$("#numFoods").val(foodNum);
 			console.log("foodNum "+foodNum);
-			console.log($("#numFoods").val());
+			console.log("numfoods val: " + $("#numFoods").val());
 			if (!(nuturl.indexOf("Eval")==-1)){
 		         
 		        // create semantic tag radio buttons
@@ -915,7 +910,9 @@ var foodItemsToRows={};
 	    //console.log("Text: '"+text+"'");
 	    //console.log("labelRep: "+labelRep);
 	    // first display the recognized speech with CRF labels
-	    $.getJSON(nuturl+nutname+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'tag_type' : tag_type},
+		console.log("nuturl: " + nuturl);
+		console.log("nutname: " + nutname);
+	    $.getJSON(nuturlNLP+nutname+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'tag_type' : tag_type},
 		      function(data){
 	    		console.log("got tagged results");
 	    		//var timer = setInterval( displayTaggedResult, 5000);
@@ -927,13 +924,16 @@ var foodItemsToRows={};
 	    	  	var serializedData = $.param(data);
 	    	  	//console.log(serializedData);
 	    	  	
+	    	  	
 	    	  	$.getJSON(nuturl+'Images'+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'data': serializedData, 'tag_type' : tag_type},
 	    			     function(dataWithImages){
+	    	  				console.log("datawithimages coming");
 	    	  				console.log(dataWithImages);
 	    		    	  	displayTable(dataWithImages);
 	    			      });
 	    		
 	    	  	//$.ajax({url:nuturl+'Images', data: data});
+	    	  	console.log("data");
 	    	  	//displayTable(data);
 	    });
 	}

@@ -18,7 +18,7 @@ public class GetAttributesFST {
 	 * @param sentence 
 	 * @throws IOException 
      */
-	static Map<String, ArrayList<Segment>> getAttributeDeps(Sentence sentence, PrintWriter writer, Segmentation segmentation, ArrayList<CRFToken> foodItems) throws IOException {		
+	static Map<String, ArrayList<Segment>> getAttributeDeps(Sentence sentence, PrintWriter writer, NLPData segmentation, ArrayList<CRFToken> foodItems) throws IOException {		
 		Map<String, ArrayList<Segment>> segmentDeps = Tag.initializeSegmentDeps(foodItems);
 		
 		if (writer != null){
@@ -40,7 +40,7 @@ public class GetAttributesFST {
 		return getAttributesFromFST(FSTout, segmentDeps, segs, segmentation);
 	}
 	
-	static Object[] getSegments(Sentence sentence, Segmentation segmentation){
+	static Object[] getSegments(Sentence sentence, NLPData segmentation){
 
 		// use FST to separate CRF tags into food segments
 		String labels = ""; 
@@ -116,7 +116,7 @@ public class GetAttributesFST {
 
 	}
 	
-	static Map<String, ArrayList<Segment>> getAttributesFromFST(String[] FSTout, Map<String, ArrayList<Segment>> segmentDeps, ArrayList<Segment> segs, Segmentation segmentation){
+	static Map<String, ArrayList<Segment>> getAttributesFromFST(String[] FSTout, Map<String, ArrayList<Segment>> segmentDeps, ArrayList<Segment> segs, NLPData segmentation){
 		// use FST output to assign attributes to foods in a segment
 		int index = 0; // index that is decremented at every # sign
 		int actualIndex = 0; // actual index that is not changed

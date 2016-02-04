@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import cern.colt.Arrays;
+import edu.mit.csail.sls.nut.NLPData;
 import edu.mit.csail.sls.nut.NutritionContext;
 import edu.mit.csail.sls.nut.Segment;
 import edu.mit.csail.sls.nut.Segmentation;
@@ -45,9 +46,23 @@ public class QuantityTester {
 						
 				// run CRF and get food-attribute dependencies
 				PrintWriter FSTwriter = null;
-			    Segmentation segmentation = null;
-				try {
-					segmentation = Tag.runCRF(FSTwriter, textWithPunc, segment_type, NutritionContext.sentenceTagger, false, labelType, tag_type);
+			   // Segmentation segmentation = null;
+				
+				Segmentation segmentation = new Segmentation();
+
+				try {				
+					NLPData NLPresult = Tag.runCRF(FSTwriter, textWithPunc, segment_type, NutritionContext.sentenceTagger, false, labelType, tag_type);
+					
+					segmentation.text = NLPresult.text;
+					segmentation.tokens = NLPresult.tokens;
+					segmentation.labels = NLPresult.labels;
+					segmentation.tags = NLPresult.tags;
+					segmentation.segments = NLPresult.segments;
+					segmentation.parse = NLPresult.parse;
+					segmentation.deps = NLPresult.deps;
+					segmentation.foods = NLPresult.foods;
+					segmentation.attributes = NLPresult.attributes;
+					
 				} catch (ClassNotFoundException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();

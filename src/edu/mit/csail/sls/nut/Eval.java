@@ -227,7 +227,7 @@ public class Eval {
             }
             
             // run CRF and get food-attribute dependencies
-    		Segmentation segmentation = Tag.runCRF(writer, text, segment_type, sentenceTagger, true, labelRep, tag_type);
+            NLPData segmentation = Tag.runCRF(writer, text, segment_type, sentenceTagger, true, labelRep, tag_type);
     		for(Segment segment : segmentation.segments){
     			// only continue if this is an attribute segment
     			if (segment.label.contains("Food") || segment.label.contains("Other")) {

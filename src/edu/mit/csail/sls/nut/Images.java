@@ -77,9 +77,20 @@ public class Images extends HttpServlet {
 				
 		// run CRF and get food-attribute dependencies
 		PrintWriter FSTwriter = null;
-	    Segmentation segmentation = null;
+		Segmentation segmentation = new Segmentation();
+
 		try {
-			segmentation = Tag.runCRF(FSTwriter, textWithPunc, segment_type, NutritionContext.sentenceTagger, false, labelType, tag_type);
+			NLPData NLPresult = Tag.runCRF(FSTwriter, textWithPunc, segment_type, NutritionContext.sentenceTagger, false, labelType, tag_type);
+			
+			segmentation.text = NLPresult.text;
+			segmentation.tokens = NLPresult.tokens;
+			segmentation.labels = NLPresult.labels;
+			segmentation.tags = NLPresult.tags;
+			segmentation.segments = NLPresult.segments;
+			segmentation.parse = NLPresult.parse;
+			segmentation.deps = NLPresult.deps;
+			segmentation.foods = NLPresult.foods;
+			segmentation.attributes = NLPresult.attributes;
 		} catch (ClassNotFoundException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -92,38 +103,34 @@ public class Images extends HttpServlet {
 		segmentation.results=USDALookup.foodItemInitialLookup(segmentation.attributes, segmentation.tokens);
 //		segmentation.semantic3results=Semantics3Lookup.foodItemLookup(segmentation.attributes, segmentation.tokens);
 
-//		segmentation.images = Semantics3Lookup.createImgMap(segmentation.semantic3results);
-		// get Google image of food items
-		try {
-			long beforeImages = System.currentTimeMillis();
-			//Map<String, String> foodImages = GetImages.getImagesDB(segmentation.foods);
-			segmentation.images = GetImages.getImageEncodings();
-			
-			System.out.println ("Printing segmentation images value 1");
-			
-			for (Map.Entry<String, String> entry : segmentation.images.entrySet()) {
-			    String key = entry.getKey();
-			    String value = entry.getValue();
+long beforeImages = System.currentTimeMillis();
+		//Map<String, String> foodImages = GetImages.getImagesDB(segmentation.foods);
+		segmentation.images = GetImages.getImageEncodings();
+		
+		/*
+		System.out.println ("Printing segmentation images value 1");
+		
+		for (Map.Entry<String, String> entry : segmentation.images.entrySet()) {
+		    String key = entry.getKey();
+		    String value = entry.getValue();
 
-			    System.out.println ("Food: " + key + " Image Path: " + value);
-			}    
-			
-			segmentation.images = GetImages.getImages(segmentation.foods, segmentation.attributes, segmentation.tokens);
-			
-			System.out.println ("Printing segmentation images value 2");
-			
-			for (Map.Entry<String, String> entry : segmentation.images.entrySet()) {
-			    String key = entry.getKey();
-			    String value = entry.getValue();
+		    System.out.println ("Food: " + key + ", Image Path: " + value);
+		}    
+		*/
+		
+		//segmentation.images = GetImages.getImages(segmentation.foods, segmentation.attributes, segmentation.tokens);
+		
+		//System.out.println ("Printing segmentation images value 2");
+		/*
+		for (Map.Entry<String, String> entry : segmentation.images.entrySet()) {
+		    String key = entry.getKey();
+		    String value = entry.getValue();
 
-			    System.out.println ("Food: " + key + " Image Path: " + value);
-			}   
-			
-			long endTime = System.currentTimeMillis();
-			System.out.println("Total time: "+(endTime-starttime)+" images time: "+(endTime-beforeImages));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		    System.out.println ("Food: " + key + " Image Path: " + value);
+		}   */
+		
+		long endTime = System.currentTimeMillis();
+		System.out.println("Total time: "+(endTime-starttime)+" images time: "+(endTime-beforeImages));
 				
 		Object result = segmentation;
 		if (null != jsonp)

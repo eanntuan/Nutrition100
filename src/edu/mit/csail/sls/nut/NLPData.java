@@ -1,5 +1,6 @@
 package edu.mit.csail.sls.nut;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -9,14 +10,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import edu.mit.csail.asgard.syntax.CRFSegment;
 import edu.mit.csail.asgard.syntax.CRFToken;
 import edu.mit.csail.asgard.syntax.Sentence;
-import edu.mit.csail.sls.nut.databaseLookup.*;
-import edu.mit.csail.sls.nut.databaseLookup.nutritionix.NutritionixResponse;
-import edu.mit.csail.sls.nut.databaseLookup.semantics3.Semantics3NutritionObject;
-import edu.mit.csail.sls.nut.databaseLookup.usda.ReturnableItem;
-import edu.mit.csail.sls.nut.databaseLookup.usda.USDAItem;
-import edu.mit.csail.sls.nut.databaseLookup.usda.USDAResult;
 
-public class Segmentation {
+
+public class NLPData {
 	@JsonProperty
 	public String text;
 	@JsonProperty
@@ -37,17 +33,8 @@ public class Segmentation {
 	@JsonProperty
 	public
 	Map<String, ArrayList<Segment>> attributes;
-	@JsonProperty
-	Map <String, USDAResult> results;
-	@JsonProperty
-	Map <String, ArrayList<String>> features; //ordered array list of features to ask
-	@JsonProperty
-	Map <String, ArrayList<Semantics3NutritionObject>> semantic3results;
-	@JsonProperty
-	Map <String, String> images;
 	
-	/*
-	Segmentation(Sentence sentence){
+	NLPData(Sentence sentence){
 		//crfTokens = sentence.tokens;
 		labels = new ArrayList<String>();
 		for (CRFToken token : sentence.tokens) {
@@ -77,7 +64,7 @@ public class Segmentation {
 					tokens.remove(tokens.size()-1);
 					tokens.add(newToken);
 				}else {
-				
+				*/
 					tokens.add(crfToken.text);
 				//}
 				
@@ -89,5 +76,4 @@ public class Segmentation {
 			prevSeg = segment;
 		}
 	}
-	*/
 }

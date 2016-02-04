@@ -219,10 +219,11 @@ public class Tag extends HttpServlet {
      * @throws IOException 
      * @throws ClassNotFoundException 
      */
-    public static Segmentation runCRF(PrintWriter FSTWriter, String text, String type, SentenceTagger tagger, boolean eval, String labelRep, String tag_type) throws IOException, ClassNotFoundException {
+    public static NLPData runCRF(PrintWriter FSTWriter, String text, String type, SentenceTagger tagger, boolean eval, String labelRep, String tag_type) throws IOException, ClassNotFoundException {
     	Sentence sentence = new Sentence();
 		sentence.originalText = text;
 		sentence.isNutrition = true;
+		System.out.println("tag type: " + tag_type);
 		if (tag_type.equals("semicrf")){
 			Features.nlparser_pos_english.compute(sentence, text);
 			tagger.addCRFClasses(sentence);
@@ -268,7 +269,7 @@ public class Tag extends HttpServlet {
 	        	segmentStart = segmentEnd+1;
 	        }
 		}
-		Segmentation segmentation = new Segmentation(sentence);
+		NLPData segmentation = new NLPData(sentence);
 		segmentation.parse = sentence.parse;
 		segmentation.deps = sentence.deps;
 		/*

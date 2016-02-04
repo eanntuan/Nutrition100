@@ -33,7 +33,7 @@ public class GetAttributesCRF {
 		sentence.isNutrition = true;
 		Features.nlparser_pos_english.compute(sentence, text);
 		sentenceTagger.addCRFClasses(sentence);
-		Segmentation segmentation = new Segmentation(sentence);
+		NLPData segmentation = new NLPData(sentence);
 		segmentation.parse = sentence.parse;
 		segmentation.deps = sentence.deps;
 		//ArrayList<String> CRFout = CRF.getOutputAll(segmentation.tokens, segmentation.labels, null, "IOE");
@@ -63,7 +63,7 @@ public class GetAttributesCRF {
 	 * @param sentence 
 	 * @throws IOException 
      */
-	static Map<String, ArrayList<Segment>> getAttributeDeps(Sentence sentence, Segmentation segmentation, ArrayList<CRFToken> foodItems, String labelRep) throws IOException {		
+	static Map<String, ArrayList<Segment>> getAttributeDeps(Sentence sentence, NLPData segmentation, ArrayList<CRFToken> foodItems, String labelRep) throws IOException {		
 		
 		Map<String, ArrayList<Segment>> segmentDeps = Tag.initializeSegmentDeps(foodItems);
 		
@@ -113,7 +113,7 @@ public class GetAttributesCRF {
 	// assumes labels are in IOE format
 	// TODO: generalize to IOB and IOBES formats
 	private static Map<String, ArrayList<Segment>> getAttributesFromCRF(
-			String[] CRFout, Map<String, ArrayList<Segment>> segmentDeps, Segmentation segmentation) {
+			String[] CRFout, Map<String, ArrayList<Segment>> segmentDeps, NLPData segmentation) {
 				// use CRF output to assign attributes to foods in a segment
 				segmentDeps = new HashMap<>();
 				ArrayList<Segment> segMatches = new ArrayList<Segment>();
@@ -202,7 +202,7 @@ public class GetAttributesCRF {
 		return segMatch;
 	}
 
-	public static int updateSegMatches(String label, String[] CRFout, int index, String currLabel, Segmentation segmentation, Segment segMatch, ArrayList<Segment> segMatches){
+	public static int updateSegMatches(String label, String[] CRFout, int index, String currLabel, NLPData segmentation, Segment segMatch, ArrayList<Segment> segMatches){
 
 		// get entire attribute segment, add to segMatches, update index
 		System.out.println("label is "+currLabel);
@@ -223,7 +223,7 @@ public class GetAttributesCRF {
 	
 	}
 	
-	public static int addFood(String label, String[] CRFout, int index, String currLabel, String food, Segmentation segmentation, Map<String, ArrayList<Segment>> segmentDeps, Segment segMatch, ArrayList<Segment> segMatches){
+	public static int addFood(String label, String[] CRFout, int index, String currLabel, String food, NLPData segmentation, Map<String, ArrayList<Segment>> segmentDeps, Segment segMatch, ArrayList<Segment> segMatches){
 		// get entire food segment, update index
 		food = "";
 		// if current IOE label is not E, then don't allow to skip past an E
