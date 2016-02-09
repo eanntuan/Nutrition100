@@ -54,10 +54,12 @@ public class GetImages {
 //	public static String imageLink = "";
 	private static Map<String, String> foodImages = new HashMap<>();
 	private static Map<String, String> foodEncodingImages = new HashMap<>();
-	
+	private static Map<String, String> foodImageEncoding = new HashMap<>();
+
 	public static Map<String, String> imageName(String description, String imageLink){
-		System.out.println("Got food description: " + description);
-		System.out.println("Got image name: " + imageLink);
+		System.out.println("");
+		System.out.println("In GetImages.imageName");
+		//System.out.println("food description: " + description + ", image name: " + imageLink);
 		
 		String foodDesc[] = description.split(" ", 2);
 		String firstWord = foodDesc[0];
@@ -66,14 +68,17 @@ public class GetImages {
 		
 		foodImages.put(firstWord, imageLink);
 		
-		Map<String, String> foodImageEncoding = new HashMap<>();
+		//Map<String, String> foodImageEncoding = new HashMap<>();
 		boolean noRes = true;
 		
+		
+		System.out.println("Printing contents of foodimages");
+
 		for (Map.Entry<String, String> entry : foodImages.entrySet()) {
 		    String foodName = entry.getKey();
 		    String imagePath = entry.getValue();
 
-		    System.out.println ("Food: " + foodName + " Image Path: " + imagePath);
+		    System.out.println ("Food: " + foodName + ", Image Path: " + imagePath);
 		    
 		    File f = new File(path+ imagePath + ".png");
 		    System.out.println("File path: " + f.getAbsolutePath());
@@ -97,6 +102,16 @@ public class GetImages {
 	
 			}
 		    
+		    /*
+		    System.out.println ("Printing contents of foodImageEncoding hashtable");
+
+		    //printing contents of foodImageEncoding hashtable
+		    for (Map.Entry<String, String> foodEntry : foodImageEncoding.entrySet()) {
+			    String food = foodEntry.getKey();
+			    String encoding = foodEntry.getValue();
+			    System.out.println ("Food: " + food + ", Image Encoding: " + encoding);
+		    }
+		    */
 		    noRes=false;
 			long startTime = System.currentTimeMillis(); // fetch starting time
 			
@@ -156,25 +171,27 @@ public class GetImages {
 		}*/
 		}
 		
-		setImageEncodings(foodImageEncoding);
+		//setImageEncodings(foodImageEncoding);
 		
 		return foodImageEncoding;
 		   
 
 	}
 	
+	/*
 	static void setImageEncodings(Map<String, String> images){
-		System.out.println("In the SET image encodings method");
+		System.out.println("setting image encodings method");
 		foodEncodingImages = images;
 
-	}
+	}*/
 	
 	static Map<String, String> getImageEncodings(){
 		System.out.println("");
-		System.out.println("In the GET image encodings method");
+		System.out.println("getting image encodings method");
 
-		return foodEncodingImages;
+		return foodImageEncoding;
 	}
+	
 	
 	
 	/**
@@ -420,6 +437,7 @@ public class GetImages {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		//System.out.println("image string in encodeToString: " + imageString);
 		return imageString;
 	}
 

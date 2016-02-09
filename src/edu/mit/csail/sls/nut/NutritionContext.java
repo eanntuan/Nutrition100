@@ -1,5 +1,6 @@
 package edu.mit.csail.sls.nut;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,7 +23,7 @@ import edu.mit.csail.asgard.util.Configure;
 
 public class NutritionContext {
 	static final String[] namePath = {"Nutrition", "Asgard", ""};
-	static final String domain = "Nutrition";
+	static final String domain = "Nutrition103-NLP";
 	//static final String confFile = "conf/eng-fix-SL-NG";
 	static final String confFile = "conf/semlab";
 
@@ -37,6 +38,7 @@ public class NutritionContext {
 	static String nutritionixAppKey = null;
 	
 	static InputStream getResourceAsStream(String path){
+		//System.out.println("path: " + path);
 		return servletContext.getResourceAsStream(path);
 	}
 

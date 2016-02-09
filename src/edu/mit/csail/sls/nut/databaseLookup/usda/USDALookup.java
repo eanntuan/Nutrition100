@@ -77,7 +77,7 @@ public class USDALookup {
 			switch (currentLevel) {
 			// To begin, check the cache for matching options
 			case 0: {
-				System.out.println("case 0");
+				//System.out.println("case 0");
 				// First, check if the full brand and description are found, or
 				// move on if brand or description are empty
 				if (!(descriptions.isEmpty() || brand.equals(""))) {
@@ -106,7 +106,7 @@ public class USDALookup {
 				break;
 			}
 			case 1: {
-				System.out.println("case 1");
+				//System.out.println("case 1");
 				// Next check for the full description and food item
 				if (!descriptions.isEmpty()) {
 					results = findFreeBaseEquiv(descriptionString + " "
@@ -124,7 +124,7 @@ public class USDALookup {
 			}
 			
 			case 2: {
-				System.out.println("case 2");
+				//System.out.println("case 2");
 				//Check if a cached result is found with just the first description
 				if (!descriptions.isEmpty()) {
 					 results =findFreeBaseEquiv(descriptions.get(0)+" "+foodItem,
@@ -140,7 +140,7 @@ public class USDALookup {
 			}
 			
 			case 3: {
-				System.out.println("case 3");
+				//System.out.println("case 3");
 				//Check if a cached result for just the food item exists
 				if (descriptions.isEmpty()) {
 				results =findFreeBaseEquiv(foodItem, singularItem, pluralItem);
@@ -480,7 +480,7 @@ public class USDALookup {
 
 			}
 		}
-		System.out.println("Description 86: " + description);
+		System.out.println("Description: " + description);
 		System.out.println("Brand: " + brand);
 
 		// remove numeric values (i.e. indices) from food item
@@ -605,6 +605,8 @@ public class USDALookup {
 	}
 
 	private static ArrayList<ReturnableItem> executeQuery(String query) {
+		System.out.println("Execute query");
+		
 		ArrayList<ReturnableItem> returnedItems = new ArrayList<ReturnableItem>();
 		
 		Connection conn = null;
@@ -899,31 +901,12 @@ public class USDALookup {
 				//+ "sugars FROM foodsWithNutrients as fd, freebaseEquiv as free "
 				+ "sugars, image FROM foodsWithNutrientsTufts as fd, freebaseEquiv as free "
 				+ "WHERE fd.NDB_NO = free.srid AND ";
-//		sql="SELECT fd.NDB_No, Long_Desc, nd1.Nutr_Val as Calories, "
-//				+ "nd2.Nutr_Val as Protein, nd3.Nutr_Val as fat, nd4.Nutr_Val as cholesterol, "
-//				+ "nd5.Nutr_Val as sodium, nd6.Nutr_Val as carbohydrates, nd7.Nutr_Val as fiber, "
-//				+ "nd8.Nutr_Val as sugars FROM FOOD_DES as fd, freebaseEquiv as free, NUT_DATA as nd1, NUT_DATA as nd2, "
-//				+ "NUT_DATA as nd3, NUT_DATA as nd4, NUT_DATA as nd5, NUT_DATA as nd6, NUT_DATA as nd7, "
-//				+ "NUT_DATA as nd8 "
-//				+ "WHERE fd.NDB_NO = nd1.NDB_NO AND fd.NDB_NO = free.srid AND nd1.NDB_NO = nd2.NDB_NO AND nd1.NDB_NO = nd3.NDB_NO "
-//				+ "AND nd1.NDB_NO = nd4.NDB_NO AND nd1.NDB_NO = nd5.NDB_NO AND nd1.NDB_NO = nd6.NDB_NO AND "
-//				+ "nd1.NDB_NO = nd7.NDB_NO AND nd1.NDB_NO = nd8.NDB_NO AND nd1.NUTR_NO= 208 "
-//				+ "AND nd2.NUTR_NO= 203 AND nd3.NUTR_NO= 204 AND nd4.NUTR_NO= 601 AND nd5.NUTR_NO= 307 "
-//				+ "AND nd6.NUTR_NO= 205 AND nd7.NUTR_NO= 291 AND nd8.NUTR_NO= 269 AND ";
-		
 		sql += "(free.name LIKE '"
 				+ item
 				+ "' OR free.name LIKE '"
 				+ singular
 				+ "' OR free.name LIKE '" + plural + "')";
 		
-//		sql = "SELECT nd.NDB_No, Long_Desc, Nutr_Val as Calories FROM FOOD_DES as fd, NUT_DATA as nd, freebaseEquiv as free"
-//				+ " WHERE fd.NDB_NO = nd.NDB_NO AND nd.NUTR_NO= 208 AND fd.NDB_NO = free.srid AND (free.name LIKE '"
-//				+ item
-//				+ "' OR free.name LIKE '"
-//				+ singular
-//				+ "' OR free.name LIKE '" + plural + "')";
-		//
 		System.out.println("Query:" + sql);
 
 		ArrayList<ReturnableItem> returnedItems = executeQuery(sql);

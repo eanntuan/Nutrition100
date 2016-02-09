@@ -339,8 +339,8 @@ var foodItemsToRows={};
 	    var databaseResults = data.results;
 	    var semantic3Results = data.semantic3results;
 	    var images = data.images;
-	    console.log("images");
-	    console.log(images);
+	    //console.log("images");
+	    //console.log(images);
 	    $(".changedComponent").removeClass("changedComponent");
 	    //Allow modifications without food items 
 	    if (jQuery.isEmptyObject(dependencies)&& !jQuery.isEmptyObject(rowsToFoodItems)) {
@@ -578,7 +578,7 @@ var foodItemsToRows={};
 			}
 			console.log($("#dependencies tr:nth-child("+tableRow+") td:nth-child(3)"));
 			if (hits.length==1) {
-				console.log(tableRow);
+				console.log("table row: " + tableRow);
 				updateCalories(tableRow);
 			}
 			
@@ -762,7 +762,7 @@ var foodItemsToRows={};
 	};
 	
 	window.updateCalories= function (tableRow) {
-		console.log(tableRow);
+		console.log("table row in update calories: " + tableRow);
 		var amount=$('#quantityInput'+tableRow).val();
 		var currentRate =  rowsToFoodItems[tableRow].weights[$('#quantitySelect'+tableRow).prop("selectedIndex")];
 		if (currentRate.gmwgt==-1) {
@@ -910,11 +910,11 @@ var foodItemsToRows={};
 	    //console.log("Text: '"+text+"'");
 	    //console.log("labelRep: "+labelRep);
 	    // first display the recognized speech with CRF labels
-		console.log("nuturl: " + nuturl);
-		console.log("nutname: " + nutname);
+		//console.log("nuturl: " + nuturl);
+		//console.log("nutname: " + nutname);
 	    $.getJSON(nuturlNLP+nutname+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'tag_type' : tag_type},
 		      function(data){
-	    		console.log("got tagged results");
+	    		console.log("went to Nut103-NLP and got tagged results");
 	    		//var timer = setInterval( displayTaggedResult, 5000);
 	    	  	displayTaggedResult(data);
 	    	  	
@@ -924,17 +924,18 @@ var foodItemsToRows={};
 	    	  	var serializedData = $.param(data);
 	    	  	//console.log(serializedData);
 	    	  	
+	    	  	//displayTable(serializedData);
+	    	  	
 	    	  	
 	    	  	$.getJSON(nuturl+'Images'+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'data': serializedData, 'tag_type' : tag_type},
 	    			     function(dataWithImages){
-	    	  				console.log("datawithimages coming");
+	    	  				console.log("data with images data coming");
 	    	  				console.log(dataWithImages);
 	    		    	  	displayTable(dataWithImages);
 	    			      });
 	    		
 	    	  	//$.ajax({url:nuturl+'Images', data: data});
-	    	  	console.log("data");
-	    	  	//displayTable(data);
+	    	  	
 	    });
 	}
 //	tag("I had cereal and milk");

@@ -50,7 +50,7 @@ public class Images extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(request.toString());
+		System.out.println("servlet request: " + request.toString());
 		long starttime = System.currentTimeMillis();
 		System.out.println("Start time: " + starttime);
 		// get the type of approach for associating foods with attributes
@@ -97,13 +97,10 @@ public class Images extends HttpServlet {
 		}
 		//Add calls to get database lookups for food item
 		System.out.println("");
-		
-		
-
 		segmentation.results=USDALookup.foodItemInitialLookup(segmentation.attributes, segmentation.tokens);
 //		segmentation.semantic3results=Semantics3Lookup.foodItemLookup(segmentation.attributes, segmentation.tokens);
 
-long beforeImages = System.currentTimeMillis();
+		long beforeImages = System.currentTimeMillis();
 		//Map<String, String> foodImages = GetImages.getImagesDB(segmentation.foods);
 		segmentation.images = GetImages.getImageEncodings();
 		
