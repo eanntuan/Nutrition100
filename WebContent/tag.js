@@ -313,7 +313,6 @@ var foodItemsToRows={};
 	    var segments = data.segments;
 	    var dependencies = data.attributes;
 	    var databaseResults = data.results;
-	    var images = data.images;
 	    
 	    // leave previous meal descriptions visible when evaluating the system
 	    if (nuturl.indexOf("Eval")==-1) {
@@ -339,8 +338,20 @@ var foodItemsToRows={};
 	    var databaseResults = data.results;
 	    var semantic3Results = data.semantic3results;
 	    var images = data.images;
-	    //console.log("images");
-	    //console.log(images);
+	    
+//	    console.log("data.images size: " + images.size());
+	    
+	    /*
+	    for (Map.Entry<String, String> entry: images.entrySet()){
+		    String key = entry.getKey();
+		    String value = entry.getValue();
+
+		    System.out.println ("Key: " + key);
+		}*/
+	    
+	    console.log("images");
+	    console.log(images);
+	    
 	    $(".changedComponent").removeClass("changedComponent");
 	    //Allow modifications without food items 
 	    if (jQuery.isEmptyObject(dependencies)&& !jQuery.isEmptyObject(rowsToFoodItems)) {
@@ -454,12 +465,22 @@ var foodItemsToRows={};
 	    	table.show();
 			//console.log("Food: '"+food+"'");
 
+//	    	String newFood = "";
 			// add a row and an image in first column to the table
 //			console.log("image:", images[food]);
 			var row = $('<tr id="food"'+tableRow+'"></tr>'); 
 			var img = $('<img id="dynamic'+(tableRow+1)+'">'); 
-			console.log(("images[food]: " + images[food]));
-			img.attr("src", images[food]);
+			
+			console.log("food: " + food);
+			console.log("foodnonums: " + foodNoNums);
+			
+			//newFood = food.replaceAll("[^A-Za-z]", "");
+			console.log(("images[foodNoNums]: " + images[foodNoNums]));
+			//console.log("images.get: " + images.get(foodNoNums));
+			
+			
+			img.attr("src", images[foodNoNums]);
+			//img.attr("src", images[food]);
 			img.attr("border", '1');
 			img.hide();
 			img.on('load', setImgSize);
@@ -468,7 +489,7 @@ var foodItemsToRows={};
 	    	
 			// add three more columns, second is food text, others empty for now
 			//row.append("<td>"+foodNoNums+"</td>");
-			row.append('<td id="foodCol">'+foodNoNums+"</td>");
+			row.append('<td id="foodCol">'+foodNoNums+"<br></td>");
 			for(var i=0;i<2;i++){
 				row.append("<td></td>");
 			}
@@ -520,12 +541,12 @@ var foodItemsToRows={};
 	    		$("#dependencies tr:nth-child("+tableRow+") td:nth-child(2)").html("<ul>"+quantitySelectionText+"</ul>").css('width', '480px').css('text-align', 'left');
 	    		//console.log("quantity selection supposed to be in 2nd column: " + quantitySelectionText);
 	    		
-	    		stext+=hits[0].longDesc+", Calories: " + "<div id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"</div>";
+	    		stext+=hits[0].longDesc+"<br>Calories: " + "<div class='calories' id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"</div>";
 	    		console.log("food id: " + hits[0].foodID);
 	    		if (hits[0].foodID=="-1") {
-	    			stext+=" <a style='font-size: 8pt;' target='_blank' href=http://www.nutritionix.com/search/item/"+hits[0].nutID+">Source: Nutritionix </a>";
+	    			stext+="<br><a class='sourceLink hover' target='_blank' href=http://www.nutritionix.com/search/item/"+hits[0].nutID+">Source: Nutritionix </a>";
 	    		}else {
-	    			stext+=" <a style='font-size: 8pt;' target='_blank' href=http://ndb.nal.usda.gov/ndb/search/list?qlookup="+hits[0].foodID+">Source: USDA </a>";
+	    			stext+="<br><a class='sourceLink hover' target='_blank' href=http://ndb.nal.usda.gov/ndb/search/list?qlookup="+hits[0].foodID+">Source: USDA </a>";
 	    		}
 	    		
 //	    		if (hits[0].longDesc.indexOf("raw") > -1) {
@@ -551,7 +572,7 @@ var foodItemsToRows={};
 	    			}
 	    			//stext+=quantitySelectionTextGeneration(weights);
 	    		
-			stext += "<li id='refine"+tableRow+"'><a>"+ "See more options" +"</a></li>";
+			stext += "<li class='hover' id='refine"+tableRow+"'><a>"+ "See more options" +"</a></li>";
 //			stext += "</br><li id='back"+tableRow+"'><a>"+ "Back" +"</a></li>";
 	       }}
 			// add image and db results to row
@@ -907,11 +928,7 @@ var foodItemsToRows={};
 	}
 	
 	function tag(text){
-	    //console.log("Text: '"+text+"'");
-	    //console.log("labelRep: "+labelRep);
 	    // first display the recognized speech with CRF labels
-		//console.log("nuturl: " + nuturl);
-		//console.log("nutname: " + nutname);
 	    $.getJSON(nuturlNLP+nutname+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'tag_type' : tag_type},
 		      function(data){
 	    		console.log("went to Nut103-NLP and got tagged results");

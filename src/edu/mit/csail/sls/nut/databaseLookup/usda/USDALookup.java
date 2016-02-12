@@ -413,31 +413,22 @@ public class USDALookup {
 	public static Map<String, USDAResult> foodItemInitialLookup(
 			Map<String, ArrayList<Segment>> dependencies,
 			ArrayList<String> tokens) {
+		
 		System.out.println("Food item initial lookup dependencies:" + dependencies);
-		
 		Map<String, USDAResult> foodItems = new HashMap<String, USDAResult>();
-		
-		//System.out.println("Testing if there is an image: " + image);
-		
-		//Map<String, String> foodImages = new HashMap<String, String>();
-		
 		System.out.println("Keyset: " + dependencies.keySet());
 		//GetImages.setImageName(imageLink);
 		
 		Set<String> keyset = dependencies.keySet();
 		
 		for (String item : dependencies.keySet()) {
-
 			foodItems.put(
 					item,
 					foodItemLookup(item, dependencies.get(item), tokens,
 							new ArrayList<String>()));
-			//foodImages.put(item, "image here");
-
 		}
 
 		return foodItems;
-
 	}
 
 	/**
@@ -605,7 +596,7 @@ public class USDALookup {
 	}
 
 	private static ArrayList<ReturnableItem> executeQuery(String query) {
-		System.out.println("Execute query");
+		System.out.println("Executing query");
 		
 		ArrayList<ReturnableItem> returnedItems = new ArrayList<ReturnableItem>();
 		
@@ -643,15 +634,6 @@ public class USDALookup {
 				System.out.println(longDesc + ", Calories: " + calories+", NDB_No: "+ndb_no);
 				System.out.println("USDA Lookup image name: " + image);
 
-				
-				//Adding image path to hash table
-				//String foodDesc[] = longDesc.split(" ", 2);
-				//String firstWord = foodDesc[0];
-				//System.out.println("first word: " + firstWord);
-				
-				//foodImages.put(firstWord, image);
-				
-				
 				USDAItem toAdd=new USDAItem(ndb_no, longDesc, calories);
 				toAdd.setProtein(protein);
 				toAdd.setFat(fat);

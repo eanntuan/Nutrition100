@@ -102,29 +102,35 @@ public class Images extends HttpServlet {
 
 		long beforeImages = System.currentTimeMillis();
 		//Map<String, String> foodImages = GetImages.getImagesDB(segmentation.foods);
+		
+		Map<String, String> myImages = new HashMap();
+		myImages = GetImages.getImageEncodings();
 		segmentation.images = GetImages.getImageEncodings();
 		
-		/*
-		System.out.println ("Printing segmentation images value 1");
+		System.out.println("myImages size1 : " + myImages.size());
+
 		
+		for (Map.Entry<String, String> entry : myImages.entrySet()) {
+		    String key = entry.getKey();
+		    String value = entry.getValue();
+
+		    System.out.println ("Key: " + key + ", Value: " + value.substring(0, 40));
+		}
+		
+		/*
+		segmentation.images = GetImages.getImages(segmentation.foods, segmentation.attributes, segmentation.tokens);
+		
+		System.out.println("segmentation.images size2 : " + segmentation.images.size());
+
 		for (Map.Entry<String, String> entry : segmentation.images.entrySet()) {
 		    String key = entry.getKey();
 		    String value = entry.getValue();
 
-		    System.out.println ("Food: " + key + ", Image Path: " + value);
-		}    
+		    System.out.println ("Key: " + key + ", Value: " + value.substring(0, 40));
+		}
+		
+		System.out.println(myImages.equals(segmentation.images));
 		*/
-		
-		//segmentation.images = GetImages.getImages(segmentation.foods, segmentation.attributes, segmentation.tokens);
-		
-		//System.out.println ("Printing segmentation images value 2");
-		/*
-		for (Map.Entry<String, String> entry : segmentation.images.entrySet()) {
-		    String key = entry.getKey();
-		    String value = entry.getValue();
-
-		    System.out.println ("Food: " + key + " Image Path: " + value);
-		}   */
 		
 		long endTime = System.currentTimeMillis();
 		System.out.println("Total time: "+(endTime-starttime)+" images time: "+(endTime-beforeImages));
