@@ -45,6 +45,8 @@ public class Segmentation {
 	Map <String, ArrayList<Semantics3NutritionObject>> semantic3results;
 	@JsonProperty
 	Map <String, String> images;
+	@JsonProperty
+	public ArrayList<String> foodID;
 	
 	/*
 	Segmentation(Sentence sentence){

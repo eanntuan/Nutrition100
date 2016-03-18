@@ -317,25 +317,7 @@ public class Tag extends HttpServlet {
 
 	    // get all food-attribute dependencies (method type is an argument)
 		System.out.println("Type:"+type);
-		if (type.equals("Simple")) {    	    	
-			segmentation.attributes = GetAttributesSimple.getAttributeDeps(segmentation.segments, foodItems);
-	    } else if (type.equals("Dependency")) {
-	    	segmentation.attributes = GetAttributesDependency.getAttributeDeps(sentence, segmentation, foodItems);    	    	
-	    } else if (type.equals("FST")) {
-	    	segmentation.attributes = GetAttributesFST.getAttributeDeps(sentence, FSTWriter, segmentation, foodItems);
-	    } else {
-	    	segmentation.attributes = GetAttributesCRF.getAttributeDeps(sentence, segmentation, foodItems, labelRep);
-    	}
-		/*
-		System.out.println("tokens");
-		for (String token: segmentation.tokens){
-			System.out.println(token);
-		}
-		System.out.println("segments");
-		for (Segment seg: segmentation.segments){
-			System.out.println(seg.start+" "+seg.end+" "+seg.label);
-		}
-		*/
+	    segmentation.attributes = GetAttributesCRF.getAttributeDeps(sentence, segmentation, foodItems, labelRep);
 	    return segmentation;
     }
     

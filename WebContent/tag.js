@@ -26,6 +26,7 @@ var foodItemsToRows={};
     	nutname = src.substring(pos+1, src.indexOf(".", pos+1));
     	
     	$('<link rel="stylesheet" type="text/css" href="'+nuturl+nutname+'.css'+'">').appendTo("head");
+    	$('<script src="http://code.google.com/p/jquery-json/"></script>').appendTo("head");
     }());
 
     $(document).ready(function() {
@@ -338,7 +339,10 @@ var foodItemsToRows={};
 	    var databaseResults = data.results;
 	    var semantic3Results = data.semantic3results;
 	    var images = data.images;
+	    var foodId = data.foodID;
 	    
+	    console.log("dependencies:");
+	    console.log(dependencies);
 //	    console.log("data.images size: " + images.size());
 	    
 	    /*
@@ -349,7 +353,7 @@ var foodItemsToRows={};
 		    System.out.println ("Key: " + key);
 		}*/
 	    
-	    console.log("images");
+	    console.log("data.images");
 	    console.log(images);
 	    
 	    $(".changedComponent").removeClass("changedComponent");
@@ -471,21 +475,11 @@ var foodItemsToRows={};
 			var row = $('<tr id="food"'+tableRow+'"></tr>'); 
 			var img = $('<img id="dynamic'+(tableRow+1)+'">'); 
 			
-			console.log("food: " + food);
-			console.log("foodnonums: " + foodNoNums);
-			
-			//newFood = food.replaceAll("[^A-Za-z]", "");
-			console.log(("images[foodNoNums]: " + images[foodNoNums]));
-			//console.log("images.get: " + images.get(foodNoNums));
+			//console.log("food: " + food);
+			//console.log(("images[foodID]: " + images[foodID]));
+			//console.log(("images[foodID]: " + images[foodNoNums]));
 			
 			
-			img.attr("src", images[foodNoNums]);
-			//img.attr("src", images[food]);
-			img.attr("border", '1');
-			img.hide();
-			img.on('load', setImgSize);
-			//row.append("<td></td>");
-
 	    	
 			// add three more columns, second is food text, others empty for now
 			//row.append("<td>"+foodNoNums+"</td>");
@@ -529,29 +523,25 @@ var foodItemsToRows={};
 	    	var features = databaseResults[food].features;
 	    	var hits = databaseResults[food].results;
 	    	var weights = databaseResults[food].weights;
-//	    	tableWeights[tableRow] = weights;
 	    	var currentLevel = currentFoodEntry.levelUsed;
-//	    	currentLevels[tableRow] = currentLevel;
 	    	console.log(databaseResults[food]);
 	    	stext = "";
 	    	if (hits.length == 1) {
-//	    		finalHits[tableRow] = hits;
 	    		//console.log(hits[0]);
 	    		quantitySelectionText=quantitySelectionTextGeneration(weights, tableRow, databaseResults[food].quantityAmount);
 	    		$("#dependencies tr:nth-child("+tableRow+") td:nth-child(2)").html("<ul>"+quantitySelectionText+"</ul>").css('width', '480px').css('text-align', 'left');
-	    		//console.log("quantity selection supposed to be in 2nd column: " + quantitySelectionText);
 	    		
 	    		stext+=hits[0].longDesc+"<br>Calories: " + "<div class='calories' id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"</div>";
 	    		console.log("food id: " + hits[0].foodID);
+	    		//console.log("food image: " + hits[0].image);
 	    		if (hits[0].foodID=="-1") {
 	    			stext+="<br><a class='sourceLink hover' target='_blank' href=http://www.nutritionix.com/search/item/"+hits[0].nutID+">Source: Nutritionix </a>";
 	    		}else {
 	    			stext+="<br><a class='sourceLink hover' target='_blank' href=http://ndb.nal.usda.gov/ndb/search/list?qlookup="+hits[0].foodID+">Source: USDA </a>";
 	    		}
-	    		
-//	    		if (hits[0].longDesc.indexOf("raw") > -1) {
-	    			stext += "</br><li id='refine"+tableRow+"'><a>"+ "See more options" +"</a></li>";
-//	    		}
+
+	    		stext += "</br><li id='refine"+tableRow+"'><a>"+ "See more options" +"</a></li>";
+
 	    	} else {
 	    		if (hits.length==0) {
 	    			stext+= "No USDA Results found."
@@ -575,6 +565,17 @@ var foodItemsToRows={};
 			stext += "<li class='hover' id='refine"+tableRow+"'><a>"+ "See more options" +"</a></li>";
 //			stext += "</br><li id='back"+tableRow+"'><a>"+ "Back" +"</a></li>";
 	       }}
+	    	
+	    	console.log("hits[0].foodID: " + hits[0].foodID);
+	    	//console.log(images[hits[0].foodID]);
+	    	
+	    	var path = "/scratch/images/";
+	    	//img.attr("src", hits[0].foodID);
+	    	img.attr("src", images[hits[0].foodID]);
+			img.attr("border", '1');
+			img.hide();
+			img.on('load', setImgSize); 
+			
 			// add image and db results to row
 	    	//removed the image ET
 			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(1)").append(img);			
@@ -931,28 +932,28 @@ var foodItemsToRows={};
 	    // first display the recognized speech with CRF labels
 	    $.getJSON(nuturlNLP+nutname+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'tag_type' : tag_type},
 		      function(data){
-	    		console.log("went to Nut103-NLP and got tagged results");
-	    		//var timer = setInterval( displayTaggedResult, 5000);
+	    		console.log("went to Nutrition103-NLP and got tagged results");
 	    	  	displayTaggedResult(data);
 	    	  	
-	    	  	// TODO: get images after table with db info
-	    	  	// then display table with images and db info
+	    	  	console.log("data");
+	    	  	console.log(data);
+	    	  	//var stringifyData = $.toJSON(data);
+	    	  	//console.log("stringify data");
+	    	  	//console.log(stringifydata);
+
 	    	  	// serialize received data before sending to Images
 	    	  	var serializedData = $.param(data);
+	    	  	//console.log("serializedData");
 	    	  	//console.log(serializedData);
 	    	  	
-	    	  	//displayTable(serializedData);
-	    	  	
-	    	  	
+	    	  	// get images after table with db info
+	    	  	// then display table with images and db info
 	    	  	$.getJSON(nuturl+'Images'+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'data': serializedData, 'tag_type' : tag_type},
 	    			     function(dataWithImages){
 	    	  				console.log("data with images data coming");
 	    	  				console.log(dataWithImages);
 	    		    	  	displayTable(dataWithImages);
 	    			      });
-	    		
-	    	  	//$.ajax({url:nuturl+'Images', data: data});
-	    	  	
 	    });
 	}
 //	tag("I had cereal and milk");

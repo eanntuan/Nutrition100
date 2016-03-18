@@ -34,5 +34,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/Nutrition103-NLP"/>
+	<classpathentry kind="lib" path="/afs/csail.mit.edu/u/e/eanntuan/Downloads/jackson-annotations-2.1.2.jar"/>
+	<classpathentry kind="lib" path="/afs/csail.mit.edu/u/e/eanntuan/Downloads/gson-2.6.2.jar"/>
+	<classpathentry kind="lib" path="/afs/csail.mit.edu/u/e/eanntuan/Downloads/commons-codec-1.4.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

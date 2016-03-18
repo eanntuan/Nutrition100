@@ -13,6 +13,8 @@ public class USDAResult {
 	private ArrayList<String> originalDescription;
 	private String originalBrand;
 	private String quantity; //Full string given
+	private String foodID;
+	private String imagePath;
 	private double quantityAmount=1;
 	boolean quantityMatchFound=false;
 	private boolean adjectivesRelevant=true;

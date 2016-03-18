@@ -1,7 +1,9 @@
 package edu.mit.csail.sls.nut;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.ObjectInputStream;
 import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ArrayList;
@@ -29,6 +31,7 @@ import edu.mit.csail.sls.nut.databaseLookup.usda.CacheGenerator;
 //import edu.mit.csail.sls.nut.databaseLookup.usda.QuantityTester;
 //import edu.mit.csail.sls.nut.databaseLookup.semantics3.Semantics3Lookup;
 import edu.mit.csail.sls.nut.databaseLookup.usda.USDALookup;
+import com.google.gson.Gson;
 
 /**
  * Servlet implementation class Images
@@ -53,33 +56,31 @@ public class Images extends HttpServlet {
 		System.out.println("servlet request: " + request.toString());
 		long starttime = System.currentTimeMillis();
 		System.out.println("Start time: " + starttime);
+		
 		// get the type of approach for associating foods with attributes
 		String segment_type = request.getParameter("segment_type"); 
 		String labelType = request.getParameter("labelRep");
 		String tag_type = request.getParameter("tag_type");
-		// TODO: re-use CRF labeling from Tag.java
-		/*
-		Object data = request.getParameter("data"); 
-		JSONObject jObject = new JSONObject(data);
-		JSONArray jarray = (JSONArray) jObject.get("bytes");
-		byte[] bytes = new byte[jarray.length()];
-		for (int i=0;i<jarray.length();i++){ 
-		    bytes[i] = (byte) jarray.get(i);
-		} 
-		Object deserializedData = SerializationUtils.deserialize(bytes);
-		//Object deserializedData = objectMapper.readValue(jObject);
-		System.out.println("data: "+deserializedData);
-		*/
-		// re-computes CRF labeling, then gets images and db data
 		String jsonp = request.getParameter("jsonp");
 		String textWithPunc = request.getParameter("text");
-		System.out.println(textWithPunc);
-				
-		// run CRF and get food-attribute dependencies
+		String data = request.getParameter("data");
+		
+		//NLPData NLPresult = new NLPData(null);
+		
+		System.out.println("text with punc: " + textWithPunc);
+		System.out.println("data: " + data);
+		
+		//attempt at deserializing object
+		//Gson gson = new Gson();
+	    //Segmentation testData = gson.fromJson(data, Segmentation.class);
+	    //System.out.println("testing test data");
+	    //System.out.println(testData);
+		
 		PrintWriter FSTwriter = null;
 		Segmentation segmentation = new Segmentation();
 
 		try {
+			//NLPData NLPresult = request.getParameter("data");
 			NLPData NLPresult = Tag.runCRF(FSTwriter, textWithPunc, segment_type, NutritionContext.sentenceTagger, false, labelType, tag_type);
 			
 			segmentation.text = NLPresult.text;
@@ -91,6 +92,7 @@ public class Images extends HttpServlet {
 			segmentation.deps = NLPresult.deps;
 			segmentation.foods = NLPresult.foods;
 			segmentation.attributes = NLPresult.attributes;
+			
 		} catch (ClassNotFoundException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -98,13 +100,12 @@ public class Images extends HttpServlet {
 		//Add calls to get database lookups for food item
 		System.out.println("");
 		segmentation.results=USDALookup.foodItemInitialLookup(segmentation.attributes, segmentation.tokens);
-//		segmentation.semantic3results=Semantics3Lookup.foodItemLookup(segmentation.attributes, segmentation.tokens);
-
 		long beforeImages = System.currentTimeMillis();
-		//Map<String, String> foodImages = GetImages.getImagesDB(segmentation.foods);
 		
+		//segmentation.foodID = 
 		Map<String, String> myImages = new HashMap();
 		myImages = GetImages.getImageEncodings();
+		segmentation.foodID = GetImages.getFoodID();
 		segmentation.images = GetImages.getImageEncodings();
 		
 		System.out.println("myImages size1 : " + myImages.size());

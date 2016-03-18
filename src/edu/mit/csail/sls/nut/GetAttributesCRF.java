@@ -127,7 +127,7 @@ public class GetAttributesCRF {
 					if (label.equals("E")){
 						int currIndex = index;
 						String currLabel = segmentation.labels.get(index);
-						System.out.println("currLabel "+currLabel);
+						System.out.println("currLabel: "+currLabel);
 						Segment segMatch = newSegMatch(currLabel, index);
 						
 						// add new food
@@ -142,7 +142,7 @@ public class GetAttributesCRF {
 						if (!currLabel.equals("food")){
 							if (!food.equals("")){
 								// add segMatches to segmentDeps for saved food
-								System.out.println("add food to segmentDeps "+food);
+								System.out.println("add food to segmentDeps: "+food);
 								segmentDeps.put(food, segMatches);
 								index++;
 							} 

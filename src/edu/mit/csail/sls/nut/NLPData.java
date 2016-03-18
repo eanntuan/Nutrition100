@@ -33,6 +33,8 @@ public class NLPData {
 	@JsonProperty
 	public
 	Map<String, ArrayList<Segment>> attributes;
+	@JsonProperty
+	public String foodID;
 	
 	NLPData(Sentence sentence){
 		//crfTokens = sentence.tokens;

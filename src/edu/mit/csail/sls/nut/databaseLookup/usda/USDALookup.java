@@ -427,7 +427,6 @@ public class USDALookup {
 					foodItemLookup(item, dependencies.get(item), tokens,
 							new ArrayList<String>()));
 		}
-
 		return foodItems;
 	}
 
@@ -457,7 +456,6 @@ public class USDALookup {
 						brand.add(tokens.get(i));
 					}
 				}
-
 			}
 			if (s.label.equals("Quantity")) {
 				for (int i = s.start; i < s.end; i++) {
@@ -485,66 +483,6 @@ public class USDALookup {
 			brandString = brandString.substring(1);
 		}
 		String formattedBrand = brandString.replaceAll("[^A-Za-z1-9% ]", "");
-
-//		ArrayList<ReturnableItem> response = new ArrayList<>();
-//		Stemmer stemmer = new Stemmer();
-//		for (char ch : formattedItem.toCharArray()) {
-//			stemmer.add(ch);
-//		}
-//		stemmer.stem();
-//		String singularFormattedItem = stemmer.toString();
-//		String pluralFormattedItem = English.plural(formattedItem);
-//		String descriptionString = "";
-//		for (String i : description) {
-//			descriptionString += " " + i;
-//		}
-//		if (descriptionString.length() > 0) {
-//			descriptionString = descriptionString.substring(1);
-//		}
-//
-//		// First check if it is found in freebase database
-//		if (description.size() > 0) {
-//			response = findFreeBaseEquiv(descriptionString + " "
-//					+ formattedItem, descriptionString + " "
-//					+ singularFormattedItem, descriptionString + " "
-//					+ pluralFormattedItem);
-//			if (response.isEmpty()) {
-//				response = findFreeBaseEquiv(description.get(0) + " "
-//						+ formattedItem, description.get(0) + " "
-//						+ singularFormattedItem, description.get(0) + " "
-//						+ pluralFormattedItem);
-//			}
-//		}
-//
-//		if (response.isEmpty()) {
-//			response = findFreeBaseEquiv(formattedItem, singularFormattedItem,
-//					pluralFormattedItem);
-//		}
-//		if (response.isEmpty()) {
-//			response = executeItemFirstPartialQuery(formattedItem,
-//					singularFormattedItem, pluralFormattedItem);
-//		}
-//
-//		// if (brand.size() > 0) {
-//		// if (brand.size() > 0) {
-//		// response = executeQuerywithBrandAndDescription(
-//		// formattedItem, brand, description);
-//		// } else {
-//		// response = executeQuerywithBrand(formattedItem, brand);
-//		// }
-//		// } else {
-//		// response=executeItemFirstPartialQuery(formattedItem);
-//		// }
-//		//
-//		System.out.println("Description: " + description);
-//		USDAResult usdaResponse = getUSDAResult(item, response, brand,
-//				description, true);
-//		if (usdaResponse.getResults().size() == 0) {
-//			System.out.println("No results using description");
-//			usdaResponse = getUSDAResult(item, response,
-//					new ArrayList<String>(), new ArrayList<String>(), true);
-//		}
-
 		return leveledFoodItemLookup(formattedItem, formattedBrand, description, 0, quantity, new ArrayList<String>());
 
 	}
@@ -564,33 +502,7 @@ public class USDALookup {
 			
 			String formattedBrand = brand.replaceAll("[^A-Za-z1-9% ]", "");
 			formattedBrand=formattedBrand.trim();
-//
-//		ArrayList<ReturnableItem> response = new ArrayList<>();
-//		Stemmer stemmer = new Stemmer();
-//		for (char ch : formattedItem.toCharArray()) {
-//			stemmer.add(ch);
-//		}
-//		stemmer.stem();
-//		String singularFormattedItem = stemmer.toString();
-//		String pluralFormattedItem = English.plural(formattedItem);
-//
-//		response = executeItemFirstPartialQuery(formattedItem,
-//				singularFormattedItem, pluralFormattedItem);
-//
-//		USDAResult usdaResponse = getUSDAResult(item, response,
-//				new ArrayList<String>(), adjectivesSpecified, defaultRaw);
-//		if (usdaResponse.getResults().size() == 0) {
-//			System.out.println("No results using description");
-//			usdaResponse = getUSDAResult(item, response,
-//					new ArrayList<String>(), new ArrayList<String>(),
-//					defaultRaw);
-//		}
-//
-//		// return usdaResponse;
-//		// USDAResult usdaResponse = getUSDAResult(item, response,
-//		// adjectivesSpecified, defaultRaw);
-//
-//		return usdaResponse;
+
 		return leveledFoodItemLookup(formattedItem, formattedBrand, description, level, quantity, adjectivesSpecified);
 
 	}
@@ -644,19 +556,20 @@ public class USDALookup {
 				toAdd.setSugars(sugars);
 				toAdd.setImage(image);
 				
-				GetImages.imageName(longDesc, image);
-				
+				//GetImages.createImageHash(ndb_no, image);
+				GetImages.createImageHash(ndb_no, image);
 				returnedItems.add(toAdd);
+				System.out.println("toAdd");
+				System.out.println(toAdd);
 
 			}
 			rs.close();
-
 			stmt.close();
 			conn.close();
+			System.out.println("returned items");
+			System.out.println(returnedItems);
 			return returnedItems;
-
-			// rs.close();
-
+			
 			// STEP 6: Clean-up environment
 
 		} catch (SQLException se) {
