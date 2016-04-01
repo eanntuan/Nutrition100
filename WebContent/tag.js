@@ -343,16 +343,6 @@ var foodItemsToRows={};
 	    
 	    console.log("dependencies:");
 	    console.log(dependencies);
-//	    console.log("data.images size: " + images.size());
-	    
-	    /*
-	    for (Map.Entry<String, String> entry: images.entrySet()){
-		    String key = entry.getKey();
-		    String value = entry.getValue();
-
-		    System.out.println ("Key: " + key);
-		}*/
-	    
 	    console.log("data.images");
 	    console.log(images);
 	    
@@ -366,12 +356,6 @@ var foodItemsToRows={};
 	    	for(var i=0; i<segments.length; i++) {
 	    		var segment = segments[i];
 	    		var stext = tokens.slice(segment.start, segment.end).join(' ');
-	    		
-//	    		if (segment.label=="Quantity"){
-//	    			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(2)").text(stext);
-//	    		} /*else if (segment.label=="Brand"){
-//	    			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(3)").text(stext);
-//	    		} else 
 	    		if (segment.label=="Description"){
 	    			entry=rowsToFoodItems[tableRow];
 	    			if (!descrReset) {
@@ -393,7 +377,7 @@ var foodItemsToRows={};
 	    	}
 	    	if (changed) {
 	    		updateResults(tableRow, rowsToFoodItems[tableRow].levelUsed,"");
-	    		console.log(cellsToUpdate);
+	    		console.log("cells to update: " + cellsToUpdate);
 	    		for (var j=0;j<cellsToUpdate.length; j++) {
 	    			$("#dependencies tr:nth-child("+foodItemsToRows[foodNoNums]+") td:nth-child("+cellsToUpdate[j]+")").addClass("changedComponent");
 	    		}
@@ -422,7 +406,6 @@ var foodItemsToRows={};
 		    				entry.description=[];
 		    				descrReset=true;
 		    			}
-		    			//entry=rowsToFoodItems[tableRow];
 		    			entry.addDescription(stext);
 		    			console.log(entry);
 		    			entry.resetLevel();
@@ -430,24 +413,11 @@ var foodItemsToRows={};
 		    			cellsToUpdate.push("3");
 		    		}
 		    		if (segment.label=="Quantity"){
-		    			//entry=rowsToFoodItems[tableRow];
 		    			entry.changeQuantity(stext);
 		    			changed=true;
 		    			cellsToUpdate.push("2");
 		    		}
 		    	}
-	    		//console.log("should update "+foodItemsToRows[foodNoNums])
-	    		//console.log(data.results[food])
-//	    		var newDescription = databaseResults[food].originalDescription;
-//	    		var entry=rowsToFoodItems[foodItemsToRows[foodNoNums]];
-//	    		if (newDescription.length>0) {
-//	    			for (var i=0;i<newDescription.length;i++){
-//	    			entry.addDescription(newDescription[i]);
-//	    			}
-//	    		}
-//	    		updateResults(foodItemsToRows[foodNoNums], rowsToFoodItems[foodItemsToRows[foodNoNums]].levelUsed,"");
-////	    		$(".changedComponent").removeClass("changedComponent");
-//	    		$("#dependencies tr:nth-child("+foodItemsToRows[foodNoNums]+") td:nth-child(3)").addClass("changedComponent");
 		    	if (changed) {
 		    		console.log(currentRow);
 		    		updateResults(currentRow, rowsToFoodItems[currentRow].levelUsed,"");
@@ -460,29 +430,9 @@ var foodItemsToRows={};
 		    	}
 	    	}  else {
 	    	foodItemsThisEntry[foodNoNums]=1;
-	    	
-//	    	if (databaseResults[food].hits.length==0) {
-//	    		console.log("no db results!", food);
-//	    		//continue;
-//	    	}
-	    	
 	    	table.show();
-			//console.log("Food: '"+food+"'");
-
-//	    	String newFood = "";
-			// add a row and an image in first column to the table
-//			console.log("image:", images[food]);
 			var row = $('<tr id="food"'+tableRow+'"></tr>'); 
 			var img = $('<img id="dynamic'+(tableRow+1)+'">'); 
-			
-			//console.log("food: " + food);
-			//console.log(("images[foodID]: " + images[foodID]));
-			//console.log(("images[foodID]: " + images[foodNoNums]));
-			
-			
-	    	
-			// add three more columns, second is food text, others empty for now
-			//row.append("<td>"+foodNoNums+"</td>");
 			row.append('<td id="foodCol">'+foodNoNums+"<br></td>");
 			for(var i=0;i<2;i++){
 				row.append("<td></td>");
@@ -505,21 +455,17 @@ var foodItemsToRows={};
 			 rowsToFoodItems[tableRow]= currentFoodEntry;
 			 foodItemsToRows[foodNoNums]=tableRow;
 	    	var attributes = dependencies[food];
+	    	
 	    	// add the attributes for this food to its row in the table
 	    	for(var i=0; i<attributes.length; i++) {
 	    		var segment = attributes[i];
 	    		var stext = tokens.slice(segment.start, segment.end).join(' ');
 	    		if (segment.label=="Quantity"){
 	    			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(2)").text(stext);
-	    		} /*else if (segment.label=="Brand"){
-	    			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(3)").text(stext);
-	    		} else if (segment.label=="Description"){
-	    			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(4)").text(stext);
-	    		}*/
+	    		} 
 	    	}
 	    	
 	    	// add the database hits for this food to last column of its row
-	    	//console.log(databaseResults[food]);
 	    	var features = databaseResults[food].features;
 	    	var hits = databaseResults[food].results;
 	    	var weights = databaseResults[food].weights;
@@ -527,20 +473,19 @@ var foodItemsToRows={};
 	    	console.log(databaseResults[food]);
 	    	stext = "";
 	    	if (hits.length == 1) {
-	    		//console.log(hits[0]);
-	    		quantitySelectionText=quantitySelectionTextGeneration(weights, tableRow, databaseResults[food].quantityAmount);
+	    		//quantitySelectionText=quantitySelectionTextGeneration(weights, tableRow, databaseResults[food].quantityAmount);
+	    		//console.log("quantity selection text: " + quantitySelectionText);
 	    		$("#dependencies tr:nth-child("+tableRow+") td:nth-child(2)").html("<ul>"+quantitySelectionText+"</ul>").css('width', '480px').css('text-align', 'left');
 	    		
 	    		stext+=hits[0].longDesc+"<br>Calories: " + "<div class='calories' id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"</div>";
 	    		console.log("food id: " + hits[0].foodID);
-	    		//console.log("food image: " + hits[0].image);
 	    		if (hits[0].foodID=="-1") {
 	    			stext+="<br><a class='sourceLink hover' target='_blank' href=http://www.nutritionix.com/search/item/"+hits[0].nutID+">Source: Nutritionix </a>";
 	    		}else {
 	    			stext+="<br><a class='sourceLink hover' target='_blank' href=http://ndb.nal.usda.gov/ndb/search/list?qlookup="+hits[0].foodID+">Source: USDA </a>";
 	    		}
 
-	    		stext += "</br><li id='refine"+tableRow+"'><a>"+ "See more options" +"</a></li>";
+	    		stext += "</br><li id='refine"+tableRow+"'><a class='hover'>"+ "See more options" +"</a></li>";
 
 	    	} else {
 	    		if (hits.length==0) {
@@ -550,9 +495,7 @@ var foodItemsToRows={};
 	    			if (currentDatabaseResults.adjectivesRelevant) {
 	    				stext +="Select further adjectives:";
 	    				for (var i=0;i<features.length;i++){
-	    					//if(i<10) {
 	    					stext += "<li><input class='feature"+tableRow+"' type='button' value='"+features[i]+"'>"+"</input></li>";
-	    					//}
 	    				}	
 	    			} else {
 	    				stext +="Select the best match:";
@@ -560,24 +503,25 @@ var foodItemsToRows={};
 	    					stext += '<li><input class="hitoption'+tableRow+'" type="button" value="'+hits[i].longDesc+'">'+'</input></li>';
 	    				}	
 	    			}
-	    			//stext+=quantitySelectionTextGeneration(weights);
 	    		
-			stext += "<li class='hover' id='refine"+tableRow+"'><a>"+ "See more options" +"</a></li>";
-//			stext += "</br><li id='back"+tableRow+"'><a>"+ "Back" +"</a></li>";
+			stext += "<li class='hover' id='refine"+tableRow+"'><a class='hover'>"+ "See more options" +"</a></li>";
 	       }}
 	    	
-	    	console.log("hits[0].foodID: " + hits[0].foodID);
-	    	//console.log(images[hits[0].foodID]);
+	    	var foodID = hits[0].foodID;
+	    	if (foodID.charAt(0) == '0'){
+	    		foodID = foodID.substring(1, foodID.length);
+	    	}
+	    	
+	    	console.log("hits[0].foodID: " + foodID);
+	    	console.log(images);
 	    	
 	    	var path = "/scratch/images/";
-	    	//img.attr("src", hits[0].foodID);
-	    	img.attr("src", images[hits[0].foodID]);
+	    	img.attr("src", images[foodID]);
 			img.attr("border", '1');
 			img.hide();
 			img.on('load', setImgSize); 
 			
 			// add image and db results to row
-	    	//removed the image ET
 			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(1)").append(img);			
 			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(3)").append("<ul>"+stext+"</ul>").css('width', '480px').css('text-align', 'left');
 			
@@ -604,18 +548,7 @@ var foodItemsToRows={};
 				updateCalories(tableRow);
 			}
 			
-//			makeUSDAListeners(food, tableRow, hits, weights, databaseResults[food].originalBrand,databaseResults[food].originalDescription);
 			makeUSDAListeners(tableRow);
-			
-			
-//			//add semantic3hits
-//	    	var hittext = "";
-//	    	var semResults = semantic3Results[food];
-//			for (var i=0;i<semResults.length;i++){
-//				hittext += "<li>"+semResults[i].name+", Brand: "+ semResults[i].brand+"</li>";
-//			}	
-//			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(7)").append("<ul>"+hittext+"</ul>").css('width', '480px').css('text-align', 'left');
-	    
 	    	}}
 	}
 	
@@ -678,14 +611,9 @@ var foodItemsToRows={};
 	
 	function makeUSDAListeners(tableRow) {
 		
-		console.log("tableRow: " + tableRow);
+		console.log("tableRow make usda listeners: " + tableRow);
 		var food = rowsToFoodItems[tableRow].itemName;
-//		console.log(brand);
-//		console.log(description);
-		// Used for adjective choices
-//		$("#dependencies tr:nth-child("+tableRow+") td:nth-child(3) input")
 		$(".feature"+tableRow).click(function (event) {
-//		console.log(event.target.value+item+tableRow);
 		updateResults(tableRow, rowsToFoodItems[tableRow].levelUsed, event.target.value);
 		
 	}) ;
@@ -700,6 +628,7 @@ var foodItemsToRows={};
 				if (hits[i].longDesc==event.target.value) {
 					hits[0]=hits[i];
 					console.log("found "+hits[i].longDesc)
+					changePhoto(hits[i].foodID);
 					break;
 				}
 			}
@@ -722,25 +651,21 @@ var foodItemsToRows={};
 						newWeights.push(entry.weights[j]);
 					}
 					}
-					
 			}
 			entry.weights=newWeights;
 //			console.log(event.target.value+item+tableRow);
 			quantitySelectionText=quantitySelectionTextGeneration(entry.weights, tableRow, entry.quantityAmount);
 	    	$("#dependencies tr:nth-child("+tableRow+") td:nth-child(2)").html("<ul>"+quantitySelectionText+"</ul>").css('width', '480px').css('text-align', 'left');
 	    		//updatedText+="Selected features: "+featureChosen+"</br>";
-	    		updatedText="<ul>"+hits[0].longDesc+", Calories: " + "<div id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"</div>";
+	    		updatedText="<ul>"+hits[0].longDesc+"<br>Calories: " + "<div class='calories' id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"<br></div>";
 	    		updatedText+=" <a style='font-size: 8pt;' target='_blank' href=http://ndb.nal.usda.gov/ndb/search/list?qlookup="+hits[0].foodID+">Source: USDA </a>";
-	    		updatedText += "</br><li id='refine"+tableRow+"'><a>"+ "See more options" +"</a></li>";
-  		    	updatedText += "</br><li id='back"+tableRow+"'><a>"+ "Back" +"</a></li></ul>";
+	    		updatedText += "</br><li id='refine"+tableRow+"'><a class='hover'>"+ "See more options" +"</a></li>";
+  		    	updatedText += "</br><li id='back"+tableRow+"'><a class='hover'>"+ "Back" +"</a></li></ul>";
 			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(3)").html(updatedText).css('width', '480px').css('text-align', 'left');
 			makeUSDAListeners(tableRow);
 			window.updateCalories(tableRow);
 		}) ;
-//		$("."+tableRow).click(function (event) {
-//			console.log(event.target.value+food);
-//			updateResults(food, event.target.value, tableRow, brand, currentLevels[tableRow]);
-//		}) ;
+
 		$("#refine"+tableRow).click(function (event) {
 //			console.log(event.target.value+food);
 			updateResults(tableRow, rowsToFoodItems[tableRow].levelUsed+1, "");
@@ -749,26 +674,6 @@ var foodItemsToRows={};
 			rowsToFoodItems[tableRow].backUpLevel();
 			updateResults(tableRow, rowsToFoodItems[tableRow].levelUsed, "");
 		}) ;
-//		$("#noadj"+tableRow).click(function (event) {
-//			updatedText="";
-//		    qsUpdatedText+=quantitySelectionTextGeneration(weights);
-////				updatedText="Selected features: "+featureChosen+"</br>";
-//				for (var i=0;i<hits.length;i++){
-//					//if(i<10) {
-//					updatedText += "<li class='allselections-"+tableRow+"'>"+hits[i].longDesc+", Calories: "+Math.round(hits[i].calories)+"</li>";
-//					updatedText+=" <a style='font-size: 8pt;' target='_blank' href=http://ndb.nal.usda.gov/ndb/search/list?qlookup="+hits[i].foodID+">Source: USDA </a>";
-//					//}
-//				}	
-//				$("#dependencies tr:nth-child("+tableRow+") td:nth-child(2)").html("<ul>"+qsUpdatedText+"</ul>");
-//				$("#dependencies tr:nth-child("+tableRow+") td:nth-child(3)").html("<ul>"+updatedText+"</ul>");
-//				for (var i=0;i<hits.length;i++){
-//					$(".allselections-"+tableRow).click (function (event) {
-//						$("#dependencies tr:nth-child("+tableRow+") td:nth-child(3)").html("<ul><li>"+event.currentTarget.innerHTML+ "</ul></li>");
-//					})
-//				}
-//				
-//			}) ;
-		
 	}
 	
 	function quantitySelectionTextGeneration (weights, tableRow, quantityAmount) {
@@ -793,8 +698,6 @@ var foodItemsToRows={};
 			var conversionRate = currentRate.gmwgt*1.0/currentRate.amount;
 			$("#calories"+tableRow).html(Math.round(rowsToFoodItems[tableRow].hits[0].calories*amount*conversionRate/100));
 		}
-		
-		
 	};
 	
 	// resize the image, but keep aspect ratio
@@ -823,27 +726,24 @@ var foodItemsToRows={};
 
 	//Updates results for new adjectives
 	function updateResults (tableRow, level, adjectiveAdded) {
-		console.log("Updating"+tableRow);
-//		console.log(featureChosen);
-		
-//		if (featureChosen.length==0) {
-//			featureChosen="[]";
-//		}
+		console.log("Updating row "+tableRow);
 		var entry = rowsToFoodItems[tableRow];
 		if (!adjectiveAdded=="") {
 			entry.addExtraAdjective(adjectiveAdded);
 		}
-		
 		$.getJSON(nuturl+'FeatureLookup'+'?jsonp=?', {'item' : entry.itemName, 'description': JSON.stringify(entry.description),
 			'featureChosen':JSON.stringify(entry.addedAdjectives), 'brand' : entry.brand, 'level': level, 'quantity': entry.quantity},
 			     function(updatedResult){
 	  				console.log(updatedResult);
-	  				
+	  	
 	  				var features = updatedResult.features;
 	  		    	var hits = updatedResult.results;
 	  		    	entry.weights=updatedResult.weights;
 	  		    	entry.levelUsed=updatedResult.levelUsed;
 	  		    	entry.adjectivesRelevant=updatedResult.adjectivesRelevant
+	  		    	
+	  		    	console.log("hits in update results: ");
+	  		    	console.log(hits);
 	  		    	if (entry.previouslevels[entry.previouslevels.length-1]!=entry.levelUsed) {
 	  		    		entry.previouslevels.push(entry.levelUsed);
 	  		    	}
@@ -853,13 +753,11 @@ var foodItemsToRows={};
 	  		    	if (hits.length==0) {
 	  		    		updatedText="No USDA Hits found";
 	  		    	} else {if (hits.length == 1) {
-//	  		    		finalHits[tableRow] = hits;
-	  		    		//console.log(hits[0]);
 	  		    		quantitySelectionText=quantitySelectionTextGeneration(entry.weights, tableRow, updatedResult.quantityAmount);
 	  		    		$("#dependencies tr:nth-child("+tableRow+") td:nth-child(2)").html("<ul>"+quantitySelectionText+"</ul>").css('width', '480px').css('text-align', 'left');
 	  		    		
 	  		    		//updatedText+="Selected features: "+featureChosen+"</br>";
-	  		    		updatedText+=hits[0].longDesc+", Calories: " + "<div id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"</div>";
+	  		    		updatedText+=hits[0].longDesc+"<br>Calories: " + "<div class='calories' id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"</div><br>";
 	  		    		updatedText+=" <a style='font-size: 8pt;' target='_blank' href=http://ndb.nal.usda.gov/ndb/search/list?qlookup="+hits[0].foodID+">Source: USDA </a>";
 	  		    	} else {
 	  		    		console.log(currentFoodEntry.adjectivesRelevant);
@@ -867,25 +765,17 @@ var foodItemsToRows={};
 	  		    		if (currentFoodEntry.adjectivesRelevant) {
 		    				updatedText +="Select further adjectives:";
 		    				for (var i=0;i<features.length;i++){
-		    					//if(i<10) {
 		    					updatedText += "<li><input class='feature"+tableRow+"' type='button' value='"+features[i]+"'>"+"</input></li>";
-		    					//}
 		    				}	
 		    			} else {
 		    				updatedText +="Select the best match:";
 		    				for (var i=0;i<hits.length;i++){
 		    					updatedText += '<li><input class="hitoption'+tableRow+'" type="button" value="'+hits[i].longDesc+'">'+'</input></li>';
 		    				}	
-		    			}
-	  		    		
-	  		    		//updatedText +="Select further adjectives:";
-	  			
-	  				//updatedText += "<li id='noadj"+tableRow+"'><a>"+ "See all options" +"</a></li>";
-	  				
-	  				
+		    			}	  				
 	  		       }
-	  		    	updatedText += "</br><li id='refine"+tableRow+"'><a>"+ "See more options" +"</a></li>";}
-	  		    	updatedText += "</br><li id='back"+tableRow+"'><a>"+ "Back" +"</a></li>";
+	  		    	updatedText += "</br><li id='refine"+tableRow+"'><a class='hover'>"+ "See more options" +"</a></li>";}
+	  		    	updatedText += "<li id='back"+tableRow+"'><a class='hover'>"+ "Back" +"</a></li>";
 	  				//console.log(updatedText);
 //	  				$("#dependencies tr:nth-child("+tableRow+") td:nth-child(5)").text("");
 	  				$("#dependencies tr:nth-child("+tableRow+") td:nth-child(3)").html("<ul>"+updatedText+"</ul>");
@@ -894,24 +784,59 @@ var foodItemsToRows={};
 	  					window.updateCalories(tableRow);
 	  				}
 	  				makeUSDAListeners(tableRow);
-//	  				$("#dependencies tr:nth-child("+tableRow+") td:nth-child(5) input").click(function (event) {
-//	  					console.log(event.target.value+item+tableRow);
-//	  					updateResults(item, featureChosen+","+event.target.value, tableRow);
-//	  				}) ;
-//	  				$("#noadj"+tableRow).click(function (event) {
-//	  					updatedText="Selected features: "+featureChosen+"</br>";
-//	  					for (var i=0;i<hits.length;i++){
-//	  						//if(i<10) {
-//	  						updatedText += "<li>"+hits[i].longDesc+", Calories: "+Math.round(hits[i].calories)+"</li>";
-//	  						//}
-//	  					}	
-//	  					$("#dependencies tr:nth-child("+tableRow+") td:nth-child(5)").html("<ul>"+updatedText+"</ul>");
-//	  				}) ;
 			      });
 	}
 	
+	function changePhoto(foodID){
+		console.log("change photo food ID: " + foodID);
+		var src;
+		if (foodID.charAt(0) == '0'){
+    		foodID = foodID.substring(1, foodID.length);
+    	}
+		
+		encodeImageFileAsURL(foodID);
+		//$("#dynamic"+tableRow).attr("src", src);
+		//console.log($("#dynamic"+tableRow).attr("src"));
+	}
+	
+	function encodeImageFileAsURL(foodID){
+		//encodes image file as url
+		var path = "/scratch/images/";
+		var filePath = path + foodID + ".png";
+		//var filePath = new File([blob], path + foodID + ".png");
+		/*
+		var reader = new FileReader();
+
+		if(file){
+			reader.readAsDataURL(file);
+		}
+        reader.onloadend = function(e){
+        	$("#dynamic"+tableRow).attr("src", reader.result);
+        }
+        */
+        
+        var xhr = new XMLHttpRequest();       
+        xhr.open("GET", filePath, true); 
+        xhr.responseType = "blob";
+        xhr.onload = function (e) {
+        	console.log(this.response);
+            var reader = new FileReader();
+            reader.onload = function(event) {
+            var res = event.target.result;
+            console.log(res)
+            $("#dynamic"+tableRow).attr("src", res);
+         }
+            var file = this.response;
+            reader.readAsDataURL(file)
+            console.log(file);
+            $("#dynamic"+tableRow).attr("src", reader.result);
+        };
+        xhr.send()
+
+	}
+	
 	function updatePhoto (tableRow) {
-		console.log(tableRow);
+		console.log("update photo tableRow " + tableRow);
 		var entry = rowsToFoodItems[tableRow];
 		
 		$.getJSON(nuturl+'UpdatePhoto'+'?jsonp=?', {'item' : entry.itemName, 'description': JSON.stringify(entry.description),
@@ -919,7 +844,7 @@ var foodItemsToRows={};
 			     function(updatedResult){
 //				var img = $("#dynamic"+tableRow); 
 				console.log($("#dynamic"+tableRow));
-				console.log($("#dynamic"+tableRow).attr("src"));
+				//console.log($("#dynamic"+tableRow).attr("src"));
 				if (updatedResult.image !="") {
 					$("#dynamic"+tableRow).attr("src", updatedResult.image);
 					console.log($("#dynamic"+tableRow).attr( "src" ));
@@ -948,7 +873,8 @@ var foodItemsToRows={};
 	    	  	
 	    	  	// get images after table with db info
 	    	  	// then display table with images and db info
-	    	  	$.getJSON(nuturl+'Images'+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'data': serializedData, 'tag_type' : tag_type},
+	    	  	console.log("nuturl: " + nuturl);
+	    	  	$.getJSON(nuturl+'Images'+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'tag_type' : tag_type},
 	    			     function(dataWithImages){
 	    	  				console.log("data with images data coming");
 	    	  				console.log(dataWithImages);
@@ -1009,6 +935,7 @@ function foodEntry (itemName, description, brand, quantity, levelUsed, rowNumber
 		this.weights=weight;
 	}
 	this.backUpLevel= function () {
+		console.log("back up level");
 		if (this.previouslevels.length>1) {
 		this.previouslevels.pop();
 		this.levelUsed=this.previouslevels[this.previouslevels.length-1];

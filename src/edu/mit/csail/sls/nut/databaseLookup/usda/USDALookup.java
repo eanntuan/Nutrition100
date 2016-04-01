@@ -76,6 +76,7 @@ public class USDALookup {
 
 			switch (currentLevel) {
 			// To begin, check the cache for matching options
+			/*
 			case 0: {
 				//System.out.println("case 0");
 				// First, check if the full brand and description are found, or
@@ -105,6 +106,7 @@ public class USDALookup {
 				}
 				break;
 			}
+			
 			case 1: {
 				//System.out.println("case 1");
 				// Next check for the full description and food item
@@ -150,7 +152,7 @@ public class USDALookup {
 				}
 				break;
 			}
-			
+			*/
 			//If no result is found in the cache, move onto the USDA SR database
 			case 4: {
 				System.out.println("case 4");
@@ -559,15 +561,15 @@ public class USDALookup {
 				//GetImages.createImageHash(ndb_no, image);
 				GetImages.createImageHash(ndb_no, image);
 				returnedItems.add(toAdd);
-				System.out.println("toAdd");
-				System.out.println(toAdd);
+				//System.out.println("toAdd");
+				//System.out.println(toAdd);
 
 			}
 			rs.close();
 			stmt.close();
 			conn.close();
-			System.out.println("returned items");
-			System.out.println(returnedItems);
+			//System.out.println("returned items:");
+			//System.out.println(returnedItems);
 			return returnedItems;
 			
 			// STEP 6: Clean-up environment

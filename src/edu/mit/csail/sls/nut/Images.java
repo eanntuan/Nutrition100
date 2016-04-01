@@ -63,12 +63,12 @@ public class Images extends HttpServlet {
 		String tag_type = request.getParameter("tag_type");
 		String jsonp = request.getParameter("jsonp");
 		String textWithPunc = request.getParameter("text");
-		String data = request.getParameter("data");
+		//String data = request.getParameter("data");
 		
 		//NLPData NLPresult = new NLPData(null);
 		
 		System.out.println("text with punc: " + textWithPunc);
-		System.out.println("data: " + data);
+		//System.out.println("data: " + data);
 		
 		//attempt at deserializing object
 		//Gson gson = new Gson();
@@ -80,7 +80,6 @@ public class Images extends HttpServlet {
 		Segmentation segmentation = new Segmentation();
 
 		try {
-			//NLPData NLPresult = request.getParameter("data");
 			NLPData NLPresult = Tag.runCRF(FSTwriter, textWithPunc, segment_type, NutritionContext.sentenceTagger, false, labelType, tag_type);
 			
 			segmentation.text = NLPresult.text;
@@ -102,37 +101,12 @@ public class Images extends HttpServlet {
 		segmentation.results=USDALookup.foodItemInitialLookup(segmentation.attributes, segmentation.tokens);
 		long beforeImages = System.currentTimeMillis();
 		
-		//segmentation.foodID = 
 		Map<String, String> myImages = new HashMap();
 		myImages = GetImages.getImageEncodings();
-		segmentation.foodID = GetImages.getFoodID();
+		//segmentation.foodID = GetImages.getFoodID();
 		segmentation.images = GetImages.getImageEncodings();
-		
-		System.out.println("myImages size1 : " + myImages.size());
+	
 
-		
-		for (Map.Entry<String, String> entry : myImages.entrySet()) {
-		    String key = entry.getKey();
-		    String value = entry.getValue();
-
-		    System.out.println ("Key: " + key + ", Value: " + value.substring(0, 40));
-		}
-		
-		/*
-		segmentation.images = GetImages.getImages(segmentation.foods, segmentation.attributes, segmentation.tokens);
-		
-		System.out.println("segmentation.images size2 : " + segmentation.images.size());
-
-		for (Map.Entry<String, String> entry : segmentation.images.entrySet()) {
-		    String key = entry.getKey();
-		    String value = entry.getValue();
-
-		    System.out.println ("Key: " + key + ", Value: " + value.substring(0, 40));
-		}
-		
-		System.out.println(myImages.equals(segmentation.images));
-		*/
-		
 		long endTime = System.currentTimeMillis();
 		System.out.println("Total time: "+(endTime-starttime)+" images time: "+(endTime-beforeImages));
 				
@@ -143,11 +117,7 @@ public class Images extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.writeValue(writer, result);
-		
-//		QuantityTester.performQuantityTest();;
-//		CacheGenerator.processSentences();
-//		GetImages.loadCacheImages();
-		
+	
 	}
 
 	/**

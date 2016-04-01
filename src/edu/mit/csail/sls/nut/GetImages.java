@@ -36,6 +36,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
+import com.sun.javafx.tk.Toolkit;
 import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 
 
@@ -55,36 +57,23 @@ import sun.misc.BASE64Encoder;
 public class GetImages {
 
 	public static String path="/scratch/images/";
-	//	public static String path="/Users/rnaphtal/Desktop/imageCache/";
-
-	//	public static String imageLink = "";
 	private static Map<String, String> foodImages = new HashMap<>();
-	//	private static Map<String, String> foodEncodingImages = new HashMap<>();
 	private static Map<String, String> foodImageEncoding = new HashMap<>();
 	private static ArrayList<String> foodID = new ArrayList<String>();
 
 	public static Map<String, String> createImageHash(String ndb_no, String imageLink){
 		System.out.println("");
 		System.out.println("In GetImages.createImageHash");
-		//System.out.println("food description: " + description + ", image name: " + imageLink);
-
-		/*
-		String foodDesc[] = description.split(" ", 2);
-		String firstWord = foodDesc[0];
-		firstWord = firstWord.replaceAll("[^A-Za-z]", "");
-		 */
+		
+		ndb_no = ndb_no.replaceFirst("^0+(?!$)", "");
 		foodID.add(ndb_no);
 		foodImages.put(ndb_no, imageLink);
 
 		boolean noRes = true;
 
-		System.out.println("Printing contents of foodimages");
-
 		for (Map.Entry<String, String> entry : foodImages.entrySet()) {
 			String foodName = entry.getKey();
 			String imagePath = entry.getValue();
-
-			System.out.println ("Food ID: " + ndb_no + ", Image Path: " + imagePath);
 			File f = new File(path+ ndb_no + ".png");
 			System.out.println("File path: " + f.getAbsolutePath());
 
@@ -95,17 +84,14 @@ public class GetImages {
 					buffImg = ImageIO.read(f);
 					foodImageEncoding.put(ndb_no, "data:image/png;base64,"+encodeToString(buffImg, "png"));
 					//noRes = false;
-					System.out.println("TESTING: Loaded image imageName:"+f.getAbsolutePath());
 					System.out.println("");
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-
 			} else {
 				System.out.println("Should not fetch from file");
 				foodImageEncoding.put(ndb_no, "");
 			}
-
 			noRes=false;
 			long startTime = System.currentTimeMillis(); // fetch starting time
 		}
@@ -122,25 +108,13 @@ public class GetImages {
 	static Map<String, String> getImageEncodings(){
 		System.out.println("");
 		System.out.println("in getting image encodings method");
-		//System.out.println("getImageEncoding size : " + foodImageEncoding.size());
 		for (Map.Entry<String, String> entry : foodImageEncoding.entrySet()) {
 			String key = entry.getKey();
 			String value = entry.getValue();
-
 			System.out.println ("Key: " + key);
 		}
 		return foodImageEncoding;
 	}
-
-	static ArrayList<String> getFoodID(){
-		System.out.println("getting food id");
-		for(String s: foodID){
-			System.out.println(s);
-		}
-		return foodID;
-	}
-
-
 
 	/**
 	 * Get images of food items with attributes from Google image search
@@ -312,7 +286,8 @@ public class GetImages {
 	 * @throws IllegalArgumentException
 	 */
 	static String getImageEncoding(final String foodSearch, final String imageUrl) throws IllegalArgumentException{
-		System.out.println(foodSearch + ", "+imageUrl);
+		System.out.println(foodSearch + " "+imageUrl);
+		HashMap<String, String> errors = new HashMap<String, String>();
 
 		ScheduledExecutorService executor = NutritionContext.executor;
 
@@ -336,10 +311,9 @@ public class GetImages {
 			// Open a connection to the URL using the proxy information.
 			//URLConnection conn = url.openConnection();
 			//conn.setRequestProperty("User-Agent", "NING/1.0") ;
-			InputStream inStream = conn.getInputStream();
-			//InputStream inStream = url.openStream();
+			//InputStream inStream = conn.getInputStream();
+			InputStream inStream = url.openStream();
 			//System.setProperty("http.proxyHost", null);
-
 
 			BufferedImage image = ImageIO.read(url);
 			BufferedImage resized = new BufferedImage(size, size, image.getType());
@@ -349,12 +323,13 @@ public class GetImages {
 			g.dispose();
 			//		Image bufferedimage= image.getScaledInstance(150, 150, Image.SCALE_SMOOTH);
 			File outputfile = new File(path+foodSearch + ".png");
-
+			
 			if (image == null) {
 				System.out.println("null image");
 				throw new IllegalArgumentException();
 			}
 			ImageIO.write(resized, "png", outputfile);
+			System.out.println("created image: " + path+foodSearch + ".png");
 			return "data:image/png;base64,"+encodeToString(resized, "png");
 
 		} catch (MalformedURLException e) {
@@ -362,57 +337,13 @@ public class GetImages {
 			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
+			errors.put(foodSearch, imageUrl);
 			e.printStackTrace();
 		}
-
-		/*
-		final Future<String> handler = executor.submit(new Callable<String>() {
-
-			@Override
-			public String call() throws Exception {
-				try {
-					int size=150;
-					URL url = new URL(imageUrl);
-					BufferedImage image = ImageIO.read(url);
-					BufferedImage resized = new BufferedImage(size, size, image.getType());
-				    Graphics2D g = resized.createGraphics();
-				    g.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-				    g.drawImage(image, 0, 0, size, size, 0, 0, image.getWidth(), image.getHeight(), null);
-				    g.dispose();
-//					Image bufferedimage= image.getScaledInstance(150, 150, Image.SCALE_SMOOTH);
-					File outputfile = new File(path+foodSearch + ".png");
-
-					if (image == null) {
-						System.out.println("null image");
-						throw new IllegalArgumentException();
-					}
-					ImageIO.write(resized, "png", outputfile);
-					return "data:image/png;base64,"+encodeToString(resized, "png");
-				} catch (javax.imageio.IIOException e) {
-					return "";
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				return imageUrl;
-			}
-		});
-
-		executor.schedule(new Runnable() {
-			@Override
-			public void run() {
-				handler.cancel(true);
-			}
-		}, 1000, TimeUnit.MILLISECONDS);
-		try {
-			return handler.get();
-		} catch (InterruptedException | ExecutionException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		 */
+		
 		return imageUrl;
 	}
+		
 
 	/**
 	 * Encode image to string
@@ -496,6 +427,7 @@ public class GetImages {
 		}
 	}
 
+	
 
 	/**
 	 * Loads the images from the csv file (with formatting image name, url), and 
@@ -507,7 +439,7 @@ public class GetImages {
 		 */
 		// Map<String, USDAResult> is what is needed to do lookup
 		String path = "/afs/csail.mit.edu/u/e/eanntuan/Desktop/";
-		String file = path+"javaLoadingData.csv";
+		String file = path+"javaLoadingURL.csv";
 
 		BufferedReader br;
 		try {
@@ -544,11 +476,8 @@ public class GetImages {
 						byte[] data = decoder.decodeBuffer(imageEncoding);
 						ByteArrayInputStream bis = new ByteArrayInputStream(data);  
 						BufferedImage image = ImageIO.read(bis); 
-						
-						
-						
-						
-						System.out.println("data: " + data);
+					
+						//System.out.println("data: " + data);
 						//InputStream in = new ByteArrayInputStream(data);
 						//BufferedImage image = ImageIO.read(in);
 						BufferedImage resized = new BufferedImage(size, size, image.getType());
@@ -556,7 +485,7 @@ public class GetImages {
 						g.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
 						g.drawImage(image, 0, 0, size, size, 0, 0, image.getWidth(), image.getHeight(), null);
 						g.dispose();
-						//					Image bufferedimage= image.getScaledInstance(150, 150, Image.SCALE_SMOOTH);
+//					Image bufferedimage= image.getScaledInstance(150, 150, Image.SCALE_SMOOTH);
 						File outputfile = new File(path+foodItem + ".png");
 						System.out.println("created file at: " + path+foodItem + ".png");
 
@@ -588,8 +517,8 @@ public class GetImages {
 	}
 
 	public static void main(String[] args) {
-		writeImagestoCache();
-		//loadCacheImages();
+		//writeImagestoCache();
+		loadCacheImages();
 	}
 
 	public static String getUpdatedImage(String food, String brand,
