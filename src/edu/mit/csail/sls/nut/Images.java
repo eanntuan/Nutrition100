@@ -101,9 +101,6 @@ public class Images extends HttpServlet {
 		segmentation.results=USDALookup.foodItemInitialLookup(segmentation.attributes, segmentation.tokens);
 		long beforeImages = System.currentTimeMillis();
 		
-		Map<String, String> myImages = new HashMap();
-		myImages = GetImages.getImageEncodings();
-		//segmentation.foodID = GetImages.getFoodID();
 		segmentation.images = GetImages.getImageEncodings();
 	
 

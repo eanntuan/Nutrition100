@@ -546,7 +546,6 @@ public class USDALookup {
 				double sugars=rs.getDouble("sugars");
 				String image = rs.getString("image");
 				System.out.println(longDesc + ", Calories: " + calories+", NDB_No: "+ndb_no);
-				System.out.println("USDA Lookup image name: " + image);
 
 				USDAItem toAdd=new USDAItem(ndb_no, longDesc, calories);
 				toAdd.setProtein(protein);
@@ -558,18 +557,14 @@ public class USDALookup {
 				toAdd.setSugars(sugars);
 				toAdd.setImage(image);
 				
-				//GetImages.createImageHash(ndb_no, image);
 				GetImages.createImageHash(ndb_no, image);
 				returnedItems.add(toAdd);
-				//System.out.println("toAdd");
-				//System.out.println(toAdd);
 
 			}
 			rs.close();
 			stmt.close();
 			conn.close();
-			//System.out.println("returned items:");
-			//System.out.println(returnedItems);
+			
 			return returnedItems;
 			
 			// STEP 6: Clean-up environment

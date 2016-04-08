@@ -22,11 +22,11 @@ var foodItemsToRows={};
     	var src = scripts[scripts.length-1].src;
     	var pos = src.lastIndexOf('/');
     	nuturl = src.substring(0, pos+1);
-    	nuturlNLP = "http://localhost:8080/Nutrition103-NLP/";
+    	nuturlNLP = "https://ssls.csail.mit.edu/Nutrition103-NLP/";
     	nutname = src.substring(pos+1, src.indexOf(".", pos+1));
     	
     	$('<link rel="stylesheet" type="text/css" href="'+nuturl+nutname+'.css'+'">').appendTo("head");
-    	$('<script src="http://code.google.com/p/jquery-json/"></script>').appendTo("head");
+    	$('<script src="https://code.google.com/p/jquery-json/"></script>').appendTo("head");
     }());
 
     $(document).ready(function() {
@@ -473,7 +473,7 @@ var foodItemsToRows={};
 	    	console.log(databaseResults[food]);
 	    	stext = "";
 	    	if (hits.length == 1) {
-	    		//quantitySelectionText=quantitySelectionTextGeneration(weights, tableRow, databaseResults[food].quantityAmount);
+	    		quantitySelectionText=quantitySelectionTextGeneration(weights, tableRow, databaseResults[food].quantityAmount);
 	    		//console.log("quantity selection text: " + quantitySelectionText);
 	    		$("#dependencies tr:nth-child("+tableRow+") td:nth-child(2)").html("<ul>"+quantitySelectionText+"</ul>").css('width', '480px').css('text-align', 'left');
 	    		
@@ -628,7 +628,7 @@ var foodItemsToRows={};
 				if (hits[i].longDesc==event.target.value) {
 					hits[0]=hits[i];
 					console.log("found "+hits[i].longDesc)
-					changePhoto(hits[i].foodID);
+					changePhoto(hits[i].foodID, tableRow);
 					break;
 				}
 			}
@@ -787,49 +787,77 @@ var foodItemsToRows={};
 			      });
 	}
 	
-	function changePhoto(foodID){
+	function changePhoto(foodID, tableRow){
 		console.log("change photo food ID: " + foodID);
+		console.log("change photo tableRow: " + tableRow);
 		var src;
 		if (foodID.charAt(0) == '0'){
     		foodID = foodID.substring(1, foodID.length);
     	}
 		
-		encodeImageFileAsURL(foodID);
-		//$("#dynamic"+tableRow).attr("src", src);
-		//console.log($("#dynamic"+tableRow).attr("src"));
+		$.getJSON(nuturl+'UpdatePhoto2'+'?jsonp=?', {'foodID' : foodID},
+			     function(updatedResult){
+
+				console.log($("#dynamic"+tableRow));
+
+				if (updatedResult.image !="") {
+					$("#dynamic"+tableRow).attr("src", updatedResult.image);
+					console.log($("#dynamic"+tableRow).attr( "src" ));
+				}
+	  				console.log(updatedResult);
+			});
+		
 	}
 	
-	function encodeImageFileAsURL(foodID){
+	function encodeImageFileAsURL(foodID, tableRow){
 		//encodes image file as url
 		var path = "/scratch/images/";
 		var filePath = path + foodID + ".png";
-		//var filePath = new File([blob], path + foodID + ".png");
-		/*
-		var reader = new FileReader();
-
-		if(file){
-			reader.readAsDataURL(file);
-		}
-        reader.onloadend = function(e){
-        	$("#dynamic"+tableRow).attr("src", reader.result);
-        }
-        */
         
         var xhr = new XMLHttpRequest();       
         xhr.open("GET", filePath, true); 
-        xhr.responseType = "blob";
+        //xhr.responseType = "blob";
+        xhr.responseType = "arraybuffer";
         xhr.onload = function (e) {
+        	var blb = new Blob([xhr.response], {type: 'image/png'});
+            var url = (window.URL || window.webkitURL).createObjectURL(blb);
+        	
+        	/*
+    	   var arr = new Uint8Array(this.response);
+
+
+           // Convert the int array to a binary string
+           // We have to use apply() as we are converting an *array*
+           // and String.fromCharCode() takes one or more single values, not
+           // an array.
+           var raw = String.fromCharCode.apply(null,arr);
+
+           // This works!!!
+           var b64=btoa(raw);
+           var dataURL="data:image/png;base64,"+b64;
+        	
+        	/*
+        	var bb = new BlobBuilder ();
+        	var blob = bb.getBlob ('image/png');
+        	
         	console.log(this.response);
+        	
             var reader = new FileReader();
+            
             reader.onload = function(event) {
             var res = event.target.result;
             console.log(res)
             $("#dynamic"+tableRow).attr("src", res);
+            
+            
          }
             var file = this.response;
             reader.readAsDataURL(file)
             console.log(file);
+            
             $("#dynamic"+tableRow).attr("src", reader.result);
+            */
+            $("#dynamic"+tableRow).attr("src", url);
         };
         xhr.send()
 

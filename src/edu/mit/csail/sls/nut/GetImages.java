@@ -29,7 +29,9 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
@@ -59,22 +61,30 @@ public class GetImages {
 	public static String path="/scratch/images/";
 	private static Map<String, String> foodImages = new HashMap<>();
 	private static Map<String, String> foodImageEncoding = new HashMap<>();
-	private static ArrayList<String> foodID = new ArrayList<String>();
+	private static Set<String> foodID = new HashSet<String>();
 
 	public static Map<String, String> createImageHash(String ndb_no, String imageLink){
 		System.out.println("");
 		System.out.println("In GetImages.createImageHash");
-		
+		//foodImageEncoding.clear();
 		ndb_no = ndb_no.replaceFirst("^0+(?!$)", "");
 		foodID.add(ndb_no);
-		foodImages.put(ndb_no, imageLink);
-
-		boolean noRes = true;
-
-		for (Map.Entry<String, String> entry : foodImages.entrySet()) {
-			String foodName = entry.getKey();
-			String imagePath = entry.getValue();
-			File f = new File(path+ ndb_no + ".png");
+		System.out.println("foodID contains key " + ndb_no + ": " + foodID.contains(ndb_no));
+		
+		if(!(foodID.contains(ndb_no))){
+			System.out.println("putting " + ndb_no + " into foodID");
+			//foodImages.put(ndb_no, imageLink);
+			foodID.add(ndb_no)
+;		}
+		
+		System.out.println("foodID size: " + foodID.size());
+		for (String food: foodID) {
+		    System.out.println(food);
+		
+		
+		//for (Map.Entry<String, String> entry : foodImages.entrySet()) {
+			File f = new File(path+ food + ".png");
+			
 			System.out.println("File path: " + f.getAbsolutePath());
 
 			if (f.exists() && !f.isDirectory()) {
@@ -82,17 +92,17 @@ public class GetImages {
 				BufferedImage buffImg;
 				try {
 					buffImg = ImageIO.read(f);
-					foodImageEncoding.put(ndb_no, "data:image/png;base64,"+encodeToString(buffImg, "png"));
-					//noRes = false;
+					if(!(foodImageEncoding.containsKey(food))){
+						foodImageEncoding.put(food, "data:image/png;base64,"+encodeToString(buffImg, "png"));
+					}
 					System.out.println("");
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
 			} else {
 				System.out.println("Should not fetch from file");
-				foodImageEncoding.put(ndb_no, "");
+				foodImageEncoding.put(food, "");
 			}
-			noRes=false;
 			long startTime = System.currentTimeMillis(); // fetch starting time
 		}
 
@@ -385,7 +395,7 @@ public class GetImages {
 
 
 		String path = "/afs/csail.mit.edu/u/e/eanntuan/Desktop/";
-		String file = path+"javaLoadingURL.csv";
+		String file = path+"eggloading.csv";
 
 		BufferedReader br;
 		try {
@@ -439,7 +449,7 @@ public class GetImages {
 		 */
 		// Map<String, USDAResult> is what is needed to do lookup
 		String path = "/afs/csail.mit.edu/u/e/eanntuan/Desktop/";
-		String file = path+"javaLoadingURL.csv";
+		String file = path+"javaLoadingData3.csv";
 
 		BufferedReader br;
 		try {
@@ -521,14 +531,68 @@ public class GetImages {
 		loadCacheImages();
 	}
 
-	public static String getUpdatedImage(String food, String brand,
-			String descriptionSpecified) {
+	//ET - connect with updatephoto2
+	public static String getNewImage(String newFoodID) {
+		System.out.println("in get updated image, food id: " + newFoodID);
+		
+		/*
 		String newFood= brand+" "+descriptionSpecified+" "+food;
 		newFood= newFood.replaceAll("  ", " ").trim();
 		newFood= newFood.replaceAll("%", "%20percent");
 		newFood= newFood.replaceAll(" ", "%20");
 		System.out.println("Food for picture: "+newFood);
 		File f = new File(path+newFood + ".png");
+		if (f.exists() && !f.isDirectory()) {
+			System.out.println("Should fetch from file and implemented");
+			BufferedImage buffImg;
+			try {
+				buffImg = ImageIO.read(f);
+				return "data:image/png;base64,"+encodeToString(buffImg, "png");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+		} 
+		
+		
+		*/
+		
+		File f = new File(path+newFoodID + ".png");
+		if (f.exists() && !f.isDirectory()) {
+			System.out.println("Should fetch from file and implemented");
+			BufferedImage buffImg;
+			try {
+				buffImg = ImageIO.read(f);
+				return "data:image/png;base64,"+encodeToString(buffImg, "png");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+		} 
+		return "";
+	}
+	
+	//Should connect with UpdatePhoto2
+	public static String getUpdatedImage(String food, String brand, String descriptionSpecified) {
+
+		String newFood= brand+" "+descriptionSpecified+" "+food;
+		newFood= newFood.replaceAll("  ", " ").trim();
+		newFood= newFood.replaceAll("%", "%20percent");
+		newFood= newFood.replaceAll(" ", "%20");
+		System.out.println("Food for picture: "+newFood);
+		File f = new File(path+newFood + ".png");
+		if (f.exists() && !f.isDirectory()) {
+			System.out.println("Should fetch from file and implemented");
+			BufferedImage buffImg;
+			try {
+				buffImg = ImageIO.read(f);
+				return "data:image/png;base64,"+encodeToString(buffImg, "png");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+		} 
+
 		if (f.exists() && !f.isDirectory()) {
 			System.out.println("Should fetch from file and implemented");
 			BufferedImage buffImg;
