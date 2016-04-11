@@ -76,9 +76,9 @@ public class USDALookup {
 
 			switch (currentLevel) {
 			// To begin, check the cache for matching options
-			/*
+			
 			case 0: {
-				//System.out.println("case 0");
+				System.out.println("case 0");
 				// First, check if the full brand and description are found, or
 				// move on if brand or description are empty
 				if (!(descriptions.isEmpty() || brand.equals(""))) {
@@ -108,7 +108,7 @@ public class USDALookup {
 			}
 			
 			case 1: {
-				//System.out.println("case 1");
+				System.out.println("case 1");
 				// Next check for the full description and food item
 				if (!descriptions.isEmpty()) {
 					results = findFreeBaseEquiv(descriptionString + " "
@@ -126,7 +126,7 @@ public class USDALookup {
 			}
 			
 			case 2: {
-				//System.out.println("case 2");
+				System.out.println("case 2");
 				//Check if a cached result is found with just the first description
 				if (!descriptions.isEmpty()) {
 					 results =findFreeBaseEquiv(descriptions.get(0)+" "+foodItem,
@@ -142,7 +142,7 @@ public class USDALookup {
 			}
 			
 			case 3: {
-				//System.out.println("case 3");
+				System.out.println("case 3");
 				//Check if a cached result for just the food item exists
 				if (descriptions.isEmpty()) {
 				results =findFreeBaseEquiv(foodItem, singularItem, pluralItem);
@@ -152,7 +152,7 @@ public class USDALookup {
 				}
 				break;
 			}
-			*/
+			
 			//If no result is found in the cache, move onto the USDA SR database
 			case 4: {
 				System.out.println("case 4");
@@ -604,6 +604,7 @@ public class USDALookup {
 	public static ArrayList<ReturnableItem> executeItemFirstPartialQuery(
 			String item, String singular, String plural) {
 		
+		System.out.println("");
 		System.out.println("Execute item first partial query for: " + item);
 
 		String sql;
@@ -616,7 +617,9 @@ public class USDALookup {
 
 		sql += "(Long_Desc LIKE '"
 				+ item
-				+ "\\,%' OR Long_Desc LIKE '"
+				+ "\\,%' OR Long_Desc LIKE '%"
+				+ item
+				+ "%' OR Long_Desc LIKE '"
 				+ singular
 				+ "\\,%' OR Long_Desc LIKE '"
 				+ plural

@@ -147,7 +147,7 @@ public class Tag extends HttpServlet {
 			Sequence input = (Sequence)testData.get(i).getData();
 			//System.out.println("input: "+input);
 			Sequence[] outputs = SimpleTagger.apply(crf, input, nBest);
-			System.out.println("applied Mallet CRF");
+			System.out.println("applied Mallet CRF in Nut100");
 			int k = outputs.length;
 			boolean error = false;
 			for (int a = 0; a < k; a++) {
@@ -235,6 +235,25 @@ public class Tag extends HttpServlet {
 			} else if (tag_type.equals("crfsuite")){
 				labels = runPyNutritionTagger(sentence.originalText);
 			}
+			
+			 // if no labels are foods, then change last brand/description to food
+            boolean hasFood = false;
+            int index = 0;
+            int lastPropertyIndex = -1;
+            for (String label : labels) {
+                    if (label.equals("food")) {
+                            hasFood = true;
+                            break;
+                    } else if (label.equals("brand") || label.equals("description")) {
+                            lastPropertyIndex = index;
+                    }
+                    index++;
+            }
+            if (!hasFood) {
+                    labels[lastPropertyIndex] = "food";
+            }
+            System.out.println("has a food label: "+hasFood);
+            System.out.println("last property index: "+lastPropertyIndex);
 			
 			// add crfClasses to each token (split on spaces)
 			String[] seq = sentence.originalText.split(" ");

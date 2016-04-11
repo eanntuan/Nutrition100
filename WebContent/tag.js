@@ -22,7 +22,8 @@ var foodItemsToRows={};
     	var src = scripts[scripts.length-1].src;
     	var pos = src.lastIndexOf('/');
     	nuturl = src.substring(0, pos+1);
-    	nuturlNLP = "https://ssls.csail.mit.edu/Nutrition103-NLP/";
+    	//nuturlNLP = "https://ssls.csail.mit.edu/Nutrition103-NLP/";
+    	nuturlNLP = "http://localhost:8080/Nutrition103-NLP/";
     	nutname = src.substring(pos+1, src.indexOf(".", pos+1));
     	
     	$('<link rel="stylesheet" type="text/css" href="'+nuturl+nutname+'.css'+'">').appendTo("head");
@@ -660,7 +661,7 @@ var foodItemsToRows={};
 	    		updatedText="<ul>"+hits[0].longDesc+"<br>Calories: " + "<div class='calories' id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"<br></div>";
 	    		updatedText+=" <a style='font-size: 8pt;' target='_blank' href=http://ndb.nal.usda.gov/ndb/search/list?qlookup="+hits[0].foodID+">Source: USDA </a>";
 	    		updatedText += "</br><li id='refine"+tableRow+"'><a class='hover'>"+ "See more options" +"</a></li>";
-  		    	updatedText += "</br><li id='back"+tableRow+"'><a class='hover'>"+ "Back" +"</a></li></ul>";
+  		    	//updatedText += "</br><li id='back"+tableRow+"'><a class='hover'>"+ "Back" +"</a></li></ul>";
 			$("#dependencies tr:nth-child("+tableRow+") td:nth-child(3)").html(updatedText).css('width', '480px').css('text-align', 'left');
 			makeUSDAListeners(tableRow);
 			window.updateCalories(tableRow);
@@ -759,8 +760,9 @@ var foodItemsToRows={};
 	  		    		//updatedText+="Selected features: "+featureChosen+"</br>";
 	  		    		updatedText+=hits[0].longDesc+"<br>Calories: " + "<div class='calories' id='calories"+tableRow+"'>"+Math.round(hits[0].calories)+"</div><br>";
 	  		    		updatedText+=" <a style='font-size: 8pt;' target='_blank' href=http://ndb.nal.usda.gov/ndb/search/list?qlookup="+hits[0].foodID+">Source: USDA </a>";
+	  		    		changePhoto(hits[0].foodID, tableRow);
 	  		    	} else {
-	  		    		console.log(currentFoodEntry.adjectivesRelevant);
+	  		    		console.log("currentFoodEntry.adjectivesRelevant" + currentFoodEntry.adjectivesRelevant);
 	  		    		console.log(currentFoodEntry);
 	  		    		if (currentFoodEntry.adjectivesRelevant) {
 		    				updatedText +="Select further adjectives:";
@@ -775,7 +777,7 @@ var foodItemsToRows={};
 		    			}	  				
 	  		       }
 	  		    	updatedText += "</br><li id='refine"+tableRow+"'><a class='hover'>"+ "See more options" +"</a></li>";}
-	  		    	updatedText += "<li id='back"+tableRow+"'><a class='hover'>"+ "Back" +"</a></li>";
+	  		    	//updatedText += "<li id='back"+tableRow+"'><a class='hover'>"+ "Back" +"</a></li>";
 	  				//console.log(updatedText);
 //	  				$("#dependencies tr:nth-child("+tableRow+") td:nth-child(5)").text("");
 	  				$("#dependencies tr:nth-child("+tableRow+") td:nth-child(3)").html("<ul>"+updatedText+"</ul>");
@@ -885,6 +887,7 @@ var foodItemsToRows={};
 	    // first display the recognized speech with CRF labels
 	    $.getJSON(nuturlNLP+nutname+'?jsonp=?', {'text' : text, 'segment_type' : segment_type, 'labelRep' : labelRep, 'tag_type' : tag_type},
 		      function(data){
+	    		console.log(nuturlNLP + ", " + nutname);
 	    		console.log("went to Nutrition103-NLP and got tagged results");
 	    	  	displayTaggedResult(data);
 	    	  	

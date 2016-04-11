@@ -53,7 +53,7 @@ public class UpdatePhoto2 extends HttpServlet {
 		String jsonp = request.getParameter("jsonp");
 		String foodID = request.getParameter("foodID");
 		String image="";
-		image = GetImages.getUpdatedImage(foodID);
+		image = GetImages.getNewImage(foodID);
 		Object result = new Photo(image);
 		if (null != jsonp)
 			result = new JSONPObject(jsonp, result);

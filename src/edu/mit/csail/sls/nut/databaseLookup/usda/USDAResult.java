@@ -18,8 +18,8 @@ public class USDAResult {
 	private double quantityAmount=1;
 	boolean quantityMatchFound=false;
 	private boolean adjectivesRelevant=true;
-	
-	
+
+
 	public USDAResult(ArrayList<String> features,
 			ArrayList<ReturnableItem> results, ArrayList<USDAWeight> weights, int level, 
 			ArrayList<String> originalDescription, String originalBrand, String quantity, boolean adjectivesRelevant) {
@@ -34,93 +34,97 @@ public class USDAResult {
 		updateQuantityWeight();
 		this.setAdjectivesRelevant(adjectivesRelevant);
 	}
-	
+
 	private void updateQuantityAmount () {
 		System.out.println("Quantity being parsed:"+quantity);
 		if (quantity.length()>0 && !quantity.equals("a")) {
 			//First check for fraction
-		Matcher matcher = Pattern.compile("(\\d+)?[/]\\d+").matcher(this.quantity);
-		if(matcher.find()) {
-			String[] fraction=matcher.group().split("/");
-			quantityAmount=Double.parseDouble(fraction[0])/Double.parseDouble(fraction[1]);
-		}  else {
-			//Otherwise check for plain digits
-			matcher = Pattern.compile("\\d+").matcher(this.quantity);
+			Matcher matcher = Pattern.compile("(\\d+)?[/]\\d+").matcher(this.quantity);
 			if(matcher.find()) {
-				quantityAmount=Double.parseDouble(matcher.group());
-			} else {
-				if  (quantity.contains("two thirds")) {
-					quantityAmount=2.0/3;
-				} else if  (quantity.contains("three quarters")) {
-					quantityAmount=.75;
-				} else if (quantity.contains("two")) {
-					quantityAmount=2;
-				} else if  (quantity.contains("three")) {
-					quantityAmount=3;
-				} else if  (quantity.contains("four")) {
-					quantityAmount=4;
-				}else if  (quantity.contains("five")) {
-					quantityAmount=5;
-				}else if  (quantity.contains("six")) {
-					quantityAmount=6;
-				}else if  (quantity.contains("seven")) {
-					quantityAmount=7;
-				}else if  (quantity.contains("eight")) {
-					quantityAmount=8;
-				}else if  (quantity.contains("nine")) {
-					quantityAmount=9;
-				}else if  (quantity.contains("ten")) {
-					quantityAmount=10;
-				}else if  (quantity.contains("half")) {
-					quantityAmount=.5;
-				}else if  (quantity.contains("quarter")) {
-					quantityAmount=.25;
-				}else if  (quantity.contains("third")) {
-					quantityAmount=1.0/3;
+				String[] fraction=matcher.group().split("/");
+				quantityAmount=Double.parseDouble(fraction[0])/Double.parseDouble(fraction[1]);
+			}  else {
+				//Otherwise check for plain digits
+				matcher = Pattern.compile("\\d+").matcher(this.quantity);
+				if(matcher.find()) {
+					quantityAmount=Double.parseDouble(matcher.group());
+				} else {
+					if  (quantity.contains("two thirds")) {
+						quantityAmount=2.0/3;
+					} else if  (quantity.contains("three quarters")) {
+						quantityAmount=.75;
+					} else if (quantity.contains("two")) {
+						quantityAmount=2;
+					} else if  (quantity.contains("three")) {
+						quantityAmount=3;
+					} else if  (quantity.contains("four")) {
+						quantityAmount=4;
+					}else if  (quantity.contains("five")) {
+						quantityAmount=5;
+					}else if  (quantity.contains("six")) {
+						quantityAmount=6;
+					}else if  (quantity.contains("seven")) {
+						quantityAmount=7;
+					}else if  (quantity.contains("eight")) {
+						quantityAmount=8;
+					}else if  (quantity.contains("nine")) {
+						quantityAmount=9;
+					}else if  (quantity.contains("ten")) {
+						quantityAmount=10;
+					}else if  (quantity.contains("half")) {
+						quantityAmount=.5;
+					}else if  (quantity.contains("quarter")) {
+						quantityAmount=.25;
+					}else if  (quantity.contains("third")) {
+						quantityAmount=1.0/3;
+					}
 				}
 			}
 		}
-		}
 	}
-	
+
 	private void updateQuantityWeight() {
 		System.out.println("WEIGHTS: " + weights);
 		if (weights==null) {
 			weights=new ArrayList<USDAWeight>();
 		}
+
 		int relevantWeight = -1;
 		int similarWeight = -1;
-		for (int i=0; i<weights.size();i++) {
-			if (quantity.contains(weights.get(i).getMsre_Desc())) {
-				relevantWeight=i;
-			} else if ((weights.get(i).getMsre_Desc().equals("tbsp") && quantity.contains("tablespoon")) ||
-					(weights.get(i).getMsre_Desc().equals("tsp") && quantity.contains("teaspoon")) ||
-					(weights.get(i).getMsre_Desc().equals("oz") && quantity.contains("ounce"))) {
-				relevantWeight=i;
-			}
-			if (relevantWeight<0 && similarWeight<0) {
-				String firstWord = weights.get(i).getMsre_Desc().split(" ")[0];
-				if (quantity.contains(firstWord) || (firstWord.equals("cup") && quantity.contains("glass"))) {
-					similarWeight = i;
+
+		if(weights.size() > 0){
+			for (int i=0; i<weights.size();i++) {
+				if (quantity.contains(weights.get(i).getMsre_Desc())) {
+					relevantWeight=i;
+				} else if ((weights.get(i).getMsre_Desc().equals("tbsp") && quantity.contains("tablespoon")) ||
+						(weights.get(i).getMsre_Desc().equals("tsp") && quantity.contains("teaspoon")) ||
+						(weights.get(i).getMsre_Desc().equals("oz") && quantity.contains("ounce"))) {
+					relevantWeight=i;
+				}
+				if (relevantWeight<0 && similarWeight<0) {
+					String firstWord = weights.get(i).getMsre_Desc().split(" ")[0];
+					if (quantity.contains(firstWord) || (firstWord.equals("cup") && quantity.contains("glass"))) {
+						similarWeight = i;
+					}
 				}
 			}
 		}
-		
+
 		if (relevantWeight<0 && similarWeight>=0) {
 			relevantWeight=similarWeight;
 		}
-		
+
 		if (relevantWeight <0 && ((quantity.contains("gram") || quantity.contains(" g ")))) {
 			weights.add(new USDAWeight("", "g", 1, 1));
 			relevantWeight= weights.size()-1;
 		}
-		
+
 		if (relevantWeight>=0) {
 			USDAWeight tofront=weights.remove(relevantWeight);
 			weights.add(0, tofront);
 			quantityMatchFound=true;
 		} else {
-			
+
 			String conversionStartingItem=UnitConverter.containsConversionItem(quantity);
 			boolean relevantQuantityFound=false;
 			if (conversionStartingItem!=null) {
@@ -146,40 +150,36 @@ public class USDAResult {
 				for (int i=0; i<weights.size();i++) {
 					if (weights.get(i).getMsre_Desc().contains("NLEA")) {
 						nleaFound=i;
-//						break;
+
 					} else if (weights.get(i).getMsre_Desc().contains("medium")) {
 						mediumFound=i;
 					} else if (weights.get(i).getGmwgt()<smallestAmount) {
 						smallest=i;
 					}
 				}
-//				if (nleaFound>=0) {
-////					quantityAmount=1;
-//					USDAWeight tofront=weights.remove(nleaFound);
-//					weights.add(0, tofront);
-//					
-//				} else 
-					if (mediumFound>=0) {
-//					quantityAmount=1;
+				if (mediumFound>=0) {
+
 					USDAWeight tofront=weights.remove(mediumFound);
 					weights.add(0, tofront);
-					
+
 				} else if (smallest>0) {
-//					quantityAmount=1;
+
 					USDAWeight tofront=weights.remove(smallest);
 					weights.add(0, tofront);
-					
+
 				}
 			}
 		}
-		
+
+		/*
 		if (weights.get(0).getMsre_Desc().equals("serving 3 pancakes")) {
 			quantityAmount=quantityAmount/3.0;
 		}
+		*/
 	}
-	
-	
-	
+
+
+
 	public ArrayList<String> getFeatures() {
 		return features;
 	}
@@ -280,6 +280,6 @@ public class USDAResult {
 	public void setAdjectivesRelevant(boolean adjectivesRelevant) {
 		this.adjectivesRelevant = adjectivesRelevant;
 	}
-	
-	
+
+
 }
