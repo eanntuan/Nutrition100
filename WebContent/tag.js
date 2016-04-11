@@ -22,8 +22,8 @@ var foodItemsToRows={};
     	var src = scripts[scripts.length-1].src;
     	var pos = src.lastIndexOf('/');
     	nuturl = src.substring(0, pos+1);
-    	nuturlNLP = "https://ssls.csail.mit.edu/Nutrition103-NLP/";
-    	//nuturlNLP = "http://localhost:8080/Nutrition103-NLP/";
+    	//nuturlNLP = "https://ssls.csail.mit.edu/Nutrition103-NLP/";
+    	nuturlNLP = "http://localhost:8080/Nutrition103-NLP/";
     	nutname = src.substring(pos+1, src.indexOf(".", pos+1));
     	
     	$('<link rel="stylesheet" type="text/css" href="'+nuturl+nutname+'.css'+'">').appendTo("head");
