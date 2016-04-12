@@ -29,7 +29,7 @@
        xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
     <info
         organisation="edu.mit.csail.sls"
-        module="Nutrition"
+        module="Nutrition100"
         status="integration">
 	</info>
 	<dependencies>
