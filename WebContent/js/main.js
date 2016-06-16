@@ -9,7 +9,7 @@ $(document).ready(function(){
 	
 		// hide warnings until need to show them
 		$("#similarWarning").hide();
- 		$("#incompleteWarning").hide();
+ 		//$("#incompleteWarning").hide();
  		$("#shortWarning").hide();
  		$("#spellWarning").hide();
  		$("#repeatWarning").hide();
@@ -66,22 +66,24 @@ $(document).ready(function(){
 	 	var numUSDAMisses = 0;
 	 	var numTagsMisses = 0;
 	 	var numQuantMisses = 0;
+	 	var numImageMisses = 0;
 	 	var foodNum = parseInt($("#numFoods").val());
 	 	var foodNumIncr = foodNum+1;
-//	 	console.log("num foods "+foodNum);
+	 	console.log("num foods "+foodNum);
 //	 	console.log("num foods+1 "+foodNumIncr);
 	 	
 	 	// check radio btns for each row in the table (i.e. each food item)
 	 	for (var foodIndex = 1; foodIndex < foodNum+1; foodIndex++){
-	 		console.log("foodIndex "+foodIndex);
+	 		console.log("foodIndex: "+foodIndex);
 		 	if ( $("#radio_USDA"+foodIndex+"no:checked").length ) { 
 		 		numUSDAMisses += 1;
-		 		console.log("USDA misses "+numUSDAMisses);
+		 		console.log("USDA misses: "+numUSDAMisses);
 		 	} else if (! $("#radio_USDA"+foodIndex+"yes:checked").length) {
 		 		// if neither radio button was checked, prevent submission
 		 		console.log("USDA radio button wasn't checked");
 		 		return false;
 		 	}
+		 	/*
 		 	if ( $("#radio_tags"+foodIndex+"no:checked").length ) { 
 		 		numTagsMisses += 1;
 		 		console.log("tag misses "+numTagsMisses);
@@ -90,6 +92,7 @@ $(document).ready(function(){
 		 		console.log("tag radio button wasn't checked");
 		 		return false;
 		 	}
+		 	*/
 		 	if ( $("#radio_quantity"+foodIndex+"no:checked").length ) { 
 		 		numQuantMisses += 1;
 		 		console.log("quantity misses "+numQuantMisses);
@@ -98,17 +101,29 @@ $(document).ready(function(){
 		 		console.log("quantity radio button wasn't checked");
 		 		return false;
 		 	}
+		 	
+		 	if ( $("#radio_Image"+foodIndex+"no:checked").length ) { 
+		 		numImageMisses += 1;
+		 		console.log("image misses "+numImageMisses);
+		 	} else if (! $("#radio_Image"+foodIndex+"yes:checked").length) {
+		 		// if neither radio button was checked, prevent submission
+		 		console.log("image radio button wasn't checked");
+		 		return false;
+		 	}
 	 	}
 	 	// set values for number of misses per category
-	 	console.log("numUSDAMissed "+numUSDAMisses);
+	 	console.log("numUSDAMissed: "+numUSDAMisses);
 	 	$("#numUSDAMissed").val(numUSDAMisses);
-	 	console.log("numTagsMissed "+numTagsMisses);
-	 	$("#numTagsMissed").val(numTagsMisses);
-	 	console.log("numQuantMissed "+numQuantMisses);
+	 	//console.log("numTagsMissed "+numTagsMisses);
+	 	//$("#numTagsMissed").val(numTagsMisses);
+	 	console.log("numQuantMissed: "+numQuantMisses);
 	 	$("#numQuantMissed").val(numQuantMisses);
+	 	console.log("numImageMissed: "+numImageMisses);
+	 	$("#numImageMissed").val(numImageMisses);
 	 	return true;
  	}
  	
+ 	/*
  	function checkDelSubst(){
  		
  		var numSubstDels = ["0", "1", "2", "3", "4"];
@@ -135,24 +150,25 @@ $(document).ready(function(){
 	 	$("#numSubs").val(numSubs);
 	 	return (subSelected & delSelected);
  	}
- 	
+ 	*/
  	
 	$("#submitButton").click(function() {
  		setTimeout(function() {
  				
  				// ensure radio buttons for all mistake categories were checked
  				if (!checkMistakes()){
+ 					console.log("checking for mistakes");
  			 		$("#radioBtnWarning").show();
  			 		$("#canSubmit").hide();
  					return false;
  				}
- 				
+ 				/*
  				// ensure substitution/deletion radio btns were checked
  				if (!checkDelSubst()){
  			 		$("#radioBtnWarning").show();
  			 		$("#canSubmit").hide();
  					return false;
- 				}
+ 				}*/
 			 	
 	 			$("#answerForm").submit();
  		}, 500);

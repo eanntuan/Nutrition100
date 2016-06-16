@@ -61,31 +61,54 @@ public class GetImages {
 	public static String path="/scratch/images/";
 	private static Map<String, String> foodImages = new HashMap<>();
 	private static Map<String, String> foodImageEncoding = new HashMap<>();
-	private static Set<String> foodID = new HashSet<String>();
+	private static Set<String> foodIDGetImages = new HashSet<String>();
 
-	public static Map<String, String> createImageHash(String ndb_no, String imageLink){
+	public static Map<String, String> createImageHash(Set<String> foodIDsLookup){
 		System.out.println("");
 		System.out.println("In GetImages.createImageHash");
-		//foodImageEncoding.clear();
-		ndb_no = ndb_no.replaceFirst("^0+(?!$)", "");
-		foodID.add(ndb_no);
-		System.out.println("foodID contains key " + ndb_no + ": " + foodID.contains(ndb_no));
-		
-		if(!(foodID.contains(ndb_no))){
-			System.out.println("putting " + ndb_no + " into foodID");
-			//foodImages.put(ndb_no, imageLink);
-			foodID.add(ndb_no)
-;		}
-		
-		System.out.println("foodID size: " + foodID.size());
-		for (String food: foodID) {
-		    System.out.println(food);
+		System.out.println("foodIDsLookup size: " + foodIDsLookup.size());
+		System.out.println("foodImageEncoding size before clearing: " + foodImageEncoding.size());
 		
 		
-		//for (Map.Entry<String, String> entry : foodImages.entrySet()) {
+		foodImageEncoding.clear();
+		/*
+		foodImages.clear();
+		//Map<String, String> foodImageEncoding = new HashMap<>();
+		System.out.println("foodIDsLookup size: " + foodIDsLookup.size());
+		System.out.println("foodImageEncoding size: " + foodImageEncoding.size());
+		System.out.println("foodImages size: " + foodImages.size());
+		System.out.println("foodIDGetImages size before: " + foodIDGetImages.size());
+		System.out.println("");
+
+		for(String key: foodIDGetImages){
+			System.out.println("foodIDGetImages key before: " + key);
+		}
+		
+		for(String ndb_no: foodIDsLookup){
+			System.out.println("ndb_no create image hash: " + ndb_no);
+			
+			ndb_no = ndb_no.replaceFirst("^0+(?!$)", "");
+			
+			if(!(foodIDGetImages.contains(ndb_no))){
+				System.out.println("putting " + ndb_no + " into foodIDGetImages");
+				System.out.println("");
+				foodIDGetImages.add(ndb_no);		
+			}
+			
+			//foodIDGetImages.add(ndb_no);
+			System.out.println("foodIDGetImages contains key " + ndb_no + ": " + foodIDGetImages.contains(ndb_no));
+			System.out.println("");
+			
+		}
+		
+		System.out.println("foodIDGetImages size after: " + foodIDGetImages.size());
+		*/
+		for (String food: foodIDsLookup) {
+		    System.out.println("foodID in foodIDsLookup: " + food);
+		    food = food.replaceFirst("^0+(?!$)", "");
 			File f = new File(path+ food + ".png");
 			
-			System.out.println("File path: " + f.getAbsolutePath());
+			//System.out.println("File path: " + f.getAbsolutePath());
 
 			if (f.exists() && !f.isDirectory()) {
 				System.out.println("Found file name in database");
@@ -104,14 +127,24 @@ public class GetImages {
 				foodImageEncoding.put(food, "");
 			}
 			long startTime = System.currentTimeMillis(); // fetch starting time
+			//System.out.println("start time Get Images: " + startTime);
 		}
 
+		
 		System.out.println("foodImageEncoding size: " + foodImageEncoding.size());
 		for (Map.Entry<String, String> entry : foodImageEncoding.entrySet()) {
 			String key = entry.getKey();
 			String value = entry.getValue();
 			System.out.println ("Key: " + key);
 		}
+		
+		/*
+		if(foodImageEncoding.size() > 11){
+			foodImageEncoding.clear();
+			System.out.println("cleared foodImageEncoding to size: " + foodImageEncoding.size());
+		}*/
+		
+		USDALookup.resetFoodIDLookup();
 		return foodImageEncoding;
 	}
 
@@ -124,8 +157,9 @@ public class GetImages {
 			System.out.println ("Key: " + key);
 		}
 		return foodImageEncoding;
-	}
 
+	}
+	
 	/**
 	 * Get images of food items with attributes from Google image search
 	 * 
@@ -145,6 +179,7 @@ public class GetImages {
 		// for (String food : foods) {
 		for (String food : segmentDeps.keySet()) {
 			ArrayList<Segment> attributes = segmentDeps.get(food);
+			System.out.println("attributes");
 			System.out.println(attributes);
 			String newFood = "";
 			String foodNoPunc = "";

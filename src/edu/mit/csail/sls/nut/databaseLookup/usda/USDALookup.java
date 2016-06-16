@@ -28,6 +28,7 @@ public class USDALookup {
 	// static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 	// static final String DB_URL = "jdbc:mysql://mysql.csail.mit.edu/FNDDS";
 	static final String DB_URL = "jdbc:mysql://mysql.csail.mit.edu/nutritionData";
+	static Set<String> foodIDsLookup = new HashSet<String>();
 
 	// Database credentials
 	static final String USER = "slsNutrition";
@@ -69,14 +70,15 @@ public class USDALookup {
 		if (descriptionString.length() > 0) {
 			descriptionString = descriptionString.substring(1);
 		}
-		
+
 		boolean adjectivesrelevant=true;
 
 		while (results.isEmpty() && currentLevel<14) {
 
 			switch (currentLevel) {
 			// To begin, check the cache for matching options
-			
+
+			/*
 			case 0: {
 				System.out.println("case 0");
 				// First, check if the full brand and description are found, or
@@ -106,7 +108,7 @@ public class USDALookup {
 				}
 				break;
 			}
-			
+
 			case 1: {
 				System.out.println("case 1");
 				// Next check for the full description and food item
@@ -124,7 +126,7 @@ public class USDALookup {
 				}
 				break;
 			}
-			
+
 			case 2: {
 				System.out.println("case 2");
 				//Check if a cached result is found with just the first description
@@ -140,7 +142,7 @@ public class USDALookup {
 				}
 				break;
 			}
-			
+
 			case 3: {
 				System.out.println("case 3");
 				//Check if a cached result for just the food item exists
@@ -152,67 +154,69 @@ public class USDALookup {
 				}
 				break;
 			}
-			
+
+			 */
+
 			//If no result is found in the cache, move onto the USDA SR database
 			case 4: {
 				System.out.println("case 4");
 				if (!descriptions.isEmpty() && !brand.isEmpty()) {
-				// Food item and description begins entry, brand exact feature in adjectives
-				ArrayList<ReturnableItem> tempResults = executeItemFirstPartialQuery(
-						descriptionString + " " + foodItem, descriptionString
-								+ " " + singularItem,
-						descriptionString + " " + pluralItem);
-				for (ReturnableItem currentItem : tempResults) {
-					if (currentItem.hasIdenticalFeature(brand)) {
-						results.add(currentItem);
+					// Food item and description begins entry, brand exact feature in adjectives
+					ArrayList<ReturnableItem> tempResults = executeItemFirstPartialQuery(
+							descriptionString + " " + foodItem, descriptionString
+							+ " " + singularItem,
+							descriptionString + " " + pluralItem);
+					for (ReturnableItem currentItem : tempResults) {
+						if (currentItem.hasIdenticalFeature(brand)) {
+							results.add(currentItem);
+						}
 					}
-				}
 				}
 				break;
 			}
-			
+
 			case 5: {
 				System.out.println("case 5");
 				// Food item and description begins entry, brand similar feature in adjectives
 				if (!descriptions.isEmpty() && !brand.isEmpty()) {
-				ArrayList<ReturnableItem> tempResults = executeItemFirstPartialQuery(
-						descriptionString + " " + foodItem, descriptionString
-								+ " " + singularItem,
-						descriptionString + " " + pluralItem);
-				for (ReturnableItem currentItem : tempResults) {
-					if (currentItem.hasSimilarFeature(brand)) {
-						results.add(currentItem);
+					ArrayList<ReturnableItem> tempResults = executeItemFirstPartialQuery(
+							descriptionString + " " + foodItem, descriptionString
+							+ " " + singularItem,
+							descriptionString + " " + pluralItem);
+					for (ReturnableItem currentItem : tempResults) {
+						if (currentItem.hasSimilarFeature(brand)) {
+							results.add(currentItem);
+						}
 					}
-				}
 				}
 				break;
 			}
-			
+
 			case 6: {
 				System.out.println("case 6");
 				//Food item and description begins entry,  brand not in entry
 				if (!descriptions.isEmpty()) {
-				results = executeItemFirstPartialQuery(
-						descriptionString + " " + foodItem, descriptionString
-								+ " " + singularItem,
-						descriptionString + " " + pluralItem);
+					results = executeItemFirstPartialQuery(
+							descriptionString + " " + foodItem, descriptionString
+							+ " " + singularItem,
+							descriptionString + " " + pluralItem);
 				}
 				break;
 			}
-			
+
 			case 7: {
 				System.out.println("case 7");
 				//Food item and description found exactly in entry
 				if (!descriptions.isEmpty()) {
-				results = executeItemPartialQuery(
-						descriptionString + " " + foodItem, descriptionString
-								+ " " + singularItem,
-						descriptionString + " " + pluralItem);
+					results = executeItemPartialQuery(
+							descriptionString + " " + foodItem, descriptionString
+							+ " " + singularItem,
+							descriptionString + " " + pluralItem);
 				}
 				adjectivesrelevant=false;
 				break;
 			}
-			
+
 			case 8: {
 				System.out.println("case 8");
 				//Food item begins entry, exact brand and description in adjectives
@@ -230,7 +234,7 @@ public class USDALookup {
 				adjectivesrelevant=true;
 				break;
 			}
-			
+
 			case 9: {
 				System.out.println("Case 9");
 				// Food item begins entry, exact brand in adjectives
@@ -252,20 +256,20 @@ public class USDALookup {
 				//Food item begins entry, exact description in adjectives
 				ArrayList<ReturnableItem> tempResults = executeItemFirstPartialQuery(foodItem, singularItem, pluralItem);
 				for (ReturnableItem currentItem : tempResults) {
-						for (String description: descriptions) {
-							if (currentItem.hasIdenticalFeature(description)) {
-								results.add(currentItem);
-								System.out.println("Item with feature "+description+": "+currentItem);
-								break;
-							} else {
-								System.out.println("Item without feature "+description+": "+currentItem);
-							}
+					for (String description: descriptions) {
+						if (currentItem.hasIdenticalFeature(description)) {
+							results.add(currentItem);
+							System.out.println("Item with feature "+description+": "+currentItem);
+							break;
+						} else {
+							System.out.println("Item without feature "+description+": "+currentItem);
+						}
 					}
 				}
 				adjectivesrelevant=true;
 				break;
 			}
-			
+
 			case 11: {
 				System.out.println("case 11");
 				//Food item begins entry, partial match to brand or description in adjectives
@@ -287,14 +291,14 @@ public class USDALookup {
 				}
 				break;
 			}
-			
+
 			case 12: {
 				System.out.println("case 12");
 				//Food item begins entry
 				results = executeItemFirstPartialQuery(foodItem, singularItem, pluralItem);
 				break;
 			}
-			
+
 			case 13: {
 				System.out.println("case 13");
 				//Food item anywhere in entry
@@ -303,20 +307,20 @@ public class USDALookup {
 				break;
 			}			
 			}
-			
+
 			//At each given level, do filter for specific adjectives specified
 			if (addedAdjectives.size()>0 && results.size()>0) {
 				ArrayList<ReturnableItem> tempResults = new ArrayList<ReturnableItem>();
 				for (ReturnableItem currentItem : results) {
 					boolean found=true;
-						for (String description: addedAdjectives) {
-							if (!currentItem.hasIdenticalFeature(description)) {
-								found=false;
-								break;
-							} 
-						}
-						if (found) {
-							tempResults.add(currentItem);
+					for (String description: addedAdjectives) {
+						if (!currentItem.hasIdenticalFeature(description)) {
+							found=false;
+							break;
+						} 
+					}
+					if (found) {
+						tempResults.add(currentItem);
 					}
 				}
 				if (!tempResults.isEmpty()) {
@@ -325,6 +329,9 @@ public class USDALookup {
 			}
 			currentLevel++;
 		}
+
+		System.out.println("results: ");
+		System.out.println(results);
 		return generateAdjectives(foodItem, descriptions, results, brand, currentLevel-1, quantity, adjectivesrelevant);
 	}
 
@@ -340,7 +347,7 @@ public class USDALookup {
 			return new USDAResult(new ArrayList<String>(), results,
 					new ArrayList<USDAWeight>(), level, adjectivesSpecified, brand, quantity, true);
 		}
-		
+
 		if (results.size()==1 && results.get(0).getFoodID().equals("-1")) {
 			//COrrect item is from Nutritonix
 			ArrayList<USDAWeight> weights = new ArrayList<USDAWeight> ();
@@ -348,14 +355,14 @@ public class USDALookup {
 			System.out.println("Calories at current: "+results.get(0).getCalories());
 			return new USDAResult(new ArrayList<String>(), results,
 					weights, level, adjectivesSpecified, brand, quantity, true);
-			
+
 		}
-		
+
 		if (results.size()==1) {
 			return new USDAResult(new ArrayList<String>(), results,
 					getRelevantQuantities(results), level, adjectivesSpecified, brand, quantity, true);
 		}
-		
+
 		ArrayList<FSTNode> fstTree = FSTGenerator.makeTree(results);
 		AttributeNode root = new AttributeNode(itemName);
 
@@ -415,14 +422,13 @@ public class USDALookup {
 	public static Map<String, USDAResult> foodItemInitialLookup(
 			Map<String, ArrayList<Segment>> dependencies,
 			ArrayList<String> tokens) {
-		
+		System.out.println("foodItemInitialLookup foodIDLookup size: " + foodIDsLookup);
 		System.out.println("Food item initial lookup dependencies:" + dependencies);
 		Map<String, USDAResult> foodItems = new HashMap<String, USDAResult>();
 		System.out.println("Keyset: " + dependencies.keySet());
-		//GetImages.setImageName(imageLink);
-		
+
 		Set<String> keyset = dependencies.keySet();
-		
+
 		for (String item : dependencies.keySet()) {
 			foodItems.put(
 					item,
@@ -442,7 +448,7 @@ public class USDALookup {
 		// Get associated values
 		ArrayList<String> brand = new ArrayList<String>();
 		ArrayList<String> description = new ArrayList<String>();
-		 String quantity = "";
+		String quantity = "";
 		for (Segment s : dependencies) {
 			System.out.println("label: " + s.label);
 			if (s.label.equals("Brand")) {
@@ -461,7 +467,7 @@ public class USDALookup {
 			}
 			if (s.label.equals("Quantity")) {
 				for (int i = s.start; i < s.end; i++) {
-					 quantity += " " + tokens.get(i);
+					quantity += " " + tokens.get(i);
 				}
 			}
 			if (s.label.equals("Description")) {
@@ -476,7 +482,7 @@ public class USDALookup {
 
 		// remove numeric values (i.e. indices) from food item
 		String formattedItem = item.replaceAll("[^A-Za-z ]", "");
-		
+
 		String brandString = "";
 		for (String i : brand) {
 			brandString += " " + i;
@@ -495,15 +501,15 @@ public class USDALookup {
 	public static USDAResult foodItemAdjectiveLookup(String item, ArrayList<String> description,
 			ArrayList<String> adjectivesSpecified, String brand, int level, String quantity) {
 
-//		System.out.println("Searching for " + item + " with adjectives"
-//				+ adjectivesSpecified);
-//		// remove numeric values (i.e. indices) from food item
+		//		System.out.println("Searching for " + item + " with adjectives"
+		//				+ adjectivesSpecified);
+		//		// remove numeric values (i.e. indices) from food item
 		String formattedItem = item.replaceAll("[^A-Za-z ]", "");
-			formattedItem=formattedItem.trim();
-			System.out.println("formatted string:" +formattedItem);
-			
-			String formattedBrand = brand.replaceAll("[^A-Za-z1-9% ]", "");
-			formattedBrand=formattedBrand.trim();
+		formattedItem=formattedItem.trim();
+		System.out.println("formatted string:" +formattedItem);
+
+		String formattedBrand = brand.replaceAll("[^A-Za-z1-9% ]", "");
+		formattedBrand=formattedBrand.trim();
 
 		return leveledFoodItemLookup(formattedItem, formattedBrand, description, level, quantity, adjectivesSpecified);
 
@@ -511,9 +517,10 @@ public class USDALookup {
 
 	private static ArrayList<ReturnableItem> executeQuery(String query) {
 		System.out.println("Executing query");
-		
+
 		ArrayList<ReturnableItem> returnedItems = new ArrayList<ReturnableItem>();
-		
+		//Set<String> foodIDsLookup = new HashSet<String>();
+
 		Connection conn = null;
 		Statement stmt = null;
 
@@ -526,7 +533,7 @@ public class USDALookup {
 
 			conn = DriverManager.getConnection(DB_URL, USER, PASS);
 			//Map<String, String> foodImages = new HashMap<String, String>();
-			
+
 			// STEP 4: Execute a query
 			// System.out.println("Creating statement...");
 			stmt = conn.createStatement();
@@ -556,17 +563,23 @@ public class USDALookup {
 				toAdd.setFiber(fiber);
 				toAdd.setSugars(sugars);
 				toAdd.setImage(image);
-				
-				GetImages.createImageHash(ndb_no, image);
+
+				//				if(!(foodIDsLookup.contains(ndb_no))){
+				//					System.out.println("putting " + ndb_no + " into foodID USDA Lookup");
+				//					System.out.println("");
+				//					foodIDsLookup.add(ndb_no);		
+				//				}
 				returnedItems.add(toAdd);
 
 			}
 			rs.close();
 			stmt.close();
 			conn.close();
-			
+
+			//GetImages.createImageHash(foodIDsLookup);
+
 			return returnedItems;
-			
+
 			// STEP 6: Clean-up environment
 
 		} catch (SQLException se) {
@@ -603,9 +616,10 @@ public class USDALookup {
 
 	public static ArrayList<ReturnableItem> executeItemFirstPartialQuery(
 			String item, String singular, String plural) {
-		
+
 		System.out.println("");
 		System.out.println("Execute item first partial query for: " + item);
+
 
 		String sql;
 		sql="SELECT NDB_No, Long_Desc, Calories, "
@@ -633,9 +647,28 @@ public class USDALookup {
 		ArrayList<ReturnableItem> returnedItems = executeQuery(sql);
 
 		System.out.println("Finished (1) with " + returnedItems.size()
-				+ " results.");
-		
-		
+		+ " results.");
+
+		System.out.println(returnedItems);
+		//		for(int i = 0; i < returnedItems.size(); i++){
+		//			//System.out.println(returnedItems.get(i));
+		//			//System.out.println(returnedItems.get(i).getFoodID());
+		//			//System.out.println(returnedItems.get(i).getAllFoodIDs());
+		//			String ndb_no = returnedItems.get(i).getFoodID();
+		//
+		//			if(!(foodIDsLookup.contains(ndb_no))){
+		//				System.out.println("putting " + ndb_no + " into foodID USDA Lookup");
+		//				System.out.println("");
+		//				foodIDsLookup.add(ndb_no);		
+		//			}
+		//			
+		//			
+		//		}
+		//		
+		//		System.out.println("foodIDsLookup size: " + foodIDsLookup.size());
+		//		for(String id: foodIDsLookup){
+		//			System.out.println("ndb_no execute item first partial query in foodIDsLookup: " + id);
+		//		}
 
 		return returnedItems;
 
@@ -671,7 +704,7 @@ public class USDALookup {
 		ArrayList<ReturnableItem> returnedItems = executeQuery(sql);
 
 		System.out.println("Finished (2) with " + returnedItems.size()
-				+ " results.");
+		+ " results.");
 		//System.out.println("Returned items: " + returnedItems);
 
 		return returnedItems;
@@ -681,7 +714,10 @@ public class USDALookup {
 
 	public static ArrayList<USDAWeight> getRelevantQuantities(
 			ArrayList<ReturnableItem> usdaIds) {
+		System.out.println("");
+		System.out.println("in getRelevantQuantities");
 		String sql;
+
 		if (usdaIds.size() < 1) {
 			System.err.println("Too few ids sent");
 		} else {
@@ -690,11 +726,19 @@ public class USDALookup {
 				allIds.addAll(id.getAllFoodIDs());
 			}
 			sql = "SELECT Msre_Desc, NDB_No, Gm_Wgt, Amount FROM WEIGHT"
-			//sql = "SELECT Msre_Desc, NDB_No, Gm_Wgt, Amount FROM WEIGHTtufts"
+					//sql = "SELECT Msre_Desc, NDB_No, Gm_Wgt, Amount FROM WEIGHTtufts"
 					+ " WHERE";
 			for (String currentID : allIds) {
+				System.out.println("ndb_no get relevant quantities: " + currentID);
 				sql += " NDB_No=" + currentID + " OR";
+				createIDHash(currentID);
 			}
+
+			for(String id: foodIDsLookup){
+				System.out.println("get relevant quantity foodIDsLookup: " + id);
+			}
+
+
 			sql = sql.substring(0, sql.length() - 2);
 			//
 			System.out.println("Query (3):" + sql);
@@ -706,6 +750,34 @@ public class USDALookup {
 		}
 		return null;
 
+	}
+
+	public static void createIDHash(String ndb_no){
+		System.out.println("in createIDHash: " + ndb_no);
+		if(!(foodIDsLookup.contains(ndb_no))){
+			System.out.println("putting " + ndb_no + " into foodID USDA Lookup");
+			System.out.println("");
+			foodIDsLookup.add(ndb_no);		
+		}
+		System.out.println("foodIDsLookup size: " + foodIDsLookup.size());
+	}
+	
+	public static Map<String, String> convertToEncodings(){
+		System.out.println("converttoEncodings method");
+		System.out.println("foodIDsLookup converttoEncodings size: " + foodIDsLookup.size());
+		
+		for (String food: foodIDsLookup) {
+		    System.out.println("foodID in foodIDsLookup: " + food);
+		}
+		
+		return GetImages.createImageHash(foodIDsLookup);
+	}
+	
+	public static void resetFoodIDLookup(){
+		System.out.println("resetting foodIDsLookup");
+		System.out.println("foodIDsLookup size before: " + foodIDsLookup.size());
+		foodIDsLookup.clear();
+		System.out.println("foodIDsLookup size after: " + foodIDsLookup.size());
 	}
 
 	private static ArrayList<USDAWeight> executeWeightQuery(String query) {
@@ -785,11 +857,11 @@ public class USDALookup {
 
 	public static ArrayList<ReturnableItem> findFreeBaseEquiv(String item,
 			String singular, String plural) {
-		
+
 		System.out.println("Find freebase equiv");
 
 		String sql;
-		
+
 		sql="SELECT fd.NDB_No, Long_Desc, Calories, "
 				+ "Protein, fat, cholesterol, "
 				+ "sodium, carbohydrates, fiber, "
@@ -801,25 +873,25 @@ public class USDALookup {
 				+ "' OR free.name LIKE '"
 				+ singular
 				+ "' OR free.name LIKE '" + plural + "')";
-		
+
 		System.out.println("Query:" + sql);
 
 		ArrayList<ReturnableItem> returnedItems = executeQuery(sql);
 
 		System.out.println("Finished (3) with " + returnedItems.size()
-				+ " results.");
+		+ " results.");
 
 		return returnedItems;
 
 	}
-	
+
 	/**
 	 * Get corresponding freebase usda_equiv item if it exists
 	 **/
 
 	public static ArrayList<ReturnableItem> findNutritionixEquiv(String item,
 			String singular, String plural) {
-		
+
 		System.out.println("Find nutritionix equiv");
 		String sql;
 		sql = "SELECT itemName, calories, nutritionixID, servingQuant, servingAmount FROM nutritionixCache"
@@ -834,16 +906,16 @@ public class USDALookup {
 		ArrayList<ReturnableItem> returnedItems = executeNutritionixCacheQuery(sql);
 
 		System.out.println("Finished (4) with " + returnedItems.size()
-				+ " results.");
+		+ " results.");
 
 		return returnedItems;
 
 	}
-	
+
 	public static USDAWeight getNutritionixWeight (NutritionixItem item) {
 		return new USDAWeight("-1", item.getQuantityAmount(), -1, Double.parseDouble(item.getQuantityUnit()));
 	}
-	
+
 	private static ArrayList<ReturnableItem> executeNutritionixCacheQuery(String query) {
 		ArrayList<ReturnableItem> returnedItems = new ArrayList<ReturnableItem>();
 		Connection conn = null;
@@ -912,18 +984,18 @@ public class USDALookup {
 	// @SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		findFreeBaseEquiv("waffle", "waffle", "waffles");
-//		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-//		Date date = new Date();
-//		System.out.println(dateFormat.format(date)); //2014/08/06 15:59:48
-//		executeItemPartialQuery("butter", "butter", "butters");
-//		
-//		date = new Date();
-//		System.out.println(dateFormat.format(date)); //2014/08/06 15:59:48
-//		
-//		System.out.println(executeItemFirstPartialQuery("butter", "butter", "butters"));
-//		
-//		date = new Date();
-//		System.out.println(dateFormat.format(date)); //2014/08/06 15:59:48
+		//		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		//		Date date = new Date();
+		//		System.out.println(dateFormat.format(date)); //2014/08/06 15:59:48
+		//		executeItemPartialQuery("butter", "butter", "butters");
+		//		
+		//		date = new Date();
+		//		System.out.println(dateFormat.format(date)); //2014/08/06 15:59:48
+		//		
+		//		System.out.println(executeItemFirstPartialQuery("butter", "butter", "butters"));
+		//		
+		//		date = new Date();
+		//		System.out.println(dateFormat.format(date)); //2014/08/06 15:59:48
 
 	}
 }

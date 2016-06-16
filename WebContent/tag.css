@@ -83,6 +83,11 @@
 
 /*Eanns code*/
 
+.link{
+	color:blue;
+	font-size: 20px;
+}
+
 .calories{
 	display: inline;
 }
@@ -135,6 +140,20 @@ a img {
 
 a:hover img { 
 	display:block; 
+}
+
+#delete-btn{
+	float: right;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: none;
+	background: none;
+}
+
+.button:hover {
+    background-color: #e7e7e7; /* Gray */
+    border-radius: 12px;
+    color: white;
 }
 
 /*

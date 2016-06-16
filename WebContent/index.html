@@ -2,7 +2,7 @@
 <head>
 <title>Food Log</title>
 <script src="jquery-1.10.2.min.js"></script>
-<script src="tag.js"></script>
+<!-- <script src="tag.js"></script>-->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<!-- 
     <link rel="stylesheet" type="text/css" href="css/cssreset-min.css">
@@ -21,6 +21,7 @@
 	<script type='text/javascript' src="dist/js/jquery.spellchecker.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/util.js"></script>
+	<script src="tag.js"></script>
 	<link rel="stylesheet" type="text/css" href="demo/audio_demo.css">
 
 </head>
@@ -54,12 +55,14 @@
 	        <div id="instructionsDiv">
 	          <h2>Instructions</h2>
 	          <div id="innerInstructionDiv">
-	            <p>Please record <b>four</b> different meals (e.g. what you ate for breakfast, lunch, dinner, or snack today or yesterday) using as much detail and
+	            <p><b>Using only the list of 100 food items provided,</b> please record <b>four</b> different meals (e.g. what you ate for breakfast, lunch, dinner, or snack today or yesterday) using as much detail and
 	accuracy as possible. Be creative--we will not accept repeat answers. Try to include as much additional information as
 	you remember, such as brand names and quantities. Please press the record button below to describe your meal orally, or type in the textbox. It's more fun to record your meal verbally, but it requires using Chrome.</p>
+	             
+	             <a href="https://ssls.csail.mit.edu/Nutrition103-NLP/t">List of 100 Food Items</a>
 	             <h3>Examples</h3>
-	             <p>I had a boiled egg, a Thomas's english muffin, and an ounce of organic butter.</p>
-	             <p>For lunch I ate a plate of spaghetti with a spinach salad and feta cheese.</p>
+	             <p>I had a hard boiled egg, a whole wheat english muffin, and one tablespoon of peanut butter.</p>
+	             <p>For lunch I ate a sauteed onions, 3 ounces of chicken breast, and one cup of mixed vegetables.</p>
 	          	 <p>***<b>Note: you must record each meal one at a time</b>, pressing Enter or stop recording at the end of each.***</p>
 	          </div>
 	        </div>
@@ -67,6 +70,7 @@
 	      
 	    <div class="jumbotron align-center">
 			<h1>Record a nutrition log!</h1>
+				
 				<span id="speech-mic" disabled class="fa-stack fa-3x record-btn"
 		             on-click="toggleRecording">
 			      <i class="fa fa-microphone fa-stack-2x
@@ -108,19 +112,20 @@
 			
 			<input type="hidden" id="numSpoken" name="numSpoken"></input>
 			<input type="hidden" id="numTyped" name="numTyped"></input>
+			<input type="hidden" id="numImageMissed" name="numImageMissed"></input>
 			<input type="hidden" id="numUSDAMissed" name="numUSDAMissed"></input>
-			<input type="hidden" id="numTagsMissed" name="numTagsMissed"></input>
+			<!--<input type="hidden" id="numTagsMissed" name="numTagsMissed"></input>-->
 			<input type="hidden" id="numQuantMissed" name="numQuantMissed"></input>
 			<input type="hidden" id="numFoods" name="numFoods"></input>
 			<input type="hidden" id="numDeletions" name="numDeletions"></input>
 			<input type="hidden" id="numSubs" name="numSubs"></input>
 	
-	          <p id="incompleteWarning" class="centerize red">You'll need to record four valid meals before you can submit. Keep going!</p>
+	          <p id="incompleteWarning" class="centerize red">You'll need to record two valid meals before you can submit. Keep going!</p>
 	          <p id="similarWarning" class="centerize red">Your description is too similar to others. Please try again.</p>
 	          <p id="shortWarning" class="centerize red">Your description is too short.  Please elaborate.</p>
 	          <p id="spellWarning" class="centerize red">Please use real English words.</p>
 	          <p id="repeatWarning" class="centerize red">Your description has too many repeating words.  Please try again.</p>
-	          <p id="canSubmit" class="centerize red">You successfully recorded two meals!</p>
+	          <p id="canSubmit" class="centerize red">You successfully recorded 2 meals!</p>
 	        
 			<div id="tagged-query"></div>
 			<div id="dependencies"></div>

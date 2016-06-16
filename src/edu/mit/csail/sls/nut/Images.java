@@ -55,7 +55,7 @@ public class Images extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("servlet request: " + request.toString());
 		long starttime = System.currentTimeMillis();
-		System.out.println("Start time: " + starttime);
+		System.out.println("Start time Get Images: " + starttime);
 		
 		// get the type of approach for associating foods with attributes
 		String segment_type = request.getParameter("segment_type"); 
@@ -78,6 +78,8 @@ public class Images extends HttpServlet {
 		
 		PrintWriter FSTwriter = null;
 		Segmentation segmentation = new Segmentation();
+		//segmentation.images.clear();
+		//System.out.println("segmentation.images size: " + segmentation.images.size());
 
 		try {
 			NLPData NLPresult = Tag.runCRF(FSTwriter, textWithPunc, segment_type, NutritionContext.sentenceTagger, false, labelType, tag_type);
@@ -101,9 +103,15 @@ public class Images extends HttpServlet {
 		segmentation.results=USDALookup.foodItemInitialLookup(segmentation.attributes, segmentation.tokens);
 		long beforeImages = System.currentTimeMillis();
 		
-		segmentation.images = GetImages.getImageEncodings();
+		segmentation.images = USDALookup.convertToEncodings();
+		
+		System.out.println("segmentation.images length after: " + segmentation.images.size());
+		//segmentation.images = GetImages.getImageEncodings();
+		segmentation.backUpImages = GetImages.getImages(segmentation.foods, segmentation.attributes, segmentation.tokens);
 	
-
+		System.out.println("backup images length: " + segmentation.backUpImages.size());
+		//System.out.println(segmentation.backUpImages);
+		
 		long endTime = System.currentTimeMillis();
 		System.out.println("Total time: "+(endTime-starttime)+" images time: "+(endTime-beforeImages));
 				

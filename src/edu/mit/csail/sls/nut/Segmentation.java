@@ -46,6 +46,8 @@ public class Segmentation {
 	@JsonProperty
 	Map <String, String> images;
 	@JsonProperty
+	Map <String, String> backUpImages;
+	@JsonProperty
 	public ArrayList<String> foodID;
 	
 	/*

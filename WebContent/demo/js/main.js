@@ -9,6 +9,8 @@ require.config({
 require(['jquery', 'ractiveUi', 'spoke'], 
 	function($, ui, spoke, mic) {
 	
+//require(['jquery', 'spoke'], 
+//	function($, spoke) {
     console.log("Loaded requirements for main.js");
     
     //var socket = spoke.sharedSocket.getSocket({url: "http://localhost:8002", path: "/socket.io/"});

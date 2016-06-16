@@ -11,7 +11,7 @@ public class USDAWeight implements Comparable<USDAWeight> {
 	private String Msre_Desc;
 	private double gmwgt;
 	private double amount;
-	
+
 	public USDAWeight (String p_foodID, String p_msreDesc, double p_gmwgt, double amount){
 		foodIDs = new HashMap<String, Double>();
 		foodIDs.put(p_foodID, p_gmwgt);

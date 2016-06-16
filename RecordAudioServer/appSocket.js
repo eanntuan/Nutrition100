@@ -12,14 +12,14 @@ var logger = require('./lib/logger');
 
 // %d is for the recording timestamp
 //  var RECORDINGS_DIRECTORY_PROD = '/data/sls/scratch/psaylor/amt_nutrecordings';
-//var RECORDINGS_DIRECTORY_PROD = '/data/sls/scratch/dharwath/nutrition_test/datasets/amt_nutrecordings';
-var RECORDINGS_DIRECTORY_PROD = '/s/nutrition/recordings/';
+//var RECORDINGS_DIRECTORY_PROD = '/s/nutrition/recordings/';
+var RECORDINGS_DIRECTORY_PROD = '/afs/csail.mit.edu/u/e/eanntuan/Thesis/recordings/';
 //var RECORDINGS_DIRECTORY_DEBUG = '/data/sls/scratch/dharwath/debug_recordings';
-var RECORDINGS_DIRECTORY_DEBUG = '/s/nutrition/recordings/debug_recordings/';
+//var RECORDINGS_DIRECTORY_DEBUG = '/s/nutrition/recordings/debug_recordings/';
 var RECORDINGS_DIRECTORY_DEV = __dirname + '/recordings'
 
 // %d is for a number unique to each utterance within the same session
-//var RAW_FILE_NAME_FORMAT = '%s/utterance_%d.raw';
+var RAW_FILE_NAME_FORMAT = '%s/utterance_%d.raw';
 var WAV_FILE_NAME_FORMAT = '%s/utterance_%d.wav';
 var TXT_FILE_NAME_FORMAT = '%s/utterance_%d.txt';
 
@@ -72,14 +72,10 @@ var AppSocket = function(server, appLocals) {
 	        + currentdate.getFullYear();
         
         var time = currentdate.getHours() + ":" + currentdate.getMinutes() + "_";
-        
-        
-        
         var month = currentdate.getMonth()+1;
         var year = currentdate.getFullYear();
         var day = currentdate.getDate();
 
-        //var date = month + "-" + day + "-" + year "-";
         var date = (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + currentdate.getFullYear() + "-";
         var time = currentdate.getHours() + ":" + currentdate.getMinutes() + "_";
         
@@ -107,12 +103,10 @@ var AppSocket = function(server, appLocals) {
         
         var recordingsDirOptions = {
                 mode: 0755,
-                prefix: time,
+                prefix: date + "-" + time,
                 postfix: '',
                 dir: recordToDir,
             };
-        
-        //recordingsDir = 
         
         var recordingsDirObj = tmp.dirSync(recordingsDirOptions);
         var recordingsDir = recordingsDirObj.name;
@@ -122,14 +116,27 @@ var AppSocket = function(server, appLocals) {
 
         ss(socket).on('audioStream', function(stream, data) {
             logger.info('Receiving stream audio for data', data);
+            
 
             //var streamId = data.fragment;
-            //	var streamText = data.text.toLowerCase().replace('.', '') + '\n';
+            //var streamText = data.text.toLowerCase().replace('.', '') + '\n';
+            
+          
+            
             var clientSampleRate = data.sampleRate;
 
-            //var rawFileName = util.format(RAW_FILE_NAME_FORMAT, recordingsDir, streamId);
+            var rawFileName = util.format(RAW_FILE_NAME_FORMAT, recordingsDir, streamId);
             var wavFileName = util.format(WAV_FILE_NAME_FORMAT, recordingsDir, streamId);
             var txtFileName = util.format(TXT_FILE_NAME_FORMAT, recordingsDir, streamId);
+            
+            if(data.text){
+            	console.log('data.text: ' + data.text);
+            	var streamText = data.text.toLowerCase().replace('.', '') + '\n';
+            	logger.debug('Saving converted txt to file ' + txtFileName);
+                console.log('Saving converted txt to file ' + txtFileName);
+                
+                fs.writeFile(txtFileName, streamText);
+            }
             
            
             //logger.debug('Saving raw audio to file ' + rawFileName);
@@ -138,8 +145,7 @@ var AppSocket = function(server, appLocals) {
             logger.debug('Saving converted wav audio to file ' + wavFileName);
             console.log('Saving converted wav audio to file ' + wavFileName);
             
-            //var rawFileWriter = fs.createWriteStream(rawFileName, {encoding: 'binary'});
-            //	fs.writeFile(txtFileName, streamText);
+            var rawFileWriter = fs.createWriteStream(rawFileName, {encoding: 'binary'});
 
             streamId+=1;
             
@@ -169,7 +175,8 @@ var AppSocket = function(server, appLocals) {
                 });
             };
 
-            //stream.pipe(rawFileWriter);
+            
+            stream.pipe(rawFileWriter);
             Recorder.convertToWav(stream, clientSampleRate, wavFileName, onWavConversion);
             
         });
@@ -182,6 +189,8 @@ var AppSocket = function(server, appLocals) {
             extfs.isEmpty(recordingsDir, function(empty) {
                 if (empty) {
                     logger.debug('Removing recording dir', recordingsDir);
+                    recordingsDirNoTime = recordingsDir.split('_')[1];
+                    //console.log("recordingsDirNoTime: " + recordingsDirNoTime);
                     fs.rmdir(recordingsDir, function (err) {
                         logger.error('Error removing recording dir:', err);
                     });
